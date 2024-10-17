@@ -9,11 +9,12 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         /* General styling */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -64,7 +65,7 @@
             margin-bottom: 8px;
             display: inline-block;  /* Change here: label will now be inline-block */
             color: #333;
-            width: 200px; /* This makes the label fixed in width */
+            width: 220px; /* This makes the label fixed in width */
             vertical-align: middle; /* Aligns the label text in the middle */
             text-align: right;
             font-weight: bold;
@@ -74,18 +75,33 @@
         input[type="email"], 
         input[type="text"],
         select {
-            width: calc(100% - 210px); /* Reduce width to account for label width */
-            padding: 12px 16px;
-            font-size: 16px;
-            color: #333;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-bottom: 15px; /* Adds space between inputs */
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-            
-        }
+                    width: calc(100% - 230px); /* Adjusts to label width */
+                    padding: 12px 16px;
+                    font-size: 16px;
+                    color: #333;
+                    background-color: #fff;
+                    border: 1px solid #ccc; /* Softer border for a flat look */
+                    border-radius: 6px; /* Slightly larger for a modern look */
+                    box-sizing: border-box;
+                    margin-bottom: 15px; /* Adds space between inputs */
+                    
+                    /* Modern flat UI with a subtle drop shadow */
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+                    transition: all 0.3s ease; /* Smooth transition for hover/focus */
+                }
+
+                /* Hover state for interaction */
+                select:hover {
+                    border-color: #888; /* Slightly darker border on hover */
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+                }
+
+                /* Focus state for when the select is active */
+                select:focus {
+                    border-color: #00970a; /* Blue border on focus */
+                    box-shadow: 0 0 0 4px rgba(29, 108, 0, 0.2); /* Blue focus ring */
+                    outline: none; /* Remove default outline */
+                }
     
         /* Button Styling */
         button {
@@ -298,7 +314,10 @@
                                 </div>
                             </div>
                         </div>
-            
+                        <div>
+                            <label for="tiebreaker">Enter a Tiebreaker:</label>
+                            <input type="number" id="tiebreaker" name="tiebreaker" min="30" max="70" step="1" required>
+                        </div>
                         <small id="teamsError" style="color: red; display: none;">You've selected two positions from the same team.</small>    
                         <button type="submit">Submit</button>
                     </form>
@@ -505,7 +524,25 @@
                     { name: "Jordan Whittington", team: "LAR" },
                     { name: "Andrei Iosivas", team: "CIN" },
                     { name: "Ricky Pearsall", team: "SF" },
-                    { name: "Rashee Rice", team: "KC" }
+                    { name: "Rashee Rice", team: "KC" },
+                    {"name": "Travis Kelce", "team": "KC"},
+                    {"name": "George Kittle", "team": "SF"},
+                    {"name": "Brock Bowers", "team": "LV"},
+                    {"name": "Trey McBride", "team": "ARI"},
+                    {"name": "Jake Ferguson", "team": "DAL"},
+                    {"name": "Sam LaPorta", "team": "DET"},
+                    {"name": "Dalton Kincaid", "team": "BUF"},
+                    {"name": "Tucker Kraft", "team": "GB"},
+                    {"name": "Kyle Pitts", "team": "ATL"},
+                    {"name": "Evan Engram", "team": "JAC"},
+                    {"name": "T.J. Hockenson", "team": "MIN"},
+                    {"name": "David Njoku", "team": "CLE"},
+                    {"name": "Pat Freiermuth", "team": "PIT"},
+                    {"name": "Cole Kmet", "team": "CHI"},
+                    {"name": "Dallas Goedert", "team": "PHI"},
+                    {"name": "Taysom Hill", "team": "NO"},
+                    {"name": "Mark Andrews", "team": "BAL"},
+                    {"name": "Isaiah Likely", "team": "BAL"}
                 ],
                 def: [
                         { name: "Arizona Cardinals", team: "ARI" },
@@ -588,7 +625,9 @@
             const filteredPlayers = Object.fromEntries(
                 Object.entries(players).map(([position, playersList]) => [
                     position,
-                    playersList.filter(player => playoffTeams.includes(player.team))
+                    playersList
+                    .filter(player => playoffTeams.includes(player.team))
+                    .sort((a, b) => a.name.localeCompare(b.name)) // Sort by player name
                 ])
             );
             // Function to populate the player selects dynamically
