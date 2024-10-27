@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simple GitHub Pages Template with Tools">
-    <title>My GitHub Page</title>
-    
+    <meta name="description" content="GOOF Playoff Fantasy Football">
+    <title>GOOF Playoff Fantasy Football</title>
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -19,707 +19,72 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-    
+
         .nav-bar {
             background-color: #006400;
             padding: 10px 0;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start; /* Aligns content to the left */
+            align-items: center; /* Aligns vertically */
         }
-    
-        .nav-bar a {
+
+        .navbar-brand {
             color: white;
+            display: flex;
+            align-items: center; /* Aligns logo and text vertically */
+            padding-left: 20px; /* Adds some spacing from the edge of the page */
+        }
+
+        .navbar-brand img {
+            margin-right: 10px; /* Adds space between the logo and the text */
+        }
+
+        .navbar-brand span {
+            font-size: 2em;
+            font-weight: bold;
+            color: white; /* Ensure text color is white */
+        }
+
+        .nav-bar .navbar-nav {
+            margin-left: auto; /* Aligns the tabs to the right */
+        }
+
+        .nav-bar a {
+            color: white; /* Keep the text color white */
             padding: 14px 20px;
             text-decoration: none;
         }
-    
-        /* Card Styling */
-        .card {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-    
-        .card-header {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-        }
-    
-        /* Form Layout */
-        form {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-    
-        /* Label Styling */
-        label {
-            font-size: 16px;
-            margin-bottom: 8px;
-            display: inline-block;  /* Change here: label will now be inline-block */
-            color: #333;
-            width: 220px; /* This makes the label fixed in width */
-            vertical-align: middle; /* Aligns the label text in the middle */
-            text-align: right;
-            font-weight: bold;
-        }
-    
-        /* Input and Select Styling */
-        input[type="email"], 
-        input[type="text"],
-        select {
-                    width: calc(100% - 230px); /* Adjusts to label width */
-                    padding: 12px 16px;
-                    font-size: 16px;
-                    color: #333;
-                    background-color: #fff;
-                    border: 1px solid #ccc; /* Softer border for a flat look */
-                    border-radius: 6px; /* Slightly larger for a modern look */
-                    box-sizing: border-box;
-                    margin-bottom: 15px; /* Adds space between inputs */
-                    
-                    /* Modern flat UI with a subtle drop shadow */
-                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-                    transition: all 0.3s ease; /* Smooth transition for hover/focus */
-                }
 
-                /* Hover state for interaction */
-                select:hover {
-                    border-color: #888; /* Slightly darker border on hover */
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
-                }
-
-                /* Focus state for when the select is active */
-                select:focus {
-                    border-color: #00970a; /* Blue border on focus */
-                    box-shadow: 0 0 0 4px rgba(29, 108, 0, 0.2); /* Blue focus ring */
-                    outline: none; /* Remove default outline */
-                }
-    
-        /* Button Styling */
-        button {
-            background-color: #006400;
-            color: white;
-            border: none;
-            padding: 12px 16px;
-            font-size: 16px;
-            cursor: pointer;
+        .nav-bar a:hover {
+            background-color: #004d00; /* Darker green on hover */
             border-radius: 4px;
-            transition: background-color 0.3s ease;
-            width: 100%;
-            margin-top: 10px;
-        }
-    
-        button:hover {
-            background-color: #004d00;
-        }
-    
-        /* Error Message */
-        #teamsError {
-            color: red;
-            display: none;
-            margin-top: 10px;
-        }
-    
-        /* Responsive Form Layout */
-        @media (max-width: 768px) {
-            form {
-                padding: 15px;
-            }
-    
-            input[type="email"], 
-            input[type="text"], 
-            select {
-                font-size: 14px;
-                padding: 10px;
-            }
-    
-            button {
-                font-size: 14px;
-                padding: 10px;
-            }
-    
-            /* Adjust label for smaller screens */
-            label {
-                width: auto;
-                display: block;
-            }
-            
-            /* Adjust select to take up full width */
-            input[type="email"], 
-            input[type="text"], 
-            select {
-                width: 100%;
-            }
         }
     </style>
-    
-    
 </head>
-
 <body>
     <!-- Navigation Bar -->
     <div class="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">My Page</a>
+            <a class="navbar-brand" href="#">
+                <img src="your-logo.png" alt="Logo"> <!-- Add your logo image here -->
+                <span>GOOF Playoff Fantasy Football</span>
+            </a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#section1">Home</a>
+                        <a class="nav-link" href="submitTeam.html">Submit Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section2">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section3">Tools</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section4">Contact</a>
+                        <a class="nav-link" href="scoring.html">Scoring</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
-
-    <div id="section4" class="row">
-        <div class="col-md-12">
-            <!-- Contact Form -->
-            <div class="card">
-                <div class="card-header">Contact Us</div>
-                <div class="card-body">
-                    <form action="https://formspree.io/f/mbljjqdp" method="POST" id="teamForm">
-                        <div class="row">
-                            <!-- Left Column -->
-                            <div class="col-md-6">
-                                <div>
-                                    <label for="email">Email Address:</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-            
-                                <div>
-                                    <label for="teamName">Team Name:</label>
-                                    <input type="text" id="teamName" name="teamName" required>
-                                </div>
-    
-                                <!-- Quarterbacks -->
-                                <div>
-                                    <label for="qb1">Quarterback 1:</label>
-                                    <select id="qb1" name="qb1" class="player-select" data-position="qb" required>
-                                        <option value="" disabled selected>Select Quarterback</option>
-                                    </select>
-                                </div>
-            
-                                <div>
-                                    <label for="qb2">Quarterback 2:</label>
-                                    <select id="qb2" name="qb2" class="player-select" data-position="qb" required>
-                                        <option value="" disabled selected>Select Quarterback</option>
-                                    </select>
-                                </div>
-            
-                                <!-- Runningbacks -->
-                                <div>
-                                    <label for="rb1">Runningback 1:</label>
-                                    <select id="rb1" name="rb1" class="player-select" data-position="rb" required>
-                                        <option value="" disabled selected>Select Runningback</option>
-                                    </select>
-                                </div>
-            
-                                <div>
-                                    <label for="rb2">Runningback 2:</label>
-                                    <select id="rb2" name="rb2" class="player-select" data-position="rb" required>
-                                        <option value="" disabled selected>Select Runningback</option>
-                                    </select>
-                                </div>
-            
-                                <div>
-                                    <label for="rb3">Runningback 3:</label>
-                                    <select id="rb3" name="rb3" class="player-select" data-position="rb" required>
-                                        <option value="" disabled selected>Select Runningback</option>
-                                    </select>
-                                </div>
-    
-                                <div>
-                                    <label for="rb4">Runningback 4:</label>
-                                    <select id="rb4" name="rb4" class="player-select" data-position="rb" required>
-                                        <option value="" disabled selected>Select Runningback</option>
-                                    </select>
-                                </div>
-                            </div>
-    
-                            <!-- Right Column -->
-                            <div class="col-md-6">
-                                <!-- Wide Receiver/Tight End -->
-                                <div>
-                                    <label for="wr1">Wide Receiver/Tight End 1:</label>
-                                    <select id="wr1" name="wr1" class="player-select" data-position="wr" required>
-                                        <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
-                                    </select>
-                                </div>
-            
-                                <div>
-                                    <label for="wr2">Wide Receiver/Tight End 2:</label>
-                                    <select id="wr2" name="wr2" class="player-select" data-position="wr" required>
-                                        <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
-                                    </select>
-                                </div>
-            
-                                <div>
-                                    <label for="wr3">Wide Receiver/Tight End 3:</label>
-                                    <select id="wr3" name="wr3" class="player-select" data-position="wr" required>
-                                        <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
-                                    </select>
-                                </div>
-    
-                                <div>
-                                    <label for="wr4">Wide Receiver/Tight End 4:</label>
-                                    <select id="wr4" name="wr4" class="player-select" data-position="wr" required>
-                                        <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
-                                    </select>
-                                </div>
-            
-                                <!-- Defense -->
-                                <div>
-                                    <label for="def1">Defense 1:</label>
-                                    <select id="def1" name="def1" class="player-select" data-position="def" required>
-                                        <option value="" disabled selected>Select Defense</option>
-                                    </select>
-                                </div>
-    
-                                <div>
-                                    <label for="def2">Defense 2:</label>
-                                    <select id="def2" name="def2" class="player-select" data-position="def" required>
-                                        <option value="" disabled selected>Select Defense</option>
-                                    </select>
-                                </div>
-            
-                                <!-- Kicker -->
-                                <div>
-                                    <label for="k1">Kicker 1:</label>
-                                    <select id="k1" name="k1" class="player-select" data-position="k" required>
-                                        <option value="" disabled selected>Select Kicker</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label for="k2">Kicker 2:</label>
-                                    <select id="k2" name="k2" class="player-select" data-position="k" required>
-                                        <option value="" disabled selected>Select Kicker</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <label for="tiebreaker">Enter a Tiebreaker:</label>
-                            <input type="number" id="tiebreaker" name="tiebreaker" min="30" max="70" step="1" required>
-                        </div>
-                        <small id="teamsError" style="color: red; display: none;">You've selected two positions from the same team.</small>    
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-        
-        <!-- Scripts -->
-        <script>
-            // Define player data
-            const players = {
-                qb: [
-                        { "name": "Lamar Jackson", "team": "BAL" },
-                        { "name": "Josh Allen", "team": "BUF" },
-                        { "name": "Jalen Hurts", "team": "PHI" },
-                        { "name": "Jayden Daniels", "team": "WAS" },
-                        { "name": "Patrick Mahomes", "team": "KC" },
-                        { "name": "Joe Burrow", "team": "CIN" },
-                        { "name": "Baker Mayfield", "team": "TB" },
-                        { "name": "C.J. Stroud", "team": "HOU" },
-                        { "name": "Jordan Love", "team": "GB" },
-                        { "name": "Kyler Murray", "team": "ARI" },
-                        { "name": "Brock Purdy", "team": "SF" },
-                        { "name": "Jared Goff", "team": "DET" },
-                        { "name": "Kirk Cousins", "team": "ATL" },
-                        { "name": "Geno Smith", "team": "SEA" },
-                        { "name": "Dak Prescott", "team": "DAL" },
-                        { "name": "Caleb Williams", "team": "CHI" },
-                        { "name": "Sam Darnold", "team": "MIN" },
-                        { "name": "Aaron Rodgers", "team": "NYJ" },
-                        { "name": "Anthony Richardson", "team": "IND" },
-                        { "name": "Matthew Stafford", "team": "LAR" },
-                        { "name": "Trevor Lawrence", "team": "JAC" },
-                        { "name": "Justin Herbert", "team": "LAC" },
-                        { "name": "Bo Nix", "team": "DEN" },
-                        { "name": "Daniel Jones", "team": "NYG" },
-                        { "name": "Tua Tagovailoa", "team": "MIA" },
-                        { "name": "Derek Carr", "team": "NO" },
-                        { "name": "Deshaun Watson", "team": "CLE" },
-                        { "name": "Russell Wilson", "team": "PIT" },
-                        { "name": "Drake Maye", "team": "NE" },
-                        { "name": "Justin Fields", "team": "PIT" }
-                    ],
-                rb: [
-                        { "name": "Derrick Henry", "team": "BAL" },
-                        { "name": "Saquon Barkley", "team": "PHI" },
-                        { "name": "Alvin Kamara", "team": "NO" },
-                        { "name": "Bijan Robinson", "team": "ATL" },
-                        { "name": "Kyren Williams", "team": "LAR" },
-                        { "name": "Breece Hall", "team": "NYJ" },
-                        { "name": "Jahmyr Gibbs", "team": "DET" },
-                        { "name": "Jonathan Taylor", "team": "IND" },
-                        { "name": "David Montgomery", "team": "DET" },
-                        { "name": "Josh Jacobs", "team": "GB" },
-                        { "name": "James Cook", "team": "BUF" },
-                        { "name": "Kenneth Walker", "team": "SEA" },
-                        { "name": "De'Von Achane", "team": "MIA" },
-                        { "name": "Joe Mixon", "team": "HOU" },
-                        { "name": "James Conner", "team": "ARI" },
-                        { "name": "D'Andre Swift", "team": "CHI" },
-                        { "name": "Najee Harris", "team": "PIT" },
-                        { "name": "Tony Pollard", "team": "TEN" },
-                        { "name": "Aaron Jones", "team": "MIN" },
-                        { "name": "Jordan Mason", "team": "SF" },
-                        { "name": "Chuba Hubbard", "team": "CAR" },
-                        { "name": "Chase Brown", "team": "CIN" },
-                        { "name": "Brian Robinson", "team": "WAS" },
-                        { "name": "J.K. Dobbins", "team": "LAC" },
-                        { "name": "Christian McCaffrey", "team": "SF" },
-                        { "name": "Rhamondre Stevenson", "team": "NE" },
-                        { "name": "Austin Ekeler", "team": "WAS" },
-                        { "name": "Zack Moss", "team": "CIN" },
-                        { "name": "Travis Etienne", "team": "JAC" },
-                        { "name": "Rachaad White", "team": "TB" },
-                        { "name": "Javonte Williams", "team": "DEN" },
-                        { "name": "Devin Singletary", "team": "NYG" },
-                        { "name": "Isiah Pacheco", "team": "KC" },
-                        { "name": "Bucky Irving", "team": "TB" },
-                        { "name": "Rico Dowdle", "team": "DAL" },
-                        { "name": "Raheem Mostert", "team": "MIA" },
-                        { "name": "Zach Charbonnet", "team": "SEA" },
-                        { "name": "Tank Bigsby", "team": "JAC" },
-                        { "name": "Tyler Allgeier", "team": "ATL" },
-                        { "name": "Jerome Ford", "team": "CLE" },
-                        { "name": "Alexander Mattison", "team": "LV" },
-                        { "name": "Tyrone Tracy", "team": "NYG" },
-                        { "name": "Nick Chubb", "team": "CLE" },
-                        { "name": "Antonio Gibson", "team": "NE" },
-                        { "name": "Jaylen Warren", "team": "PIT" },
-                        { "name": "Jonathon Brooks", "team": "CAR" },
-                        { "name": "Jaleel McLaughlin", "team": "DEN" },
-                        { "name": "Zamir White", "team": "LV" },
-                        { "name": "Carson Steele", "team": "KC" },
-                        { "name": "Braelon Allen", "team": "NYJ" },
-                        { "name": "Tyjae Spears", "team": "TEN" },
-                        { "name": "Ty Chandler", "team": "MIN" },
-                        { "name": "Justice Hill", "team": "BAL" },
-                        { "name": "Kareem Hunt", "team": "KC" },
-                        { "name": "Ezekiel Elliott", "team": "DAL" },
-                        { "name": "Ray Davis", "team": "BUF" },
-                        { "name": "Blake Corum", "team": "LAR" },
-                        { "name": "Trey Benson", "team": "ARI" },
-                        { "name": "Jaylen Wright", "team": "MIA" },
-                        { "name": "Roschon Johnson", "team": "CHI" },
-                        { "name": "Gus Edwards", "team": "LAC" },
-                        { "name": "Trey Sermon", "team": "IND" },
-                        { "name": "Miles Sanders", "team": "CAR" },
-                        { "name": "Dameon Pierce", "team": "HOU" },
-                        { "name": "Kimani Vidal", "team": "LAC" },
-                        { "name": "Samaje Perine", "team": "KC" },
-                        { "name": "Kendre Miller", "team": "NO" },
-                        { "name": "Cam Akers", "team": "MIN" },
-                        { "name": "Emanuel Wilson", "team": "GB" },
-                        { "name": "Jeremy McNichols", "team": "WAS" },
-                        { "name": "Ty Johnson", "team": "BUF" },
-                        { "name": "Tyler Goodson", "team": "IND" },
-                        { "name": "Khalil Herbert", "team": "CHI" },
-                        { "name": "MarShawn Lloyd", "team": "GB" },
-                        { "name": "Clyde Edwards-Helaire", "team": "KC" }
-                    ],
-                wr: [
-                    { name: "Justin Jefferson", team: "MIN" },
-                    { name: "Ja'Marr Chase", team: "CIN" },
-                    { name: "Amon-Ra St. Brown", team: "DET" },
-                    { name: "CeeDee Lamb", team: "DAL" },
-                    { name: "Tyreek Hill", team: "MIA" },
-                    { name: "Chris Godwin", team: "TB" },
-                    { name: "Garrett Wilson", team: "NYJ" },
-                    { name: "Stefon Diggs", team: "HOU" },
-                    { name: "Drake London", team: "ATL" },
-                    { name: "Jayden Reed", team: "GB" },
-                    { name: "Malik Nabers", team: "NYG" },
-                    { name: "A.J. Brown", team: "PHI" },
-                    { name: "DK Metcalf", team: "SEA" },
-                    { name: "Mike Evans", team: "TB" },
-                    { name: "Terry McLaurin", team: "WAS" },
-                    { name: "DeVonta Smith", team: "PHI" },
-                    { name: "Zay Flowers", team: "BAL" },
-                    { name: "D.J. Moore", team: "CHI" },
-                    { name: "Nico Collins", team: "HOU" },
-                    { name: "Marvin Harrison", team: "ARI" },
-                    { name: "Diontae Johnson", team: "CAR" },
-                    { name: "Tee Higgins", team: "CIN" },
-                    { name: "Chris Olave", team: "NO" },
-                    { name: "Deebo Samuel Sr.", team: "SF" },
-                    { name: "Brian Thomas", team: "JAC" },
-                    { name: "Jameson Williams", team: "DET" },
-                    { name: "George Pickens", team: "PIT" },
-                    { name: "Xavier Worthy", team: "KC" },
-                    { name: "Amari Cooper", team: "BUF" },
-                    { name: "Davante Adams", team: "NYJ" },
-                    { name: "Michael Pittman", team: "IND" },
-                    { name: "Christian Kirk", team: "JAC" },
-                    { name: "Tank Dell", team: "HOU" },
-                    { name: "Wan'Dale Robinson", team: "NYG" },
-                    { name: "Jaxon Smith-Njigba", team: "SEA" },
-                    { name: "Brandon Aiyuk", team: "SF" },
-                    { name: "Rashid Shaheed", team: "NO" },
-                    { name: "Jaylen Waddle", team: "MIA" },
-                    { name: "Darnell Mooney", team: "ATL" },
-                    { name: "Calvin Ridley", team: "TEN" },
-                    { name: "Courtland Sutton", team: "DEN" },
-                    { name: "Tyler Lockett", team: "SEA" },
-                    { name: "Ladd McConkey", team: "LAC" },
-                    { name: "Cooper Kupp", team: "LAR" },
-                    { name: "Jakobi Meyers", team: "LV" },
-                    { name: "DeAndre Hopkins", team: "TEN" },
-                    { name: "Josh Downs", team: "IND" },
-                    { name: "Puka Nacua", team: "LAR" },
-                    { name: "Jordan Addison", team: "MIN" },
-                    { name: "Jerry Jeudy", team: "CLE" },
-                    { name: "Romeo Doubs", team: "GB" },
-                    { name: "Allen Lazard", team: "NYJ" },
-                    { name: "Demario Douglas", team: "NE" },
-                    { name: "Keenan Allen", team: "CHI" },
-                    { name: "Michael Wilson", team: "ARI" },
-                    { name: "Rome Odunze", team: "CHI" },
-                    { name: "Christian Watson", team: "GB" },
-                    { name: "Khalil Shakir", team: "BUF" },
-                    { name: "Keon Coleman", team: "BUF" },
-                    { name: "Quentin Johnston", team: "LAC" },
-                    { name: "Gabe Davis", team: "JAC" },
-                    { name: "Rashod Bateman", team: "BAL" },
-                    { name: "Xavier Legette", team: "CAR" },
-                    { name: "Darius Slayton", team: "NYG" },
-                    { name: "Demarcus Robinson", team: "LAR" },
-                    { name: "Joshua Palmer", team: "LAC" },
-                    { name: "Jauan Jennings", team: "SF" },
-                    { name: "Alec Pierce", team: "IND" },
-                    { name: "Jalen Tolbert", team: "DAL" },
-                    { name: "Mike Williams", team: "NYJ" },
-                    { name: "Brandin Cooks", team: "DAL" },
-                    { name: "Dontayvion Wicks", team: "GB" },
-                    { name: "Tre Tucker", team: "LV" },
-                    { name: "Adam Thielen", team: "CAR" },
-                    { name: "Ja'Lynn Polk", team: "NE" },
-                    { name: "Adonai Mitchell", team: "IND" },
-                    { name: "JuJu Smith-Schuster", team: "KC" },
-                    { name: "Curtis Samuel", team: "BUF" },
-                    { name: "Ray-Ray McCloud", team: "ATL" },
-                    { name: "Tutu Atwell", team: "LAR" },
-                    { name: "Jordan Whittington", team: "LAR" },
-                    { name: "Andrei Iosivas", team: "CIN" },
-                    { name: "Ricky Pearsall", team: "SF" },
-                    { name: "Rashee Rice", team: "KC" },
-                    {"name": "Travis Kelce", "team": "KC"},
-                    {"name": "George Kittle", "team": "SF"},
-                    {"name": "Brock Bowers", "team": "LV"},
-                    {"name": "Trey McBride", "team": "ARI"},
-                    {"name": "Jake Ferguson", "team": "DAL"},
-                    {"name": "Sam LaPorta", "team": "DET"},
-                    {"name": "Dalton Kincaid", "team": "BUF"},
-                    {"name": "Tucker Kraft", "team": "GB"},
-                    {"name": "Kyle Pitts", "team": "ATL"},
-                    {"name": "Evan Engram", "team": "JAC"},
-                    {"name": "T.J. Hockenson", "team": "MIN"},
-                    {"name": "David Njoku", "team": "CLE"},
-                    {"name": "Pat Freiermuth", "team": "PIT"},
-                    {"name": "Cole Kmet", "team": "CHI"},
-                    {"name": "Dallas Goedert", "team": "PHI"},
-                    {"name": "Taysom Hill", "team": "NO"},
-                    {"name": "Mark Andrews", "team": "BAL"},
-                    {"name": "Isaiah Likely", "team": "BAL"}
-                ],
-                def: [
-                        { name: "Arizona Cardinals", team: "ARI" },
-                        { name: "Atlanta Falcons", team: "ATL" },
-                        { name: "Baltimore Ravens", team: "BAL" },
-                        { name: "Buffalo Bills", team: "BUF" },
-                        { name: "Carolina Panthers", team: "CAR" },
-                        { name: "Chicago Bears", team: "CHI" },
-                        { name: "Cincinnati Bengals", team: "CIN" },
-                        { name: "Cleveland Browns", team: "CLE" },
-                        { name: "Dallas Cowboys", team: "DAL" },
-                        { name: "Denver Broncos", team: "DEN" },
-                        { name: "Detroit Lions", team: "DET" },
-                        { name: "Green Bay Packers", team: "GB" },
-                        { name: "Houston Texans", team: "HOU" },
-                        { name: "Indianapolis Colts", team: "IND" },
-                        { name: "Jacksonville Jaguars", team: "JAX" },
-                        { name: "Kansas City Chiefs", team: "KC" },
-                        { name: "Los Angeles Chargers", team: "LAC" },
-                        { name: "Los Angeles Rams", team: "LAR" },
-                        { name: "Miami Dolphins", team: "MIA" },
-                        { name: "Minnesota Vikings", team: "MIN" },
-                        { name: "New England Patriots", team: "NE" },
-                        { name: "New Orleans Saints", team: "NO" },
-                        { name: "New York Giants", team: "NYG" },
-                        { name: "New York Jets", team: "NYJ" },
-                        { name: "Philadelphia Eagles", team: "PHI" },
-                        { name: "Pittsburgh Steelers", team: "PIT" },
-                        { name: "San Francisco 49ers", team: "SF" },
-                        { name: "Seattle Seahawks", team: "SEA" },
-                        { name: "Tampa Bay Buccaneers", team: "TB" },
-                        { name: "Tennessee Titans", team: "TEN" },
-                        { name: "Washington Commanders", team: "WAS" }
-                    ],
-                k: [
-                        { name: "Brandon Aubrey", team: "DAL" },
-                        { name: "Austin Seibert", team: "WAS" },
-                        { name: "Chris Boswell", team: "PIT" },
-                        { name: "Younghoe Koo", team: "ATL" },
-                        { name: "Ka'imi Fairbairn", team: "HOU" },
-                        { name: "Brayden Narveson", team: "GB" },
-                        { name: "Chase McLaughlin", team: "TB" },
-                        { name: "Justin Tucker", team: "BAL" },
-                        { name: "Jake Moody", team: "SF" },
-                        { name: "Wil Lutz", team: "DEN" },
-                        { name: "Blake Grupe", team: "NO" },
-                        { name: "Harrison Butker", team: "KC" },
-                        { name: "Tyler Bass", team: "BUF" },
-                        { name: "Evan McPherson", team: "CIN" },
-                        { name: "Jake Bates", team: "DET" },
-                        { name: "Will Reichard", team: "MIN" },
-                        { name: "Jason Myers", team: "SEA" },
-                        { name: "Cam Little", team: "JAX" },
-                        { name: "Cairo Santos", team: "CHI" },
-                        { name: "Dustin Hopkins", team: "CLE" },
-                        { name: "Cameron Dicker", team: "LAC" },
-                        { name: "Eddy Pineiro", team: "CAR" },
-                        { name: "Greg Zuerlein", team: "NYJ" },
-                        { name: "Joey Slye", team: "NE" },
-                        { name: "Joshua Karty", team: "LA" },
-                        { name: "Matt Gay", team: "IND" },
-                        { name: "Nick Folk", team: "TEN" },
-                        { name: "Daniel Carlson", team: "LV" },
-                        { name: "Greg Joseph", team: "NYG" },
-                        { name: "Jason Sanders", team: "MIA" },
-                        { name: "Matt Prater", team: "ARI" },
-                        { name: "Jake Elliott", team: "PHI" },
-                        { name: "Chad Ryland", team: "ARI" },
-                        { name: "Matthew Wright", team: "SF" },
-                        { name: "Graham Gano", team: "NYG" },
-                        { name: "Spencer Shrader", team: "IND" },
-                        { name: "Mitch Wishnowsky", team: "SF" },
-                        { name: "Cade York", team: "WAS" },
-                        { name: "Jamie Gillan", team: "NYG" }
-                    ]
-
-            };
-            
-            const playoffTeams = ["KC", "BUF", "BAL", "CIN", "MIA", "NYJ", "LAC", "PHI", "SF", "DET", "MIN", "NO", "DAL", "GB"];
-            const filteredPlayers = Object.fromEntries(
-                Object.entries(players).map(([position, playersList]) => [
-                    position,
-                    playersList
-                    .filter(player => playoffTeams.includes(player.team))
-                    .sort((a, b) => a.name.localeCompare(b.name)) // Sort by player name
-                ])
-            );
-            // Function to populate the player selects dynamically
-            function populatePlayers(position) {
-                const selects = document.querySelectorAll(`select[data-position="${position}"]`);
-                
-                selects.forEach(select => {
-        
-                    filteredPlayers[position].forEach(player => {
-                        const option = document.createElement("option");
-                        option.value = player.name;
-                        option.textContent = player.name;
-                        option.dataset.team = player.team;
-                        select.appendChild(option);
-                    });
-                });
-            }
-        
-            // Function to check for team conflicts (i.e., two players from the same team)
-            function checkForTeamErrors() {
-                const elementIds = ['qb1', 'qb2', 'rb1', 'rb2', 'rb3', 'rb4', 'wr1', 'wr2', 'wr3', 'wr4', 'def1', 'def2', 'k1', 'k2']; // Array of element IDs
-                let teams = []; // Array to hold the team values
-                // Loop through each element ID
-                for (const id of elementIds) {
-                    const element = document.getElementById(id);
-                    const team = element?.options[element.selectedIndex]?.dataset.team; // Get the data-team attribute
-                    teams.push(team); // Add the team to the array
-                }
-                teams = teams.filter(item => item);
-                const teamsError = document.getElementById('teamsError');
-                const submitButton = document.querySelector('button[type="submit"]');
-
-                teamsError.style.display = 'none';
-                submitButton.disabled = false; // Reset the button state
-
-                if (new Set(teams).size !== teams.length) {
-                    teamsError.style.display = 'block';
-                    submitButton.disabled = true; // Disable button if error is present
-                }
-            }
-
-            // Populate positions
-            ['qb', 'rb', 'wr', 'def', 'k'].forEach(position => populatePlayers(position));
-        
-            // Add event listeners to detect when a dropdown changes
-            document.querySelectorAll('.player-select').forEach(selectElement => {
-                selectElement.addEventListener('change', checkForTeamErrors);
-            });
-        </script>
-        
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Chart.js Script -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
+        window.onload = function() {
+            window.location.href = 'submitTeam.html'; // Redirects to submitTeam.html
+        };
     </script>
 </body>
 </html>
