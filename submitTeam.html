@@ -79,7 +79,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             width: 100%;
-            max-width: 1000px;
+            max-width: 1400px;
         }
 
         .card-header {
@@ -95,14 +95,20 @@
             margin-bottom: 8px;
             color: #333;
             font-weight: bold;
+            min-width:130px;
+            max-width: 130px; /* Adjust as needed */
+            white-space: normal; /* Allows text to wrap */
+            display: inline-block; /* Ensures max-width is respected */
+
         }
 
         input[type="email"], 
         input[type="text"], 
         input[type="number"],
         select {
-            width: 100%;
+            width: calc(100% - 140px); /* Adjusts for label width */;
             padding: 12px 16px;
+            
             font-size: 16px;
             color: #333;
             border: 1px solid #ccc;
@@ -213,6 +219,11 @@
                 font-size: 0.9em;
             }
         }
+        .label-container {
+            display: flex;               /* Use flexbox for alignment */
+            align-items: center;        /* Center vertically */
+            margin-bottom: 15px;        /* Space between rows */
+        }
 
 
     </style>
@@ -309,26 +320,26 @@
                                 <!-- Right Column -->
                                 <div class="col-md-5">
                                     <!-- Wide Receiver/Tight End -->
-                                    <div>
-                                        <label for="wr1">Wide Receiver/Tight End 1:</label>
+                                    <div class="label-container">
+                                        <label for="wr1">Wide Receiver/ Tight End 1:</label>
                                         <select id="wr1" name="wr1" class="player-select" data-position="wr" required>
                                             <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
                                         </select>
                                     </div>
-                                    <div>
-                                        <label for="wr2">Wide Receiver/Tight End 2:</label>
+                                    <div class="label-container">
+                                        <label for="wr2">Wide Receiver/ Tight End 2:</label>
                                         <select id="wr2" name="wr2" class="player-select" data-position="wr" required>
                                             <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
                                         </select>
                                     </div>
-                                    <div>
-                                        <label for="wr3">Wide Receiver/Tight End 3:</label>
+                                    <div class="label-container">
+                                        <label for="wr3">Wide Receiver/ Tight End 3:</label>
                                         <select id="wr3" name="wr3" class="player-select" data-position="wr" required>
                                             <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
                                         </select>
                                     </div>
-                                    <div>
-                                        <label for="wr4">Wide Receiver/Tight End 4:</label>
+                                    <div class="label-container">
+                                        <label for="wr4">Wide Receiver/ Tight End 4:</label>
                                         <select id="wr4" name="wr4" class="player-select" data-position="wr" required>
                                             <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
                                         </select>
