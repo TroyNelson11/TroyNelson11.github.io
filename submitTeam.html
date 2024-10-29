@@ -17,14 +17,19 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            min-width: 1000px; /* Prevents collapsing too quickly */
         }
-
+        .container {
+        max-width: 1420px;
+        }
         .nav-bar {
             background-color: #006400;
             padding: 10px 0;
             display: flex;
             justify-content: flex-start; /* Aligns content to the left */
             align-items: center; /* Aligns vertically */
+            min-width: 1000px; /* Prevents collapsing too quickly */
+            overflow-x: auto; /* Allows for horizontal scrolling */
         }
 
         .navbar-brand {
@@ -39,33 +44,39 @@
         }
 
         .navbar-brand span {
-            font-size: 2em;
+            font-size: 2vw;
             font-weight: bold;
             color: white; /* Ensure text color is white */
         }
 
-        .nav-bar .navbar-nav {
+        .navbar-nav {
             margin-left: auto; /* Aligns the tabs to the right */
+            flex-wrap: wrap; /* Prevents wrapping */
         }
 
-        .nav-bar a {
-            color: white; /* Keep the text color white */
-            padding: 14px 20px;
-            text-decoration: none;
+        .navbar-nav .nav-item .nav-link {
+            color: white; /* Set text color to white */
+            font-weight: bold; /* Make text bold */
+            text-transform: uppercase; /* Optional: make the text uppercase */
+            padding: 10px 15px; /* Add padding for spacing */
+            transition: color 0.3s; /* Smooth transition on hover */
+            text-decoration: none; /* Remove underline */
+            font-size: 2.5vh;
         }
 
-        .nav-bar a:hover {
-            background-color: #004d00; /* Darker green on hover */
-            border-radius: 4px;
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #ddd; /* Change color slightly on hover for contrast */
         }
 
-        /* Additional styles for your form */
         .card {
             margin: 20px;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            min-width: 800px; /* Prevents collapsing too quickly */
+            width: 90%;
+
         }
 
         .card-header {
@@ -123,6 +134,65 @@
             display: none;
             margin-top: 10px;
         }
+
+        .logo {
+            width: 110px; /* Adjust width to your preference */
+            height: auto; /* Ensures it doesn't exceed a certain height */
+            margin: 10px; /* Adds space around the logo */
+            padding: 5px;
+        }
+
+        #title {
+            text-align: center;
+            color: white;
+        }
+
+        #goof {
+            display: block;
+            font-size: 4vw;
+            font-weight: bold;
+        }
+
+        /* Media Queries for responsive design */
+        @media (max-width: 600px) {
+            .nav-bar {
+                padding: 5px 0; /* Less padding on smaller screens */
+            }
+
+            .navbar-brand span {
+                font-size: 3vw; /* Smaller font size for the brand */
+            }
+
+            .navbar-nav .nav-item .nav-link {
+                font-size: 3vh; /* Smaller font size for nav links */
+            }
+        }
+        .team {
+            display: flex;
+            align-items: center;
+            margin: 5px 0; /* Adds space between teams */
+            width: 100%; /* Change cursor to indicate clickability */
+        }
+        /* New styles for the text item */
+        .team-name {
+            flex: 1; /* Allow the text to take up available space */
+            min-width: 60px; /* Minimum width for uniformity */
+            text-align: center; /* Align text to the left */
+        }
+        .team-logo {
+            width: 30px; /* Adjust logo size */
+            height: auto;
+            margin-right: 5px; /* Space between logo and text */
+        }
+
+        .team-name.selected {
+            color: darkgray !important; /* Color when selected */
+            background-color: gray !important; /* Default color */
+        }
+        .team-logo.selected {
+            filter: grayscale(100%) contrast(1.2); /* Adds grayscale with enhanced contrast */
+        }
+
     </style>
 </head>
 <body>
@@ -131,8 +201,11 @@
      <div class="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
-                <img src="https://raw.githubusercontent.com/TroyNelson11/TroyNelson11.github.io/main/src/drawn_gator_v1.png" alt="Logo">
-                <span>GOOF Playoff Fantasy Football</span>
+                <img src="https://raw.githubusercontent.com/TroyNelson11/TroyNelson11.github.io/main/src/drawn_gator_logo.png" alt="Logo" class="logo">
+                <div id="title">
+                    <span id="goof">GOOF</span>
+                    <span>Playoff Fantasy Football</span>
+                </div>
             </a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
@@ -141,6 +214,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="scoring.html">Scoring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="players.html">Players</a>
                     </li>
                 </ul>
             </div>
@@ -156,7 +232,7 @@
                         <form id="teamForm">
                             <div class="row">
                                 <!-- Left Column -->
-                                <div class="col-md-6">
+                                <div class="col-md-5">
                                     <div>
                                         <label for="email">Email Address:</label>
                                         <input type="email" id="email" name="email" required>
@@ -203,9 +279,13 @@
                                             <option value="" disabled selected>Select Runningback</option>
                                         </select>
                                     </div>
+                                    <div>
+                                        <label for="tiebreaker">Enter a Tiebreaker:</label>
+                                        <input type="number" id="tiebreaker" name="tiebreaker" min="30" max="70" step="1" style="max-width: 100px;" required>
+                                    </div>
                                 </div>
                                 <!-- Right Column -->
-                                <div class="col-md-6">
+                                <div class="col-md-5">
                                     <!-- Wide Receiver/Tight End -->
                                     <div>
                                         <label for="wr1">Wide Receiver/Tight End 1:</label>
@@ -258,11 +338,13 @@
                                         </select>
                                     </div>
                                 </div>
+                                <div class="col-md-2">
+                                    <div class="col-md-2">
+                                        <div id="nfl-teams" style="font-size: 1.2em; font-weight: bold;"></div>
+                                    </div>                                    
+                                </div>
                             </div>
-                            <div>
-                                <label for="tiebreaker">Enter a Tiebreaker:</label>
-                                <input type="number" id="tiebreaker" name="tiebreaker" min="30" max="70" step="1" required>
-                            </div>
+                            
                             <small id="teamsError">You've selected two positions from the same team.</small>    
                             <button type="submit">Submit</button>
                         </form>
@@ -568,8 +650,128 @@
                 };
                 
          
-                const playoffTeams = ["KC", "BUF", "BAL", "CIN", "MIA", "NYJ", "LAC", "PHI", "SF", "DET", "MIN", "NO", "DAL", "GB"];
-                
+                const playoffTeams = ["KC", "BUF", "BAL", "HOU", "PIT", "DEN", "LAC", "PHI", "SF", "DET", "MIN", "TB", "WAS", "GB"];
+                const detailedPlayoffTeams = [
+                    {
+                        "abbreviation": "KC",
+                        "name": "Kansas City Chiefs",
+                        "logo": "https://content.sportslogos.net/logos/7/162/full/857.png",
+                        "primary_color": "#C8102E", 
+                        "secondary_color": "#FFB612"
+                    },
+                    {
+                        "abbreviation": "BUF",
+                        "name": "Buffalo Bills",
+                        "logo": "https://content.sportslogos.net/logos/7/149/full/buffalo_bills_logo_primary_19747050.png",
+                        "primary_color": "#003DA5", 
+                        "secondary_color": "#C8102E"
+                    },
+                    {
+                        "abbreviation": "BAL",
+                        "name": "Baltimore Ravens",
+                        "logo": "https://content.sportslogos.net/logos/7/153/full/baltimore_ravens_logo_primary_19996038.png",
+                        "primary_color": "#3B0A45", 
+                        "secondary_color": "#FFC20E"
+                    },
+                    {
+                        "abbreviation": "HOU",
+                        "name": "Houston Texans",
+                        "logo": "https://content.sportslogos.net/logos/7/157/full/houston_texans_logo_primary_2024_sportslogosnet-5890.png",
+                        "primary_color": "#A50034", 
+                        "secondary_color": "#003A70"
+                    },
+                    {
+                        "abbreviation": "PIT",
+                        "name": "Pittsburgh Steelers",
+                        "logo": "https://content.sportslogos.net/logos/7/156/full/970.png",
+                        "primary_color": "#FFC20E", 
+                        "secondary_color": "#000000"
+                    },
+                    {
+                        "abbreviation": "DEN",
+                        "name": "Denver Broncos",
+                        "logo": "https://content.sportslogos.net/logos/7/161/full/denver_broncos_logo_primary_19973076.png",
+                        "primary_color": "#FB4F14", 
+                        "secondary_color": "#002244"
+                    },
+                    {
+                        "abbreviation": "LAC",
+                        "name": "Los Angeles Chargers",
+                        "logo": "https://content.sportslogos.net/logos/7/6446/full/los_angeles_chargers_logo_primary_20203514.png",
+                        "primary_color": "#0080C6", 
+                        "secondary_color": "#FFC20E"
+                    },
+                    {
+                        "abbreviation": "PHI",
+                        "name": "Philadelphia Eagles",
+                        "logo": "https://content.sportslogos.net/logos/7/167/full/philadelphia_eagles_logo_primary_19964867.png",
+                        "primary_color": "#004C54", 
+                        "secondary_color": "#A5ACAF"
+                    },
+                    {
+                        "abbreviation": "SF",
+                        "name": "San Francisco 49ers",
+                        "logo": "https://content.sportslogos.net/logos/7/179/full/9455_san_francisco_49ers-primary-2009.png",
+                        "primary_color": "#A50034", 
+                        "secondary_color": "#FFC20E"
+                    },
+                    {
+                        "abbreviation": "DET",
+                        "name": "Detroit Lions",
+                        "logo": "https://content.sportslogos.net/logos/7/170/full/detroit_lions_logo_primary_20172565.png",
+                        "primary_color": "#0076B6", 
+                        "secondary_color": "#A5ACAF"
+                    },
+                    {
+                        "abbreviation": "MIN",
+                        "name": "Minnesota Vikings",
+                        "logo": "https://content.sportslogos.net/logos/7/172/full/2704_minnesota_vikings-primary-20131.png",
+                        "primary_color": "#4F2765", 
+                        "secondary_color": "#FFD100"
+                    },
+                    {
+                        "abbreviation": "TB",
+                        "name": "Tampa Bay Buccaneers",
+                        "logo": "https://content.sportslogos.net/logos/7/176/full/8363_tampa_bay_buccaneers-primary-2020.png",
+                        "primary_color": "#D50A0A", 
+                        "secondary_color": "#A5ACAF"
+                    },
+                    {
+                        "abbreviation": "WAS",
+                        "name": "Washington Commanders",
+                        "logo": "https://content.sportslogos.net/logos/7/6832/full/washington_commanders_logo_primary_20228587.png",
+                        "primary_color": "#A51A34", 
+                        "secondary_color": "#FFC20E"
+                    },
+                    {
+                        "abbreviation": "GB",
+                        "name": "Green Bay Packers",
+                        "logo": "https://content.sportslogos.net/logos/7/171/full/dcy03myfhffbki5d7il3.png",
+                        "primary_color": "#A25A22", 
+                        "secondary_color": "#FFB612"
+                    }
+                ]
+
+
+                function populateTeams() {
+                    const teamsContainer = document.getElementById('nfl-teams');
+
+                    detailedPlayoffTeams.forEach(team => {
+                        const teamDiv = document.createElement('div');
+                        teamDiv.className = 'team';
+                        teamDiv.setAttribute('data-team', team.abbreviation);
+                        teamDiv.innerHTML = `
+    <img src="${team.logo}" alt="${team.abbreviation}" class="team-logo" style="vertical-align: middle; margin-right: 5px;">
+    <span class="team-name" style="color: ${team.secondary_color}; background-color: ${team.primary_color}; padding: 2px 5px; border-radius: 3px;">${team.abbreviation}</span>
+                                        `;
+                        teamsContainer.appendChild(teamDiv);
+
+                    });
+                }
+
+                // Call the function to populate teams on page load
+                document.addEventListener('DOMContentLoaded', populateTeams);
+
                 const filteredPlayers = Object.fromEntries(
                     Object.entries(players).map(([position, playersList]) => [
                         position,
@@ -605,6 +807,15 @@
                         teams.push(team); // Add the team to the array
                     }
                     teams = teams.filter(item => item);
+                    for (const team of new Set(teams)) {
+                        const teamElement = document.querySelector(`.team[data-team="${team}"]`);
+                        if (teamElement) {
+                            teamElement.querySelector('.team-name').classList.add('selected');
+                            teamElement.querySelector('.team-logo').classList.add('selected');
+                        }
+                        
+
+                    }
                     const teamsError = document.getElementById('teamsError');
                     const submitButton = document.querySelector('button[type="submit"]');
     
@@ -631,12 +842,7 @@
     
         <script>
             function showTab(tab) {
-            // Hide all tabs
-            document.getElementById('submitTeamTab').style.display = 'none';
-            document.getElementById('scoringTab').style.display = 'none';
-    
-            // Show the selected tab
-            document.getElementById(tab + 'Tab').style.display = 'block';
+           
             }
     
             // Default to showing the Submit Team tab on page load

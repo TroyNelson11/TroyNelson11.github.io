@@ -59,12 +59,12 @@
             background-color: #004d00; /* Darker green on hover */
             border-radius: 4px;
         }
-        img {
-            width: 100px; /* Adjust width to your preference */
-            max-width: 100px; /* Ensures responsiveness */
-            max-height: 100px; /* Ensures it doesn't exceed a certain height */
+        .logo {
+            width: 200px; /* Adjust width to your preference */
+            max-width: 100%; /* Ensures responsiveness */
+            height: auto; /* Ensures it doesn't exceed a certain height */
             margin: 10px; /* Adds space around the logo */
-            object-fit: contain;
+            padding: 5px;
         }
     </style>
 </head>
@@ -73,7 +73,7 @@
     <div class="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
-                <img src="https://raw.githubusercontent.com/TroyNelson11/TroyNelson11.github.io/main/src/drawn_gator_v1.png" alt="Logo" class="logo">
+                <img src="https://raw.githubusercontent.com/TroyNelson11/TroyNelson11.github.io/main/src/drawn_gator_logo.png" alt="Logo" class="logo">
                 <span>GOOF Playoff Fantasy Football</span>
             </a>
             <div class="collapse navbar-collapse">
@@ -83,6 +83,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="scoring.html">Scoring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="players.html">Players</a>
                     </li>
                 </ul>
             </div>
