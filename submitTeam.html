@@ -312,10 +312,7 @@
                                             <option value="" disabled selected>Select Runningback</option>
                                         </select>
                                     </div>
-                                    <div>
-                                        <label for="tiebreaker">Enter a Tiebreaker:</label>
-                                        <input type="number" id="tiebreaker" name="tiebreaker" min="30" max="70" step="1" style="max-width: 100px;" required>
-                                    </div>
+                                    
                                 </div>
                                 <!-- Right Column -->
                                 <div class="col-md-5">
@@ -377,7 +374,10 @@
                                     </div>                                    
                                 </div>
                             </div>
-                            
+                            <div class="label-container">
+                                <label for="tiebreaker">Enter a Tiebreaker:</label>
+                                <input type="number" id="tiebreaker" name="tiebreaker" min="30" max="70" step="1" style="max-width: 100px;" required>
+                            </div>
                             <small id="teamsError">You've selected two positions from the same team.</small>    
                             <button type="submit">Submit</button>
                         </form>
@@ -840,6 +840,11 @@
                         teams.push(team); // Add the team to the array
                     }
                     teams = teams.filter(item => item);
+                    const allTeams = document.querySelectorAll('.team'); // Select all team elements
+                    allTeams.forEach(t => {
+                        t.querySelector('.team-name').classList.remove('selected'); // unselect the team names
+                        t.querySelector('.team-logo').classList.remove('selected'); // unselect the team logos
+                    });
                     for (const team of new Set(teams)) {
                         const teamElement = document.querySelector(`.team[data-team="${team}"]`);
                         if (teamElement) {
