@@ -8,304 +8,353 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-       /* Base styles for larger screens */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    min-width: 320px; /* Set minimum width for very small devices */
-}
-
-.container {
-    max-width: 1420px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
-/* Navbar Styling */
-.nav-bar {
-    background-color: #006400;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    overflow-x: auto; /* Allows horizontal scrolling on smaller screens */
-}
-
-.navbar-brand {
-    color: white;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-
-.navbar-brand img {
-    margin-right: 5px;
-}
-
-.navbar-brand span {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: white;
-}
-
-.navbar-nav {
-    margin-left: auto;
-    display: flex;
-}
-
-.navbar-nav .nav-item .nav-link {
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    font-size: 1.4em;
-    transition: color 0.3s;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-    color: #ddd;
-}
-
-.nav-bar a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-.nav-bar a:hover {
-    background-color: #004d00; /* Darker green on hover */
-    border-radius: 4px;
-}
-
-/* Card Styles */
-.card {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 100%;
-    max-width: 1400px;
-}
-
-.card-header {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: white;
-}
-
-th, td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-
-th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
-
-/* Responsive Table */
-@media (max-width: 768px) {
-    th, td {
-        font-size: 14px;
-        padding: 8px;
-    }
-}
-
-/* Form and Label Styling */
-.label-container {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center vertically */
-    margin-bottom: 15px; /* Space between rows */
-}
-
-label {
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: #333;
-    font-weight: bold;
-    min-width: 130px;
-    max-width: 130px; /* Adjust as needed */
-    white-space: normal; /* Allows text to wrap */
-    display: inline-block; /* Ensures max-width is respected */
-}
-
-input[type="email"], 
-input[type="text"], 
-input[type="number"],
-select {
-    width: calc(100% - 140px); /* Adjusts for label width */
-    padding: 12px 16px;
-    font-size: 16px;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-}
-
-/* Button Styling */
-button {
-    background-color: #006400;
-    color: white;
-    border: none;
-    padding: 12px 16px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #004d00;
-}
-
-/* Team List Styling */
-.team {
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
-    width: 100%;
-}
-
-.team-logo {
-    width: 30px;
-    height: auto;
-    margin-right: 5px;
-}
-
-.team-name {
-    flex: 1;
-    min-width: 60px;
-    text-align: center;
-}
-
-.team-name.selected {
-    color: darkgray !important;
-    background-color: gray !important;
-}
-
-.team-logo.selected {
-    filter: grayscale(100%) contrast(1.2);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .nav-bar {
-        flex-direction: column;
-        padding: 10px 0;
-    }
-
-    .navbar-brand span {
-        font-size: 1.5em;
-        color: white;
-    }
-
-    .navbar-nav .nav-item .nav-link {
-        font-size: 1em;
-        padding: 8px 10px;
-        color: white;
-    }
-
-    .card {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    .card-header {
-        font-size: 1.8em;
-    }
-
-    .team-name {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar-brand img {
-        width: 40px;
-    }
-
-    .nav-bar {
-        padding: 5px;
-    }
-
-    .navbar-brand span {
-        font-size: 1.2em;
-        color: white;
-    }
-
-    .navbar-nav .nav-item .nav-link {
-        padding: 5px 10px;
-        font-size: 0.9em;
-        color: white;
-    }
-
-    .card {
-        padding: 10px;
-    }
-
-    .team-name {
-        font-size: 0.9em;
-    }
-}
-
-.logo {
-    width: 100px; /* Adjust width to your preference */
-    max-width: 100%; /* Ensures responsiveness */
-    height: auto; /* Ensures it doesn't exceed a certain height */
-    margin: 10px; /* Adds space around the logo */
-    padding: 5px;
-}
-
-
-    </style>
-</head>
-<body>
-
+        /* Base styles for larger screens */
+ body {
+     font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f4f4f4;
+     min-width: 320px; /* Set minimum width for very small devices */
+ }
+ 
+ .container {
+     max-width: 1420px;
+     padding: 0 20px;
+     margin: 0 auto;
+     
+ }
+ 
+ 
+ 
+ /* Card Styles */
+ .card {
+     margin: 20px;
+     padding: 20px;
+     background-color: #fff;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+     width: 100%;
+     max-width: 1400px;
+ }
+ 
+ .card-header {
+     font-size: 24px;
+     font-weight: bold;
+     color: #333;
+     margin-bottom: 10px;
+ }
+ /* Table Styling */
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     margin: 0 0;
+     background-color: white; /* Original tables */
+ }
+ 
+ th, td {
+     padding: 12px;
+     text-align: left;
+     border: 1px solid #ddd;
+ }
+ 
+ th {
+     background-color: #f2f2f2;
+     font-weight: bold;
+ }
+ 
+ /* Player Score Table Styling */
+ .player-scores-table {
+     width: auto; /* Makes the table as thin as possible */
+     background-color: #333; /* Dark background */
+     color: white; /* White text for contrast */
+     border-collapse: collapse; /* Collapse borders for a cleaner look */
+     border-radius: 8px; /* Rounded corners */
+     overflow: hidden; /* Ensures rounded corners are respected */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+     table-layout: auto; /* Ensure table layout allows for padding */
+ }
+ 
+ .player-scores-table th, .player-scores-table td {
+     padding: 5px 10px; /* Smaller padding for even more condensed rows */
+     font-size: 0.85em; /* Slightly smaller text size */
+     border: none; /* Remove border for a flat look */
+ }
+ 
+ /* Dark background for rows */
+ .player-scores-table tr {
+     background-color: #333; /* Dark rows */
+ }
+ 
+ .player-scores-table tr:nth-child(even) {
+     background-color: #444; /* Slightly lighter dark background for even rows */
+ }
+ 
+ .player-scores-table th {
+     background-color: #444; /* Darker header background */
+     color: #f0f0f0; /* Light grey text for header */
+     border-bottom: 2px solid #555; /* Subtle border for the header */
+ }
+ 
+ .player-scores-table td {
+     color: #e0e0e0; /* Light grey text for table data */
+ }
+ 
+ /* Optional: Hover Effect for Rows */
+ .player-scores-table tr:hover {
+     background-color: #555; /* Slightly lighter on hover for interactivity */
+     transition: background-color 0.3s ease; /* Smooth transition */
+ }
+ 
+ /* General Styles for Team Container */
+ .single_team_container {
+     display: flex; /* Allow flexbox layout */
+     flex-wrap: wrap; /* Wrap items if there's not enough space */
+     justify-content: flex-start; /* Center items */
+ }
+ 
+ /* Wrapper for Each Table */
+ .table-wrapper {
+     background-color: #dcdcdc; /* Dark grey background for the wrapper */
+     border-radius: 8px; /* Rounded corners */
+     margin: 10px; /* Space around each table */
+     padding: 20px; /* Inner padding */
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+ }
+ 
+ /* Adjust title size to match table */
+ .team-title {
+     font-size: 1.8em; /* Adjust as needed */
+     color: #222; /* Match the text color */
+     margin: 0 0 10px 0; /* Margin below title */
+     text-align: center; /* Center title */
+     font-weight: bold;
+ }
+ 
+ 
+ 
+ /* Responsive Table */
+ @media (max-width: 768px) {
+     th, td {
+         font-size: 14px;
+         padding: 8px;
+     }
+ }
+ 
+ /* Form and Label Styling */
+ .label-container {
+     display: flex; /* Use flexbox for alignment */
+     align-items: center; /* Center vertically */
+     margin-bottom: 15px; /* Space between rows */
+ }
+ 
+ label {
+     font-size: 16px;
+     margin-bottom: 8px;
+     color: #333;
+     font-weight: bold;
+     min-width: 130px;
+     max-width: 130px; /* Adjust as needed */
+     white-space: normal; /* Allows text to wrap */
+     display: inline-block; /* Ensures max-width is respected */
+ }
+ 
+ input[type="email"], 
+ input[type="text"], 
+ input[type="number"],
+ select {
+     width: calc(100% - 140px); /* Adjusts for label width */
+     padding: 12px 16px;
+     font-size: 16px;
+     color: #333;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     box-sizing: border-box;
+     margin-bottom: 15px;
+ }
+ 
+ /* Button Styling */
+ button {
+     background-color: #006400;
+     color: white;
+     border: none;
+     padding: 12px 16px;
+     font-size: 16px;
+     cursor: pointer;
+     border-radius: 4px;
+     transition: background-color 0.3s ease;
+     width: 100%;
+ }
+ 
+ button:hover {
+     background-color: #004d00;
+ }
+ 
+ /* Team List Styling */
+ .team {
+     display: flex;
+     align-items: center;
+     margin: 5px 0;
+     width: 100%;
+ }
+ 
+ .team-logo {
+     width: 30px;
+     height: auto;
+     margin-right: 5px;
+ }
+ 
+ .team-name {
+     flex: 1;
+     min-width: 60px;
+     text-align: center;
+ }
+ 
+ .team-name.selected {
+     color: darkgray !important;
+     background-color: gray !important;
+ }
+ 
+ .team-logo.selected {
+     filter: grayscale(100%) contrast(1.2);
+ }
+ /* Navbar Styling */
+ /* Navbar Styling */
+ .nav-bar {
+     background-color: #006400;
+     padding: 10px 20px;
+     display: flex;
+     align-items: center;
+     justify-content: flex;
+     width: 100%;
+     overflow: hidden;
+ }
+ 
+ .navbar-brand {
+     display: flex;
+     align-items: center;
+     flex-shrink: 0; /* Prevents shrinking */
+ }
+ 
+ .navbar-brand img {
+     margin-right: 10px;
+ }
+ 
+ .brand-text {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     white-space: nowrap; /* Prevents wrapping */
+ }
+ 
+ .title {
+     font-size: 2.8em;
+     font-weight: bold;
+     color: white;
+ }
+ 
+ .subtitle {
+     font-size: 1.8em;
+     color: white;
+     margin-right: 80px;
+ }
+ 
+ .navbar-nav {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     flex-wrap: nowrap; /* Prevent wrapping */
+ }
+ .navbar-nav .nav-item {
+     flex: 1; /* Allow each item to take equal space */
+ }
+ .navbar-nav .nav-item .nav-link {
+     color: white;
+     font-weight: bold;
+     text-transform: uppercase;
+     font-size: 1.2em;
+     padding: 5px 10px;
+     white-space: nowrap; /* Prevents wrapping for nav links */
+     transition: color 0.3s;
+     display: block; /* Ensure nav-link behaves like a block element */
+ }
+ 
+ .navbar-nav .nav-item .nav-link:hover {
+     color: #ddd;
+ }
+ 
+ 
+ /* Responsive Styles */
+ @media (max-width: 1160px) {
+     .nav-bar {
+         flex-wrap: wrap; /* Allows wrapping if space is constrained */
+         justify-content: center; /* Center horizontally */
+         align-items: center; /* Center vertically */
+     }
+ 
+     .navbar-nav {
+         justify-content: center;
+         align-items: center;
+         gap: 5px;
+     }
+ }
+ 
+ @media (max-width: 480px) {
+     .navbar-brand img {
+         width: 40px;
+     }
+ 
+     .title {
+         font-size: 1.5em;
+     }
+ 
+     .navbar-nav .nav-item .nav-link {
+         font-size: 1em;
+         padding: 8px 10px;
+     }
+ }
+ 
+ #playerScoresContainer {
+     display: flex; /* Allow flexbox layout */
+     flex-wrap: wrap; /* Allow wrapping to the next line */
+     justify-content: center; /* Align items to the left */
+     margin: 20px; /* Space around the container */  
+ }
+ 
+ .logo {
+     width: 100px; /* Adjust width to your preference */
+     max-width: 100%; /* Ensures responsiveness */
+     height: auto; /* Ensures it doesn't exceed a certain height */
+     margin: 10px; /* Adds space around the logo */
+     padding: 5px;
+ }
+ 
+     </style>
+ </head>
+ <body>
      <!-- Navigation Bar -->
+ 
      <div class="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">
-                <img src="https://raw.githubusercontent.com/TroyNelson11/TroyNelson11.github.io/main/src/drawn_gator_logo.png" alt="Logo" class="logo">
-                <div style="display: flex; flex-direction: column; align-items: center;">
-                    <span style="font-size: 7vh;">GOOF</span>
-                    <span>Playoff Fantasy Football</span>
-                </div>
-            </a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="submitTeam.html">Submit Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="scoring.html">Scoring</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="players.html">Players</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+         <div class="navbar-brand">
+             <img src="https://raw.githubusercontent.com/TroyNelson11/TroyNelson11.github.io/main/src/drawn_gator_logo.png" alt="Logo" class="logo">
+             <div class="brand-text">
+                 <span class="title">GOOF</span> <span class="subtitle">Playoff Fantasy Football</span>
+             </div>
+         </div>
+         <div class="navbar-nav">
+             <div class="nav-item">
+                 <a class="nav-link" href="submitTeam.html">Submit Team</a>
+             </div>
+             <div class="nav-item">
+                 <a class="nav-link" href="scoring.html">Scoring</a>
+             </div>
+             <div class="nav-item">
+                 <a class="nav-link" href="players.html">Players</a>
+             </div>
+         </div>
+     </div>
     
     <div class="container">
         <div id="section4" class="row">
