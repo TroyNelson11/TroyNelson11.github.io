@@ -8,7 +8,6 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
@@ -28,62 +27,7 @@ body {
     
 }
 
-/* Navbar Styling */
-.nav-bar {
-    background-color: #006400;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    overflow-x: auto; /* Allows horizontal scrolling on smaller screens */
-}
 
-.navbar-brand {
-    color: white;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-
-.navbar-brand img {
-    margin-right: 5px;
-}
-
-.navbar-brand span {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: white;
-}
-
-.navbar-nav {
-    margin-left: auto;
-    display: flex;
-}
-
-.navbar-nav .nav-item .nav-link {
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    font-size: 1.4em;
-    transition: color 0.3s;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-    color: #ddd;
-}
-
-.nav-bar a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-.nav-bar a:hover {
-    background-color: #004d00; /* Darker green on hover */
-    border-radius: 4px;
-}
 
 /* Card Styles */
 .card {
@@ -276,36 +220,84 @@ button:hover {
 .team-logo.selected {
     filter: grayscale(100%) contrast(1.2);
 }
+/* Navbar Styling */
+/* Navbar Styling */
+.nav-bar {
+    background-color: #006400;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.brand-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+.title {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: white;
+}
+
+.subtitle {
+    font-size: 1.8em;
+    color: white;
+    margin-right: 80px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+.navbar-nav .nav-item {
+    flex: 1; /* Allow each item to take equal space */
+}
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    white-space: nowrap; /* Prevents wrapping for nav links */
+    transition: color 0.3s;
+    display: block; /* Ensure nav-link behaves like a block element */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ddd;
+}
+
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1160px) {
     .nav-bar {
-        flex-direction: column;
-        padding: 10px 0;
+        flex-wrap: wrap; /* Allows wrapping if space is constrained */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
     }
 
-    .navbar-brand span {
-        font-size: 1.5em;
-        color: white;
-    }
-
-    .navbar-nav .nav-item .nav-link {
-        font-size: 1em;
-        padding: 8px 10px;
-        color: white;
-    }
-
-    .card {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    .card-header {
-        font-size: 1.8em;
-    }
-
-    .team-name {
-        font-size: 1em;
+    .navbar-nav {
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
     }
 }
 
@@ -314,29 +306,16 @@ button:hover {
         width: 40px;
     }
 
-    .nav-bar {
-        padding: 5px;
-    }
-
-    .navbar-brand span {
-        font-size: 1.2em;
-        color: white;
+    .title {
+        font-size: 1.5em;
     }
 
     .navbar-nav .nav-item .nav-link {
-        padding: 5px 10px;
-        font-size: 0.9em;
-        color: white;
-    }
-
-    .card {
-        padding: 10px;
-    }
-
-    .team-name {
-        font-size: 0.9em;
+        font-size: 1em;
+        padding: 8px 10px;
     }
 }
+
 #playerScoresContainer {
     display: flex; /* Allow flexbox layout */
     flex-wrap: wrap; /* Allow wrapping to the next line */
@@ -356,30 +335,25 @@ button:hover {
 </head>
 <body>
     <!-- Navigation Bar -->
-    <!-- Navigation Bar -->
+
     <div class="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">
-                <img src="https://raw.githubusercontent.com/TroyNelson11/TroyNelson11.github.io/main/src/drawn_gator_logo.png" alt="Logo" class="logo">
-                <div style="display: flex; flex-direction: column; align-items: center;">
-                    <span style="font-size: 7vh;">GOOF</span>
-                    <span>Playoff Fantasy Football</span>
-                </div>
-            </a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="submitTeam.html">Submit Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="scoring.html">Scoring</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="players.html">Players</a>
-                    </li>
-                </ul>
+        <div class="navbar-brand">
+            <img src="https://raw.githubusercontent.com/TroyNelson11/TroyNelson11.github.io/main/src/drawn_gator_logo.png" alt="Logo" class="logo">
+            <div class="brand-text">
+                <span class="title">GOOF</span> <span class="subtitle">Playoff Fantasy Football</span>
             </div>
-        </nav>
+        </div>
+        <div class="navbar-nav">
+            <div class="nav-item">
+                <a class="nav-link" href="submitTeam.html">Submit Team</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="scoring.html">Scoring</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="players.html">Players</a>
+            </div>
+        </div>
     </div>
 
     <div class="container">
