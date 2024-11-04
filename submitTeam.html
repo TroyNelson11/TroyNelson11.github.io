@@ -36,7 +36,7 @@
      background-color: #fff;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
      border-radius: 8px;
-     width: 100%;
+     width: auto;
      max-width: 1400px;
  }
  
@@ -253,12 +253,15 @@
      font-size: 2.8em;
      font-weight: bold;
      color: white;
+     display: inline-flex;
+     align-items: center;
+     margin-right: 25px;
  }
  
  .subtitle {
-     font-size: 1.8em;
+     font-size: 2.0em;
      color: white;
-     margin-right: 80px;
+     margin-right: 20px;
  }
  
  .navbar-nav {
@@ -303,16 +306,44 @@
  
  @media (max-width: 480px) {
      .navbar-brand img {
-         width: 40px;
+        width: 80px;
+        margin: 0px;
+        text-align: left;
+        display: inline-block;
+
+     }
+     .navbar-brand {
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+    }
+    .brand-text {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+     .title {
+         font-size: 2.8em;
+         display: inline-flex;
+         align-items: center;
+
+     }
+     .subtitle {
+        display: block; 
+        text-align: center;
+        margin: 0px;
      }
  
-     .title {
-         font-size: 1.5em;
-     }
  
      .navbar-nav .nav-item .nav-link {
          font-size: 1em;
          padding: 8px 10px;
+     }
+     .player-select {
+        font-weight: bold;
+     }
+     select {
+        width: 100%;
      }
  }
  
@@ -330,7 +361,10 @@
      margin: 10px; /* Adds space around the logo */
      padding: 5px;
  }
- 
+ .nfl-teams {
+    padding-bottom: 20px;
+ }
+
      </style>
  </head>
  <body>
@@ -338,9 +372,10 @@
  
      <div class="nav-bar">
          <div class="navbar-brand">
-             <img src="https://raw.githubusercontent.com/TroyNelson11/TroyNelson11.github.io/main/src/drawn_gator_logo.png" alt="Logo" class="logo">
+             
+             <div class="title"><img src="https://raw.githubusercontent.com/TroyNelson11/TroyNelson11.github.io/main/src/drawn_gator_logo.png" alt="Logo" class="logo">GOOF</div>
              <div class="brand-text">
-                 <span class="title">GOOF</span> <span class="subtitle">Playoff Fantasy Football</span>
+                <span class="subtitle">Playoff Fantasy Football</span>
              </div>
          </div>
          <div class="navbar-nav">
@@ -417,25 +452,25 @@
                                 <!-- Right Column -->
                                 <div class="col-md-5">
                                     <!-- Wide Receiver/Tight End -->
-                                    <div class="label-container">
+                                    <div>
                                         <label for="wr1">Wide Receiver/ Tight End 1:</label>
                                         <select id="wr1" name="wr1" class="player-select" data-position="wr" required>
                                             <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
                                         </select>
                                     </div>
-                                    <div class="label-container">
+                                    <div>
                                         <label for="wr2">Wide Receiver/ Tight End 2:</label>
                                         <select id="wr2" name="wr2" class="player-select" data-position="wr" required>
                                             <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
                                         </select>
                                     </div>
-                                    <div class="label-container">
+                                    <div>
                                         <label for="wr3">Wide Receiver/ Tight End 3:</label>
                                         <select id="wr3" name="wr3" class="player-select" data-position="wr" required>
                                             <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
                                         </select>
                                     </div>
-                                    <div class="label-container">
+                                    <div>
                                         <label for="wr4">Wide Receiver/ Tight End 4:</label>
                                         <select id="wr4" name="wr4" class="player-select" data-position="wr" required>
                                             <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
@@ -468,17 +503,19 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-2">
-                                    <div class="col-md-2">
+                                <div class="col-md-2" style="padding-bottom: 20px;;">
+                                    
                                         <div id="nfl-teams" style="font-size: 1.2em; font-weight: bold;"></div>
-                                    </div>                                    
+                                  
                                 </div>
                             </div>
                             <div class="label-container">
                                 <label for="tiebreaker">Enter a Tiebreaker:</label>
                                 <input type="number" id="tiebreaker" name="tiebreaker" min="30" max="70" step="1" style="max-width: 100px;" required>
                             </div>
-                            <small id="teamsError">You've selected two positions from the same team.</small>    
+                            <div style="text-align: center; color: red; font-weight: bold;">
+                                <small id="teamsError">You've selected two positions from the same team.</small>
+                            </div>   
                             <button type="submit">Submit</button>
                         </form>
                     </div>
@@ -564,9 +601,7 @@
             { "name": "DJ Moore", "team": "CHI" },
             { "name": "Amari Cooper", "team": "CLE" },
             { "name": "Keenan Allen", "team": "LAC" },
-            { "name": "Michael Thomas", "team": "NO" }
-        ],
-        "te": [
+            { "name": "Michael Thomas", "team": "NO" },
             { "name": "Travis Kelce", "team": "KC" },
             { "name": "George Kittle", "team": "SF" },
             { "name": "Mark Andrews", "team": "BAL" },
@@ -580,7 +615,78 @@
             { "name": "Hunter Henry", "team": "NE" },
             { "name": "Robert Tonyan", "team": "CHI" },
             { "name": "Zach Ertz", "team": "ARI" }
-        ]
+        ],
+        "k": [
+            { "name": "Justin Tucker", "team": "BAL" },
+            { "name": "Matt Prater", "team": "ARI" },
+            { "name": "Harrison Butker", "team": "KC" },
+            { "name": "Evan McPherson", "team": "CIN" },
+            { "name": "Younghoe Koo", "team": "ATL" },
+            { "name": "Tyler Bass", "team": "BUF" },
+            { "name": "Ryan Succop", "team": "TB" },
+            { "name": "Jason Myers", "team": "SEA" },
+            { "name": "Matt Gay", "team": "LAR" },
+            { "name": "Daniel Carlson", "team": "LV" },
+            { "name": "Cairo Santos", "team": "CHI" },
+            { "name": "Brandon Aubrey", "team": "DAL" },
+            { "name": "Nick Folk", "team": "NE" },
+            { "name": "Riley Patterson", "team": "JAX" },
+            { "name": "Greg Zuerlein", "team": "NYJ" },
+            { "name": "Matt Ammendola", "team": "NYG" },
+            { "name": "Zane Gonzalez", "team": "CAR" },
+            { "name": "Chase McLaughlin", "team": "IND" },
+            { "name": "Cameron Dicker", "team": "LAC" },
+            { "name": "Ka'imi Fairbairn", "team": "HOU" },
+            { "name": "Michael Badgley", "team": "DET" },
+            { "name": "Eddy Pineiro", "team": "CAR" },
+            { "name": "Brett Maher", "team": "NO" },
+            { "name": "Sam Ficken", "team": "PIT" },
+            { "name": "Joey Slye", "team": "WAS" },
+            { "name": "Dustin Hopkins", "team": "LAC" },
+            { "name": "Aldrick Rosas", "team": "SEA" },
+            { "name": "Matt Wright", "team": "TEN" },
+            { "name": "Nick Novak", "team": "CIN" },
+            { "name": "Chris Boswell", "team": "PIT" },
+            { "name": "Jake Elliott", "team": "PHI" },
+            { "name": "Matt Prater", "team": "ARI" },
+            { "name": "Robbie Gould", "team": "SF" },
+            { "name": "Justin Yoon", "team": "NE" },
+            { "name": "David Akers", "team": "PHI" },
+            { "name": "Sebastian Janikowski", "team": "SEA" }
+        ],
+        "def": [
+            { "team": "CHI", "name": "Chicago Bears" },
+            { "team": "BAL", "name": "Baltimore Ravens" },
+            { "team": "PIT", "name": "Pittsburgh Steelers" },
+            { "team": "LAR", "name": "Los Angeles Rams" },
+            { "team": "SF", "name": "San Francisco 49ers" },
+            { "team": "NE", "name": "New England Patriots" },
+            { "team": "BUF", "name": "Buffalo Bills" },
+            { "team": "PHI", "name": "Philadelphia Eagles" },
+            { "team": "TB", "name": "Tampa Bay Buccaneers" },
+            { "team": "NO", "name": "New Orleans Saints" },
+            { "team": "MIA", "name": "Miami Dolphins" },
+            { "team": "CIN", "name": "Cincinnati Bengals" },
+            { "team": "MIN", "name": "Minnesota Vikings" },
+            { "team": "DAL", "name": "Dallas Cowboys" },
+            { "team": "IND", "name": "Indianapolis Colts" },
+            { "team": "HOU", "name": "Houston Texans" },
+            { "team": "TEN", "name": "Tennessee Titans" },
+            { "team": "ARI", "name": "Arizona Cardinals" },
+            { "team": "LV", "name": "Las Vegas Raiders" },
+            { "team": "WAS", "name": "Washington Commanders" },
+            { "team": "ATL", "name": "Atlanta Falcons" },
+            { "team": "CAR", "name": "Carolina Panthers" },
+            { "team": "NYG", "name": "New York Giants" },
+            { "team": "NYJ", "name": "New York Jets" },
+            { "team": "LAC", "name": "Los Angeles Chargers" },
+            { "team": "SEA", "name": "Seattle Seahawks" },
+            { "team": "DET", "name": "Detroit Lions" },
+            { "team": "JAX", "name": "Jacksonville Jaguars" },
+            { "team": "CLE", "name": "Cleveland Browns" },
+            { "team": "GB", "name": "Green Bay Packers" },
+            { "team": "DEN", "name": "Denver Broncos" },
+            { "team": "KC", "name": "Kansas City Chiefs" }      ]
     }
                 const playoffTeams = ["KC", "BUF", "BAL", "HOU", "PIT", "DEN", "LAC", "PHI", "SF", "DET", "MIN", "TB", "WAS", "GB"];
                 const detailedPlayoffTeams = [
@@ -679,7 +785,7 @@
                         "abbreviation": "GB",
                         "name": "Green Bay Packers",
                         "logo": "https://content.sportslogos.net/logos/7/171/full/dcy03myfhffbki5d7il3.png",
-                        "primary_color": "#A25A22", 
+                        "primary_color": "#203731", 
                         "secondary_color": "#FFB612"
                     }
                 ]
@@ -702,33 +808,49 @@
                 }
 
                 // Call the function to populate teams on page load
-                document.addEventListener('DOMContentLoaded', populateTeams);
-
-                const filteredPlayers = Object.fromEntries(
-                    Object.entries(players).map(([position, playersList]) => [
-                        position,
-                        playersList
-                        .filter(player => playoffTeams.includes(player.team))
-                        .sort((a, b) => a.name.localeCompare(b.name)) // Sort by player name
-                    ])
-                );
-                // Function to populate the player selects dynamically
+                document.addEventListener('DOMContentLoaded', populateTeams)
                 function populatePlayers(position) {
                     const selects = document.querySelectorAll(`select[data-position="${position}"]`);
-                    
+
+                    // Create filteredPlayers based on the current players and playoff teams
+                    const filteredPlayers = Object.fromEntries(
+                        Object.entries(players).map(([pos, playersList]) => [
+                            pos,
+                            playersList
+                                .filter(player => playoffTeams.includes(player.team))
+                                .sort((a, b) => a.name.localeCompare(b.name)) // Sort by player name
+                        ])
+                    );
                     selects.forEach(select => {
-            
-                        filteredPlayers[position].forEach(player => {
-                            const option = document.createElement("option");
-                            option.value = player.name;
-                            option.textContent = player.name;
-                            option.dataset.team = player.team;
-                            select.appendChild(option);
-                            
-                        });
+                        // Check the viewport width on page load
+                        if (window.innerWidth <= 500) {
+                            // Set the select element's text to the uppercase version of position
+                            select.options[0].textContent = "Select " + position.toUpperCase(); // Change the placeholder text
+
+                            // Select the corresponding label for the current select
+                            const positionLabel = document.querySelector(`label[for="${select.id}"]`);
+                            if (positionLabel) {
+                                positionLabel.textContent = `${select.id.toUpperCase()}:`; // Update the label text dynamically
+                            }
+                        }
+
+
+
+                        // Populate the select with filtered players for the current position
+                        if (filteredPlayers[position]) { // Check if filteredPlayers has the current position
+                            filteredPlayers[position].forEach(player => {
+                                const option = document.createElement("option");
+                                option.value = player.name;
+                                option.textContent = player.name;
+                                option.dataset.team = player.team;
+                                select.appendChild(option);
+                            });
+                        } else {
+                            console.warn(`No players found for position: ${position}`); // Warn if there are no players
+                        }
                     });
                 }
-            
+          
                 // Function to check for team conflicts (i.e., two players from the same team)
                 function checkForTeamErrors() {
                     const elementIds = ['qb1', 'qb2', 'rb1', 'rb2', 'rb3', 'rb4', 'wr1', 'wr2', 'wr3', 'wr4', 'def1', 'def2', 'k1', 'k2']; // Array of element IDs
@@ -762,7 +884,7 @@
     
                     if (new Set(teams).size !== teams.length) {
                         teamsError.style.display = 'block';
-                        submitButton.disabled = false; // Disable button if error is present
+                        submitButton.disabled = true; // Disable button if error is present
                     }
                 }
     
