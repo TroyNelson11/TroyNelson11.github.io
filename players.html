@@ -40,27 +40,10 @@
     </div>
 
     <div class="container">
-        <h1 class="text-center mt-4">Team Scores</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Team Name</th>
-                    <th>week1</th>
-                    <th>week2</th>
-                    <th>week3</th>
-                    <th>week4</th>
-                    <th>week5</th>
-                    <th>week6</th>
-                    <th>total</th>
-                </tr>
-            </thead>
-            <tbody id="scoreTableBody">
-                <!-- Scores will be populated here by JavaScript -->
-            </tbody>
-        </table>
-    </div>
-    <div  id="playerScoresContainer">
-        <!-- Team player score tables will be inserted here by JavaScript -->
+        <h1 class="text-center mt-4">Player Scores</h1>
+        <div  id="playerScoresContainer">
+            <!-- Team player score tables will be inserted here by JavaScript -->
+        </div>
     </div>
     <script>
         // Sample Data for Teams (replace this with your actual data)
@@ -86707,147 +86690,88 @@
     }
 ]
 
-                        function populateScores() {
-                            const tbody = document.getElementById("scoreTableBody");
-                            tbody.innerHTML = ""; // Clear previous entries
+function populateScores() {
+    const playerScoresContainer = document.getElementById("playerScoresContainer");
+    const playersPerPage = 20; // Set number of players per page
+    let currentPage = 1; // Track the current page
+    const totalPlayers = Object.keys(player_stats).length; // Total number of players
+    const totalPages = Math.ceil(totalPlayers / playersPerPage); // Calculate total pages
 
-                            // Initialize an array to hold team scores and FPTS for each week
-                            const teamScores = fantasy_team_submissions.map(team => {
-                                // Initialize the score object for this team
-                                let totalScores = {
-                                    name: team.name,
-                                    week1: 0,
-                                    week2: 0,
-                                    week3: 0,
-                                    week4: 0,
-                                    week5: 0,
-                                    week6: 0,
-                                    total: 0
-                                };
-                                
-                                const teamSelections = Object.values(team);
-                                const players = teamSelections.slice(1, -1); // Get all players except the team name and extra entry
+    function renderPage(page) {
+        playerScoresContainer.innerHTML = ''; // Clear previous content
+        const startIndex = (page - 1) * playersPerPage;
+        const endIndex = Math.min(startIndex + playersPerPage, totalPlayers);
+        const playersToDisplay = Object.keys(player_stats).slice(startIndex, endIndex);
 
-                                // Loop through each player in the team's roster to calculate FPTS
-                                players.forEach(player => {
-                                    for (let week = 1; week <= 6; week++) {
-                                        const weekKey = `week ${week}`;
-                                        // Check if player stats exist for this week, and add FPTS
-                                        if (player_stats[player] && player_stats[player][weekKey]) {
-                                            const fpts = player_stats[player][weekKey]["FPTS"];
-                                            totalScores[`week${week}`] += fpts || 0;
-                                        }
-                                    }
-                                });
+        playersToDisplay.forEach(player => {
+            // Create a wrapper div for the player's score table
+            const tableWrapper = document.createElement("div");
+            tableWrapper.classList.add("table-wrapper"); // Add a class for styling
 
-                                // Calculate the grand total for the team by summing all weekly scores
-                                totalScores.total = totalScores.week1 + totalScores.week2 + totalScores.week3 +
-                                                    totalScores.week4 + totalScores.week5 + totalScores.week6;
+            // Add title for the player
+            const playerName = document.createElement("h2");
+            playerName.classList.add("text-center", "team-title"); // Add class for styling
+            playerName.textContent = `${player}`;
+            tableWrapper.appendChild(playerName); // Append title to the wrapper
 
-                                // Round scores to 1 decimal place
-                                for (const key in totalScores) {
-                                    if (key !== 'name' && typeof totalScores[key] === 'number') {
-                                        totalScores[key] = parseFloat(totalScores[key].toFixed(1));
-                                    }
-                                }
+            // Create the table structure for the player
+            const playerTable = document.createElement("table");
+            playerTable.classList.add("player-scores-table"); // Add the class for styling
+            playerTable.innerHTML = `
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="${player}PlayerTableBody"></tbody>
+            `;
 
-                                // Attach the players list to the score object for each team
-                                totalScores.players = players;
-                                return totalScores;
-                            });
+            // Append the player table to the wrapper
+            tableWrapper.appendChild(playerTable);
+            // Append the wrapper to the player scores container
+            playerScoresContainer.appendChild(tableWrapper);
 
-                            // Sort teams by total score (Descending)
-                            teamScores.sort((a, b) => b.total - a.total);
+            // Populate the player's scores
+            const playerTableBody = document.getElementById(`${player}PlayerTableBody`);
+            let playerTotal = 0;
 
-                            // Add each team's scores to the main scoreboard table
-                            teamScores.forEach((teamScore, teamIndex) => {
-                                const row = document.createElement("tr");
-                                row.innerHTML = `
-                                    <td class="team-link">${teamScore.name}</td>
-                                    <td>${teamScore.week1}</td>
-                                    <td>${teamScore.week2}</td>
-                                    <td>${teamScore.week3}</td>
-                                    <td>${teamScore.week4}</td>
-                                    <td>${teamScore.week5}</td>
-                                    <td>${teamScore.week6}</td>
-                                    <td>${teamScore.total}</td>
-                                `;
-                                tbody.appendChild(row);
+            // Loop through each week for the player's scores
+            for (let week = 1; week <= 6; week++) {
+                const weekKey = `week ${week}`;
+                const fpts = player_stats[player] && player_stats[player][weekKey] ? player_stats[player][weekKey]["FPTS"] : 0;
+                playerTotal += fpts;
+                playerTableBody.innerHTML += `<tr><td>Week ${week}</td><td>${fpts.toFixed(1)}</td></tr>`;
+            }
 
-                                // Scroll to player score container on team row click
-                                row.addEventListener("click", () => {
-                                    const teamContainer = document.getElementById(`team-${teamIndex}`);
-                                    if (teamContainer) teamContainer.scrollIntoView({ behavior: "smooth" });
-                                });
+            // Add the player's total score row
+            playerTableBody.innerHTML += `<tr><td>Total</td><td>${playerTotal.toFixed(1)}</td></tr>`;
+        });
 
-                               // Populate player score table for each team
-                                const playerScoresContainer = document.getElementById("playerScoresContainer");
-                                const teamContainer = document.createElement("div");
-                                teamContainer.id = `team-${teamIndex}`;
-                                teamContainer.classList.add("single_team_container");
+        renderPaginationControls();
+    }
 
-                                // Create a wrapper div for the player score table and title
-                                const tableWrapper = document.createElement("div");
-                                tableWrapper.classList.add("table-wrapper"); // Add a class for styling
+    function renderPaginationControls() {
+        const paginationContainer = document.createElement("div");
+        paginationContainer.classList.add("pagination"); // Add class for styling
+        for (let i = 1; i <= totalPages; i++) {
+            const pageButton = document.createElement("button");
+            pageButton.textContent = i;
+            pageButton.onclick = () => {
+                currentPage = i;
+                renderPage(currentPage);
+            };
+            if (i === currentPage) {
+                pageButton.classList.add("active"); // Add active class to the current page button
+            }
+            paginationContainer.appendChild(pageButton);
+        }
+        playerScoresContainer.appendChild(paginationContainer);
+    }
 
-                                // Add title for each team
-                                const teamTitle = document.createElement("h2");
-                                teamTitle.classList.add("text-center", "team-title"); // Add class for styling
-                                teamTitle.textContent = `${teamScore.name} - Player Scores`;
-                                tableWrapper.appendChild(teamTitle); // Append title to the wrapper
+    renderPage(currentPage); // Initial render
+}
 
-                                // Create the table structure
-                                const playerTable = document.createElement("table");
-                                playerTable.classList.add("player-scores-table"); // Add the class for styling
-                                playerTable.innerHTML = `
-                                    <thead>
-                                        <tr>
-                                            <th>Player</th>
-                                            <th>week1</th>
-                                            <th>week2</th>
-                                            <th>week3</th>
-                                            <th>week4</th>
-                                            <th>week5</th>
-                                            <th>week6</th>
-                                            <th>total</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="team-${teamIndex}PlayerTableBody"></tbody>
-                                `;
-
-                                // Append the player table to the wrapper
-                                tableWrapper.appendChild(playerTable);
-                                // Append the wrapper to the team container
-                                teamContainer.appendChild(tableWrapper);
-                                // Append the team container to the player scores container
-                                playerScoresContainer.appendChild(teamContainer);
-
-
-
-                                // Populate each player's weekly scores and total
-                                const playerTableBody = document.getElementById(`team-${teamIndex}PlayerTableBody`);
-                                teamScore.players.forEach(player => {
-                                    const playerRow = document.createElement("tr");
-                                    let playerTotal = 0;
-                                    playerRow.innerHTML = `<td>${player}</td>`;
-
-                                    // Loop through each week for the player's scores
-                                    for (let week = 1; week <= 6; week++) {
-                                        const weekKey = `week ${week}`;
-                                        const fpts = player_stats[player] && player_stats[player][weekKey] ? player_stats[player][weekKey]["FPTS"] : 0;
-                                        playerTotal += fpts;
-                                        if (fpts == undefined) {
-                                            return;
-                                        }
-                                        playerRow.innerHTML += `<td>${fpts.toFixed(1)}</td>`;
-                                    }
-
-                                    // Add the player's total score column
-                                    playerRow.innerHTML += `<td>${playerTotal.toFixed(1)}</td>`;
-                                    playerTableBody.appendChild(playerRow);
-                                });
-                            });
-                        }
 
 
         // Call the function to populate scores on page load

@@ -1,0 +1,431 @@
+/* Base styles for larger screens */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    min-width: 320px; /* Set minimum width for very small devices */
+}
+
+.container {
+    max-width: 1420px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* Card Styles */
+.card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: auto;
+    max-width: 1400px;
+}
+
+.card-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0;
+    background-color: white; /* Original tables */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Player Score Table Styling */
+.player-scores-table {
+    width: auto; /* Makes the table as thin as possible */
+    background-color: #333; /* Dark background */
+    color: white; /* White text for contrast */
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures rounded corners are respected */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    table-layout: auto; /* Ensure table layout allows for padding */
+}
+
+.player-scores-table th, .player-scores-table td {
+    padding: 5px 10px; /* Smaller padding for even more condensed rows */
+    font-size: 0.85em; /* Slightly smaller text size */
+    border: none; /* Remove border for a flat look */
+}
+
+/* Dark background for rows */
+.player-scores-table tr {
+    background-color: #333; /* Dark rows */
+}
+
+.player-scores-table tr:nth-child(even) {
+    background-color: #444; /* Slightly lighter dark background for even rows */
+}
+
+.player-scores-table th {
+    background-color: #444; /* Darker header background */
+    color: #f0f0f0; /* Light grey text for header */
+    border-bottom: 2px solid #555; /* Subtle border for the header */
+}
+
+.player-scores-table td {
+    color: #e0e0e0; /* Light grey text for table data */
+}
+
+/* Optional: Hover Effect for Rows */
+.player-scores-table tr:hover {
+    background-color: #555; /* Slightly lighter on hover for interactivity */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* General Styles for Team Container */
+.single_team_container {
+    display: flex; /* Allow flexbox layout */
+    flex-wrap: wrap; /* Wrap items if there's not enough space */
+    justify-content: flex-start; /* Center items */
+}
+
+/* Wrapper for Each Table */
+.table-wrapper {
+    background-color: #dcdcdc; /* Dark grey background for the wrapper */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px; /* Space around each table */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+/* Adjust title size to match table */
+.team-title {
+    font-size: 1.8em; /* Adjust as needed */
+    color: #222; /* Match the text color */
+    margin: 0 0 10px 0; /* Margin below title */
+    text-align: center; /* Center title */
+    font-weight: bold;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Form and Label Styling */
+.label-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically */
+    margin-bottom: 15px; /* Space between rows */
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+    min-width: 130px;
+    max-width: 130px; /* Adjust as needed */
+    white-space: normal; /* Allows text to wrap */
+    display: inline-block; /* Ensures max-width is respected */
+}
+
+input[type="email"], 
+input[type="text"], 
+input[type="number"],
+select {
+    width: calc(100% - 140px); /* Adjusts for label width */
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+button {
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #004d00;
+}
+
+/* Team List Styling */
+.team {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.team-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.team-name {
+    flex: 1;
+    min-width: 60px;
+    text-align: center;
+}
+
+.team-name.selected {
+    color: darkgray !important;
+    background-color: gray !important;
+}
+
+.team-logo.selected {
+    filter: grayscale(100%) contrast(1.2);
+}
+
+/* Navbar Styling */
+.nav-bar {
+    background-color: #006400;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.brand-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+.title {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.subtitle {
+    font-size: 2.0em;
+    color: white;
+    margin-right: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.navbar-nav .nav-item {
+    flex: 1; /* Allow each item to take equal space */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    white-space: nowrap; /* Prevents wrapping for nav links */
+    transition: color 0.3s;
+    display: block; /* Ensure nav-link behaves like a block element */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ddd;
+}
+.col-md-1 { width: 6%; }
+.col-md-2 { width: 9%; }
+.col-md-3 { width: 24%; }
+.col-md-4 { width: 33.33%; }
+.col-md-5 { width: 41%; }
+.col-md-6 { width: 50%; }
+.col-md-7 { width: 58.33%; }
+.col-md-8 { width: 66.67%; }
+.col-md-9 { width: 75%; }
+.col-md-10 { width: 83.33%; }
+.col-md-11 { width: 91.67%; }
+.col-md-12 { width: 100%; }
+
+#playerScoresContainer {
+    display: flex; /* Allow flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Align items to the left */
+    margin: 20px; /* Space around the container */  
+}
+
+.logo {
+    width: 100px; /* Adjust width to your preference */
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto; /* Ensures it doesn't exceed a certain height */
+    margin: 10px; /* Adds space around the logo */
+    padding: 5px;
+}
+.nfl-teams {
+   padding-bottom: 20px;
+   align-items: right;
+   display:block;
+}
+[class*="col-"] {
+    padding: 0px;; /* Adjust as necessary */
+}
+.pagination {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center the buttons */
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0; /* No margin */
+    padding: 5px 10px;
+    box-sizing: border-box; /* Include padding and border in width/height */
+    cursor: pointer;
+    display: inline-block; /* Ensure buttons are inline */
+    background-color: #ffffff; /* Highlight color for the active page */
+    color: black;
+    border-radius: 0;
+}
+
+.pagination button.active {
+    font-weight: bold;
+    background-color: #006400; /* Highlight color for the active page */
+    color: black;
+}
+
+.pagination button:hover {
+    background-color: #006400; /* Darker blue on hover */
+    color: black;
+}
+
+.row {
+display: flex;           /* Use flexbox for alignment */
+flex-wrap: wrap;        /* Allow items to wrap onto multiple lines */
+margin-left: 5px; /* Remove left margin */
+margin-right: 5px; /* Remove right margin */
+}
+
+.col-md-5,
+.col-md-2 {
+    padding-left: 10px; /* Remove padding */
+    padding-right: 10px; /* Remove padding */
+    
+}
+.label-container {
+    display: flex;           /* Use flexbox layout */
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 15px;    /* Space between label/select groups */
+}
+/* Responsive Styles */
+@media (max-width: 1025px) {
+    .nav-bar {
+        flex-wrap: wrap; /* Allows wrapping if space is constrained */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+
+    .navbar-nav {
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .col-md-5,
+        .col-md-2 {
+    padding-left: 10px; /* Remove padding */
+    padding-right: 10px; /* Remove padding */
+    
+}
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 107%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .label-container {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-brand img {
+        width: 80px;
+        margin: 0px;
+        text-align: left;
+        display: inline-block;
+    }
+    .navbar-brand {
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+    }
+    .brand-text {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+    .title {
+        font-size: 2.8em;
+        display: inline-flex;
+        align-items: center;
+    }
+    .subtitle {
+        display: block; 
+        text-align: center;
+        margin: 0px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 1em;
+        padding: 8px 10px;
+    }
+    .player-select {
+        font-weight: bold;
+    }
+    select {
+        width: 100%;
+    }
+    .col-md-5, .col-md-2 {
+        padding: 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+ 
