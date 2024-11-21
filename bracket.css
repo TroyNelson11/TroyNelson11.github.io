@@ -2,7 +2,7 @@
     position: absolute;
   }
   .bracket {
-    padding: 40px;
+    padding: 0px 10px;
     margin: 5px;
   }
   .bracket {
@@ -17,14 +17,26 @@
     justify-content: space-around;
     align-content: center;
   }
+  .two {
+
+    justify-content: space-evenly;
+
+  }
+  .Four {
+
+    justify-content: center;
+
+  }
   .match {
     position: relative;
     display: flex;
     flex-direction: column;
     max-width: 250px;
+    min-width: 216px;
     width: calc(25vw - 100px); /* Adds a base width (100px) that scales with vw */
-    height: 62px;
-    margin: 12px 24px 12px 0;
+    height: auto;
+    margin: 12px 48px 12px 0;
+    background-color: #fcfcfc;
   }
   .match .match-top {
     border-radius: 2px 2px 0 0;
@@ -61,25 +73,27 @@
     right: -1px;
   }
   .match-lines .line {
-    background: red;
+    background: black;
     position: absolute;
+    top:-2px;
   }
   .match-lines .line.one {
-    height: 1px;
-    width: 12px;
+    height: 2px;
+    width: 27px;
+    left: -2px;
   }
   .match-lines .line.two {
     height: 44px;
-    width: 1px;
-    left: 11px;
+    width: 2px;
+    left: 23px;
   }
   .match-lines.alt {
-    left: -12px;
+    left: -22px;
   }
   .match-lines .line.three {
     height: 64px;
-    width: 1px;
-    left: 11px;
+    width: 2px;
+    left: 23px;
   }
   .winner-bottom .match-lines .line.two {
     transform: translate(0, -100%);
