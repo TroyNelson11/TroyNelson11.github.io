@@ -426,7 +426,7 @@ const updateLateRounds = () => {
         bracket.thirdMatch = matches[5];
 
         // Gather winners from the first two matches
-        matches.forEach(match => {
+        matches.slice(0,4).forEach(match => {
             if (match.children.length < 2) {
                 return;
             }
@@ -434,24 +434,31 @@ const updateLateRounds = () => {
             if (winningTeam) {
                 bracket.winners.push({
                     teamDiv: winningTeam.cloneNode(true), // Clone for reuse
-                    seed: winningTeam.getAttribute('data-seed'),
+                    seed: parseInt(winningTeam.getAttribute('data-seed'), 10),
                 });
             }
         });
 
         // Sort winners by seed (ascending)
         bracket.winners.sort((a, b) => a.seed - b.seed);
-
+        let homeTeam;
+        let awayTeam;
         // Update the third match
         if (bracket.thirdMatch) {
             if (bracket.winners.length == 0) {
                 return;
+            } else if (bracket.winners.length >= 2) {
+                [homeTeam, awayTeam] = bracket.winners;
+            } else {
+                homeTeam = bracket.winners[0]
             }
-            const [homeTeam, awayTeam] = bracket.winners;
 
             // Update team divs and seeds
             ["home", "away"].forEach((role, i) => {
                 const teamSlot = bracket.thirdMatch.children[i];
+                if (i == 1 && awayTeam == undefined) {
+                    return;
+                }
                 const newTeamDiv = i === 0 ? homeTeam.teamDiv : awayTeam.teamDiv;
                 const newSeed = newTeamDiv.getAttribute("data-seed");
 
