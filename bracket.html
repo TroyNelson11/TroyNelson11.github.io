@@ -39,27 +39,33 @@
             </div>
          </div>
      </div>
-     <div class="container">
+     <div id="container" class="container">
         <div class="col-md-12">
-            <div class="card">
-                <div class="card-header">Playoff Bracket</div>
+            <div class="bracketcard">
+                <div class="card-header"></div>
                         <div>
                             <div class="bracket disable-image">
                                 <div class="column one">
 
-                                <div id="bracket-container" class="p-4"></div>
+                                <div id="bracket-container" class="p-4 flex flex-col justify-start items-center"></div>
                                 
                                 </div>
                                 <div class="column two">
                                 
-                                    <div id="bracket-container-2" class="p-4"></div>
+                                    <div id="bracket-container-2" class="p-4 flex flex-col justify-start items-center"></div>
                             
                                 </div>
                                 <div class="column three">
-                                    <div id="bracket-container-3" class="p-4"></div>
-                            </div>       
-                                <div class="column Four">Super Bowl
-                                    <div id="bracket-container-4" class="p-4"></div>
+                                    <div id="bracket-container-3" class="flex flex-col items-center justify-start">
+                                        <img 
+                                            src="https://static.tvtropes.org/pmwiki/pub/images/super_bowl_lix_logosvg.png" 
+                                            alt="Super Bowl LIX Logo" 
+                                            class="w-40 max-w-xs h-auto mb-4 mt-40">
+                                    </div>
+                                </div>       
+                                
+                                    <div id="bracket-container-4" class="p-4 flex flex-col justify-center items-center"></div>
+                                    <div id="bracket-container-5" class="p-4 flex flex-col justify-start items-center"></div>
 
                             </div>
                             <div id="teams-container" class="grid grid-cols-2 gap-4 p-4 hidden"></div>
@@ -78,119 +84,151 @@
                         "name": "Kansas City Chiefs",
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/kansas-city-chiefs-logo-emblem-png.png",
                         "primary_color": "#C8102E", 
-                        "secondary_color": "#FFB612"
+                        "secondary_color": "#FFB612",
+                        "seed" : 2
                     },
                     {
                         "abbreviation": "BUF",
                         "name": "Buffalo Bills",
                         "logo": "https://content.sportslogos.net/logos/7/149/full/buffalo_bills_logo_primary_19747050.png",
                         "primary_color": "#003DA5", 
-                        "secondary_color": "#C8102E"
+                        "secondary_color": "#C8102E",
+                        "seed" : 1
+
                     },
                     {
                         "abbreviation": "BAL",
                         "name": "Baltimore Ravens",
                         "logo": "https://content.sportslogos.net/logos/7/153/full/baltimore_ravens_logo_primary_19996038.png",
                         "primary_color": "#3B0A45", 
-                        "secondary_color": "#FFC20E"
+                        "secondary_color": "#FFC20E",
+                        "seed" : 5
+
                     },
                     {
                         "abbreviation": "HOU",
                         "name": "Houston Texans",
                         "logo": "https://content.sportslogos.net/logos/7/157/full/houston_texans_logo_primary_2024_sportslogosnet-5890.png",
                         "primary_color": "#03202F", 
-                        "secondary_color": "#003A70"
+                        "secondary_color": "#003A70",
+                        "seed" : 4
+
                     },
                     {
                         "abbreviation": "PIT",
                         "name": "Pittsburgh Steelers",
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/pittsburgh-steelers-logo-emblem-png.png",
                         "primary_color": "#FFC20E", 
-                        "secondary_color": "#000000"
+                        "secondary_color": "#000000",
+                        "seed" : 3
+
                     },
                     {
                         "abbreviation": "DEN",
                         "name": "Denver Broncos",
                         "logo": "https://content.sportslogos.net/logos/7/161/full/denver_broncos_logo_primary_19973076.png",
                         "primary_color": "#FB4F14", 
-                        "secondary_color": "#002244"
+                        "secondary_color": "#002244",
+                        "seed" : 7
+
                     },
                     {
                         "abbreviation": "LAC",
                         "name": "Los Angeles Chargers",
                         "logo": "https://content.sportslogos.net/logos/7/6446/full/los_angeles_chargers_logo_primary_20203514.png",
                         "primary_color": "#0080C6", 
-                        "secondary_color": "#FFC20E"
+                        "secondary_color": "#FFC20E",
+                        "seed" : 6
+
                     },
                     {
                         "abbreviation": "PHI",
                         "name": "Philadelphia Eagles",
                         "logo": "https://content.sportslogos.net/logos/7/167/full/philadelphia_eagles_logo_primary_19964867.png",
                         "primary_color": "#004C54", 
-                        "secondary_color": "#A5ACAF"
+                        "secondary_color": "#A5ACAF",
+                        "seed" : 1
+
                     },
                     {
                         "abbreviation": "SF",
                         "name": "San Francisco 49ers",
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/san-francisco-49ers-logo-emblem-png.png",
                         "primary_color": "#B3995D", 
-                        "secondary_color": "#B3995D"
+                        "secondary_color": "#B3995D",
+                        "seed" : 8
+
                     },
                     {
                         "abbreviation": "DET",
                         "name": "Detroit Lions",
                         "logo": "https://content.sportslogos.net/logos/7/170/full/detroit_lions_logo_primary_20172565.png",
                         "primary_color": "#0076B6", 
-                        "secondary_color": "#A5ACAF"
+                        "secondary_color": "#A5ACAF",
+                        "seed" : 2
+
                     },
                     {
                         "abbreviation": "MIN",
                         "name": "Minnesota Vikings",
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/minnesota-vikings-logo-emblem-png.png",
                         "primary_color": "#4F2765", 
-                        "secondary_color": "#FFD100"
+                        "secondary_color": "#FFD100",
+                        "seed" : 5
+
                     },
                     {
                         "abbreviation": "TB",
                         "name": "Tampa Bay Buccaneers",
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/tampa-bay-buccaneers-logo-emblem-png.png",
                         "primary_color": "#34302B", 
-                        "secondary_color": "#A5ACAF"
+                        "secondary_color": "#A5ACAF",
+                        "seed" : 9
+
                     },
                     {
                         "abbreviation": "WAS",
                         "name": "Washington Commanders",
                         "logo": "https://content.sportslogos.net/logos/7/6832/full/washington_commanders_logo_primary_20228587.png",
                         "primary_color": "#5A1414", 
-                        "secondary_color": "#FFC20E"
+                        "secondary_color": "#FFC20E",
+                        "seed" : 6
+
                     },
                     {
                         "abbreviation": "GB",
                         "name": "Green Bay Packers",
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/green-bay-packers-symbol-logo-png.png",
                         "primary_color": "#203731", 
-                        "secondary_color": "#FFB612"
+                        "secondary_color": "#FFB612",
+                        "seed" : 7
+
                     },
                     {
                         "abbreviation": "ATL",
                         "name": "Atlanta Falcons",
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/06/atlanta-falcons-logo-hex-colors.png",
                         "primary_color": "#000",
-                        "secondary_color": "#A71930"
+                        "secondary_color": "#A71930",
+                        "seed" : 4
                     },
                     {
                         "abbreviation": "ARI",
                         "name": "Arizona Cardinals",
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/06/arizona-cardinals-team-logo-png.png",
                         "primary_color": "#97233F",
-                        "secondary_color": "#FFCB05"
+                        "secondary_color": "#FFCB05",
+                        "seed" : 3
+
                     },
                     {
                         "abbreviation": "SEA",
                         "name": "Seattle Seahawks",
                         "logo": "https://content.sportslogos.net/logos/7/180/full/seattle_seahawks_logo_primary_20121228.png",
                         "primary_color": "#002246",
-                        "secondary_color": "#69BE28"
+                        "secondary_color": "#69BE28",
+                        "seed" : 10
+
                     }
                 ]
                 const generateTeamDivs = (teams) => {
@@ -198,30 +236,253 @@
 
     const teamDivs = {};
 
-    teams.forEach((team) => {
-        // Create the team div
-        const teamDiv = document.createElement('div');
-        teamDiv.className = 'team-div relative flex items-center justify-center w-24 h-12 border rounded shadow-md overflow-hidden';
-        teamDiv.style.backgroundColor = team.primary_color;
+teams.forEach((team) => {
+    // Create the team div
+    const teamDiv = document.createElement('div');
+    teamDiv.className = 'team-div relative flex items-center justify-center w-24 h-12 border rounded shadow-md overflow-hidden';
+    teamDiv.style.backgroundColor = team.primary_color;
 
-        // Team logo
-        const logo = document.createElement('img');
-        logo.src = team.logo;
-        logo.alt = `${team.name} logo`;
-        logo.className = 'absolute w-full h-auto object-cover'; // Keeps the aspect ratio while filling height
+    // Set initial result status to "lose"
+    teamDiv.setAttribute('data-result', 'lose');
+    teamDiv.setAttribute('data-seed', team.seed);
+    teamDiv.setAttribute('data-team', team.abbreviation);
 
-        // Append the logo to the team div
-        teamDiv.appendChild(logo);
+    // Team logo
+    const logo = document.createElement('img');
+    logo.src = team.logo;
+    logo.alt = `${team.name} logo`;
+    logo.className = 'absolute w-full h-auto object-cover'; // Keeps the aspect ratio while filling height
 
-        // Append the team div to the container
-        container.appendChild(teamDiv);
+    // Append the logo to the team div
+    teamDiv.appendChild(logo);
 
-        // Store in a dictionary for reuse
-        teamDivs[team.abbreviation] = teamDiv;
-    });
+    // Append the team div to the container
+    container.appendChild(teamDiv);
+
+    // Store in a dictionary for reuse
+    teamDivs[team.abbreviation] = teamDiv;
+});
+
 
     return teamDivs; // Return the dictionary for further use
 };
+const addEventDelegation = () => {
+    // Get all team divs in the container
+    const teamDivs = document.querySelectorAll('.team-div');
+
+    teamDivs.forEach((teamDiv) => {
+        // Add click event listener to each team-div
+        teamDiv.addEventListener('click', (e) => {
+            // Find the parent match container
+            const match = teamDiv.closest('.match');
+            if (!match) return; // Ensure the clicked element is inside a match
+
+            // Get all team-div elements within the match
+            const matchTeamDivs = match.querySelectorAll('.team-div');
+            let teamSeed = teamDiv.closest('.team-and-seed')
+            let seed = teamSeed.querySelector('.seed')
+            // Toggle the data-result for the clicked team-div
+            if (teamDiv.getAttribute('data-result') === 'win') {
+                teamDiv.setAttribute('data-result', 'lose');
+                seed.style.color = 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
+                seed.style.fontWeight = ''; // Set the desired font weight, e.g., 'bold'
+            } else {
+                teamDiv.setAttribute('data-result', 'win');
+                seed.style.color = '#0e0e0e'; // Set the desired color, e.g., 'red'
+                seed.style.fontWeight = 'bold'; // Set the desired font weight, e.g., 'bold'
+            }
+
+            // Set the other team-div's data-result to the opposite
+            matchTeamDivs.forEach((otherDiv) => {
+                if (otherDiv !== teamDiv) {
+                    otherDiv.setAttribute(
+                        'data-result',
+                        teamDiv.getAttribute('data-result') === 'win' ? 'lose' : 'win'
+                    );
+                    let teamSeed = otherDiv.closest('.team-and-seed')
+                    let seed = teamSeed.querySelector('.seed')
+                    seed.style.color = otherDiv.getAttribute('data-result') === 'win' ? '0e0e0e' : 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
+                    seed.style.fontWeight = otherDiv.getAttribute('data-result') === 'win' ? 'bold' : ''; // Set the desired font weight, e.g., 'bold'
+                }
+                
+            });
+
+            // Get the bracket container that the match is in
+            const bracket = e.target.closest('.p-4');
+
+            // Call the correct function based on the bracket
+            if (bracket == document.getElementById("bracket-container") || bracket == document.getElementById("bracket-container-5")) {
+                // Update second round match details
+                updateSecondRoundMatchDetails();
+            } 
+
+            // Prevent event from bubbling up unnecessarily
+            e.stopPropagation();
+        });
+    });
+
+};
+const addNewEventDelegation = () => {
+    // Get all team divs in the container
+    let bracket = document.getElementById('bracket-container-2');
+
+    const teamDivs = bracket.querySelectorAll('.team-div');
+
+    teamDivs.forEach((teamDiv) => {
+        // Add click event listener to each team-div
+        teamDiv.addEventListener('click', (e) => {
+            // Find the parent match container
+            const match = teamDiv.closest('.match');
+            if (!match) return; // Ensure the clicked element is inside a match
+
+            // Get all team-div elements within the match
+            const matchTeamDivs = match.querySelectorAll('.team-div');
+            let seedText = teamDiv.closest('.seed')
+            
+            // Toggle the data-result for the clicked team-div
+            if (teamDiv.getAttribute('data-result') === 'win') {
+                teamDiv.setAttribute('data-result', 'lose');
+                seedText.style.color = 'gray-500'; // Set the desired color, e.g., 'red'
+                seedText.style.fontWeight = 'regular'; // Set the desired font weight, e.g., 'bold'
+            } else {
+                teamDiv.setAttribute('data-result', 'win');
+                seedText.style.color = 'black'; // Set the desired color, e.g., 'red'
+                seedText.style.fontWeight = 'bold'; // Set the desired font weight, e.g., 'bold'
+            }
+
+            // Set the other team-div's data-result to the opposite
+            matchTeamDivs.forEach((otherDiv) => {
+                if (otherDiv !== teamDiv) {
+                    otherDiv.setAttribute(
+                        'data-result',
+                        teamDiv.getAttribute('data-result') === 'win' ? 'lose' : 'win'
+                    );
+                }
+            });
+
+            // Get the bracket container that the match is in
+            const bracket = e.target.closest('.p-4');
+
+            // Prevent event from bubbling up unnecessarily
+            e.stopPropagation();
+            updateLateRounds();
+
+        });
+    });
+    let bracket2 = document.getElementById('bracket-container-4');
+
+    teamDivs2 = bracket2.querySelectorAll('.team-div');
+
+    teamDivs2.forEach((teamDiv) => {
+        // Add click event listener to each team-div
+        teamDiv.addEventListener('click', (e) => {
+            // Find the parent match container
+            const match = teamDiv.closest('.match');
+            if (!match) return; // Ensure the clicked element is inside a match
+
+            // Get all team-div elements within the match
+            const matchTeamDivs = match.querySelectorAll('.team-div');
+
+            // Toggle the data-result for the clicked team-div
+            if (teamDiv.getAttribute('data-result') === 'win') {
+                teamDiv.setAttribute('data-result', 'lose');
+            } else {
+                teamDiv.setAttribute('data-result', 'win');
+            }
+
+            // Set the other team-div's data-result to the opposite
+            matchTeamDivs.forEach((otherDiv) => {
+                if (otherDiv !== teamDiv) {
+                    otherDiv.setAttribute(
+                        'data-result',
+                        teamDiv.getAttribute('data-result') === 'win' ? 'lose' : 'win'
+                    );
+                }
+            });
+            // Get the bracket container that the match is in
+            const bracket = e.target.closest('.p-4');
+
+            // Prevent event from bubbling up unnecessarily
+            updateLateRounds();
+
+            e.stopPropagation();
+
+        });
+    });
+
+};
+const updateLateRounds = () => {
+    const brackets = [
+        { container: "bracket-container-2", winners: [], thirdMatch: null },
+        { container: "bracket-container-4", winners: [], thirdMatch: null }
+    ];
+
+    // Gather winners and update third match in each bracket
+    brackets.forEach(bracket => {
+        const bracketElement = document.getElementById(bracket.container);
+        const matches = Array.from(bracketElement.querySelectorAll(".match"));
+
+        // Store the third match reference for later
+        bracket.thirdMatch = matches[5];
+
+        // Gather winners from the first two matches
+        matches.forEach(match => {
+            if (match.children.length < 2) {
+                return;
+            }
+            const winningTeam = match.querySelector('.team-div[data-result="win"]');
+            if (winningTeam) {
+                bracket.winners.push({
+                    teamDiv: winningTeam.cloneNode(true), // Clone for reuse
+                    seed: winningTeam.getAttribute('data-seed'),
+                });
+            }
+        });
+
+        // Sort winners by seed (ascending)
+        bracket.winners.sort((a, b) => a.seed - b.seed);
+
+        // Update the third match
+        if (bracket.thirdMatch) {
+            if (bracket.winners.length == 0) {
+                return;
+            }
+            const [homeTeam, awayTeam] = bracket.winners;
+
+            // Update team divs and seeds
+            ["home", "away"].forEach((role, i) => {
+                const teamSlot = bracket.thirdMatch.children[i];
+                const newTeamDiv = i === 0 ? homeTeam.teamDiv : awayTeam.teamDiv;
+                const newSeed = newTeamDiv.getAttribute("data-seed");
+
+                teamSlot.querySelector('.team-div').replaceWith(newTeamDiv);
+                const seedDiv = teamSlot.querySelector('.seed');
+                if (seedDiv) seedDiv.textContent = `#${newSeed}`;
+            });
+        }
+    });
+
+    // Update the single match in bracket 3
+    const bracket3 = document.getElementById("bracket-container-3");
+    const singleMatch = bracket3.querySelector(".match");
+
+    if (singleMatch && brackets[0].winners.length && brackets[1].winners.length) {
+        const bracket2Winner = brackets[0].winners[0]; // Bracket 2 home team
+        const bracket4Winner = brackets[1].winners[0]; // Bracket 4 away team
+
+        // Update team divs and seeds
+        ["home", "away"].forEach((role, i) => {
+            const teamSlot = singleMatch.children[i];
+            const newTeamDiv = i === 0 ? bracket2Winner.teamDiv : bracket4Winner.teamDiv;
+            const newSeed = i === 0 ? bracket2Winner.seed : bracket4Winner.seed;
+
+            teamSlot.querySelector('.team-div').replaceWith(newTeamDiv);
+            const seedDiv = teamSlot.querySelector('.seed');
+            if (seedDiv) seedDiv.textContent = `#${newSeed}`;
+        });
+    }
+};
+
 
 const addMatchDetails = (teamDiv, seed, spread, overUnder, isTopTeam) => {
     // Wrapper for team and details
@@ -235,6 +496,11 @@ const addMatchDetails = (teamDiv, seed, spread, overUnder, isTopTeam) => {
     if (seed) {
         const seedElement = document.createElement('div');
         seedElement.textContent = `#${seed}`;
+        seedElement.className = 'seed text-s text-gray-500 p-2'; // Styled as a subtle label
+        teamAndSeed.appendChild(seedElement);
+    } else {
+        const seedElement = document.createElement('div');
+        seedElement.textContent = ``;
         seedElement.className = 'seed text-s text-gray-500 p-2'; // Styled as a subtle label
         teamAndSeed.appendChild(seedElement);
     }
@@ -269,6 +535,56 @@ const addMatchDetails = (teamDiv, seed, spread, overUnder, isTopTeam) => {
 
     return matchRow;
 };
+
+
+const updateSecondRoundMatchDetails = () => {
+    const bracketContainer1 = document.getElementById('bracket-container');
+    const teamDivs = Array.from(bracketContainer1.querySelectorAll('.team-div[data-result="win"]'));
+
+    if (teamDivs.length < 3) {
+        console.warn('Not enough winning teams to update the afc second round matches.');
+    } else {
+        // Sort by `data-seed` in descending order
+        teamDivs.sort((a, b) => {
+        const seedA = parseInt(a.getAttribute('data-seed'), 10);
+        const seedB = parseInt(b.getAttribute('data-seed'), 10);
+        return seedB - seedA; // Descending order
+    });
+    secondRoundMatchDetails[0].away = teamDivs[0].getAttribute('data-team');
+    secondRoundMatchDetails[0].awayseed = teamDivs[0].getAttribute('data-seed');
+    secondRoundMatchDetails[1].away = teamDivs[1].getAttribute('data-team');
+    secondRoundMatchDetails[1].awayseed = parseInt(teamDivs[1].getAttribute('data-seed'), 10);
+    secondRoundMatchDetails[1].home = teamDivs[2].getAttribute('data-team');
+    secondRoundMatchDetails[1].homeseed = parseInt(teamDivs[2].getAttribute('data-seed'), 10);
+    updateMatches();
+    }
+    
+
+    const bracketContainer5 = document.getElementById('bracket-container-5');
+    const teamDivs2 = Array.from(bracketContainer5.querySelectorAll('.team-div[data-result="win"]'));
+
+    if (teamDivs2.length < 3) {
+        console.warn('Not enough winning teams to update the nfc second round matches.');
+    } else {
+// Sort by `data-seed` in descending order
+        teamDivs2.sort((a, b) => {
+        const seedA = parseInt(a.getAttribute('data-seed'), 10);
+        const seedB = parseInt(b.getAttribute('data-seed'), 10);
+        return seedB - seedA; // Descending order
+    });
+    secondRoundMatchDetails[2].away = teamDivs2[0].getAttribute('data-team');
+    secondRoundMatchDetails[2].awayseed = parseInt(teamDivs2[0].getAttribute('data-seed'), 10);
+    secondRoundMatchDetails[3].away = teamDivs2[1].getAttribute('data-team');
+    secondRoundMatchDetails[3].awayseed = parseInt(teamDivs2[1].getAttribute('data-seed'), 10);
+    secondRoundMatchDetails[3].home = teamDivs2[2].getAttribute('data-team');
+    secondRoundMatchDetails[3].homeseed = parseInt(teamDivs2[2].getAttribute('data-seed'), 10);
+    updateMatches();
+    }
+    
+    
+};
+
+
 
 let match_details = [
     {
@@ -320,7 +636,7 @@ let match_details = [
         "total": 46.5
     }
 ];
-const secondRoundMatchDetails = [
+let secondRoundMatchDetails = [
     // AFC
     {
         "home": "BUF",
@@ -356,14 +672,75 @@ const secondRoundMatchDetails = [
         "spread": null,
         "total": null
     },
+    
 ];
+const updateMatches = () => {
+    const containers = [
+        document.getElementById('bracket-container-2'),
+        document.getElementById('bracket-container-4')
+
+    ];
+
+    containers.forEach((container, index) => {
+        if (!container) {
+            console.warn(`Container ${index + 2} does not exist.`);
+            return;
+        }
+
+
+
+        // Find the matches inside the container
+        const matches = Array.from(container.querySelectorAll('.match')).slice(0,4);
+        let i = 0;
+
+        matches.forEach((match, matchIndex) => {
+            // Update home team
+
+            if (match.children.length < 2) {
+                return;
+            }
+            const m = secondRoundMatchDetails[(index*2) + i];
+            if (!m) {
+            console.warn(`No match details for container ${index + 2}.`);
+            return;
+            }
+            console.log((index*2) + i)
+            const homeDiv = match.children[0].querySelector('.team-div'); // First child's team-div
+            if (homeDiv &&  m.home) {
+                const teams = generateTeamDivs(detailedPlayoffTeams)
+                const newHomeDiv = teams[m.home].cloneNode(true);
+                newHomeDiv.setAttribute("data-result", "lose")
+                homeDiv.replaceWith(newHomeDiv);
+                const homeSeed = match.children[0].querySelector('.seed'); // First child's team-div
+                homeSeed.textContent = "#" + m.homeseed;
+
+            }
+
+            const awayDiv = match.children[1].querySelector('.team-div'); // Second child's team-div
+            if (awayDiv && m.away) {
+                const teams = generateTeamDivs(detailedPlayoffTeams)
+                const newAwayDiv = teams[m.away].cloneNode(true);
+                newAwayDiv.setAttribute("data-result", "lose")
+
+                awayDiv.replaceWith(newAwayDiv);
+                const awaySeed = match.children[1].querySelector('.seed'); // First child's team-div
+                awaySeed.textContent ="#" +  m.awayseed;
+
+                }
+            i = i + 1;
+
+        });
+    });
+    addNewEventDelegation();
+};
 // Usage
 document.addEventListener('DOMContentLoaded', () => {
     const teamDivs = generateTeamDivs(detailedPlayoffTeams);
-
     // Example of reusing team divs for a match in the bracket
     const bracketContainer = document.getElementById('bracket-container'); // Replace with your bracket container's ID
-    for (const m of match_details) {
+    bracketContainer.appendChild(createGameTitle("Wildcard"))
+
+    for (const m of match_details.slice(0,3)) {
         const match = document.createElement('div');
         match.className = 'match flex flex-col items-left rounded-md p-2 m-2 shadow-md';
 
@@ -375,9 +752,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // Example of reusing team divs for a match in the bracket
     const bracketContainer2 = document.getElementById('bracket-container-2'); // Replace with your bracket container's ID
+    bracketContainer2.appendChild(createGameTitle("Divisional"))
+
     const spacer = document.createElement('div');
-    spacer.className = 'match flex flex-col items-left rounded-md p-20 m-2 shadow-md invisible'; 
-    for (const m of secondRoundMatchDetails) {
+    spacer.className = 'match flex flex-col items-left rounded-md p-5 m-2 shadow-md invisible'; 
+    for (const m of secondRoundMatchDetails.slice(0,2)) {
         const match = document.createElement('div');
         match.className = 'match flex flex-col items-left rounded-md p-2 m-2 shadow-md';
 
@@ -385,27 +764,63 @@ document.addEventListener('DOMContentLoaded', () => {
         match.appendChild(addMatchDetails(teamDivs[m.home] ? teamDivs[m.home].cloneNode(true) : createEmptyTeamDiv(), m.homeseed, m.spread, m.total, true)); // Away team
 
         match.appendChild(addMatchDetails(teamDivs[m.away] ? teamDivs[m.away].cloneNode(true) : createEmptyTeamDiv(), m.awayseed, m.spread, m.total, false)); // Away team
+        bracketContainer2.appendChild(spacer.cloneNode(true))
 
         bracketContainer2.appendChild(match);
-        if (bracketContainer2.childElementCount == 2) {
-            
-            bracketContainer2.appendChild(spacer.cloneNode(true))
-        }
+
+
     }
+    bracketContainer2.appendChild(spacer.cloneNode(true))
+    bracketContainer2.appendChild(createGameTitle("AFC", "#D50A0A"))
+    bracketContainer2.appendChild(createEmptyMatch())
+
     const bracketContainer3 = document.getElementById('bracket-container-3'); // Replace with your bracket container's ID
     bracketContainer3.appendChild(createEmptyMatch())
     bracketContainer3.appendChild(spacer.cloneNode(true))
-    bracketContainer3.appendChild(spacer.cloneNode(true))
-    bracketContainer3.appendChild(createEmptyMatch())
+
+
 
     const bracketContainer4 = document.getElementById('bracket-container-4'); // Replace with your bracket container's ID
-    bracketContainer4.appendChild(createEmptyMatch())
+    bracketContainer4.appendChild(createGameTitle("Divisional"))
 
+    for (const m of secondRoundMatchDetails.slice(2,4)) {
+        const match = document.createElement('div');
+        match.className = 'match flex flex-col items-left rounded-md p-2 m-2 shadow-md';
+
+        // Add team divs with details, for bye teams insert empty placeholders
+        match.appendChild(addMatchDetails(teamDivs[m.home] ? teamDivs[m.home].cloneNode(true) : createEmptyTeamDiv(), m.homeseed, m.spread, m.total, true)); // Away team
+
+        match.appendChild(addMatchDetails(teamDivs[m.away] ? teamDivs[m.away].cloneNode(true) : createEmptyTeamDiv(), m.awayseed, m.spread, m.total, false)); // Away team
+        bracketContainer4.appendChild(spacer.cloneNode(true))
+
+        bracketContainer4.appendChild(match);
+
+    }
+    bracketContainer4.appendChild(spacer.cloneNode(true))
+    bracketContainer4.appendChild(createGameTitle("NFC", "#013369"))
+    bracketContainer4.appendChild(createEmptyMatch())
+    const bracketContainer5 = document.getElementById('bracket-container-5'); // Replace with your bracket container's ID
+    bracketContainer5.appendChild(createGameTitle("Wildcard"))
+
+    for (const m of match_details.slice(3,6)) {
+        const match = document.createElement('div');
+        match.className = 'match flex flex-col items-left rounded-md p-2 m-2 shadow-md';
+
+        // Add team divs with details
+        match.appendChild(addMatchDetails(teamDivs[m.home].cloneNode(true), m.homeseed, m.spread, m.total, true)); // Kansas City Chiefs
+        match.appendChild(addMatchDetails(teamDivs[m.away].cloneNode(true), m.awayseed, m.spread*-1, m.total, false)); // Buffalo Bills
+
+        bracketContainer5.appendChild(match);
+
+
+    }
+    addEventDelegation();
+});
 
 // Function to create an empty team div for "BYE" teams
 function createEmptyTeamDiv() {
     const emptyDiv = document.createElement('div');
-    emptyDiv.className = 'team-div relative flex items-center justify-center w-24 h-12 border rounded shadow-md bg-gray-300';
+    emptyDiv.className = 'team-div empty-team relative flex items-center justify-center w-24 h-12 border rounded shadow-md bg-gray-300';
     const placeholder = document.createElement('div');
     placeholder.className = 'text-center text-gray-600';
     placeholder.textContent = '';
@@ -414,15 +829,34 @@ function createEmptyTeamDiv() {
 }
 function createEmptyMatch() {
     const match = document.createElement('div');
-    match.className = 'match flex flex-col items-left rounded-md p-2 m-2 shadow-md';
-    // Add team divs with details, for bye teams insert empty placeholders
-    match.appendChild(addMatchDetails(createEmptyTeamDiv(), null, null, null, true)); // Away team
+    match.className = 'match empty-match flex flex-col items-left rounded-md p-2 m-2 shadow-md';
 
-    match.appendChild(addMatchDetails(createEmptyTeamDiv(), null, null, null, false)); // Away team
+    // Add team divs with details, for bye teams insert empty placeholders
+    match.appendChild(addMatchDetails(createEmptyTeamDiv(), null, null, null, true)); // Placeholder for one team
+    match.appendChild(addMatchDetails(createEmptyTeamDiv(), null, null, null, false)); // Placeholder for the other team
+
     return match;
 }
     
-});
+function createGameTitle(title, backgroundColor = null) {
+    const titleDiv = document.createElement('div');
+    titleDiv.className = 'game-title flex items-center justify-center w-40 h-auto border-b-2 border-gray-300 mb-4';
+
+    // Apply background color if provided, or default to gray
+    titleDiv.style.backgroundColor = backgroundColor || '#f3f4f6'; // Default to gray-100
+
+    const titleText = document.createElement('h2');
+    titleText.className = 'text-2xl font-bold text-center uppercase';
+
+    // Set text color based on background color
+    titleText.style.color = backgroundColor ? '#ffffff' : '#1f2937'; // Default to gray-800
+
+    titleText.textContent = title;
+
+    titleDiv.appendChild(titleText);
+    return titleDiv;
+}
+
 
 
         </script>

@@ -3,7 +3,7 @@
   }
   .bracket {
     padding: 0px 10px;
-    margin: 5px;
+    margin: 0px;
   }
   .bracket {
     display: flex;
@@ -17,9 +17,48 @@
     justify-content: space-around;
     align-content: center;
   }
+  .container {
+    max-width: 1600px;
+  }
+    /* Default team div styling */
+  .team-div {
+  }
+
+  /* Hover effect: Black outline */
+  .team-div:hover {
+    border: 1px solid grey; /* Green outline when the team is marked as win */
+  }
+
+  /* Active win state: Add a green outline for the winning team */
+  .team-div[data-result="win"] {
+    border: 1px solid black; /* Green outline when the team is marked as win */
+  }
+
+  /* Optionally: Style for when the team is in lose state */
+  .team-div[data-result="lose"] {
+  }
+
+  /* Card Styles */
+  .bracketcard {
+    margin: 5px;
+    padding: 5px;
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: auto;
+    max-width: 1600px;
+    min-width: 1200px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+  }
+  .one {
+
+    justify-content: start;
+
+  }
   .two {
 
-    justify-content: space-evenly;
+    justify-content: start;
 
   }
   .Four {
@@ -27,12 +66,39 @@
     justify-content: center;
 
   }
+  /* Styling for the larger empty match card in the third column */
+.three #bracket-container-3 .empty-match {
+  background-color: #6b6b6b; /* Light gray background */
+  color: #1f1f1f; /* Dark gray text */
+  border: 3px solid #3b3b3b; /* Darker border to contrast */
+  font-weight: bold; /* Bold font for emphasis */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for a floating effect */
+  padding: 10px;
+  margin: 20px;
+  max-width: 50px;
+  border-radius: 12px; /* Rounded corners for a modern look */
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Styling for the empty team boxes inside the empty match */
+.three #bracket-container-3 .empty-match .empty-team {
+  background-color: #2f2f2f; /* Light gray background */
+  border-color: #1f1f1f; /* Light gray background */
+  color: #1f1f1f; /* Darker text color */
+  margin: 5px;
+  display: flex;
+  min-height: 50px; /* Minimum height to keep them consistent */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
   .match {
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 250px;
-    min-width: 216px;
+    max-width: 230px;
+    min-width: 219px;
     width: calc(25vw - 100px); /* Adds a base width (100px) that scales with vw */
     height: auto;
     margin: 12px 48px 12px 0;
