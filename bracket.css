@@ -67,7 +67,7 @@
 
   }
   /* Styling for the larger empty match card in the third column */
-.three #bracket-container-3 .empty-match {
+.three #bracket-container-3 .empty-match, .three #bracket-container-3 .match {
   background-color: #6b6b6b; /* Light gray background */
   color: #1f1f1f; /* Dark gray text */
   border: 3px solid #3b3b3b; /* Darker border to contrast */
@@ -81,7 +81,15 @@
   flex-direction: column;
   transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
-
+.three #bracket-container-3 .match .team-div  {
+  background-color: #2f2f2f; /* Light gray background */
+  border-color: #eee; /* Light gray background */
+  color: #1f1f1f; /* Darker text color */
+  margin: 5px;
+  display: flex;
+  min-height: 50px; /* Minimum height to keep them consistent */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
 /* Styling for the empty team boxes inside the empty match */
 .three #bracket-container-3 .empty-match .empty-team {
   background-color: #2f2f2f; /* Light gray background */

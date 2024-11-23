@@ -337,17 +337,17 @@ const addNewEventDelegation = () => {
 
             // Get all team-div elements within the match
             const matchTeamDivs = match.querySelectorAll('.team-div');
-            let seedText = teamDiv.closest('.seed')
-            
+            let teamSeed = teamDiv.closest('.team-and-seed')
+            let seed = teamSeed.querySelector('.seed')
             // Toggle the data-result for the clicked team-div
             if (teamDiv.getAttribute('data-result') === 'win') {
                 teamDiv.setAttribute('data-result', 'lose');
-                seedText.style.color = 'gray-500'; // Set the desired color, e.g., 'red'
-                seedText.style.fontWeight = 'regular'; // Set the desired font weight, e.g., 'bold'
+                seed.style.color = 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
+                seed.style.fontWeight = ''; // Set the desired font weight, e.g., 'bold'
             } else {
                 teamDiv.setAttribute('data-result', 'win');
-                seedText.style.color = 'black'; // Set the desired color, e.g., 'red'
-                seedText.style.fontWeight = 'bold'; // Set the desired font weight, e.g., 'bold'
+                seed.style.color = '#0e0e0e'; // Set the desired color, e.g., 'red'
+                seed.style.fontWeight = 'bold'; // Set the desired font weight, e.g., 'bold'
             }
 
             // Set the other team-div's data-result to the opposite
@@ -357,7 +357,12 @@ const addNewEventDelegation = () => {
                         'data-result',
                         teamDiv.getAttribute('data-result') === 'win' ? 'lose' : 'win'
                     );
+                    let teamSeed = otherDiv.closest('.team-and-seed')
+                    let seed = teamSeed.querySelector('.seed')
+                    seed.style.color = otherDiv.getAttribute('data-result') === 'win' ? '0e0e0e' : 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
+                    seed.style.fontWeight = otherDiv.getAttribute('data-result') === 'win' ? 'bold' : ''; // Set the desired font weight, e.g., 'bold'
                 }
+                
             });
 
             // Get the bracket container that the match is in
@@ -382,12 +387,17 @@ const addNewEventDelegation = () => {
 
             // Get all team-div elements within the match
             const matchTeamDivs = match.querySelectorAll('.team-div');
-
+            let teamSeed = teamDiv.closest('.team-and-seed')
+            let seed = teamSeed.querySelector('.seed')
             // Toggle the data-result for the clicked team-div
             if (teamDiv.getAttribute('data-result') === 'win') {
                 teamDiv.setAttribute('data-result', 'lose');
+                seed.style.color = 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
+                seed.style.fontWeight = ''; // Set the desired font weight, e.g., 'bold'
             } else {
                 teamDiv.setAttribute('data-result', 'win');
+                seed.style.color = '#0e0e0e'; // Set the desired color, e.g., 'red'
+                seed.style.fontWeight = 'bold'; // Set the desired font weight, e.g., 'bold'
             }
 
             // Set the other team-div's data-result to the opposite
@@ -397,7 +407,12 @@ const addNewEventDelegation = () => {
                         'data-result',
                         teamDiv.getAttribute('data-result') === 'win' ? 'lose' : 'win'
                     );
+                    let teamSeed = otherDiv.closest('.team-and-seed')
+                    let seed = teamSeed.querySelector('.seed')
+                    seed.style.color = otherDiv.getAttribute('data-result') === 'win' ? '0e0e0e' : 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
+                    seed.style.fontWeight = otherDiv.getAttribute('data-result') === 'win' ? 'bold' : ''; // Set the desired font weight, e.g., 'bold'
                 }
+                
             });
             // Get the bracket container that the match is in
             const bracket = e.target.closest('.p-4');
@@ -413,81 +428,111 @@ const addNewEventDelegation = () => {
 };
 const updateLateRounds = () => {
     const brackets = [
-        { container: "bracket-container-2", winners: [], thirdMatch: null },
-        { container: "bracket-container-4", winners: [], thirdMatch: null }
-    ];
+    { container: "bracket-container-2", winners: [], thirdMatch: null },
+    { container: "bracket-container-4", winners: [], thirdMatch: null }
+];
+let superbowl_match = null;
+// Gather winners and update third match in each bracket
+brackets.forEach((bracket) => {
+    const bracketElement = document.getElementById(bracket.container);
+    const matches = Array.from(bracketElement.querySelectorAll(".match"));
 
-    // Gather winners and update third match in each bracket
-    brackets.forEach(bracket => {
-        const bracketElement = document.getElementById(bracket.container);
-        const matches = Array.from(bracketElement.querySelectorAll(".match"));
+    // Store the third match reference for later
+    bracket.thirdMatch = matches[5];
 
-        // Store the third match reference for later
-        bracket.thirdMatch = matches[5];
-
-        // Gather winners from the first two matches
-        matches.slice(0,4).forEach(match => {
-            if (match.children.length < 2) {
-                return;
-            }
-            const winningTeam = match.querySelector('.team-div[data-result="win"]');
-            if (winningTeam) {
-                bracket.winners.push({
-                    teamDiv: winningTeam.cloneNode(true), // Clone for reuse
-                    seed: parseInt(winningTeam.getAttribute('data-seed'), 10),
-                });
-            }
-        });
-
-        // Sort winners by seed (ascending)
-        bracket.winners.sort((a, b) => a.seed - b.seed);
-        let homeTeam;
-        let awayTeam;
-        // Update the third match
-        if (bracket.thirdMatch) {
-            if (bracket.winners.length == 0) {
-                return;
-            } else if (bracket.winners.length >= 2) {
-                [homeTeam, awayTeam] = bracket.winners;
-            } else {
-                homeTeam = bracket.winners[0]
-            }
-
-            // Update team divs and seeds
-            ["home", "away"].forEach((role, i) => {
-                const teamSlot = bracket.thirdMatch.children[i];
-                if (i == 1 && awayTeam == undefined) {
-                    return;
-                }
-                const newTeamDiv = i === 0 ? homeTeam.teamDiv : awayTeam.teamDiv;
-                const newSeed = newTeamDiv.getAttribute("data-seed");
-
-                teamSlot.querySelector('.team-div').replaceWith(newTeamDiv);
-                const seedDiv = teamSlot.querySelector('.seed');
-                if (seedDiv) seedDiv.textContent = `#${newSeed}`;
+    // Gather winners from the first four matches
+    matches.slice(0, 4).forEach((match) => {
+        if (match.children.length < 2) return;
+        
+        const winningTeam = match.querySelector('.team-div[data-result="win"]');
+        if (winningTeam) {
+            const td = winningTeam.cloneNode(true);
+            td.setAttribute("data-result", "lose");
+            bracket.winners.push({
+                teamDiv: td, // Clone for reuse
+                seed: parseInt(winningTeam.getAttribute("data-seed"), 10),
             });
         }
     });
 
-    // Update the single match in bracket 3
-    const bracket3 = document.getElementById("bracket-container-3");
-    const singleMatch = bracket3.querySelector(".match");
+    // Sort winners by seed (ascending)
+    bracket.winners.sort((a, b) => a.seed - b.seed);
 
-    if (singleMatch && brackets[0].winners.length && brackets[1].winners.length) {
-        const bracket2Winner = brackets[0].winners[0]; // Bracket 2 home team
-        const bracket4Winner = brackets[1].winners[0]; // Bracket 4 away team
+    // Prepare home and away teams
+    let homeTeam = null;
+    let awayTeam = null;
 
-        // Update team divs and seeds
+    if (bracket.winners.length >= 2) {
+        [homeTeam, awayTeam] = bracket.winners;
+    } else if (bracket.winners.length === 1) {
+        homeTeam = bracket.winners[0];
+    }
+
+    // Update the third match
+    if (bracket.thirdMatch) {
         ["home", "away"].forEach((role, i) => {
-            const teamSlot = singleMatch.children[i];
-            const newTeamDiv = i === 0 ? bracket2Winner.teamDiv : bracket4Winner.teamDiv;
-            const newSeed = i === 0 ? bracket2Winner.seed : bracket4Winner.seed;
+            const teamSlot = bracket.thirdMatch.children[i];
+            const currentTeam = i === 0 ? homeTeam : awayTeam;
 
-            teamSlot.querySelector('.team-div').replaceWith(newTeamDiv);
-            const seedDiv = teamSlot.querySelector('.seed');
+            if (!currentTeam) return;
+
+            const newTeamDiv = currentTeam.teamDiv.cloneNode(true);
+            const newSeed = newTeamDiv.getAttribute("data-seed");
+
+            teamSlot.querySelector(".team-div").replaceWith(newTeamDiv);
+
+            const seedDiv = teamSlot.querySelector(".seed");
             if (seedDiv) seedDiv.textContent = `#${newSeed}`;
         });
     }
+
+    // Add click event to teamDivs in the third match
+    const teamDivs = Array.from(bracket.thirdMatch?.children ?? []).map((slot) =>
+        slot.querySelector(".team-div")
+    );
+    const bracket3 = document.getElementById("bracket-container-3");
+    let i = bracket.container == "bracket-container-2" ? 0 : 1;
+    teamDivs.forEach((teamDiv) => {
+        teamDiv?.addEventListener("click", (e) => {
+            // Find the parent match container
+            const match = teamDiv.closest(".match");
+            if (!match) return;
+
+            // Toggle the data-result for the clicked team-div
+            const isWinner = teamDiv.getAttribute("data-result") === "win";
+            teamDiv.setAttribute("data-result", isWinner ? "lose" : "win");
+            if (!isWinner) {
+                let clone = teamDiv.cloneNode(true)
+                clone.setAttribute("data-result", "lose");
+                const superbowl = bracket3.querySelectorAll('.match')[0];
+                superbowl.children[i].querySelector(".team-div").replaceWith(clone);
+                const seedDiv = superbowl.children[i].querySelector(".seed");
+                if (seedDiv) {
+                    seedDiv.textContent = `#${teamDiv.getAttribute('data-seed')}`;
+                    seedDiv.style.color = '#eee'; // Set the desired color, e.g., 'red'
+                    seedDiv.style.fontWeight = ""; // Set the desired font weight, e.g., 'bold'
+                }
+            }
+            const teamSeed = teamDiv.closest(".team-and-seed");
+            const seed = teamSeed.querySelector(".seed");
+            seed.style.color = isWinner ? "rgb(107 114 128)" : "#0e0e0e";
+            seed.style.fontWeight = isWinner ? "" : "bold";
+
+            // Set the other team-div's data-result to the opposite
+            teamDivs.forEach((otherDiv) => {
+                if (otherDiv !== teamDiv) {
+                    const otherIsWinner = teamDiv.getAttribute("data-result") === "win";
+                    otherDiv.setAttribute("data-result", otherIsWinner ? "lose" : "win");
+
+                    const otherSeed = otherDiv.closest(".team-and-seed").querySelector(".seed");
+                    otherSeed.style.color = otherIsWinner ? "rgb(107 114 128)" : "#0e0e0e";
+                    otherSeed.style.fontWeight = otherIsWinner ? "" : "bold";
+                }
+            });
+        });
+    });
+});
+
 };
 
 
