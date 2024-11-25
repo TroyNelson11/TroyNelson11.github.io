@@ -376,6 +376,22 @@ margin-right: 5px; /* Remove right margin */
 }
 
 @media (max-width: 480px) {
+    /* Prevent horizontal scrolling */
+    body {
+        overflow-x: hidden; /* Disable horizontal scrolling */
+        max-width: 100vw;   /* Restrict the width to the viewport width */
+    }
+
+    /* Ensure no child element exceeds the viewport width */
+    * {
+        box-sizing: border-box; /* Include padding and border in width calculation */
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;         /* Ensure the body and HTML fill the viewport width */
+    }
     .container {
         width: 107%;
         margin: 0px;

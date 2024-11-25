@@ -865,6 +865,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
     addEventDelegation();
+    rearrangeBracketContainers()
+
 });
 
 // Function to create an empty team div for "BYE" teams
@@ -913,10 +915,11 @@ function rearrangeBracketContainers() {
   const columnThree = document.querySelector('.column.three');
   const columnFour = document.querySelector('.column.four');
   const columnFive = document.querySelector('.column.five');
-  const bracketContainerThree = document.querySelector('#bracket-container-3');
 
   // Get bracket containers from columns
+  const bracketContainerOne = document.querySelector('#bracket-container');
   const bracketContainerTwo = document.querySelector('#bracket-container-2');
+  const bracketContainerThree = document.querySelector('#bracket-container-3');
   const bracketContainerFour = document.querySelector('#bracket-container-4');
   const bracketContainerFive = document.querySelector('#bracket-container-5');
 
@@ -949,22 +952,22 @@ function rearrangeBracketContainers() {
       }
     }
     // Remove "invisible" divs from #bracket-container-2 and #bracket-container-4
-    removeElementsByClass('#bracket-container-2', 'invisible');
-    removeElementsByClass('#bracket-container-4', 'invisible');
+    removeElementsByClass('#bracket-container-2', 'spacer');
+    removeElementsByClass('#bracket-container-4', 'spacer');
 
     // Replace the last game title in bracket-container-2 and bracket-container-4 with "Conference"
     replaceLastGameTitleWithConference(bracketContainerTwo);
     replaceLastGameTitleWithConference(bracketContainerFour);
 
         // Check if the "AFC" title is already in columnOne
-    if (!columnOne.querySelector('[data-title="AFC"]')) {
-        columnOne.prepend(createGameTitle("AFC", "#D50A0A")); // Prepend "AFC" title to column one
+    if (bracketContainerOne.children[0].children[0].textContent != "AFC") {
+        bracketContainerOne.prepend(createGameTitle("AFC", "#D50A0A")); // Prepend "AFC" title to column one
     } else {
-        console.warn("AFC title already exists in columnOne.");
+        console.warn(bracketContainerOne.children[0].children[0].textContent);
     }
 
     // Check if the "NFC" title is already in bracketContainerFive
-    if (!bracketContainerFive.querySelector('[data-title="NFC"]')) {
+    if (bracketContainerFive.children[0].children[0].textContent != "NFC") {
         bracketContainerFive.prepend(createGameTitle("NFC", "#013369")); // Prepend "NFC" title to column two
     } else {
         console.warn("NFC title already exists in bracketContainerFive.");
@@ -995,10 +998,6 @@ function rearrangeBracketContainers() {
   } 
 }
 
-
-// Attach the event listener
-window.addEventListener('resize', rearrangeBracketContainers);
-window.addEventListener('DOMContentLoaded', rearrangeBracketContainers);
 
 
         </script>
