@@ -55,17 +55,21 @@
                                     <div id="bracket-container-2" class="p-4 flex flex-col justify-start items-center"></div>
                             
                                 </div>
-                                <div class="column three">
+                                <div id = "c3" class="column three">
                                     <div id="bracket-container-3" class="flex flex-col items-center justify-start">
                                         <img 
                                             src="https://static.tvtropes.org/pmwiki/pub/images/super_bowl_lix_logosvg.png" 
                                             alt="Super Bowl LIX Logo" 
-                                            class="w-40 max-w-xs h-auto mb-4 mt-40">
+                                            class="w-40 max-w-xs h-auto mb-4">
                                     </div>
                                 </div>       
-                                
+                                <div class="column four">
                                     <div id="bracket-container-4" class="p-4 flex flex-col justify-center items-center"></div>
+                                </div>
+                                <div class="column five">
                                     <div id="bracket-container-5" class="p-4 flex flex-col justify-start items-center"></div>
+                                </div>
+                                    
 
                             </div>
                             <div id="teams-container" class="grid grid-cols-2 gap-4 p-4 hidden"></div>
@@ -438,11 +442,10 @@ brackets.forEach((bracket) => {
     const matches = Array.from(bracketElement.querySelectorAll(".match"));
 
     // Store the third match reference for later
-    bracket.thirdMatch = matches[5];
+    bracket.thirdMatch = matches[2];
 
     // Gather winners from the first four matches
-    matches.slice(0, 4).forEach((match) => {
-        if (match.children.length < 2) return;
+    matches.slice(0,2).forEach((match) => {
         
         const winningTeam = match.querySelector('.team-div[data-result="win"]');
         if (winningTeam) {
@@ -539,7 +542,7 @@ brackets.forEach((bracket) => {
 const addMatchDetails = (teamDiv, seed, spread, overUnder, isTopTeam) => {
     // Wrapper for team and details
     const matchRow = document.createElement('div');
-    matchRow.className = 'match-row flex items-center justify-between';
+    matchRow.className = 'match-row flex items-left justify-between';
     // Wrapper for team and seed
     const teamAndSeed = document.createElement('div');
     teamAndSeed.className = 'team-and-seed flex items-center';
@@ -562,7 +565,7 @@ const addMatchDetails = (teamDiv, seed, spread, overUnder, isTopTeam) => {
     let matchDetails = null;
     if (isTopTeam) {
         if (spread) {
-            matchRow.className = 'match-row flex items-center justify-between mb-2';
+            matchRow.className = 'match-row flex items-left justify-between mb-2';
             matchDetails = document.createElement('div');
             matchDetails.className = 'match-details text-s text-gray-700 flex flex-col items-end';
 
@@ -608,7 +611,6 @@ const updateSecondRoundMatchDetails = () => {
     secondRoundMatchDetails[1].awayseed = parseInt(teamDivs[1].getAttribute('data-seed'), 10);
     secondRoundMatchDetails[1].home = teamDivs[2].getAttribute('data-team');
     secondRoundMatchDetails[1].homeseed = parseInt(teamDivs[2].getAttribute('data-seed'), 10);
-    updateMatches();
     }
     
 
@@ -617,6 +619,7 @@ const updateSecondRoundMatchDetails = () => {
 
     if (teamDivs2.length < 3) {
         console.warn('Not enough winning teams to update the nfc second round matches.');
+        updateMatches();
     } else {
 // Sort by `data-seed` in descending order
         teamDivs2.sort((a, b) => {
@@ -739,24 +742,19 @@ const updateMatches = () => {
             return;
         }
 
-
-
         // Find the matches inside the container
-        const matches = Array.from(container.querySelectorAll('.match')).slice(0,4);
+        const matches = Array.from(container.querySelectorAll('.match'));
         let i = 0;
 
-        matches.forEach((match, matchIndex) => {
+        matches.slice(0,2).forEach((match, matchIndex) => {
             // Update home team
 
-            if (match.children.length < 2) {
-                return;
-            }
-            const m = secondRoundMatchDetails[(index*2) + i];
+            const m = secondRoundMatchDetails[matchIndex + (2*index)];
             if (!m) {
             console.warn(`No match details for container ${index + 2}.`);
             return;
             }
-            console.log((index*2) + i)
+            console.log((index*2) + matchIndex)
             const homeDiv = match.children[0].querySelector('.team-div'); // First child's team-div
             if (homeDiv &&  m.home) {
                 const teams = generateTeamDivs(detailedPlayoffTeams)
@@ -807,7 +805,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bracketContainer2.appendChild(createGameTitle("Divisional"))
 
     const spacer = document.createElement('div');
-    spacer.className = 'match flex flex-col items-left rounded-md p-5 m-2 shadow-md invisible'; 
+    spacer.className = 'spacer flex flex-col items-left rounded-md p-5 m-2 shadow-md invisible'; 
     for (const m of secondRoundMatchDetails.slice(0,2)) {
         const match = document.createElement('div');
         match.className = 'match flex flex-col items-left rounded-md p-2 m-2 shadow-md';
@@ -872,7 +870,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to create an empty team div for "BYE" teams
 function createEmptyTeamDiv() {
     const emptyDiv = document.createElement('div');
-    emptyDiv.className = 'team-div empty-team relative flex items-center justify-center w-24 h-12 border rounded shadow-md bg-gray-300';
+    emptyDiv.className = 'team-div empty-team relative flex items-left w-24 h-12 border rounded shadow-md bg-gray-300';
     const placeholder = document.createElement('div');
     placeholder.className = 'text-center text-gray-600';
     placeholder.textContent = '';
@@ -909,6 +907,98 @@ function createGameTitle(title, backgroundColor = null) {
     return titleDiv;
 }
 
+function rearrangeBracketContainers() {
+  const columnOne = document.querySelector('.column.one');
+  const columnTwo = document.querySelector('.column.two');
+  const columnThree = document.querySelector('.column.three');
+  const columnFour = document.querySelector('.column.four');
+  const columnFive = document.querySelector('.column.five');
+  const bracketContainerThree = document.querySelector('#bracket-container-3');
+
+  // Get bracket containers from columns
+  const bracketContainerTwo = document.querySelector('#bracket-container-2');
+  const bracketContainerFour = document.querySelector('#bracket-container-4');
+  const bracketContainerFive = document.querySelector('#bracket-container-5');
+
+  // Helper function to replace the last game title with "Conference"
+  function replaceLastGameTitleWithConference(container) {
+    const gameTitles = container.querySelectorAll('.game-title');
+
+    if (gameTitles.length > 0) {
+      const lastGameTitle = gameTitles[gameTitles.length - 1];
+      const titleText = lastGameTitle.querySelector('h2');
+      titleText.className = 'text-2xl font-bold text-center uppercase';
+      titleText.textContent = 'Conference'; // Replace with "Conference"
+      titleText.style.color = '#1f2937'
+      lastGameTitle.appendChild(titleText);
+
+      lastGameTitle.style.backgroundColor = '#f3f4f6'; // Default to gray-100
+
+    }
+  }
+
+  if (window.innerWidth <= 768 || true) {
+    // Remove any divs with the class "game-title" from column five and column four
+    console.log('test');
+    function removeElementsByClass(containerId, className) {
+      const container = document.querySelector(containerId);
+      if (container) {
+        const elementsToRemove = container.querySelectorAll(`.${className}`);
+        elementsToRemove.forEach(element => element.remove());
+        console.log(`Removed ${className} divs from ${containerId}`);
+      }
+    }
+    // Remove "invisible" divs from #bracket-container-2 and #bracket-container-4
+    removeElementsByClass('#bracket-container-2', 'invisible');
+    removeElementsByClass('#bracket-container-4', 'invisible');
+
+    // Replace the last game title in bracket-container-2 and bracket-container-4 with "Conference"
+    replaceLastGameTitleWithConference(bracketContainerTwo);
+    replaceLastGameTitleWithConference(bracketContainerFour);
+
+        // Check if the "AFC" title is already in columnOne
+    if (!columnOne.querySelector('[data-title="AFC"]')) {
+        columnOne.prepend(createGameTitle("AFC", "#D50A0A")); // Prepend "AFC" title to column one
+    } else {
+        console.warn("AFC title already exists in columnOne.");
+    }
+
+    // Check if the "NFC" title is already in bracketContainerFive
+    if (!bracketContainerFive.querySelector('[data-title="NFC"]')) {
+        bracketContainerFive.prepend(createGameTitle("NFC", "#013369")); // Prepend "NFC" title to column two
+    } else {
+        console.warn("NFC title already exists in bracketContainerFive.");
+    }
+
+
+    // Move bracket-container-5 to be the first child of column two
+    columnTwo.prepend(bracketContainerFive);
+
+    // Move bracket-container-2 to column one
+    columnOne.appendChild(bracketContainerTwo);
+
+    // Move bracket-container-4 into column two (this remains as is)
+    columnTwo.appendChild(bracketContainerFour);
+
+    // Move bracket-container-3 underneath both columns and center it
+    if (bracketContainerThree) {
+      const parentContainer = document.querySelector('.bracketcard'); // The parent container (or adjust to your needs)
+      
+      // Ensure bracket-container-3 is the last child of the parent container
+      parentContainer.appendChild(bracketContainerThree);
+
+      // Apply centering styles directly to bracket-container-3
+      bracketContainerThree.style.display = 'flex';
+      bracketContainerThree.style.justifyContent = 'center';
+      bracketContainerThree.style.width = '100%';
+    }
+  } 
+}
+
+
+// Attach the event listener
+window.addEventListener('resize', rearrangeBracketContainers);
+window.addEventListener('DOMContentLoaded', rearrangeBracketContainers);
 
 
         </script>

@@ -67,7 +67,7 @@
 
   }
   /* Styling for the larger empty match card in the third column */
-.three #bracket-container-3 .empty-match, .three #bracket-container-3 .match {
+#bracket-container-3 .empty-match, .three #bracket-container-3 .match {
   background-color: #6b6b6b; /* Light gray background */
   color: #1f1f1f; /* Dark gray text */
   border: 3px solid #3b3b3b; /* Darker border to contrast */
@@ -81,7 +81,7 @@
   flex-direction: column;
   transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
-.three #bracket-container-3 .match .team-div  {
+#bracket-container-3 .match .team-div  {
   background-color: #2f2f2f; /* Light gray background */
   border-color: #eee; /* Light gray background */
   color: #1f1f1f; /* Darker text color */
@@ -91,7 +91,7 @@
   transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
 /* Styling for the empty team boxes inside the empty match */
-.three #bracket-container-3 .empty-match .empty-team {
+#bracket-container-3 .empty-match .empty-team {
   background-color: #2f2f2f; /* Light gray background */
   border-color: #1f1f1f; /* Light gray background */
   color: #1f1f1f; /* Darker text color */
@@ -248,3 +248,148 @@
   .theme-dark .match .score {
     font-size: 14px;
   }
+ 
+/* Mobile-specific styles for .team-div */
+@media only screen and (max-width: 768px) {
+  .one , .two {
+    width:50%;
+    max-width:50%;
+    min-width: 10px;
+  }
+  #bracket-container, #bracket-container-2, #bracket-container-3, #bracket-container-4, #bracket-container-5 {
+    padding: 0px;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .game-title {
+    width: 20%;
+    max-width: 100%;
+    min-width: 10px;
+
+  }
+  .game-title .text-2xl {
+    font-size: 1rem;
+  }
+  .match-row {
+    align-items: flex-start;
+    }
+    img {
+      display: block;         /* Make img behave as a block element */
+      margin-left: auto;      /* Auto margin on left */
+      margin-right: auto; 
+      margin-top: 0px;    /* Auto margin on right */
+      padding: 10px;          /* Add padding around images */
+      max-width: 100%;        /* Ensure the image doesn't overflow its container */
+      height: auto;           /* Maintain aspect ratio */
+    }
+  .bracket .team-div {
+    width: 4rem; /* Much smaller width */
+    height: 2.5rem; /* Much smaller height */
+    font-size: 0.5rem; /* Reduce font size further */
+    border-width: 0.5px; /* Slim border */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Lighter, smaller shadow */
+  }
+
+  /* Adjust padding and margins for smaller size */
+  .bracket {
+    padding: 2px;
+    max-width: 100%;
+    min-width: 100%;
+
+  }
+
+  .bracketcard {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    min-width: 10px;
+  }
+
+  .match {
+    max-width: 100%; /* Smaller match cards */
+    min-width: 100%;
+    width: 100%; /* Adjust to smaller scaling */
+    margin: 4px 8px;
+  }
+  .match-row {
+    flex-direction: column;
+  }
+
+  .match .team {
+    height: 1.5rem; /* Reduce team height */
+    font-size: 0.5rem; /* Smaller font size */
+    padding: 2px; /* Minimal padding */
+  }
+
+  .match-lines .line.one {
+    width: 10px; /* Shorter horizontal line */
+  }
+
+  .match-lines .line.two {
+    height: 15px; /* Shorter vertical line */
+  }
+
+  .match-lines .line.three {
+    height: 30px;
+  }
+
+  .three #bracket-container-3 .match .team-div {
+    min-height: 1rem;
+    font-size: 0.4rem; /* Smaller font for inner items */
+  }
+
+  .three #bracket-container-3 .empty-match {
+    max-width: 20px;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 4px; /* Smaller rounding */
+  }
+}
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+  body {
+    background: linear-gradient(to top, #006400 0%, white 50%, #eeeeee 100%);
+    padding: 10px; /* Add some inner padding for smaller screens */
+  }
+
+  .container {
+    max-width: 100%; /* Full width for mobile */
+    padding: 0 10px; /* Reduce side padding */
+  }
+  #container {
+    max-width: 100%; /* Full width for mobile */
+    padding: 0 10px; /* Reduce side padding */
+  }
+
+  .card {
+    margin: 10px; /* Reduce outer margins */
+    padding: 15px; /* Reduce padding inside the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    border-radius: 6px; /* Slightly less rounded corners */
+    max-width: 100%; /* Ensure card fits within the viewport */
+    margin-bottom: 50px; /* Reduce bottom spacing */
+  }
+
+  .card-header {
+    font-size: 18px; /* Smaller font size for headers */
+    margin-bottom: 8px; /* Slightly tighter spacing */
+  }
+  #bracket-container-3 .empty-match, .three #bracket-container-3 .match {
+    background-color: #6b6b6b; /* Light gray background */
+    color: #1f1f1f; /* Dark gray text */
+    border: 3px solid #3b3b3b; /* Darker border to contrast */
+    font-weight: bold; /* Bold font for emphasis */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for a floating effect */
+    padding: 10px;
+    margin: 20px;
+    max-width: 60%;
+    width: 60%;
+    min-width: 60%;
+    border-radius: 12px; /* Rounded corners for a modern look */
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    display: flex;
+    justify-content: flex-start; /* Use Flexbox to align */
+  }
+}
