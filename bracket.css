@@ -255,6 +255,13 @@
     width:50%;
     max-width:50%;
     min-width: 10px;
+    padding: 5px;
+  }
+  .one {
+    padding-right: 10px;
+  }
+  .two {
+    padding-left: 10px;
   }
   #bracket-container, #bracket-container-2, #bracket-container-3, #bracket-container-4, #bracket-container-5 {
     padding: 0px;
@@ -265,7 +272,7 @@
     width: 20%;
     max-width: 100%;
     min-width: 10px;
-
+    margin-top: 10px;
   }
   .game-title .text-2xl {
     font-size: 1rem;
