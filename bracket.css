@@ -380,11 +380,11 @@ html, body {
     color: black;                 /* Slightly darker gray color */
   }
   /* Tightened win/lose states */
-#bracket-container-3 .match .team-div[data-result="win"] {
+.team-div[data-result="win"] {
   border: 0.2vw solid black !important;
   outline: 0.4vw solid black !important;
 }
-#bracket-container-3 .match .team-div[data-result="lose"] {
+.team-div[data-result="lose"] {
   border: 0.1vw solid transparent !important;
 }
   }
