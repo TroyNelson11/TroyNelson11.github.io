@@ -191,7 +191,7 @@ html, body {
     font-size: 14px;
   }
  
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .one, .two {
       width: 50%;
       max-width: 50%;
