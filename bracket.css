@@ -6,7 +6,7 @@ html, body {
   font-size: 1vw; /* Responsive font size */
 }
 .card-header {
-  font-size: 3rem;                /* Small font size */
+  font-size: 1.5vw;                /* Small font size */
   font-weight: normal;            /* Lighter font weight */
   color: #555555;                 /* Slightly darker gray color */
   text-align: center;             /* Center text */              /* Add some padding for spacing */ 
@@ -269,7 +269,7 @@ html, body {
       display: flex;
       flex-direction: column; /* Ensure teams stack properly */
       gap: 1vw; /* Add space between teams */
-      font-size: 3.2rem;
+      font-size: 3.2em;
     }
   
     .match-row {
@@ -366,10 +366,17 @@ html, body {
   .subtitle {
     font-size: 5.0em;
     color: white;
+    padding-left: 3vw;
   }
   .navbar-brand {
-    flex-direction: row;
-    text-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-header {
+    font-size: 3.5vw;                /* Small font size */
+    font-weight: bold;            /* Lighter font weight */
+    color: black;                 /* Slightly darker gray color */
   }
   }
   
