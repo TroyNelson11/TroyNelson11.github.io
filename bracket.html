@@ -81,7 +81,7 @@
         </div>
     
         <script>
-             const playoffTeams = [ "BUF","KC",  "PIT", "HOU", "LAC", "BAL", "DEN", "DET", "PHI", "ARI", "ATL", "MIN",  "WAS", "GB"];
+             const playoffTeams = [ "KC", "BUF", "PIT", "HOU", "LAC", "BAL", "DEN", "DET", "PHI", "ARI", "ATL", "MIN",  "GB", "WAS"];
                 const detailedPlayoffTeams = [
                     {
                         "abbreviation": "KC",
@@ -89,7 +89,7 @@
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/kansas-city-chiefs-logo-emblem-png.png",
                         "primary_color": "#C8102E", 
                         "secondary_color": "#FFB612",
-                        "seed" : 2
+                        "seed" : 1
                     },
                     {
                         "abbreviation": "BUF",
@@ -97,7 +97,7 @@
                         "logo": "https://content.sportslogos.net/logos/7/149/full/buffalo_bills_logo_primary_19747050.png",
                         "primary_color": "#003DA5", 
                         "secondary_color": "#C8102E",
-                        "seed" : 1
+                        "seed" : 2
 
                     },
                     {
@@ -151,7 +151,7 @@
                         "logo": "https://content.sportslogos.net/logos/7/167/full/philadelphia_eagles_logo_primary_19964867.png",
                         "primary_color": "#004C54", 
                         "secondary_color": "#A5ACAF",
-                        "seed" : 1
+                        "seed" : 2
 
                     },
                     {
@@ -169,7 +169,7 @@
                         "logo": "https://content.sportslogos.net/logos/7/170/full/detroit_lions_logo_primary_20172565.png",
                         "primary_color": "#0076B6", 
                         "secondary_color": "#A5ACAF",
-                        "seed" : 2
+                        "seed" : 1
 
                     },
                     {
@@ -196,7 +196,7 @@
                         "logo": "https://content.sportslogos.net/logos/7/6832/full/washington_commanders_logo_primary_20228587.png",
                         "primary_color": "#5A1414", 
                         "secondary_color": "#FFC20E",
-                        "seed" : 6
+                        "seed" : 7
 
                     },
                     {
@@ -205,7 +205,7 @@
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/green-bay-packers-symbol-logo-png.png",
                         "primary_color": "#203731", 
                         "secondary_color": "#FFB612",
-                        "seed" : 7
+                        "seed" : 6
 
                     },
                     {
@@ -350,7 +350,7 @@ const addNewEventDelegation = () => {
                 seed.style.fontWeight = ''; // Set the desired font weight, e.g., 'bold'
             } else {
                 teamDiv.setAttribute('data-result', 'win');
-                seed.style.color = '#black'; // Set the desired color, e.g., 'red'
+                seed.style.color = 'black'; // Set the desired color, e.g., 'red'
                 seed.style.fontWeight = 'bold'; // Set the desired font weight, e.g., 'bold'
             }
 
