@@ -5,6 +5,16 @@ html, body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
   font-size: 1vw; /* Responsive font size */
 }
+.card-header {
+  font-size: 3rem;                /* Small font size */
+  font-weight: normal;            /* Lighter font weight */
+  color: #555555;                 /* Slightly darker gray color */
+  text-align: center;             /* Center text */              /* Add some padding for spacing */ 
+  max-width: 90%;                 /* Limit width to fit within the card */
+  margin-left: auto;              /* Center horizontally */
+  margin-right: auto;  
+  margin-bottom: 0px;           /* Center horizontally */
+}
 
 .theme {
   position: absolute;
@@ -259,7 +269,7 @@ html, body {
       display: flex;
       flex-direction: column; /* Ensure teams stack properly */
       gap: 1vw; /* Add space between teams */
-      font-size: 3rem;
+      font-size: 3.2rem;
     }
   
     .match-row {
@@ -340,7 +350,7 @@ html, body {
       font-weight: bold;
       text-decoration: underline;
       text-transform: uppercase;
-      font-size: 2.8em;
+      font-size: 3.8em;
       padding: 2px 2px;
       white-space: nowrap; /* Prevents wrapping for nav links */
       transition: color 0.3s;
@@ -350,12 +360,16 @@ html, body {
       gap: 4vw;
     }
   .title {
-    font-size: 3.6em;
+    font-size: 12.6em;
     color: white;
   }
   .subtitle {
-    font-size: 3.0em;
+    font-size: 5.0em;
     color: white;
+  }
+  .navbar-brand {
+    flex-direction: row;
+    text-wrap: wrap;
   }
   }
   
