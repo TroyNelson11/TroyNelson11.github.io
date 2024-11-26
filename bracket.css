@@ -64,7 +64,7 @@ html, body {
 /* Tightened win/lose states */
 .team-div[data-result="win"] {
   border: 0.1vw solid black !important;
-  outline: 0.1vw solid black !important;
+  outline: 0.2vw solid black !important;
 }
 .team-div[data-result="lose"] {
   border: 0.1vw solid transparent !important;
@@ -87,10 +87,11 @@ html, body {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-bottom: 8vw;
   max-width: 12vw;
   min-width: 10vw;
+  margin: 4vw 0; /* Space between matches */
   width: calc(20vw - 3vw); /* Dynamic width */
-  margin: 0; /* Remove extra spacing between matches */
   background-color: #fcfcfc;
   border-radius: 0.8vw !important;
 }
@@ -264,7 +265,7 @@ html, body {
       max-width: 100%;
       min-width: none;
       height: auto; /* Auto height */
-      margin: 1vw 0; /* Space between matches */
+      margin: 4vw 0; /* Space between matches */
       padding: 1vw;
       display: flex;
       flex-direction: column; /* Ensure teams stack properly */
@@ -378,5 +379,13 @@ html, body {
     font-weight: bold;            /* Lighter font weight */
     color: black;                 /* Slightly darker gray color */
   }
+  /* Tightened win/lose states */
+#bracket-container-3 .match .team-div[data-result="win"] {
+  border: 0.1vw solid black !important;
+  outline: 0.2vw solid black !important;
+}
+#bracket-container-3 .match .team-div[data-result="lose"] {
+  border: 0.1vw solid transparent !important;
+}
   }
   
