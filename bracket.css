@@ -272,7 +272,7 @@ html, body {
     }
   
     .match .team {
-      height: 9vw; /* Matches team-div height */
+      height: 8vw; /* Matches team-div height */
       font-size: 1.2vw; /* Scaled font size */
       padding: 0.5vw; /* Internal padding for teams */
     }
@@ -310,6 +310,12 @@ html, body {
       border-radius: 1vw;
       width: 50vw;
       min-width: none;
+    }
+    #bracket-container-3 .match img {
+      height: auto;
+      width: 20vw;
+      max-width: 20vw;
+      min-width: 20vw;
     }
     #superbowl-logo {
       width: 50vw;
