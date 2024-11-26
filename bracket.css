@@ -191,191 +191,165 @@ html, body {
     font-size: 14px;
   }
  
-/* Mobile-specific styles for .team-div */
-@media only screen and (max-width: 768px) {
-  .one , .two {
-    width:50%;
-    max-width:50%;
-    min-width: 10px;
-    padding: 5px;
-  }
-  .one {
-    padding-right: 10px;
-  }
-  .two {
-    padding-left: 10px;
-  }
-  #bracket-container, #bracket-container-2, #bracket-container-3, #bracket-container-4, #bracket-container-5 {
-    padding: 0px;
-    max-width: 100%;
-    min-width: 100%;
-  }
-  .game-title {
-    width: 20%;
-    max-width: 100%;
-    min-width: 10px;
-    margin-top: 10px;
-  }
-  .game-title .text-2xl {
-    font-size: 1rem;
-  }
-  .match-row {
-    align-items: flex-start;
+  @media only screen and (max-width: 768px) {
+    .one, .two {
+      width: 50%;
+      max-width: 50%;
+      min-width: 2vw;
+      padding: 1vw;
     }
+    .one {
+      padding-right: 1.5vw;
+    }
+    .two {
+      padding-left: 1.5vw;
+    }
+    #bracket-container, #bracket-container-2, #bracket-container-3, #bracket-container-4, #bracket-container-5 {
+      padding: 0vw;
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .bracket {
+      padding: 1vw;
+      max-width: 100%;
+      min-width: 100%;
+      gap: 2vw; /* Add space between items */
+    }
+  
+    .game-title {
+      width: 100%; /* Matches the width of the matches */
+      max-width: 100%;
+      min-width: 100%;
+      margin-top: 1vw;
+      font-size: 4vw; /* Maintain legibility */
+      text-align: center; /* Center-align game titles */
+      height: auto;
+      padding: 1.5vw;
+    }
+    .game-title .text-2xl {
+      font-size: 4vw;
+      height: auto;
+    }
+  
+    .bracket .team-div {
+      width: 16vw; /* Wider width for same aspect ratio */
+      height: 8vw; /* Adjusted height */
+      font-size: 1.2vw; /* Scaled font size */
+      border-width: 0.2vw; /* Consistent border thickness */
+      box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.1); /* Slight shadow */
+      margin-bottom: 1vw; /* Space between teams */
+      border-radius: 0.5rem;
 
-  .bracket .team-div {
-    width: 4rem; /* Much smaller width */
-    height: 2.5rem; /* Much smaller height */
-    font-size: 0.5rem; /* Reduce font size further */
-    border-width: 0.5px; /* Slim border */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Lighter, smaller shadow */
+    }
+  
+    .bracketcard {
+      margin: 1vw;
+      padding: 1vw;
+      width: 100%;
+      min-width: 10vw;
+    }
+  
+    .match {
+      width: 100%; /* Match fills the container */
+      max-width: 100%;
+      min-width: none;
+      height: auto; /* Auto height */
+      margin: 1vw 0; /* Space between matches */
+      padding: 1vw;
+      display: flex;
+      flex-direction: column; /* Ensure teams stack properly */
+      gap: 1vw; /* Add space between teams */
+      font-size: 3rem;
+    }
+  
+    .match-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 1vw; /* Add space between items */
+      width: 100%;
+      flex-wrap: wrap; /* Allow wrapping if the space is too tight */
+    }
+  
+    .match .team {
+      height: 9vw; /* Matches team-div height */
+      font-size: 1.2vw; /* Scaled font size */
+      padding: 0.5vw; /* Internal padding for teams */
+    }
+  
+    .team-and-seed {
+      display: flex;
+      flex: 1; /* Flex to fill space within row */
+      justify-content: flex-start; /* Align content to the start (left side) */
+      max-width: 47vw; /* Ensure it fits on the same row */
+      min-width: 15vw; /* Allow it to shrink as needed */
+      gap: 0; /* Remove space between items inside */
+    }
+    
+    .match-details {
+      display: flex;
+      flex: 0 1 auto; /* Allow it to shrink and grow based on content */
+      justify-content: flex-end; /* Align content to the right */
+      max-width: 35vw; /* Make it thinner than the team-and-seed */
+      min-width: 12vw; /* Allow it to shrink as needed */
+    }
+  
+    #bracket-container-3 .match .team-div, #bracket-container-3 .match .empty-team {
+      min-height: 3vw;
+      font-size: 1vw;
+      max-width: 20vw;
+      width: 20vw;
+      height: 10vw;
+      border-radius: 0.5rem;
+    }
+  
+    #bracket-container-3 .empty-match, #bracket-container-3 .match {
+      max-width: 50vw;
+      padding: 1vw;
+      margin: 1vw;
+      border-radius: 1vw;
+      width: 50vw;
+      min-width: none;
+    }
+    #bracket-container-3 img {
+      width: 50vw;
+      max-width: 50vw;
+      min-width: 50vw;
+    }
+    .nav-bar {
+      background-color: #006400;
+      padding: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: flex;
+      max-width: 100%;
+      min-width: 100%;
+      width: 100%;
+      overflow: hidden;
   }
-
-  /* Adjust padding and margins for smaller size */
-  .bracket {
-    padding: 2px;
-    max-width: 100%;
-    min-width: 100%;
-
-  }
-
-  .bracketcard {
-    margin: 5px;
-    padding: 5px;
-    width: 100%;
-    min-width: 10px;
-  }
-
-  .match {
-    max-width: 100%; /* Smaller match cards */
-    min-width: 100%;
-    width: 100%; /* Adjust to smaller scaling */
-    margin: 4px 8px;
-  }
-  .match-row {
-    flex-direction: column;
-  }
-
-  .match .team {
-    height: 1.5rem; /* Reduce team height */
-    font-size: 0.5rem; /* Smaller font size */
-    padding: 2px; /* Minimal padding */
-  }
-
-  .match-lines .line.one {
-    width: 10px; /* Shorter horizontal line */
-  }
-
-  .match-lines .line.two {
-    height: 15px; /* Shorter vertical line */
-  }
-
-  .match-lines .line.three {
-    height: 30px;
-  }
-
-  .three #bracket-container-3 .match .team-div {
-    min-height: 1rem;
-    font-size: 0.4rem; /* Smaller font for inner items */
-  }
-
-  .three #bracket-container-3 .empty-match {
-    max-width: 20px;
-    padding: 2px;
-    margin: 5px;
-    border-radius: 4px; /* Smaller rounding */
-  }
-}
-/* Mobile-specific styles */
-@media only screen and (max-width: 768px) {
-  body {
-    background: linear-gradient(to top, #006400 0%, white 50%, #eeeeee 100%);
-    padding: 10px; /* Add some inner padding for smaller screens */
-  }
-
-  .container {
-    max-width: 100%; /* Full width for mobile */
-    padding: 0 10px; /* Reduce side padding */
-  }
-  #container {
-    max-width: 100%; /* Full width for mobile */
-    padding: 0 0px; /* Reduce side padding */
-  }
-  /* Prevent horizontal scrolling */
-body {
-  overflow-x: hidden; /* Disable horizontal scrolling */
-  max-width: 100vw;   /* Restrict the width to the viewport width */
-}
-
-/* Ensure no child element exceeds the viewport width */
-* {
-  box-sizing: border-box; /* Include padding and border in width calculation */
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;         /* Ensure the body and HTML fill the viewport width */
-}
-
-  .card {
-    margin: 10px; /* Reduce outer margins */
-    padding: 15px; /* Reduce padding inside the card */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow */
-    border-radius: 6px; /* Slightly less rounded corners */
-    max-width: 100%; /* Ensure card fits within the viewport */
-    margin-bottom: 50px; /* Reduce bottom spacing */
-  }
-
-  .card-header {
-    font-size: 18px; /* Smaller font size for headers */
-    margin-bottom: 8px; /* Slightly tighter spacing */
-  }
-  #bracket-container-3 .empty-match, .three #bracket-container-3 .match {
-    background-color: #6b6b6b; /* Light gray background */
-    color: #1f1f1f; /* Dark gray text */
-    border: 3px solid #3b3b3b; /* Darker border to contrast */
-    font-weight: bold; /* Bold font for emphasis */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for a floating effect */
-    padding: 10px;
-    margin: 20px;
-    max-width: 60%;
-    width: 60%;
-    min-width: 60%;
-    border-radius: 12px; /* Rounded corners for a modern look */
-    display: flex;
-    flex-direction: column;
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
-    display: flex;
-    justify-content: flex-start; /* Use Flexbox to align */
-  }
-  .nav-bar {
-    background-color: #006400;
-    padding: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: flex;
-    max-width: 100%;
-    min-width: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-  /* Add hover effects to the empty matches */
-  .navbar-nav .nav-item .nav-link {
+  
+    /* Add hover effects to the empty matches */
+    .navbar-nav .nav-item .nav-link {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
+      text-transform: uppercase;
+      font-size: 2.8em;
+      padding: 2px 2px;
+      white-space: nowrap; /* Prevents wrapping for nav links */
+      transition: color 0.3s;
+      display: block; /* Ensure nav-link behaves like a block element */
+    }
+    .navbar-nav {
+      gap: 4vw;
+    }
+  .title {
+    font-size: 3.6em;
     color: white;
-    font-weight: bold;
-    text-decoration: underline;
-    text-transform: uppercase;
-    font-size: 0.88em;
-    padding: 2px 2px;
-    white-space: nowrap; /* Prevents wrapping for nav links */
-    transition: color 0.3s;
-    display: block; /* Ensure nav-link behaves like a block element */
-}
-
-.subtitle {
-  font-size: 1.6em;
-  color: white;
-}
-}
+  }
+  .subtitle {
+    font-size: 3.0em;
+    color: white;
+  }
+  }
+  

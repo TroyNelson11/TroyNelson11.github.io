@@ -995,6 +995,24 @@ function rearrangeBracketContainers() {
       bracketContainerThree.style.justifyContent = 'center';
       bracketContainerThree.style.width = '100%';
     }
+    const bracket = document.querySelector('.bracket');
+
+    // Helper function to remove specific columns
+    function removeColumns(bracket, columnClasses) {
+        columnClasses.forEach((columnClass) => {
+        const column = bracket.querySelector(`.${columnClass}`);
+        if (column) {
+            column.remove();
+            console.log(`Removed column: ${columnClass}`);
+        }
+        });
+    }
+
+    if (bracket) {
+        // Specify the columns to remove
+        const columnsToRemove = ['three', 'four', 'five'];
+        removeColumns(bracket, columnsToRemove);
+    }
   } 
 }
 
