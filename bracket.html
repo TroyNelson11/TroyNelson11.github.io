@@ -292,7 +292,7 @@ const addEventDelegation = () => {
                 seed.style.fontWeight = ''; // Set the desired font weight, e.g., 'bold'
             } else {
                 teamDiv.setAttribute('data-result', 'win');
-                seed.style.color = '#0e0e0e'; // Set the desired color, e.g., 'red'
+                seed.style.color = 'black'; // Set the desired color, e.g., 'red'
                 seed.style.fontWeight = 'bold'; // Set the desired font weight, e.g., 'bold'
             }
 
@@ -305,7 +305,7 @@ const addEventDelegation = () => {
                     );
                     let teamSeed = otherDiv.closest('.team-and-seed')
                     let seed = teamSeed.querySelector('.seed')
-                    seed.style.color = otherDiv.getAttribute('data-result') === 'win' ? '0e0e0e' : 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
+                    seed.style.color = otherDiv.getAttribute('data-result') === 'win' ? 'black' : 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
                     seed.style.fontWeight = otherDiv.getAttribute('data-result') === 'win' ? 'bold' : ''; // Set the desired font weight, e.g., 'bold'
                 }
                 
@@ -350,7 +350,7 @@ const addNewEventDelegation = () => {
                 seed.style.fontWeight = ''; // Set the desired font weight, e.g., 'bold'
             } else {
                 teamDiv.setAttribute('data-result', 'win');
-                seed.style.color = '#0e0e0e'; // Set the desired color, e.g., 'red'
+                seed.style.color = '#black'; // Set the desired color, e.g., 'red'
                 seed.style.fontWeight = 'bold'; // Set the desired font weight, e.g., 'bold'
             }
 
@@ -363,7 +363,7 @@ const addNewEventDelegation = () => {
                     );
                     let teamSeed = otherDiv.closest('.team-and-seed')
                     let seed = teamSeed.querySelector('.seed')
-                    seed.style.color = otherDiv.getAttribute('data-result') === 'win' ? '0e0e0e' : 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
+                    seed.style.color = otherDiv.getAttribute('data-result') === 'win' ? 'black' : 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
                     seed.style.fontWeight = otherDiv.getAttribute('data-result') === 'win' ? 'bold' : ''; // Set the desired font weight, e.g., 'bold'
                 }
                 
@@ -400,7 +400,7 @@ const addNewEventDelegation = () => {
                 seed.style.fontWeight = ''; // Set the desired font weight, e.g., 'bold'
             } else {
                 teamDiv.setAttribute('data-result', 'win');
-                seed.style.color = '#0e0e0e'; // Set the desired color, e.g., 'red'
+                seed.style.color = 'black'; // Set the desired color, e.g., 'red'
                 seed.style.fontWeight = 'bold'; // Set the desired font weight, e.g., 'bold'
             }
 
@@ -413,7 +413,7 @@ const addNewEventDelegation = () => {
                     );
                     let teamSeed = otherDiv.closest('.team-and-seed')
                     let seed = teamSeed.querySelector('.seed')
-                    seed.style.color = otherDiv.getAttribute('data-result') === 'win' ? '0e0e0e' : 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
+                    seed.style.color = otherDiv.getAttribute('data-result') === 'win' ? 'black' : 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
                     seed.style.fontWeight = otherDiv.getAttribute('data-result') === 'win' ? 'bold' : ''; // Set the desired font weight, e.g., 'bold'
                 }
                 
@@ -518,7 +518,7 @@ brackets.forEach((bracket) => {
             }
             const teamSeed = teamDiv.closest(".team-and-seed");
             const seed = teamSeed.querySelector(".seed");
-            seed.style.color = isWinner ? "rgb(107 114 128)" : "#0e0e0e";
+            seed.style.color = isWinner ? "rgb(107 114 128)" : "black";
             seed.style.fontWeight = isWinner ? "" : "bold";
 
             // Set the other team-div's data-result to the opposite
@@ -528,7 +528,7 @@ brackets.forEach((bracket) => {
                     otherDiv.setAttribute("data-result", otherIsWinner ? "lose" : "win");
 
                     const otherSeed = otherDiv.closest(".team-and-seed").querySelector(".seed");
-                    otherSeed.style.color = otherIsWinner ? "rgb(107 114 128)" : "#0e0e0e";
+                    otherSeed.style.color = otherIsWinner ? "rgb(107 114 128)" : "black";
                     otherSeed.style.fontWeight = otherIsWinner ? "" : "bold";
                 }
             });
@@ -940,7 +940,7 @@ function rearrangeBracketContainers() {
     }
   }
 
-  if (window.innerWidth <= 768 || true) {
+  if (window.innerWidth <= 768) {
     // Remove any divs with the class "game-title" from column five and column four
     console.log('test');
     function removeElementsByClass(containerId, className) {

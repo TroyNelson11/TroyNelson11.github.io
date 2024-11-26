@@ -1,201 +1,143 @@
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-size: 1vw; /* Responsive font size */
+}
+
 .theme {
-    position: absolute;
-  }
-  .bracket {
-    padding: 0px 10px;
-    margin: 0px;
-  }
-  .bracket {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-  }
-  .column {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    justify-content: space-around;
-    align-content: center;
-  }
-  .container {
-    max-width: 1600px;
-  }
-    /* Default team div styling */
-  .team-div {
-  }
+  position: absolute;
+}
 
-  /* Hover effect: Black outline */
-  .team-div:hover {
-    border: 1px solid grey; /* Green outline when the team is marked as win */
-  }
+.bracket {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  justify-content: space-between; /* Evenly distribute columns with space */
+  align-items: flex-start; /* Align items to the top */
+  gap: 2vw; /* Optional: Add space between columns */
+}
 
-  /* Active win state: Add a green outline for the winning team */
-  .team-div[data-result="win"] {
-    border: 1px solid black; /* Green outline when the team is marked as win */
-  }
-
-  /* Optionally: Style for when the team is in lose state */
-  .team-div[data-result="lose"] {
-  }
-
-  /* Card Styles */
-  .bracketcard {
-    margin: 5px;
-    padding: 5px;
-    background-color: #fcfcfc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: auto;
-    max-width: 1600px;
-    min-width: 1200px;
-    margin-bottom: 100px;
-    margin-top: 10px;
-  }
-  .one {
-
-    justify-content: start;
-
-  }
-  .two {
-
-    justify-content: start;
-
-  }
-  .Four {
-
-    justify-content: center;
-
-  }
-  /* Styling for the larger empty match card in the third column */
-#bracket-container-3 .empty-match, .three #bracket-container-3 .match {
-  background-color: #6b6b6b; /* Light gray background */
-  color: #1f1f1f; /* Dark gray text */
-  border: 3px solid #3b3b3b; /* Darker border to contrast */
-  font-weight: bold; /* Bold font for emphasis */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for a floating effect */
-  padding: 10px;
-  margin: 20px;
-  max-width: 50px;
-  border-radius: 12px; /* Rounded corners for a modern look */
+/* Columns inside the bracket */
+.column {
   display: flex;
   flex-direction: column;
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
-}
-#bracket-container-3 .match .team-div  {
-  background-color: #2f2f2f; /* Light gray background */
-  border-color: #eee; /* Light gray background */
-  color: #1f1f1f; /* Darker text color */
-  margin: 5px;
-  display: flex;
-  min-height: 50px; /* Minimum height to keep them consistent */
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
-}
-/* Styling for the empty team boxes inside the empty match */
-#bracket-container-3 .empty-match .empty-team {
-  background-color: #2f2f2f; /* Light gray background */
-  border-color: #1f1f1f; /* Light gray background */
-  color: #1f1f1f; /* Darker text color */
-  margin: 5px;
-  display: flex;
-  min-height: 50px; /* Minimum height to keep them consistent */
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  justify-content: space-around; /* Space items evenly within the column */
+  align-content: center;
+  flex: 1; /* Ensure all columns take up equal space */
+  min-width: 0; /* Prevent columns from overflowing */
 }
 
-  .match {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    max-width: 230px;
-    min-width: 219px;
-    width: calc(25vw - 100px); /* Adds a base width (100px) that scales with vw */
-    height: auto;
-    margin: 12px 48px 12px 0;
-    background-color: #fcfcfc;
-  }
-  .match .match-top {
-    border-radius: 2px 2px 0 0;
-  }
-  .match .match-bottom {
-    border-radius: 0 0 2px 2px;
-  }
-  .match .team {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border: 1px solid black;
-    position: relative;
-  }
-  .match .team span {
-    padding-left: 8px;
-  }
-  .match .team span:last-child {
-    padding-right: 8px;
-  }
-  .match .team .score {
-    margin-left: auto;
-  }
-  .match .team:first-child {
-    margin-bottom: -1px;
-  }
-  .match-lines {
-    display: block;
-    position: absolute;
-    top: 50%;
-    bottom: 0;
-    margin-top: 0px;
-    right: -1px;
-  }
-  .match-lines .line {
-    background: black;
-    position: absolute;
-    top:-2px;
-  }
-  .match-lines .line.one {
-    height: 2px;
-    width: 27px;
-    left: -2px;
-  }
-  .match-lines .line.two {
-    height: 44px;
-    width: 2px;
-    left: 23px;
-  }
-  .match-lines.alt {
-    left: -22px;
-  }
-  .match-lines .line.three {
-    height: 64px;
-    width: 2px;
-    left: 23px;
-  }
-  .winner-bottom .match-lines .line.two {
-    transform: translate(0, -100%);
-  }
-  .winner-top .match-lines .line.two {
-    height: 100px;
-  }
-  .column:first-child .match-lines.alt {
-    display: none;
-  }
-  .column:last-child .match-lines {
-    display: none;
-  }
-  .column:last-child .match-lines.alt {
-    display: block;
-  }
-  .column:nth-child(2) .match-lines .line.two {
-    height: 88px;
-  }
-  .column:nth-child(3) .match-lines .line.two {
-    height: 175px;
-  }
-  .column:nth-child(4) .match-lines .line.two {
-    height: 262px;
-  }
-  .column:nth-child(5) .match-lines .line.two {
-    height: 349px;
-  }
+/* Container adjustments */
+.container {
+  max-width: 95vw !important; /* Constrain container width */
+  margin: 0 auto;
+}
+
+/* Team div styles */
+.team-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.3vw solid transparent; /* No default border */
+  width: 100%;
+  height: auto;
+}
+
+/* Hover effects */
+.team-div:hover {
+  outline: 0.1vw solid black !important;
+}
+
+/* Tightened win/lose states */
+.team-div[data-result="win"] {
+  border: 0.1vw solid black !important;
+  outline: 0.1vw solid black !important;
+}
+.team-div[data-result="lose"] {
+  border: 0.1vw solid transparent !important;
+}
+
+/* Bracket card styles */
+.bracketcard {
+  margin: 1vw auto !important; /* Minimal margin */
+  padding: 0.5vw !important;
+  background-color: #fcfcfc;
+  box-shadow: 0 0.2vw 0.4vw rgba(0, 0, 0, 0.1);
+  border-radius: 0.5vw !important;
+  width: auto;
+  max-width: 90vw;
+  min-width: 40vw;
+}
+
+/* Match card styles */
+.match {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 12vw;
+  min-width: 10vw;
+  width: calc(20vw - 3vw); /* Dynamic width */
+  margin: 0; /* Remove extra spacing between matches */
+  background-color: #fcfcfc;
+  border-radius: 0.8vw !important;
+}
+.match .match-top {
+  border-radius: 0.5vw 0.5vw 0 0 !important;
+}
+.match .match-bottom {
+  border-radius: 0 0 0.5vw 0.5vw !important;
+}
+.match .team {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 0.3vw solid black !important;
+  padding: 0.5vw;
+}
+.match .team span {
+  padding-left: 0.5vw !important;
+}
+.match .team span:last-child {
+  padding-right: 0.5vw !important;
+}
+.match .team .score {
+  margin-left: auto !important;
+}
+
+/* Empty match and team boxes */
+#bracket-container-3 .empty-match,
+.three #bracket-container-3 .match {
+  background-color: #6b6b6b;
+  color: #1f1f1f;
+  border: 0.2vw solid #3b3b3b !important;
+  padding: 1vw !important;
+  margin: 0.5vw; /* Remove outer margin */
+  border-radius: 0.5vw !important;
+}
+#bracket-container-3 .empty-match .empty-team {
+  background-color: #2f2f2f;
+  border-color: #1f1f1f !important;
+  margin: 0.5vw !important;
+  min-height: 4vh !important;
+}
+
+/* Team divs inside matches */
+#bracket-container-3 .match .team-div {
+  background-color: #2f2f2f !important;
+  border-color: #5b5b5b !important;
+  margin: 0.5vw !important; /* Remove extra margin */
+  min-height: 4vh !important;
+}
+
+/* Align and tighten items */
+.match .team:first-child {
+  margin-bottom: -0.1vw !important;
+}
+
+
   .disable-image .image,
   .disable-seed .seed,
   .disable-name .name,

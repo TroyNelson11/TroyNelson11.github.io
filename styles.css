@@ -393,7 +393,7 @@ margin-right: 5px; /* Remove right margin */
         width: 100%;         /* Ensure the body and HTML fill the viewport width */
     }
     .container {
-        width: 107%;
+        width: 100%;
         margin: 0px;
         padding: 0px;
     }
