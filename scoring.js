@@ -37970,29 +37970,20 @@ const fantasy_team_submissions = [
             const ownershipTable = document.querySelector('.ownership-stats');
             const mainLeaderboard = document.querySelector('.main-leaderboard');
             
-            // Use the main leaderboard's height as reference
+            // Get the actual height of the main leaderboard table
             const mainTableHeight = mainLeaderboard.offsetHeight;
+            const mainTableRows = mainLeaderboard.querySelectorAll('tbody tr');
+            if (mainTableRows.length === 0) return 10; // Default if no rows
             
-            // Get a sample row height
-            const tempRow = document.createElement('tr');
-            tempRow.innerHTML = `
-                <td class="px-6 py-4 whitespace-nowrap text-gray-100">Sample</td>
-                <td class="px-6 py-4 whitespace-nowrap text-gray-100">100%</td>
-            `;
-            ownershipTable.querySelector('tbody').appendChild(tempRow);
-            const rowHeight = tempRow.offsetHeight;
-            tempRow.remove();
-        
-            // Calculate available height (subtract header and pagination)
-            const headerHeight = 96; // Typical header height
-            const paginationHeight = 52; // Typical pagination control height
-            const availableHeight = mainTableHeight - headerHeight - paginationHeight;
-        
-            // Calculate items per page
-            const itemsPerPage = Math.floor(availableHeight / rowHeight);
+            // Calculate the actual row height from the main leaderboard
+            const mainRowHeight = mainTableRows[0].offsetHeight;
             
-            // Return a reasonable number of items (between 8 and 15)
-            return itemsPerPage;
+            // Calculate how many rows will fit in the ownership stats table
+            // Subtract 3 rows worth of space for header and pagination
+            const itemsPerPage = Math.floor(mainTableHeight / mainRowHeight) - 5;
+            
+            // Ensure we return a reasonable number (minimum 5, maximum mainTableRows.length)
+            return Math.max(5, Math.min(itemsPerPage, mainTableRows.length));
         }
 
 function calculateOwnershipStats() {

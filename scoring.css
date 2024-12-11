@@ -1,3 +1,11 @@
+/* Add at the top, before other styles */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-size: 1vw; /* Responsive font size */
+}
+
 /* Base styles */
 body {
     font-family: 'Poppins', sans-serif;
@@ -6,7 +14,9 @@ body {
     background: linear-gradient(to top, #006400 0%, white 35%, #eeeeee 100%);
     min-width: 320px;
 }
-
+.main-leaderboard {
+    margin-left: 0vw;
+}
 .container {
     max-width: 1420px;
     padding: 0 20px;
@@ -90,6 +100,73 @@ body {
     padding: 5px;
 }
 
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav-bar {
+        background-color: #006400;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: flex;
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    /* Add hover effects to the nav links */
+    .navbar-nav .nav-item .nav-link {
+        color: white;
+        font-weight: bold;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: 3.8em;
+        padding: 2px 2px;
+        white-space: nowrap;
+        transition: color 0.3s;
+        display: block;
+    }
+
+    .navbar-nav {
+        gap: 4vw;
+    }
+
+    .brand-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 12.6em;
+        color: white;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .subtitle {
+        font-size: 5.0em;
+        color: white;
+        padding-left: 3vw;
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        width: 80px;
+        margin: 0px;
+        text-align: left;
+        display: inline-block;
+    }
+}
+
 /* Responsive nav adjustments */
 @media (max-width: 1025px) {
     .nav-bar {
@@ -165,7 +242,7 @@ body {
     }
 
     .title {
-        font-size: 2.8em;
+        font-size: 12.6em;
         display: inline-flex;
         align-items: center;
     }
@@ -176,6 +253,11 @@ body {
         margin: 0px;
     }
 
+    .navbar-brand {
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 /* Main leaderboard table styles */
@@ -314,6 +396,33 @@ body {
 
 @media (max-width: 768px) {
     /* Force container and body to respect viewport width */
+    .nav-bar {
+        background-color: #006400;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: flex;
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+      /* Add hover effects to the empty matches */
+      .navbar-nav .nav-item .nav-link {
+        color: white;
+        font-weight: bold;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: 3.8em;
+        padding: 2px 2px;
+        white-space: nowrap; /* Prevents wrapping for nav links */
+        transition: color 0.3s;
+        display: block; /* Ensure nav-link behaves like a block element */
+      }
+      .navbar-nav {
+        gap: 4vw;
+      }
     body {
         width: 100vw;
         overflow-x: hidden;
@@ -497,22 +606,33 @@ body {
     width: 80%;
     max-width: 80%;
     min-width: 80%;
-    margin: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    background-color: white;
+    margin: 0 -1vw;
 }
 
-/* Update the header to match the rounded corners */
-.ownership-stats h2 {
-    border-radius: 12px 12px 0 0;
-}
+/* Add margins only for mobile screens */
+@media (max-width: 768px) {
+    .ownership-stats {
+        width: 80%;
+        max-width: 80%;
+        min-width: 80%;
+        margin: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: white;
+    }
 
-/* Update the pagination controls to match */
-.ownership-stats .pagination-controls {
-    border-radius: 0 0 12px 12px;
+    /* Update the header to match the rounded corners */
+    .ownership-stats h2 {
+        border-radius: 12px 12px 0 0;
+    }
+
+    /* Update the pagination controls to match */
+    .ownership-stats .pagination-controls {
+        border-radius: 0 0 12px 12px;
+    }
 }
 .ownership-stats table {
     width: 100%;
