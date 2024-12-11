@@ -295,12 +295,77 @@ body {
 }
 
 @media (max-width: 768px) {
+    .leaderboard-container {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        min-width: 100%;
+        gap: 2vw;
+        padding: 1vw;
+        margin: 0;
+    }
+
+    .main-leaderboard,
+    .ownership-stats,
+    .team-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        margin: 1vw 0;
+        border-radius: 0;
+    }
+
     #playerScoresContainer {
         grid-template-columns: 1fr;
+        gap: 2vw;
+        padding: 1vw;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
     }
-    
-    .main-leaderboard {
-        overflow-x: auto;
+
+    .team-card {
+        margin: 2vw 0;
+    }
+
+    .team-card-header {
+        font-size: 4vw;
+        padding: 2vw;
+    }
+
+    .team-card table,
+    .main-leaderboard table,
+    .ownership-stats table {
+        font-size: 3.2vw;
+    }
+
+    .team-card th,
+    .team-card td,
+    .main-leaderboard th,
+    .main-leaderboard td,
+    .ownership-stats th,
+    .ownership-stats td {
+        padding: 2vw;
+    }
+
+    /* Container adjustments */
+    .container {
+        max-width: 100% !important;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Pagination controls */
+    .pagination-controls {
+        padding: 2vw;
+    }
+
+    .pagination-btn {
+        padding: 2vw 4vw;
+        font-size: 3.2vw;
+    }
+
+    #pageInfo {
+        font-size: 3.2vw;
     }
 }
 
