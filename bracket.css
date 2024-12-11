@@ -1,4 +1,3 @@
-
 html, body {
   width: 100%;
   height: 100%;
@@ -80,6 +79,7 @@ html, body {
   width: auto;
   max-width: 90vw;
   min-width: 40vw;
+  max-height: 90vh;
 }
 
 /* Match card styles */
@@ -389,3 +389,71 @@ html, body {
 }
   }
   
+/* Tightened win/lose states - with higher specificity */
+.bracket .team-div[data-result="win"],
+.match .team-div[data-result="win"],
+div[id^="bracket-container"] .team-div[data-result="win"] {
+  border: 0.1vw solid black !important;
+  outline: 0.2vw solid black !important;
+}
+
+.bracket .team-div[data-result="lose"],
+.match .team-div[data-result="lose"],
+div[id^="bracket-container"] .team-div[data-result="lose"] {
+  border: 0.1vw solid transparent !important;
+}
+  
+#bracket-container, #bracket-container-2, #bracket-container-4, #bracket-container-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align to top */
+    align-items: center;
+    gap: 0; /* Remove flex gap */
+}
+
+.match {
+    margin: 0.5vh 0; /* Small margin between matches */
+}
+
+.spacer {
+    height: 3vh; /* Explicit height for spacers */
+    visibility: visible; /* Make sure spacers are visible */
+    margin: 0;
+}
+
+.game-title {
+    margin: 0.5vh 0;
+    height: auto;
+}
+  
+
+
+/* Keep existing styles */
+.bracketcard {
+    max-height: 90vh;
+}
+
+#bracket-container, #bracket-container-2, #bracket-container-4, #bracket-container-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+}
+
+.match {
+    margin: 0.5vh 0;
+}
+
+.game-title {
+    margin: 0.5vh 0;
+    height: auto;
+}
+
+/* Add margin to match rows in columns 2 and 4 */
+#bracket-container-2 .match-row,
+#bracket-container-4 .match-row {
+    margin-top: 0.3vh;
+    margin-bottom: 0.3vh;
+}
+

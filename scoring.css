@@ -1,0 +1,416 @@
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, #006400 0%, white 35%, #eeeeee 100%);
+    min-width: 320px;
+}
+
+.container {
+    max-width: 1420px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* Navigation Bar Styling */
+.nav-bar {
+    background-color: #006400;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.brand-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.title {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.subtitle {
+    font-size: 2.0em;
+    color: white;
+    margin-right: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.navbar-nav .nav-item {
+    flex: 1;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    white-space: nowrap;
+    transition: color 0.3s;
+    display: block;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ddd;
+}
+
+.logo {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Responsive nav adjustments */
+@media (max-width: 1025px) {
+    .nav-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navbar-brand img {
+        width: 80px;
+        margin: 0px;
+        text-align: left;
+        display: inline-block;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .brand-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 2.8em;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .subtitle {
+        display: block;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 1em;
+        padding: 8px 10px;
+    }
+}
+
+/* Main leaderboard table styles */
+.leaderboard-container {
+    display: grid;
+    grid-template-columns: minmax(auto, 800px) minmax(auto, 400px);
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: start;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Common table styles */
+.main-leaderboard,
+.ownership-stats,
+.team-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles for all tables */
+.ownership-stats h2,
+.team-card-header,
+.main-leaderboard thead tr,
+.ownership-stats thead tr,
+.team-card thead tr {
+    background-color: #006400;
+    color: white;
+    font-weight: bold;
+}
+
+/* Table header cells */
+.main-leaderboard th,
+.ownership-stats th,
+.team-card th {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Table cells */
+.main-leaderboard td,
+.ownership-stats td,
+.team-card td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Keep team name column left-aligned */
+.main-leaderboard td:first-child,
+.ownership-stats td:first-child,
+.team-card td:first-child {
+    text-align: left;
+}
+
+/* Hover effects */
+.main-leaderboard tbody tr:hover,
+.ownership-stats tbody tr:hover,
+.team-card tbody tr:hover {
+    background-color: #f8f8f8;
+    transition: background-color 0.2s ease;
+}
+
+/* Score columns alignment */
+.score-col {
+    text-align: center;
+}
+
+/* Total score column */
+.main-leaderboard th:last-child,
+.main-leaderboard td:last-child {
+    background-color: #006400;
+    color: white;
+    font-weight: bold;
+}
+
+/* Pagination controls */
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    gap: 12px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+}
+
+.pagination-btn {
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.pagination-btn:hover {
+    background-color: #005300;
+}
+
+.pagination-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#pageInfo {
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Player scores container */
+#playerScoresContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .leaderboard-container {
+        grid-template-columns: 1fr;
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    #playerScoresContainer {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-leaderboard {
+        overflow-x: auto;
+    }
+}
+
+/* Update ownership stats header and table styles */
+.ownership-stats h2 {
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    margin: 0;
+}
+
+.ownership-stats table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ownership-stats thead tr {
+    background-color: #006400;
+    width: 100%;
+}
+
+.ownership-stats th {
+    padding: 12px 16px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Optional: if you want to control column widths */
+.ownership-stats th:first-child {
+    width: 70%; /* Adjust player name column width */
+}
+
+.ownership-stats th:last-child {
+    width: 30%; /* Adjust percentage column width */
+}
+
+/* Team detail card styles */
+.team-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-card-header {
+    background-color: #006400;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.team-card table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* Column widths */
+.team-card th,
+.team-card td {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Make player name column wider */
+.team-card th:first-child,
+.team-card td:first-child {
+    width: 30%;
+    text-align: left;
+    padding-left: 12px;
+}
+
+/* Make score columns equal width */
+.team-card th:not(:first-child),
+.team-card td:not(:first-child) {
+    width: 14%;
+    text-align: center;
+}
+
+.team-card th {
+    background-color: #f8f8f8;
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.team-card td {
+    color: #333;
+}
+
+/* Hover effect for rows */
+.team-card tr:hover {
+    background-color: #f8f8f8;
+    transition: background-color 0.2s ease;
+}
+
+.team-name-link {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.team-name-link:hover {
+    color: #4ade80; /* Light green color on hover */
+    text-decoration: underline;
+} 

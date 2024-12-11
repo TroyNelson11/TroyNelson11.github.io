@@ -82,7 +82,7 @@
         </div>
     
         <script>
-             const playoffTeams = [ "KC", "BUF", "PIT", "HOU", "BAL", "LAC",  "DEN", "DET", "PHI", "ARI", "ATL", "MIN",  "GB", "WAS"];
+             const playoffTeams = [ "KC", "BUF", "PIT", "HOU", "BAL", "LAC",  "DEN", "DET", "PHI", "SEA", "ATL", "MIN",  "GB", "WAS"];
                 const detailedPlayoffTeams = [
                     {
                         "abbreviation": "KC",
@@ -223,7 +223,7 @@
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/06/arizona-cardinals-team-logo-png.png",
                         "primary_color": "#97233F",
                         "secondary_color": "#FFCB05",
-                        "seed" : 3
+                        "seed" : 10
 
                     },
                     {
@@ -232,7 +232,7 @@
                         "logo": "https://content.sportslogos.net/logos/7/180/full/seattle_seahawks_logo_primary_20121228.png",
                         "primary_color": "#002246",
                         "secondary_color": "#69BE28",
-                        "seed" : 10
+                        "seed" : 3
 
                     }
                 ]
@@ -278,193 +278,133 @@ const addEventDelegation = () => {
     teamDivs.forEach((teamDiv) => {
         // Add click event listener to each team-div
         teamDiv.addEventListener('click', (e) => {
-            // Find the parent match container
+            e.stopPropagation();
+            
             const match = teamDiv.closest('.match');
-            if (!match) return; // Ensure the clicked element is inside a match
+            if (!match) return;
 
-            // Get all team-div elements within the match
             const matchTeamDivs = match.querySelectorAll('.team-div');
             let teamSeed = teamDiv.closest('.team-and-seed')
             let seed = teamSeed.querySelector('.seed')
-            // Toggle the data-result for the clicked team-div
             
             teamDiv.setAttribute('data-result', 'win');
-            seed.style.color = 'black'; // Set the desired color, e.g., 'red'
-            seed.style.fontWeight = 'bold'; // Set the desired font weight, e.g., 'bold'
-            
+            seed.style.color = 'black';
+            seed.style.fontWeight = 'bold';
 
-            // Set the other team-div's data-result to the opposite
             matchTeamDivs.forEach((otherDiv) => {
                 if (otherDiv !== teamDiv) {
-                    otherDiv.setAttribute(
-                        'data-result',
-                        'lose'
-                    );
+                    otherDiv.setAttribute('data-result', 'lose');
                     let teamSeed = otherDiv.closest('.team-and-seed')
                     let seed = teamSeed.querySelector('.seed')
-                    seed.style.color = 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
-                    seed.style.fontWeight = ''; // Set the desired font weight, e.g., 'bold'
+                    seed.style.color = 'rgb(107 114 128)';
+                    seed.style.fontWeight = '';
                 }
-                
             });
 
             // Get the bracket container that the match is in
             const bracket = e.target.closest('.p-4');
 
-            // Call the correct function based on the bracket
-            if (bracket == document.getElementById("bracket-container") || bracket == document.getElementById("bracket-container-5")) {
-                // Update second round match details
+            // Only update if it's the correct bracket
+            if (bracket == document.getElementById("bracket-container") || 
+                bracket == document.getElementById("bracket-container-5")) {
                 updateSecondRoundMatchDetails();
-            } 
-
-            // Prevent event from bubbling up unnecessarily
-            e.stopPropagation();
+            }
         });
     });
-
 };
 const addNewEventDelegation = () => {
-    // Get all team divs in the container
-    let bracket = document.getElementById('bracket-container-2');
-
-    const teamDivs = bracket.querySelectorAll('.team-div');
-
-    teamDivs.forEach((teamDiv) => {
-        // Add click event listener to each team-div
-        teamDiv.addEventListener('click', (e) => {
-            // Find the parent match container
-            const match = teamDiv.closest('.match');
-            if (!match) return; // Ensure the clicked element is inside a match
-
-            // Get all team-div elements within the match
-            const matchTeamDivs = match.querySelectorAll('.team-div');
-            let teamSeed = teamDiv.closest('.team-and-seed')
-            let seed = teamSeed.querySelector('.seed')
-            // Toggle the data-result for the clicked team-div
-            
-            teamDiv.setAttribute('data-result', 'win');
-            seed.style.color = 'black'; // Set the desired color, e.g., 'red'
-            seed.style.fontWeight = 'bold'; // Set the desired font weight, e.g., 'bold'
-            
-
-            // Set the other team-div's data-result to the opposite
-            matchTeamDivs.forEach((otherDiv) => {
-                if (otherDiv !== teamDiv) {
-                    otherDiv.setAttribute(
-                        'data-result',
-                        'lose'
-                    );
-                    let teamSeed = otherDiv.closest('.team-and-seed')
-                    let seed = teamSeed.querySelector('.seed')
-                    seed.style.color = 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
-                    seed.style.fontWeight = ''; // Set the desired font weight, e.g., 'bold'
-                }
-                
+    // Handle AFC bracket (bracket-container-2)
+    let bracket2 = document.getElementById('bracket-container-2');
+    if (bracket2) {
+        const teamDivs = bracket2.querySelectorAll('.team-div');
+        teamDivs.forEach((teamDiv) => {
+            teamDiv.addEventListener('click', (e) => {
+                e.stopPropagation();
+                handleTeamClick(e, teamDiv, true); // true for AFC
             });
-
-            // Get the bracket container that the match is in
-            const bracket = e.target.closest('.p-4');
-
-            // Prevent event from bubbling up unnecessarily
-            e.stopPropagation();
-            updateLateRounds();
-
         });
-    });
-    let bracket2 = document.getElementById('bracket-container-4');
+    }
 
-    teamDivs2 = bracket2.querySelectorAll('.team-div');
-
-    teamDivs2.forEach((teamDiv) => {
-        // Add click event listener to each team-div
-        teamDiv.addEventListener('click', (e) => {
-            // Find the parent match container
-            const match = teamDiv.closest('.match');
-            if (!match) return; // Ensure the clicked element is inside a match
-
-            // Get all team-div elements within the match
-            const matchTeamDivs = match.querySelectorAll('.team-div');
-            let teamSeed = teamDiv.closest('.team-and-seed')
-            let seed = teamSeed.querySelector('.seed')
-            // Toggle the data-result for the clicked team-div
-
-            teamDiv.setAttribute('data-result', 'win');
-            seed.style.color = 'black'; // Set the desired color, e.g., 'red'
-            seed.style.fontWeight = 'bold'; // Set the desired font weight, e.g., 'bold'
-            
-
-            // Set the other team-div's data-result to the opposite
-            matchTeamDivs.forEach((otherDiv) => {
-                if (otherDiv !== teamDiv) {
-                    otherDiv.setAttribute(
-                        'data-result',
-                        'lose'
-                    );
-                    let teamSeed = otherDiv.closest('.team-and-seed')
-                    let seed = teamSeed.querySelector('.seed')
-                    seed.style.color = 'rgb(107 114 128)'; // Set the desired color, e.g., 'red'
-                    seed.style.fontWeight = ''; // Set the desired font weight, e.g., 'bold'
-                }
-                
+    // Handle NFC bracket (bracket-container-4)
+    let bracket4 = document.getElementById('bracket-container-4');
+    if (bracket4) {
+        const teamDivs2 = bracket4.querySelectorAll('.team-div');
+        teamDivs2.forEach((teamDiv) => {
+            teamDiv.addEventListener('click', (e) => {
+                e.stopPropagation();
+                handleTeamClick(e, teamDiv, false); // false for NFC
             });
-            // Get the bracket container that the match is in
-            const bracket = e.target.closest('.p-4');
-
-            // Prevent event from bubbling up unnecessarily
-            updateLateRounds();
-
-            e.stopPropagation();
-
         });
+    }
+};
+
+// New helper function to handle team clicks
+const handleTeamClick = (e, teamDiv, isAFC) => {
+    const match = teamDiv.closest('.match');
+    if (!match) return;
+
+    const matchTeamDivs = match.querySelectorAll('.team-div');
+    let teamSeed = teamDiv.closest('.team-and-seed')
+    let seed = teamSeed.querySelector('.seed')
+    
+    teamDiv.setAttribute('data-result', 'win');
+    seed.style.color = 'black';
+    seed.style.fontWeight = 'bold';
+
+    matchTeamDivs.forEach((otherDiv) => {
+        if (otherDiv !== teamDiv) {
+            otherDiv.setAttribute('data-result', 'lose');
+            let teamSeed = otherDiv.closest('.team-and-seed')
+            let seed = teamSeed.querySelector('.seed')
+            seed.style.color = 'rgb(107 114 128)';
+            seed.style.fontWeight = '';
+        }
     });
 
+    // Only update the relevant rounds
+    if (isAFC) {
+        updateLateRounds(); // Only update AFC side
+    } else {
+        updateLateRounds(); // Only update NFC side
+    }
 };
 const updateLateRounds = () => {
-    const brackets = [
-    { container: "bracket-container-2", winners: [], thirdMatch: null },
-    { container: "bracket-container-4", winners: [], thirdMatch: null }
-    ];
-    let superbowl_match = null;
-    // Gather winners and update third match in each bracket
-    brackets.forEach((bracket) => {
-        const bracketElement = document.getElementById(bracket.container);
-        const matches = Array.from(bracketElement.querySelectorAll(".match"));
+    // Check which bracket was clicked
+    const clickedElement = event.target;
+    const isAFCUpdate = clickedElement.closest('#bracket-container-2') !== null;
+    const isNFCUpdate = clickedElement.closest('#bracket-container-4') !== null;
 
-        // Store the third match reference for later
-        bracket.thirdMatch = matches[2];
+    // Handle AFC side
+    if (isAFCUpdate) {
+        const bracket2 = document.getElementById("bracket-container-2");
+        if (!bracket2) return;
 
-        // Gather winners from the first four matches
+        const matches = Array.from(bracket2.querySelectorAll(".match"));
+        const thirdMatch = matches[2];
+        if (!thirdMatch) return;
+
+        // Gather winners from the first two matches
+        const winners = [];
         matches.slice(0,2).forEach((match) => {
-            
             const winningTeam = match.querySelector('.team-div[data-result="win"]');
             if (winningTeam) {
                 const td = winningTeam.cloneNode(true);
                 td.setAttribute("data-result", "lose");
-                bracket.winners.push({
-                    teamDiv: td, // Clone for reuse
+                winners.push({
+                    teamDiv: td,
                     seed: parseInt(winningTeam.getAttribute("data-seed"), 10),
                 });
             }
         });
 
-        // Sort winners by seed (ascending)
-        bracket.winners.sort((a, b) => a.seed - b.seed);
-
-        // Prepare home and away teams
-        let homeTeam = null;
-        let awayTeam = null;
-
-        if (bracket.winners.length >= 2) {
-            [homeTeam, awayTeam] = bracket.winners;
-        } else if (bracket.winners.length === 1) {
-            homeTeam = bracket.winners[0];
-        }
+        // Sort winners by seed
+        winners.sort((a, b) => a.seed - b.seed);
 
         // Update the third match
-        if (bracket.thirdMatch) {
+        if (winners.length >= 2) {
             ["home", "away"].forEach((role, i) => {
-                const teamSlot = bracket.thirdMatch.children[i];
-                const currentTeam = i === 0 ? homeTeam : awayTeam;
+                const teamSlot = thirdMatch.children[i];
+                const currentTeam = winners[i];
 
                 if (!currentTeam) return;
 
@@ -474,79 +414,79 @@ const updateLateRounds = () => {
                 teamSlot.querySelector(".team-div").replaceWith(newTeamDiv);
 
                 const seedDiv = teamSlot.querySelector(".seed");
-                if (seedDiv) seedDiv.textContent = `#${newSeed}`;
+                if (seedDiv) {
+                    seedDiv.textContent = `#${newSeed}`;
+                    seedDiv.style.color = 'rgb(107 114 128)';
+                    seedDiv.style.fontWeight = 'normal';
+                }
             });
         }
 
-        // Add click event to teamDivs in the third match
-        const teamDivs = Array.from(bracket.thirdMatch?.children ?? []).map((slot) =>
-            slot.querySelector(".team-div")
-        );
-        const bracket3 = document.getElementById("bracket-container-3");
-        let i = bracket.container == "bracket-container-2" ? 0 : 1;
+        // Add click handlers for AFC championship game
+        const teamDivs = Array.from(thirdMatch.querySelectorAll(".team-div"));
         teamDivs.forEach((teamDiv) => {
             teamDiv?.addEventListener("click", (e) => {
-                // Find the parent match container
-                const match = teamDiv.closest(".match");
-                if (!match) return;
+                handleChampionshipClick(e, teamDiv, true); // true for AFC
+            });
+        });
+    }
 
-                // Toggle the data-result for the clicked team-div
-                const isWinner = teamDiv.getAttribute("data-result") === "win";
-                teamDiv.setAttribute("data-result", "win");
-                if (!isWinner) {
-                    let clone = teamDiv.cloneNode(true)
-                    clone.setAttribute("data-result", "lose");
-                    const superbowl = bracket3.querySelectorAll('.match')[0];
-                    superbowl.children[i].querySelector(".team-div").replaceWith(clone);
-                    const seedDiv = superbowl.children[i].querySelector(".seed");
-                    if (seedDiv) {
-                        seedDiv.textContent = `#${teamDiv.getAttribute('data-seed')}`;
-                        seedDiv.style.color = '#eee'; // Set the desired color, e.g., 'red'
-                        seedDiv.style.fontWeight = ""; // Set the desired font weight, e.g., 'bold'
-                    }
-                }
-                const teamSeed = teamDiv.closest(".team-and-seed");
-                const seed = teamSeed.querySelector(".seed");
-                seed.style.color = "black";
-                seed.style.fontWeight = "bold";
+    // Handle NFC side
+    if (isNFCUpdate) {
+        const bracket4 = document.getElementById("bracket-container-4");
+        if (!bracket4) return;
 
-                // Set the other team-div's data-result to the opposite
-                teamDivs.forEach((otherDiv) => {
-                    if (otherDiv !== teamDiv) {
-                        otherDiv.setAttribute("data-result", "lose");
+        const matches = Array.from(bracket4.querySelectorAll(".match"));
+        const thirdMatch = matches[2];
+        if (!thirdMatch) return;
 
-                        const otherSeed = otherDiv.closest(".team-and-seed").querySelector(".seed");
-                        otherSeed.style.color = "rgb(107 114 128)";
-                        otherSeed.style.fontWeight = "" ;
-                    }
+        // Gather winners from the first two matches
+        const winners = [];
+        matches.slice(0,2).forEach((match) => {
+            const winningTeam = match.querySelector('.team-div[data-result="win"]');
+            if (winningTeam) {
+                const td = winningTeam.cloneNode(true);
+                td.setAttribute("data-result", "lose");
+                winners.push({
+                    teamDiv: td,
+                    seed: parseInt(winningTeam.getAttribute("data-seed"), 10),
                 });
-            });
+            }
         });
-    });
-const bracket3 = document.getElementById("bracket-container-3");
 
-const superbowl_teams = bracket3.querySelectorAll('.team-div');
-superbowl_teams.forEach((teamDiv) => {
-        // Add click event listener to each team-div
-        teamDiv.setAttribute('data-result', 'lose');
-        teamDiv.addEventListener('click', (e) => {
-            // Toggle the data-result for the clicked team-div
+        // Sort winners by seed
+        winners.sort((a, b) => a.seed - b.seed);
 
-            teamDiv.setAttribute('data-result', 'win');
-            
-            // Set the other team-div's data-result to the opposite
-            superbowl_teams.forEach((otherDiv) => {
-                if (otherDiv !== teamDiv) {
-                    otherDiv.setAttribute(
-                        'data-result',
-                        'lose'
-                    );
+        // Update the third match
+        if (winners.length >= 2) {
+            ["home", "away"].forEach((role, i) => {
+                const teamSlot = thirdMatch.children[i];
+                const currentTeam = winners[i];
+
+                if (!currentTeam) return;
+
+                const newTeamDiv = currentTeam.teamDiv.cloneNode(true);
+                const newSeed = newTeamDiv.getAttribute("data-seed");
+
+                teamSlot.querySelector(".team-div").replaceWith(newTeamDiv);
+
+                const seedDiv = teamSlot.querySelector(".seed");
+                if (seedDiv) {
+                    seedDiv.textContent = `#${newSeed}`;
+                    seedDiv.style.color = 'rgb(107 114 128)';
+                    seedDiv.style.fontWeight = 'normal';
                 }
             });
-            e.stopPropagation();
-        });
-    });
+        }
 
+        // Add click handlers for NFC championship game
+        const teamDivs = Array.from(thirdMatch.querySelectorAll(".team-div"));
+        teamDivs.forEach((teamDiv) => {
+            teamDiv?.addEventListener("click", (e) => {
+                handleChampionshipClick(e, teamDiv, false); // false for NFC
+            });
+        });
+    }
 };
 
 
@@ -604,53 +544,150 @@ const addMatchDetails = (teamDiv, seed, spread, overUnder, isTopTeam) => {
 
 
 const updateSecondRoundMatchDetails = () => {
+    // Get the bracket container that triggered the update
     const bracketContainer1 = document.getElementById('bracket-container');
-    const teamDivs = Array.from(bracketContainer1.querySelectorAll('.team-div[data-result="win"]'));
-
-    if (teamDivs.length < 3) {
-        console.warn('Not enough winning teams to update the afc second round matches.');
-    } else {
-        // Sort by `data-seed` in descending order
-        teamDivs.sort((a, b) => {
-        const seedA = parseInt(a.getAttribute('data-seed'), 10);
-        const seedB = parseInt(b.getAttribute('data-seed'), 10);
-        return seedB - seedA; // Descending order
-    });
-    secondRoundMatchDetails[0].away = teamDivs[0].getAttribute('data-team');
-    secondRoundMatchDetails[0].awayseed = teamDivs[0].getAttribute('data-seed');
-    secondRoundMatchDetails[1].away = teamDivs[1].getAttribute('data-team');
-    secondRoundMatchDetails[1].awayseed = parseInt(teamDivs[1].getAttribute('data-seed'), 10);
-    secondRoundMatchDetails[1].home = teamDivs[2].getAttribute('data-team');
-    secondRoundMatchDetails[1].homeseed = parseInt(teamDivs[2].getAttribute('data-seed'), 10);
-    }
-    
-
     const bracketContainer5 = document.getElementById('bracket-container-5');
-    const teamDivs2 = Array.from(bracketContainer5.querySelectorAll('.team-div[data-result="win"]'));
+    
+    // Check which bracket triggered the update
+    const clickedElement = event.target;
+    const isAFCUpdate = clickedElement.closest('#bracket-container') !== null;
+    const isNFCUpdate = clickedElement.closest('#bracket-container-5') !== null;
 
-    if (teamDivs2.length < 3) {
-        console.warn('Not enough winning teams to update the nfc second round matches.');
-        updateMatches();
-    } else {
-// Sort by `data-seed` in descending order
-        teamDivs2.sort((a, b) => {
-        const seedA = parseInt(a.getAttribute('data-seed'), 10);
-        const seedB = parseInt(b.getAttribute('data-seed'), 10);
-        return seedB - seedA; // Descending order
-    });
-    secondRoundMatchDetails[2].away = teamDivs2[0].getAttribute('data-team');
-    secondRoundMatchDetails[2].awayseed = parseInt(teamDivs2[0].getAttribute('data-seed'), 10);
-    secondRoundMatchDetails[3].away = teamDivs2[1].getAttribute('data-team');
-    secondRoundMatchDetails[3].awayseed = parseInt(teamDivs2[1].getAttribute('data-seed'), 10);
-    secondRoundMatchDetails[3].home = teamDivs2[2].getAttribute('data-team');
-    secondRoundMatchDetails[3].homeseed = parseInt(teamDivs2[2].getAttribute('data-seed'), 10);
-    updateMatches();
+    // Handle AFC side (brackets 1->2) only if AFC was clicked
+    if (isAFCUpdate) {
+        const teamDivs = Array.from(bracketContainer1.querySelectorAll('.team-div[data-result="win"]'));
+        if (teamDivs.length >= 3) {
+            teamDivs.sort((a, b) => {
+                const seedA = parseInt(a.getAttribute('data-seed'), 10);
+                const seedB = parseInt(b.getAttribute('data-seed'), 10);
+                return seedB - seedA;
+            });
+            secondRoundMatchDetails[0].away = teamDivs[0].getAttribute('data-team');
+            secondRoundMatchDetails[0].awayseed = teamDivs[0].getAttribute('data-seed');
+            secondRoundMatchDetails[1].away = teamDivs[1].getAttribute('data-team');
+            secondRoundMatchDetails[1].awayseed = parseInt(teamDivs[1].getAttribute('data-seed'), 10);
+            secondRoundMatchDetails[1].home = teamDivs[2].getAttribute('data-team');
+            secondRoundMatchDetails[1].homeseed = parseInt(teamDivs[2].getAttribute('data-seed'), 10);
+            
+            updateAFCMatches();
+        }
     }
-    
-    
+
+    // Handle NFC side (brackets 5->4) only if NFC was clicked
+    if (isNFCUpdate) {
+        const teamDivs2 = Array.from(bracketContainer5.querySelectorAll('.team-div[data-result="win"]'));
+        if (teamDivs2.length >= 3) {
+            teamDivs2.sort((a, b) => {
+                const seedA = parseInt(a.getAttribute('data-seed'), 10);
+                const seedB = parseInt(b.getAttribute('data-seed'), 10);
+                return seedB - seedA;
+            });
+            secondRoundMatchDetails[2].away = teamDivs2[0].getAttribute('data-team');
+            secondRoundMatchDetails[2].awayseed = parseInt(teamDivs2[0].getAttribute('data-seed'), 10);
+            secondRoundMatchDetails[3].away = teamDivs2[1].getAttribute('data-team');
+            secondRoundMatchDetails[3].awayseed = parseInt(teamDivs2[1].getAttribute('data-seed'), 10);
+            secondRoundMatchDetails[3].home = teamDivs2[2].getAttribute('data-team');
+            secondRoundMatchDetails[3].homeseed = parseInt(teamDivs2[2].getAttribute('data-seed'), 10);
+            
+            updateNFCMatches();
+        }
+    }
 };
 
+// Split updateMatches into two functions
+const updateAFCMatches = () => {
+    const container = document.getElementById('bracket-container-2');
+    if (!container) return;
 
+    const matches = Array.from(container.querySelectorAll('.match'));
+    
+    matches.slice(0,2).forEach((match, matchIndex) => {
+        const m = secondRoundMatchDetails[matchIndex];
+        if (!m) return;
+
+        // Update home team
+        const homeDiv = match.children[0].querySelector('.team-div');
+        if (homeDiv && m.home) {
+            const teams = generateTeamDivs(detailedPlayoffTeams);
+            const newHomeDiv = teams[m.home].cloneNode(true);
+            newHomeDiv.setAttribute("data-result", "lose");
+            homeDiv.replaceWith(newHomeDiv);
+            
+            // Reset seed styles
+            const homeSeed = match.children[0].querySelector('.seed');
+            if (homeSeed) {
+                homeSeed.textContent = "#" + m.homeseed;
+                homeSeed.style.color = 'rgb(107 114 128)';
+                homeSeed.style.fontWeight = 'normal';
+            }
+        }
+
+        // Update away team
+        const awayDiv = match.children[1].querySelector('.team-div');
+        if (awayDiv && m.away) {
+            const teams = generateTeamDivs(detailedPlayoffTeams);
+            const newAwayDiv = teams[m.away].cloneNode(true);
+            newAwayDiv.setAttribute("data-result", "lose");
+            awayDiv.replaceWith(newAwayDiv);
+            
+            // Reset seed styles
+            const awaySeed = match.children[1].querySelector('.seed');
+            if (awaySeed) {
+                awaySeed.textContent = "#" + m.awayseed;
+                awaySeed.style.color = 'rgb(107 114 128)';
+                awaySeed.style.fontWeight = 'normal';
+            }
+        }
+    });
+    addNewEventDelegation();
+};
+
+const updateNFCMatches = () => {
+    const container = document.getElementById('bracket-container-4');
+    if (!container) return;
+
+    const matches = Array.from(container.querySelectorAll('.match'));
+    
+    matches.slice(0,2).forEach((match, matchIndex) => {
+        const m = secondRoundMatchDetails[matchIndex + 2]; // Offset by 2 for NFC matches
+        if (!m) return;
+
+        // Update home team
+        const homeDiv = match.children[0].querySelector('.team-div');
+        if (homeDiv && m.home) {
+            const teams = generateTeamDivs(detailedPlayoffTeams);
+            const newHomeDiv = teams[m.home].cloneNode(true);
+            newHomeDiv.setAttribute("data-result", "lose");
+            homeDiv.replaceWith(newHomeDiv);
+            
+            // Reset seed styles
+            const homeSeed = match.children[0].querySelector('.seed');
+            if (homeSeed) {
+                homeSeed.textContent = "#" + m.homeseed;
+                homeSeed.style.color = 'rgb(107 114 128)';
+                homeSeed.style.fontWeight = 'normal';
+            }
+        }
+
+        // Update away team
+        const awayDiv = match.children[1].querySelector('.team-div');
+        if (awayDiv && m.away) {
+            const teams = generateTeamDivs(detailedPlayoffTeams);
+            const newAwayDiv = teams[m.away].cloneNode(true);
+            newAwayDiv.setAttribute("data-result", "lose");
+            awayDiv.replaceWith(newAwayDiv);
+            
+            // Reset seed styles
+            const awaySeed = match.children[1].querySelector('.seed');
+            if (awaySeed) {
+                awaySeed.textContent = "#" + m.awayseed;
+                awaySeed.style.color = 'rgb(107 114 128)';
+                awaySeed.style.fontWeight = 'normal';
+            }
+        }
+    });
+    addNewEventDelegation();
+};
 
 let match_details = [
     {
@@ -686,12 +723,12 @@ let match_details = [
         "total": 47.5
     },
     {
-        "home": "ARI",
+        "home": "SEA",
         "away": "GB",
         "homeseed": 3,
         "awayseed": 6,
-        "spread": "+1.5",
-        "total": 44.5
+        "spread": "+3",
+        "total": 46.5
     },
     {
         "home": "ATL",
@@ -800,7 +837,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Example of reusing team divs for a match in the bracket
     const bracketContainer = document.getElementById('bracket-container'); // Replace with your bracket container's ID
     bracketContainer.appendChild(createGameTitle("Wildcard"))
-
+    const spacer = document.createElement('div');
+    spacer.className = 'spacer flex flex-col items-left rounded-md p-2 m-1 shadow-md invisible';
     for (const m of match_details.slice(0,3)) {
         const match = document.createElement('div');
         match.className = 'match flex flex-col items-left rounded-md p-2 shadow-lg';
@@ -810,13 +848,14 @@ document.addEventListener('DOMContentLoaded', () => {
         match.appendChild(addMatchDetails(teamDivs[m.away].cloneNode(true), m.awayseed, m.spread*-1, m.total, false)); // Buffalo Bills
 
         bracketContainer.appendChild(match);
+        bracketContainer.appendChild(spacer.cloneNode(true)); // Add spacer after each match
+
     }
     // Example of reusing team divs for a match in the bracket
     const bracketContainer2 = document.getElementById('bracket-container-2'); // Replace with your bracket container's ID
     bracketContainer2.appendChild(createGameTitle("Divisional"))
 
-    const spacer = document.createElement('div');
-    spacer.className = 'spacer flex flex-col items-left rounded-md p-5 m-2 shadow-md invisible'; 
+    
     for (const m of secondRoundMatchDetails.slice(0,2)) {
         const match = document.createElement('div');
         match.className = 'match flex flex-col items-left rounded-md p-2 shadow-lg';
@@ -872,6 +911,7 @@ document.addEventListener('DOMContentLoaded', () => {
         match.appendChild(addMatchDetails(teamDivs[m.away].cloneNode(true), m.awayseed, m.spread*-1, m.total, false)); // Buffalo Bills
 
         bracketContainer5.appendChild(match);
+        bracketContainer5.appendChild(spacer.cloneNode(true)); // Add spacer after each match
 
 
     }
@@ -892,11 +932,11 @@ function createEmptyTeamDiv() {
 }
 function createEmptyMatch() {
     const match = document.createElement('div');
-    match.className = 'match empty-match flex flex-col items-left rounded-md p-2 m-2 shadow-md';
+    match.className = 'match empty-match flex flex-col items-left rounded-md p-1 m-1 shadow-md';
 
     // Add team divs with details, for bye teams insert empty placeholders
-    match.appendChild(addMatchDetails(createEmptyTeamDiv(), null, null, null, true)); // Placeholder for one team
-    match.appendChild(addMatchDetails(createEmptyTeamDiv(), null, null, null, false)); // Placeholder for the other team
+    match.appendChild(addMatchDetails(createEmptyTeamDiv(), null, null, null, true));
+    match.appendChild(addMatchDetails(createEmptyTeamDiv(), null, null, null, false));
 
     return match;
 }
@@ -1027,7 +1067,73 @@ function rearrangeBracketContainers() {
   } 
 }
 
+// Helper function for championship game clicks
+const handleChampionshipClick = (e, teamDiv, isAFC) => {
+    e.stopPropagation();
+    
+    const match = teamDiv.closest(".match");
+    if (!match) return;
 
+    // Toggle the data-result for the clicked team-div
+    teamDiv.setAttribute("data-result", "win");
+    const teamSeed = teamDiv.closest(".team-and-seed");
+    const seed = teamSeed.querySelector(".seed");
+    seed.style.color = "black";
+    seed.style.fontWeight = "bold";
+
+    // Set the other team-div's data-result to lose
+    const matchTeamDivs = match.querySelectorAll(".team-div");
+    matchTeamDivs.forEach((otherDiv) => {
+        if (otherDiv !== teamDiv) {
+            otherDiv.setAttribute("data-result", "lose");
+            const otherSeed = otherDiv.closest(".team-and-seed").querySelector(".seed");
+            otherSeed.style.color = "rgb(107 114 128)";
+            otherSeed.style.fontWeight = "";
+        }
+    });
+
+    // Update Super Bowl bracket
+    const superbowl_bracket = document.getElementById("bracket-container-3");
+    if (superbowl_bracket) {
+        let clone = teamDiv.cloneNode(true);
+        clone.setAttribute("data-result", "lose");
+        // Set text color to white
+        clone.style.color = "white";
+        
+        const superbowl = superbowl_bracket.querySelectorAll('.match')[0];
+        const index = isAFC ? 0 : 1;  // AFC goes in first slot, NFC in second
+        
+        // Update the team and seed
+        superbowl.children[index].querySelector(".team-div").replaceWith(clone);
+        const seedDiv = superbowl.children[index].querySelector(".seed");
+        if (seedDiv) {
+            seedDiv.textContent = `#${teamDiv.getAttribute('data-seed')}`;
+            seedDiv.style.color = "white";  // Set seed text to white
+        }
+
+        // Add Super Bowl click handler
+        clone.addEventListener('click', handleSuperBowlClick);
+    }
+};
+
+// Helper function for Super Bowl clicks
+const handleSuperBowlClick = (e) => {
+    e.stopPropagation();
+    const teamDiv = e.currentTarget;
+    
+    const superbowl_teams = document.getElementById("bracket-container-3")
+        .querySelectorAll('.team-div');
+    
+    // Set clicked team as winner
+    teamDiv.setAttribute('data-result', 'win');
+    
+    // Set other team as loser
+    superbowl_teams.forEach((otherDiv) => {
+        if (otherDiv !== teamDiv) {
+            otherDiv.setAttribute('data-result', 'lose');
+        }
+    });
+};
 
         </script>
     </div>

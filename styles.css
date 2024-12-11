@@ -445,4 +445,96 @@ margin-right: 5px; /* Remove right margin */
         max-width: 100%;
     }
 }
+
+/* Add to your existing styles.css */
+.team-score-card {
+    @apply bg-gray-800 rounded-lg shadow-lg overflow-hidden;
+}
+
+.team-score-card .team-header {
+    @apply bg-gray-700 px-4 py-3 text-white font-bold text-lg;
+}
+
+.team-score-card table {
+    @apply w-full text-sm text-gray-100;
+}
+
+.team-score-card th {
+    @apply px-4 py-2 bg-gray-600 font-semibold text-left;
+}
+
+.team-score-card td {
+    @apply px-4 py-2 border-t border-gray-700;
+}
+
+.team-score-card tr:hover {
+    @apply bg-gray-700 transition-colors duration-150;
+}
+
+/* Sticky first column for mobile scrolling */
+.sticky-col {
+    @apply sticky left-0 bg-white z-10;
+}
+
+/* Update the main leaderboard table styles to match player tables */
+.main-leaderboard {
+    background-color: #333;
+    color: white;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.main-leaderboard th {
+    background-color: #444;
+    color: #f0f0f0;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    border-bottom: 2px solid #555;
+    white-space: nowrap;
+}
+
+.main-leaderboard td {
+    padding: 6px 12px;
+    font-size: 0.9em;
+    color: #e0e0e0;
+    border: none;
+}
+
+.main-leaderboard tr:nth-child(even) {
+    background-color: #444;
+}
+
+.main-leaderboard tr:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+/* Optimize column widths */
+.main-leaderboard .team-name-col {
+    width: auto;
+    min-width: 150px;
+}
+
+.main-leaderboard .score-col {
+    width: 80px;
+    text-align: right;
+}
+
+/* Update player scores container layout */
+#playerScoresContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #playerScoresContainer {
+        grid-template-columns: 1fr;
+    }
+}
  
