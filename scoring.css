@@ -1042,13 +1042,6 @@ body {
         font-size: 2.8vw;
     }
 
-    /* Force all tables to be full width */
-    table {
-        width: 90vw !important;
-        max-width: 90vw !important;
-        min-width: 90vw !important;
-    }
-
     /* Adjust cell padding for better spacing */
     .main-leaderboard td:first-child {
         padding-left: 2vw;
@@ -1148,6 +1141,11 @@ body {
         margin-bottom: 1rem;
         background-color: white;
         padding: 0;
+    }
+    .text-3xl {
+        font-size: 5.5vw;
+        padding: 2vw;
+        padding-top: 4vw;
     }
 
     /* Update the header to match the rounded corners */
