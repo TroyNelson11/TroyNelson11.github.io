@@ -449,9 +449,9 @@ body {
         overflow-x: hidden;
     }
     .team-card {
-        width: 90vw;
-        max-width: 90vw;
-        min-width: 90vw;
+        width: 80vw;
+        max-width: 80vw;
+        min-width: 80vw;
         margin: 0;
         padding: 0;
         border-radius: 0;
@@ -600,6 +600,31 @@ body {
         table-layout: fixed;
         width: 100vw;
     }
+
+    /* Update team card text sizes for mobile only */
+    .team-card-header {
+        font-size: 4vw;
+    }
+
+    .team-card th {
+        font-size: 3.2vw;
+        padding: 2vw 1vw;
+        text-align: center;
+    }
+
+    .team-card td {
+        font-size: 3.2vw;
+        padding: 2vw 1vw;
+    }
+
+    .team-card td:first-child {
+        text-align: left;
+        padding-left: 2vw;
+    }
+
+    .team-card td:not(:first-child) {
+        text-align: center;
+    }
 }
 
 /* Update ownership stats header and table styles */
@@ -614,6 +639,7 @@ body {
     max-width: 80%;
     min-width: 80%;
     margin: 0 -1vw;
+    padding: 0;
 }
 
 /* Add margins only for mobile screens */
@@ -625,15 +651,16 @@ body {
         margin: auto;
         border-radius: 12px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        padding: 1rem 0;
         margin-top: 1rem;
         margin-bottom: 1rem;
         background-color: white;
+        padding: 0;
     }
 
     /* Update the header to match the rounded corners */
     .ownership-stats h2 {
         border-radius: 12px 12px 0 0;
+        padding: 1rem 0;
     }
 
     /* Update the pagination controls to match */
@@ -644,6 +671,7 @@ body {
 .ownership-stats table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .ownership-stats thead tr {
@@ -817,4 +845,5 @@ body {
         overflow: hidden;
         text-overflow: ellipsis;
     }
-} 
+}
+ 
