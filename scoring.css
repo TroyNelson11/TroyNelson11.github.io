@@ -477,7 +477,9 @@ body {
         min-width: 100vw;
         table-layout: fixed;
     }
-
+    .team-card th {
+        font-size: 2.2vw;
+    }
     /* Header and cell sizes */
     .team-card th,
     .main-leaderboard th,
@@ -607,7 +609,7 @@ body {
     }
 
     .team-card th {
-        font-size: 3.2vw;
+        font-size: 8.2vw;
         padding: 2vw 1vw;
         text-align: center;
     }
@@ -823,19 +825,19 @@ body {
     /* Adjust column widths for mobile */
     .ownership-stats th:first-child,
     .ownership-stats td:first-child {
-        width: 60%; /* Slightly smaller width for player name */
-        min-width: 60%;
-        max-width: 60%;
+        width: 55%;
+        min-width: 55%;
+        max-width: 55%;
         padding: 1.5vw 1vw;
     }
 
     .ownership-stats th:last-child,
     .ownership-stats td:last-child {
-        width: 40%; /* Larger width for percentage */
-        min-width: 40%;
-        max-width: 40%;
+        width: 25%;
+        min-width: 25%;
+        max-width: 25%;
         padding: 1.5vw 1vw;
-        text-align: center;
+        text-align: left;
     }
 
     /* Ensure text doesn't overflow */
@@ -845,5 +847,33 @@ body {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+}
+
+/* Update team card header size */
+.team-card-header {
+    font-size: 4vw; /* Increase from 4vw */
+    padding: 2vw;
+    text-align: center;
+}
+
+/* Update team card column headers */
+.team-card thead th {
+    font-size: 2.2vw; /* Increase from current size */
+    padding: 2vw 1vw;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Keep player name column left-aligned */
+.team-card thead th:first-child {
+    text-align: left;
+}
+
+/* Keep other header styles */
+.team-card td {
+    font-size: 3.2vw;
+    padding: 2vw 1vw;
 }
  
