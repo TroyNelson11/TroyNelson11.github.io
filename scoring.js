@@ -37916,19 +37916,19 @@ const fantasy_team_submissions = [
             const table = document.createElement("table");
             table.className = "min-w-full";
             table.innerHTML = `
-                <thead>
-                    <tr>
-                        <th>Player</th>
-                        <th>Week 1</th>
-                        <th>Week 2</th>
-                        <th>Week 3</th>
-                        <th>Week 4</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            `;
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Wildcard</th>
+                    <th>Divisional</th>
+                    <th>Conference</th>
+                    <th>Superbowl</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        `;
         
             const tbody = table.querySelector('tbody');
             let tracker = 0;
@@ -37939,16 +37939,26 @@ const fantasy_team_submissions = [
                 let playerTotal = 0;
                 let weeklyScores = [];
                 
+                const weekToRoundMap = {
+                    1: "Wildcard",
+                    2: "Divisional",
+                    3: "Conference",
+                    4: "Superbowl"
+                };
+                
                 for (let week = 1; week <= 4; week++) {
                     const weekKey = `week ${week}`;
                     const fpts = player_stats[player]?.[weekKey]?.["FPTS"] || 0;
                     playerTotal += fpts;
-                    weeklyScores.push(fpts.toFixed(1));
+                    weeklyScores.push({
+                        round: weekToRoundMap[week],
+                        score: fpts.toFixed(1)
+                    });
                 }
-        
+                
                 row.innerHTML = `
                     <td>${player}</td>
-                    ${weeklyScores.map(score => 
+                    ${weeklyScores.map(({score}) => 
                         `<td>${score}</td>`
                     ).join('')}
                     <td>${playerTotal.toFixed(1)}</td>
