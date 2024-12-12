@@ -466,6 +466,9 @@ body {
 .team-name-link {
     cursor: pointer;
     transition: color 0.2s ease;
+    color: #2dad5c; /* Light green color on hover */
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .team-name-link:hover {
