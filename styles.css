@@ -651,4 +651,340 @@ margin-right: 5px; /* Remove right margin */
         grid-template-columns: 1fr;
     }
 }
+
+/* Update mobile styles for form elements */
+@media (max-width: 768px) {
+    .nav-bar {
+        background-color: #006400;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: flex;
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+      /* Add hover effects to the empty matches */
+      .navbar-nav .nav-item .nav-link {
+        color: white;
+        font-weight: bold;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: 3.8em;
+        padding: 2px 2px;
+        white-space: nowrap; /* Prevents wrapping for nav links */
+        transition: color 0.3s;
+        display: block; /* Ensure nav-link behaves like a block element */
+      }
+      .navbar-nav {
+        gap: 4vw;
+      }
+      .title {
+        font-size: 12.6em;
+        color: white;
+      }
+      .subtitle {
+        font-size: 5.0em;
+        color: white;
+        padding-left: 3vw;
+      }
+      .navbar-brand {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    /* Form label and input styling for mobile */
+    .label-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    label {
+        font-size: 5vw !important;
+        margin-bottom: 10px !important;
+        min-width: auto !important;  /* Remove fixed width constraints */
+        max-width: none !important;
+    }
+
+    input[type="email"], 
+    input[type="text"], 
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 12px;
+        font-size: 3.5vw;
+        margin-bottom: 10px;
+    }
+
+    /* NFL Teams container styling for mobile */
+    #nfl-teams {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .team {
+        flex: 0 1 auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 1vw !important;
+        max-width: 30vw !important;
+        height: 12vw !important;
+    }
+
+    .team-logo {
+        width: 8vw !important;
+        height: auto !important;
+    }
+
+    .team-name {
+        font-size: 2.5vw !important;
+        padding: 1vw 2vw !important;
+        height: 12vw !important;
+        min-width: 22vw !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /* Adjust grid layout for form sections */
+    .grid.grid-cols-1.md\:grid-cols-12 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .md\:col-span-5 {
+        width: 100%;
+    }
+
+    .md\:col-span-2 {
+        width: 100%;
+    }
+
+    /* Make form buttons larger on mobile */
+    button[type="submit"] {
+        font-size: 6vw;
+        padding: 4vw;
+        margin-top: 2vw;
+    }
+    label {
+        font-size: 4vw !important;
+        margin-bottom: 10px !important;
+        min-width: auto !important;  /* Remove fixed width constraints */
+        max-width: none !important;
+    }
+
+    .w-1\/3 {  /* This targets the label width class used in your HTML */
+        width: 40% !important;  /* Override Tailwind width */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Previous mobile styles remain the same... */
+
+    /* Center tiebreaker label and input */
+    .label-container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 2vw !important;
+        margin: 4vw 0 !important;
+    }
+
+    /* Adjust NFL teams sizing */
+    .team {
+        flex: 0 1 auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 1vw !important;
+        max-width: 24vw !important;
+        height: 12vw !important;
+    }
+
+    .team-logo {
+        width: 10vw !important;
+        height: auto !important;
+    }
+
+    .team-name {
+        font-size: 5.5vw !important;
+        padding: 1vw 2vw !important;
+        height: 10vw !important;
+        min-width: 18vw !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /* Adjust tiebreaker input specifically */
+    #tiebreaker {
+        width: 20vw !important;
+        text-align: center !important;
+        margin: 0 !important;
+    }
+
+    label[for="tiebreaker"] {
+        margin: 0 !important;
+        white-space: nowrap !important;
+    }
+}
+
+/* Target first two inputs (email and team name) */
+.flex:nth-child(1) input,
+.flex:nth-child(2) input {
+    width: 45vw !important;
+}
+
+/* Target all other inputs/selects */
+select, 
+input:not(.flex:nth-child(1) input, .flex:nth-child(2) input) {
+    width: 55vw !important;
+}
+
+/* Keep tiebreaker input separate since it has its own styling */
+#tiebreaker {
+    width: 20vw !important;
+}
+
+/* Make select elements wider and add spacing */
+select {
+    width: 75vw !important;
+}
+
+/* Add spacing between form rows */
+.mb-4 {
+    margin-bottom: 3vw !important;
+}
+
+/* Keep tiebreaker input separate */
+#tiebreaker {
+    width: 20vw !important;
+}
+
+/* Adjust label margins and spacing */
+label {
+    font-size: 4vw !important;
+    margin: 2vw 4vw !important; /* Add horizontal and vertical margins */
+    min-width: auto !important;
+    max-width: none !important;
+    height: 5vw !important; /* Set explicit height for labels */
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Make select elements taller and wider */
+select {
+    width: 75vw !important;
+    height: 8vw !important; /* Make taller than labels */
+    padding: 1vw 2vw !important;
+    font-size: 3.5vw !important;
+    margin: 1vw 0 !important;
+}
+
+/* Adjust spacing between form rows */
+.mb-4 {
+    margin-bottom: 3vw !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Special handling for email and team name containers */
+.flex.items-center.mb-4 {
+    margin-bottom: 2vw !important;  /* More space between these rows */
+    min-height: 12vw !important;    /* Minimum height for these containers */
+}
+.flex.items-center.mb-4 label {  /* More space between these rows */
+    min-height: auto !important;    /* Minimum height for these containers */
+    height: auto !important;    /* Minimum height for these containers */
+    line-height: 5vw !important;  /* Add space between text lines */
+}
+
+/* Remove any other select rules that might be conflicting */
+/* Keep tiebreaker separate as it needs different styling */
+#tiebreaker {
+    width: 20vw !important;
+}
+
+@media (max-width: 768px) {
+    /* Remove all duplicate select rules and consolidate into one */
+    select {
+        width: 55vw !important;
+        max-width: 55vw !important;
+        min-width: 55vw !important;
+        box-sizing: border-box !important;
+        height: 8vw !important;
+        padding: 1vw 2vw !important;
+        font-size: 3.5vw !important;
+        margin: 1vw 0 !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        flex: 0 0 75vw !important;  /* Prevent flex growth/shrink */
+    }
+
+    /* Keep only tiebreaker as an exception */
+    #tiebreaker {
+        width: 20vw !important;
+    }
+}
+
+@media (max-width: 768px) {
+    select {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+}
+
+/* Make the flex container consistent */
+.mb-4.flex.items-center {
+    display: flex !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+}
+
+/* Give labels fixed width */
+label {
+    width: 10vw !important;
+    min-width: 10vw !important;
+    max-width: 10vw !important;
+}
+
+/* Adjust select positioning */
+select {
+    width: 55vw !important;
+    max-width: 55vw !important;
+    min-width: 55vw !important;
+}
+
+/* Special width for email and team name labels */
+label[for="email"],
+label[for="teamName"] {
+    width: 20vw !important;
+    min-width: 20vw !important;
+    max-width: 20vw !important;
+}
+
+
+
+label[for="tiebreaker"] {
+    width: 40vw !important;
+    min-width: 40vw !important;
+    max-width: 0vw !important;
+}
+input#tiebreaker {
+    font-size: 4.5vw !important;
+}
+
+
+
  
