@@ -235,6 +235,8 @@ button:hover {
 }
 button {
     font-size: min(1.4vw, 16px) !important;
+    border-radius: 1vw !important;
+
   }
   
 select, input {
@@ -449,9 +451,10 @@ input#tiebreaker {
 
     /* Make form buttons larger on mobile */
     button[type="submit"] {
-        font-size: 6vw;
-        padding: 4vw;
-        margin-top: 2vw;
+        font-size: 6vw !important;
+        padding: 4vw !important;
+        margin-top: 2vw !important;
+        border-radius: 1vw !important;
     }
     label {
         font-size: 4vw !important;
