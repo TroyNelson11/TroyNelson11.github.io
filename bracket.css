@@ -369,6 +369,8 @@ html, body {
   .subtitle {
     font-size: 5.0em;
     color: white;
+    text-align: center;
+    margin: 0;
     padding-left: 3vw;
   }
   .navbar-brand {

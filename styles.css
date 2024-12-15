@@ -291,21 +291,36 @@ input#tiebreaker {
         align-items: center;
     }
 
+    /* Add hover effects to the empty matches */
     .navbar-nav .nav-item .nav-link {
-        font-size: 3.8em;
-        padding: 2px;
+        color: white;
+        font-weight: bold;
         text-decoration: underline;
-    }
+        text-transform: uppercase;
+        font-size: 3.8em;
+        padding: 2px 2px;
+        white-space: nowrap; /* Prevents wrapping for nav links */
+        transition: color 0.3s;
+        display: block; /* Ensure nav-link behaves like a block element */
+      }
     
 
-    .title {
+      .title {
         font-size: 12.6em;
-    }
-
-    .subtitle {
+        color: white;
+      }
+      .subtitle {
         font-size: 5.0em;
+        color: white;
+        margin: 0;
         padding-left: 3vw;
-    }
+
+      }
+      .navbar-brand {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     /* body */
     body {
         overflow-x: hidden;
