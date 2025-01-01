@@ -197,166 +197,125 @@
             <script>
                 // Define player data
                 const players = {
-        "qb": [
-            { "name": "Lamar Jackson", "team": "BAL" },
-            { "name": "Josh Allen", "team": "BUF" },
-            { "name": "Jalen Hurts", "team": "PHI" },
-            { "name": "Jayden Daniels", "team": "WAS" },
-            { "name": "Patrick Mahomes II", "team": "KC" },
-            { "name": "Joe Burrow", "team": "CIN" },
-            { "name": "Baker Mayfield", "team": "TB" },
-            { "name": "C.J. Stroud", "team": "HOU" },
-            { "name": "Jordan Love", "team": "GB" },
-            { "name": "Kyler Murray", "team": "ARI" },
-            { "name": "Brock Purdy", "team": "SF" },
-            { "name": "Jared Goff", "team": "DET" },
-            { "name": "Kirk Cousins", "team": "ATL" },
-            { "name": "Geno Smith", "team": "SEA" },
-            { "name": "Dak Prescott", "team": "DAL" },
-            { "name": "Caleb Williams", "team": "CHI" },
-            { "name": "Sam Darnold", "team": "MIN" },
-            { "name": "Aaron Rodgers", "team": "NYJ" },
-            { "name": "Anthony Richardson", "team": "IND" },
-            { "name": "Matthew Stafford", "team": "LAR" },
-            { "name": "Trevor Lawrence", "team": "JAC" },
-            { "name": "Justin Herbert", "team": "LAC" },
-            { "name": "Bo Nix", "team": "DEN" },
-            { "name": "Daniel Jones", "team": "NYG" },
-            { "name": "Tua Tagovailoa", "team": "MIA" },
-            { "name": "Derek Carr", "team": "NO" },
-            { "name": "Deshaun Watson", "team": "CLE" },
-            { "name": "Russell Wilson", "team": "PIT" },
-            { "name": "Drake Maye", "team": "NE" },
-            { "name": "Justin Fields", "team": "PIT" }
-        ],
-        "rb": [
-            { "name": "Derrick Henry", "team": "BAL" },
-            { "name": "Saquon Barkley", "team": "PHI" },
-            { "name": "Alvin Kamara", "team": "NO" },
-            { "name": "Bijan Robinson", "team": "ATL" },
-            { "name": "Kyren Williams", "team": "LAR" },
-            { "name": "Breece Hall", "team": "NYJ" },
-            { "name": "Jahmyr Gibbs", "team": "DET" },
-            { "name": "Jonathan Taylor", "team": "IND" },
-            { "name": "David Montgomery", "team": "DET" },
-            { "name": "Josh Jacobs", "team": "GB" },
-            { "name": "James Cook", "team": "BUF" },
-            { "name": "Kenneth Walker", "team": "SEA" },
-            { "name": "De'Von Achane", "team": "MIA" },
-            { "name": "Joe Mixon", "team": "HOU" },
-            { "name": "James Conner", "team": "ARI" },
-            { "name": "Tony Pollard", "team": "DAL" },
-            { "name": "Rhamondre Stevenson", "team": "NE" },
-            { "name": "Miles Sanders", "team": "CAR" },
-            { "name": "Zack Moss", "team": "IND" }
-        ],
-        "wr": [
-            { "name": "Tyreek Hill", "team": "MIA" },
-            { "name": "Davante Adams", "team": "LV" },
-            { "name": "Stefon Diggs", "team": "BUF" },
-            { "name": "A.J. Brown", "team": "PHI" },
-            { "name": "DeAndre Hopkins", "team": "TEN" },
-            { "name": "CeeDee Lamb", "team": "DAL" },
-            { "name": "Amon-Ra St. Brown", "team": "DET" },
-            { "name": "Justin Jefferson", "team": "MIN" },
-            { "name": "Tee Higgins", "team": "CIN" },
-            { "name": "Garrett Wilson", "team": "NYJ" },
-            { "name": "DK Metcalf", "team": "SEA" },
-            { "name": "Chris Godwin", "team": "TB" },
-            { "name": "Deebo Samuel", "team": "SF" },
-            { "name": "Drake London", "team": "ATL" },
-            { "name": "Michael Pittman Jr.", "team": "IND" },
-            { "name": "DJ Moore", "team": "CHI" },
-            { "name": "Amari Cooper", "team": "CLE" },
-            { "name": "Keenan Allen", "team": "LAC" },
-            { "name": "Michael Thomas", "team": "NO" },
-            { "name": "Travis Kelce", "team": "KC" },
-            { "name": "George Kittle", "team": "SF" },
-            { "name": "Mark Andrews", "team": "BAL" },
-            { "name": "Darren Waller", "team": "NYG" },
-            { "name": "TJ Hockenson", "team": "MIN" },
-            { "name": "Dallas Goedert", "team": "PHI" },
-            { "name": "Kyle Pitts", "team": "ATL" },
-            { "name": "Cole Kmet", "team": "CHI" },
-            { "name": "Gerald Everett", "team": "LAC" },
-            { "name": "Pat Freiermuth", "team": "PIT" },
-            { "name": "Hunter Henry", "team": "NE" },
-            { "name": "Robert Tonyan", "team": "CHI" },
-            { "name": "Zach Ertz", "team": "ARI" }
-        ],
-        "k": [
-            { "name": "Justin Tucker", "team": "BAL" },
-            { "name": "Matt Prater", "team": "ARI" },
-            { "name": "Harrison Butker", "team": "KC" },
-            { "name": "Evan McPherson", "team": "CIN" },
-            { "name": "Younghoe Koo", "team": "ATL" },
-            { "name": "Tyler Bass", "team": "BUF" },
-            { "name": "Ryan Succop", "team": "TB" },
-            { "name": "Jason Myers", "team": "SEA" },
-            { "name": "Matt Gay", "team": "LAR" },
-            { "name": "Daniel Carlson", "team": "LV" },
-            { "name": "Cairo Santos", "team": "CHI" },
-            { "name": "Brandon Aubrey", "team": "DAL" },
-            { "name": "Nick Folk", "team": "NE" },
-            { "name": "Riley Patterson", "team": "JAX" },
-            { "name": "Greg Zuerlein", "team": "NYJ" },
-            { "name": "Matt Ammendola", "team": "NYG" },
-            { "name": "Zane Gonzalez", "team": "CAR" },
-            { "name": "Chase McLaughlin", "team": "IND" },
-            { "name": "Cameron Dicker", "team": "LAC" },
-            { "name": "Ka'imi Fairbairn", "team": "HOU" },
-            { "name": "Michael Badgley", "team": "DET" },
-            { "name": "Eddy Pineiro", "team": "CAR" },
-            { "name": "Brett Maher", "team": "NO" },
-            { "name": "Sam Ficken", "team": "PIT" },
-            { "name": "Joey Slye", "team": "WAS" },
-            { "name": "Dustin Hopkins", "team": "LAC" },
-            { "name": "Aldrick Rosas", "team": "SEA" },
-            { "name": "Matt Wright", "team": "TEN" },
-            { "name": "Nick Novak", "team": "CIN" },
-            { "name": "Chris Boswell", "team": "PIT" },
-            { "name": "Jake Elliott", "team": "PHI" },
-            { "name": "Matt Prater", "team": "ARI" },
-            { "name": "Robbie Gould", "team": "SF" },
-            { "name": "Justin Yoon", "team": "NE" },
-            { "name": "David Akers", "team": "PHI" },
-            { "name": "Sebastian Janikowski", "team": "SEA" }
-        ],
-        "def": [
-            { "team": "CHI", "name": "Chicago Bears" },
-            { "team": "BAL", "name": "Baltimore Ravens" },
-            { "team": "PIT", "name": "Pittsburgh Steelers" },
-            { "team": "LAR", "name": "Los Angeles Rams" },
-            { "team": "SF", "name": "San Francisco 49ers" },
-            { "team": "NE", "name": "New England Patriots" },
-            { "team": "BUF", "name": "Buffalo Bills" },
-            { "team": "PHI", "name": "Philadelphia Eagles" },
-            { "team": "TB", "name": "Tampa Bay Buccaneers" },
-            { "team": "NO", "name": "New Orleans Saints" },
-            { "team": "MIA", "name": "Miami Dolphins" },
-            { "team": "CIN", "name": "Cincinnati Bengals" },
-            { "team": "MIN", "name": "Minnesota Vikings" },
-            { "team": "DAL", "name": "Dallas Cowboys" },
-            { "team": "IND", "name": "Indianapolis Colts" },
-            { "team": "HOU", "name": "Houston Texans" },
-            { "team": "TEN", "name": "Tennessee Titans" },
-            { "team": "ARI", "name": "Arizona Cardinals" },
-            { "team": "LV", "name": "Las Vegas Raiders" },
-            { "team": "WAS", "name": "Washington Commanders" },
-            { "team": "ATL", "name": "Atlanta Falcons" },
-            { "team": "CAR", "name": "Carolina Panthers" },
-            { "team": "NYG", "name": "New York Giants" },
-            { "team": "NYJ", "name": "New York Jets" },
-            { "team": "LAC", "name": "Los Angeles Chargers" },
-            { "team": "SEA", "name": "Seattle Seahawks" },
-            { "team": "DET", "name": "Detroit Lions" },
-            { "team": "JAX", "name": "Jacksonville Jaguars" },
-            { "team": "CLE", "name": "Cleveland Browns" },
-            { "team": "GB", "name": "Green Bay Packers" },
-            { "team": "DEN", "name": "Denver Broncos" },
-            { "team": "KC", "name": "Kansas City Chiefs" }      ]
-    }
-                const playoffTeams = ["KC", "DET","BUF", "PHI", "PIT", "SEA", "HOU", "ATL", "LAC", "MIN","BAL", "WAS", "DEN",  "GB"];
+    "qb": [
+        { "name": "Baker Mayfield", "team": "TB" }, 
+        { "name": "Bo Nix", "team": "DEN" },        
+        { "name": "C.J. Stroud", "team": "HOU" },   
+        { "name": "Jalen Hurts", "team": "PHI" },   
+        { "name": "Jared Goff", "team": "DET" },    
+        { "name": "Jayden Daniels", "team": "WAS" },
+        { "name": "Jordan Love", "team": "GB" },    
+        { "name": "Josh Allen", "team": "BUF" },    
+        { "name": "Justin Fields", "team": "PIT" }, 
+        { "name": "Justin Herbert", "team": "LAC" },
+        { "name": "Lamar Jackson", "team": "BAL" }, 
+        { "name": "Matthew Stafford", "team": "LAR" },
+        { "name": "Patrick Mahomes II", "team": "KC" },
+        { "name": "Russell Wilson", "team": "PIT" },
+        { "name": "Sam Darnold", "team": "MIN" },
+    ],
+    "rb": [
+        { "name": "Aaron Jones", "team": "MIN" },
+        { "name": "Aaron Jones Sr.", "team": "MIN" },
+        { "name": "Austin Ekeler", "team": "WAS" },
+        { "name": "Brian Robinson Jr.", "team": "WAS" },
+        { "name": "Bucky Irving", "team": "TB" },
+        { "name": "David Montgomery", "team": "DET" },
+        { "name": "Derrick Henry", "team": "BAL" },
+        { "name": "Gus Edwards", "team": "LAC" },
+        { "name": "Isiah Pacheco", "team": "KC" },
+        { "name": "J.K. Dobbins", "team": "LAC" },
+        { "name": "Jahmyr Gibbs", "team": "DET" },
+        { "name": "James Cook", "team": "BUF" },
+        { "name": "Javonte Williams", "team": "DEN" },
+        { "name": "Jaylen Warren", "team": "PIT" },
+        { "name": "Joe Mixon", "team": "HOU" },
+        { "name": "Josh Jacobs", "team": "GB" },
+        { "name": "Kareem Hunt", "team": "KC" },
+        { "name": "Kyren Williams", "team": "LAR" },
+        { "name": "Najee Harris", "team": "PIT" },
+        { "name": "Rachaad White", "team": "TB" },
+        { "name": "Saquon Barkley", "team": "PHI" },
+        { "name": "Ty Chandler", "team": "MIN" },
+    ],
+    "wr": [
+        { "name": "A.J. Brown", "team": "PHI" },
+        { "name": "Amari Cooper", "team": "BUF" },
+        { "name": "Amon-Ra St. Brown", "team": "DET" },
+        { "name": "Chris Godwin", "team": "TB" },
+        { "name": "Christian Watson", "team": "GB" },
+        { "name": "Cooper Kupp", "team": "LAR" },
+        { "name": "Courtland Sutton", "team": "DEN" },
+        { "name": "DeAndre Hopkins", "team": "KC" },
+        { "name": "DeVonta Smith", "team": "PHI" },
+        { "name": "Demarcus Robinson", "team": "LAR" },
+        { "name": "Diontae Johnson", "team": "HOU" },
+        { "name": "George Pickens", "team": "PIT" },
+        { "name": "Jalen McMillan", "team": "TB" },
+        { "name": "Jameson Williams", "team": "DET" },
+        { "name": "Jayden Reed", "team": "GB" },
+        { "name": "Jordan Addison", "team": "MIN" },
+        { "name": "JuJu Smith-Schuster", "team": "KC" },
+        { "name": "Justin Jefferson", "team": "MIN" },
+        { "name": "Keon Coleman", "team": "BUF" },
+        { "name": "Khalil Shakir", "team": "BUF" },
+        { "name": "Ladd McConkey", "team": "LAC" },
+        { "name": "Marquise Brown", "team": "KC" },
+        { "name": "Mike Evans", "team": "TB" },
+        { "name": "Nico Collins", "team": "HOU" },
+        { "name": "Puka Nacua", "team": "LAR" },
+        { "name": "Quentin Johnston", "team": "LAC" },
+        { "name": "Rashee Rice", "team": "KC" },
+        { "name": "Rashod Bateman", "team": "BAL" },
+        { "name": "Romeo Doubs", "team": "GB" },
+        { "name": "Stefon Diggs", "team": "HOU" },
+        { "name": "Tank Dell", "team": "HOU" },
+        { "name": "Terry McLaurin", "team": "WAS" },
+        { "name": "Xavier Worthy", "team": "KC" },
+        { "name": "Zay Flowers", "team": "BAL" },
+    ],
+    "k": [
+        { "name": "Austin Seibert", "team": "WAS" },
+        { "name": "Cameron Dicker", "team": "LAC" },
+        { "name": "Chase McLaughlin", "team": "TB" },
+        { "name": "Chris Boswell", "team": "PIT" },
+        { "name": "Harrison Butker", "team": "KC" },
+        { "name": "Jake Bates", "team": "DET" },
+        { "name": "Jake Elliott", "team": "PHI" },
+        { "name": "Justin Tucker", "team": "BAL" },
+        { "name": "Ka'imi Fairbairn", "team": "HOU" },
+        { "name": "Tyler Bass", "team": "BUF" },
+    ],
+    "dst": [
+        { "name": "Baltimore Ravens", "team": "BAL" },
+        { "name": "Buffalo Bills", "team": "BUF" },
+        { "name": "Denver Broncos", "team": "DEN" },
+        { "name": "Detroit Lions", "team": "DET" },
+        { "name": "Green Bay Packers", "team": "GB" },
+        { "name": "Houston Texans", "team": "HOU" },
+        { "name": "Kansas City Chiefs", "team": "KC" },
+        { "name": "Los Angeles Chargers", "team": "LAC" },
+        { "name": "Minnesota Vikings", "team": "MIN" },
+        { "name": "Philadelphia Eagles", "team": "PHI" },
+        { "name": "Pittsburgh Steelers", "team": "PIT" },
+        { "name": "Tampa Bay Buccaneers", "team": "TB" },
+        { "name": "Washington Commanders", "team": "WAS" },
+    ],
+    "te": [
+        { "name": "Dallas Goedert", "team": "PHI" },
+        { "name": "David Njoku", "team": "HOU" },
+        { "name": "George Kittle", "team": "GB" },
+        { "name": "Isaiah Likely", "team": "BAL" },
+        { "name": "Jake Ferguson", "team": "TB" },
+        { "name": "Mark Andrews", "team": "BAL" },
+        { "name": "Pat Freiermuth", "team": "PIT" },
+        { "name": "Sam LaPorta", "team": "DET" },
+        { "name": "Travis Kelce", "team": "KC" },
+        { "name": "Tucker Kraft", "team": "GB" }
+    ]
+};
+
+                const playoffTeams = ["KC", "DET","BUF", "PHI", "BAL", "LAR", "HOU", "TB", "PIT", "MIN","LAC", "WAS", "DEN",  "GB"];
                 const detailedPlayoffTeams = [
                     {
                         "abbreviation": "KC",
@@ -364,7 +323,7 @@
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/kansas-city-chiefs-logo-emblem-png.png",
                         "primary_color": "#C8102E", 
                         "secondary_color": "#FFB612",
-                        "seed" : 2
+                        "seed" : 1
                     },
                     {
                         "abbreviation": "BUF",
@@ -372,7 +331,7 @@
                         "logo": "https://content.sportslogos.net/logos/7/149/full/buffalo_bills_logo_primary_19747050.png",
                         "primary_color": "#003DA5", 
                         "secondary_color": "#C8102E",
-                        "seed" : 1
+                        "seed" : 2
 
                     },
                     {
@@ -388,8 +347,8 @@
                         "abbreviation": "HOU",
                         "name": "Houston Texans",
                         "logo": "https://content.sportslogos.net/logos/7/157/full/houston_texans_logo_primary_2024_sportslogosnet-5890.png",
-                        "primary_color": "#A71930", 
-                        "secondary_color": "#03202F",
+                        "primary_color": "#03202F", 
+                        "secondary_color": "#A71930",
                         "seed" : 4
 
                     },
@@ -426,16 +385,16 @@
                         "logo": "https://content.sportslogos.net/logos/7/167/full/philadelphia_eagles_logo_primary_19964867.png",
                         "primary_color": "#004C54", 
                         "secondary_color": "#A5ACAF",
-                        "seed" : 1
+                        "seed" : 2
 
                     },
                     {
-                        "abbreviation": "SF",
-                        "name": "San Francisco 49ers",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/san-francisco-49ers-logo-emblem-png.png",
-                        "primary_color": "#B3995D", 
+                        "abbreviation": "LAR",
+                        "name": "Los Angeles Rams",
+                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/los-angeles-rams-football-logo-png.png",
+                        "primary_color": "#003594", 
                         "secondary_color": "#B3995D",
-                        "seed" : 8
+                        "seed" : 3
 
                     },
                     {
@@ -444,7 +403,7 @@
                         "logo": "https://content.sportslogos.net/logos/7/170/full/detroit_lions_logo_primary_20172565.png",
                         "primary_color": "#0076B6", 
                         "secondary_color": "#A5ACAF",
-                        "seed" : 2
+                        "seed" : 1
 
                     },
                     {
@@ -471,7 +430,7 @@
                         "logo": "https://content.sportslogos.net/logos/7/6832/full/washington_commanders_logo_primary_20228587.png",
                         "primary_color": "#5A1414", 
                         "secondary_color": "#FFC20E",
-                        "seed" : 6
+                        "seed" : 7
 
                     },
                     {
@@ -480,7 +439,7 @@
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/green-bay-packers-symbol-logo-png.png",
                         "primary_color": "#203731", 
                         "secondary_color": "#FFB612",
-                        "seed" : 7
+                        "seed" : 6
 
                     },
                     {
@@ -497,7 +456,7 @@
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/06/arizona-cardinals-team-logo-png.png",
                         "primary_color": "#97233F",
                         "secondary_color": "#FFCB05",
-                        "seed" : 3
+                        "seed" : 10
 
                     },
                     {
@@ -506,11 +465,11 @@
                         "logo": "https://content.sportslogos.net/logos/7/180/full/seattle_seahawks_logo_primary_20121228.png",
                         "primary_color": "#002246",
                         "secondary_color": "#69BE28",
-                        "seed" : 10
+                        "seed" : 8
 
                     }
                 ]
-
+       
                 function populateTeams() {
                     const teamsContainer = document.getElementById('nfl-teams');
                     const orderedTeams = detailedPlayoffTeams.sort((a, b) => {

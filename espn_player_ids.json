@@ -1,0 +1,588 @@
+{
+    "players": {
+        "Josh Allen": {
+            "id": "3918298",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3918298.png",
+            "position": "QB",
+            "team": "BUF",
+            "roster_pct": 99.7
+        },
+        "Baker Mayfield": {
+            "id": "3052587",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3052587.png",
+            "position": "QB",
+            "team": "TB",
+            "roster_pct": 82.5
+        },
+        "Jayden Daniels": {
+            "id": "4426348",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4426348.png",
+            "position": "QB",
+            "team": "WAS",
+            "roster_pct": 97.0
+        },
+        "Lamar Jackson": {
+            "id": "3916387",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3916387.png",
+            "position": "QB",
+            "team": "BAL",
+            "roster_pct": 99.8
+        },
+        "C.J. Stroud": {
+            "id": "4432577",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4432577.png",
+            "position": "QB",
+            "team": "HOU",
+            "roster_pct": 97.6
+        },
+        "Jalen Hurts": {
+            "id": "4040715",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4040715.png",
+            "position": "QB",
+            "team": "PHI",
+            "roster_pct": 99.6
+        },
+        "Jordan Love": {
+            "id": "4036378",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4036378.png",
+            "position": "QB",
+            "team": "GB",
+            "roster_pct": 91.6
+        },
+        "Matthew Stafford": {
+            "id": "12483",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/12483.png",
+            "position": "QB",
+            "team": "LAR",
+            "roster_pct": 30.0
+        },
+        "Sam Darnold": {
+            "id": "3912547",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3912547.png",
+            "position": "QB",
+            "team": "MIN",
+            "roster_pct": 55.8
+        },
+        "Patrick Mahomes II": {
+            "id": "3139477",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3139477.png",
+            "position": "QB",
+            "team": "KC",
+            "roster_pct": 96.7
+        },
+        "Bo Nix": {
+            "id": "4426338",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4426338.png",
+            "position": "QB",
+            "team": "DEN",
+            "roster_pct": 28.2
+        },
+        "Jared Goff": {
+            "id": "3046779",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3046779.png",
+            "position": "QB",
+            "team": "DET",
+            "roster_pct": 73.4
+        },
+        "Justin Fields": {
+            "id": "4362887",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4362887.png",
+            "position": "QB",
+            "team": "PIT",
+            "roster_pct": 26.9
+        },
+        "Justin Herbert": {
+            "id": "4038941",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4038941.png",
+            "position": "QB",
+            "team": "LAC",
+            "roster_pct": 46.9
+        },
+        "Russell Wilson": {
+            "id": "14881",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/14881.png",
+            "position": "QB",
+            "team": "PIT",
+            "roster_pct": 25.6
+        },
+        "Saquon Barkley": {
+            "id": "3929630",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3929630.png",
+            "position": "RB",
+            "team": "PHI",
+            "roster_pct": 99.8
+        },
+        "Joe Mixon": {
+            "id": "3116385",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3116385.png",
+            "position": "RB",
+            "team": "HOU",
+            "roster_pct": 98.6
+        },
+        "J.K. Dobbins": {
+            "id": "4241985",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4241985.png",
+            "position": "RB",
+            "team": "LAC",
+            "roster_pct": 90.7
+        },
+        "Aaron Jones": {
+            "id": "3042519",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3042519.png",
+            "position": "RB",
+            "team": "MIN",
+            "roster_pct": 96.6
+        },
+        "David Montgomery": {
+            "id": "4035538",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4035538.png",
+            "position": "RB",
+            "team": "DET",
+            "roster_pct": 95.6
+        },
+        "Brian Robinson Jr.": {
+            "id": "4241474",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4241474.png",
+            "position": "RB",
+            "team": "WAS",
+            "roster_pct": 91.5
+        },
+        "Isiah Pacheco": {
+            "id": "4361529",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4361529.png",
+            "position": "RB",
+            "team": "KC",
+            "roster_pct": 91.4
+        },
+        "Jahmyr Gibbs": {
+            "id": "4429795",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4429795.png",
+            "position": "RB",
+            "team": "DET",
+            "roster_pct": 99.8
+        },
+        "Kyren Williams": {
+            "id": "4430737",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4430737.png",
+            "position": "RB",
+            "team": "LAR",
+            "roster_pct": 99.6
+        },
+        "Derrick Henry": {
+            "id": "3043078",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3043078.png",
+            "position": "RB",
+            "team": "BAL",
+            "roster_pct": 99.7
+        },
+        "Rachaad White": {
+            "id": "4697815",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4697815.png",
+            "position": "RB",
+            "team": "TB",
+            "roster_pct": 92.0
+        },
+        "Josh Jacobs": {
+            "id": "4047365",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4047365.png",
+            "position": "RB",
+            "team": "GB",
+            "roster_pct": 98.7
+        },
+        "James Cook": {
+            "id": "4379399",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4379399.png",
+            "position": "RB",
+            "team": "BUF",
+            "roster_pct": 98.4
+        },
+        "Najee Harris": {
+            "id": "4241457",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4241457.png",
+            "position": "RB",
+            "team": "PIT",
+            "roster_pct": 91.7
+        },
+        "Bucky Irving": {
+            "id": "4596448",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4596448.png",
+            "position": "RB",
+            "team": "TB",
+            "roster_pct": 71.2
+        },
+        "Austin Ekeler": {
+            "id": "3068267",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3068267.png",
+            "position": "RB",
+            "team": "WAS",
+            "roster_pct": 79.7
+        },
+        "Ty Chandler": {
+            "id": "4242431",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4242431.png",
+            "position": "RB",
+            "team": "MIN",
+            "roster_pct": 32.3
+        },
+        "Javonte Williams": {
+            "id": "4361579",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4361579.png",
+            "position": "RB",
+            "team": "DEN",
+            "roster_pct": 87.8
+        },
+        "Jaylen Warren": {
+            "id": "4569987",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4569987.png",
+            "position": "RB",
+            "team": "PIT",
+            "roster_pct": 56.6
+        },
+        "Kareem Hunt": {
+            "id": "3059915",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3059915.png",
+            "position": "RB",
+            "team": "KC",
+            "roster_pct": 85.8
+        },
+        "Jayden Reed": {
+            "id": "4362249",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4362249.png",
+            "position": "WR",
+            "team": "GB",
+            "roster_pct": 94.6
+        },
+        "Jameson Williams": {
+            "id": "4426388",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4426388.png",
+            "position": "WR",
+            "team": "DET",
+            "roster_pct": 81.7
+        },
+        "Xavier Worthy": {
+            "id": "4683062",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4683062.png",
+            "position": "WR",
+            "team": "KC",
+            "roster_pct": 86.9
+        },
+        "Mike Evans": {
+            "id": "16737",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16737.png",
+            "position": "WR",
+            "team": "TB",
+            "roster_pct": 97.8
+        },
+        "Cooper Kupp": {
+            "id": "2977187",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2977187.png",
+            "position": "WR",
+            "team": "LAR",
+            "roster_pct": 97.9
+        },
+        "A.J. Brown": {
+            "id": "4047646",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4047646.png",
+            "position": "WR",
+            "team": "PHI",
+            "roster_pct": 99.6
+        },
+        "Stefon Diggs": {
+            "id": "2976212",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2976212.png",
+            "position": "WR",
+            "team": "HOU",
+            "roster_pct": 98.7
+        },
+        "Chris Godwin": {
+            "id": "3116165",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3116165.png",
+            "position": "WR",
+            "team": "TB",
+            "roster_pct": 63.1
+        },
+        "Justin Jefferson": {
+            "id": "4262921",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4262921.png",
+            "position": "WR",
+            "team": "MIN",
+            "roster_pct": 99.8
+        },
+        "Nico Collins": {
+            "id": "4258173",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4258173.png",
+            "position": "WR",
+            "team": "HOU",
+            "roster_pct": 98.3
+        },
+        "Rashee Rice": {
+            "id": "4428331",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4428331.png",
+            "position": "WR",
+            "team": "KC",
+            "roster_pct": 42.2
+        },
+        "Khalil Shakir": {
+            "id": "4373678",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4373678.png",
+            "position": "WR",
+            "team": "BUF",
+            "roster_pct": 68.0
+        },
+        "Ladd McConkey": {
+            "id": "4612826",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4612826.png",
+            "position": "WR",
+            "team": "LAC",
+            "roster_pct": 71.6
+        },
+        "Jalen McMillan": {
+            "id": "4430834",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4430834.png",
+            "position": "WR",
+            "team": "TB",
+            "roster_pct": 46.3
+        },
+        "DeVonta Smith": {
+            "id": "4241478",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4241478.png",
+            "position": "WR",
+            "team": "PHI",
+            "roster_pct": 96.7
+        },
+        "George Pickens": {
+            "id": "4426354",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4426354.png",
+            "position": "WR",
+            "team": "PIT",
+            "roster_pct": 93.9
+        },
+        "Christian Watson": {
+            "id": "4248528",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4248528.png",
+            "position": "WR",
+            "team": "GB",
+            "roster_pct": 54.7
+        },
+        "Tank Dell": {
+            "id": "4366031",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4366031.png",
+            "position": "WR",
+            "team": "HOU",
+            "roster_pct": 90.8
+        },
+        "Rashod Bateman": {
+            "id": "4360939",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4360939.png",
+            "position": "WR",
+            "team": "BAL",
+            "roster_pct": 35.7
+        },
+        "Zay Flowers": {
+            "id": "4429615",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4429615.png",
+            "position": "WR",
+            "team": "BAL",
+            "roster_pct": 95.8
+        },
+        "Keon Coleman": {
+            "id": "4635008",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4635008.png",
+            "position": "WR",
+            "team": "BUF",
+            "roster_pct": 53.5
+        },
+        "Romeo Doubs": {
+            "id": "4361432",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4361432.png",
+            "position": "WR",
+            "team": "GB",
+            "roster_pct": 63.9
+        },
+        "Puka Nacua": {
+            "id": "4426515",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4426515.png",
+            "position": "WR",
+            "team": "LAR",
+            "roster_pct": 95.1
+        },
+        "Quentin Johnston": {
+            "id": "4429025",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4429025.png",
+            "position": "WR",
+            "team": "LAC",
+            "roster_pct": 33.8
+        },
+        "Courtland Sutton": {
+            "id": "3128429",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3128429.png",
+            "position": "WR",
+            "team": "DEN",
+            "roster_pct": 72.9
+        },
+        "Jordan Addison": {
+            "id": "4429205",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4429205.png",
+            "position": "WR",
+            "team": "MIN",
+            "roster_pct": 79.3
+        },
+        "Terry McLaurin": {
+            "id": "3121422",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3121422.png",
+            "position": "WR",
+            "team": "WAS",
+            "roster_pct": 93.6
+        },
+        "Amari Cooper": {
+            "id": "2976499",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2976499.png",
+            "position": "WR",
+            "team": "BUF",
+            "roster_pct": 94.7
+        },
+        "Amon-Ra St. Brown": {
+            "id": "4374302",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4374302.png",
+            "position": "WR",
+            "team": "DET",
+            "roster_pct": 99.8
+        },
+        "DeAndre Hopkins": {
+            "id": "15795",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/15795.png",
+            "position": "WR",
+            "team": "KC",
+            "roster_pct": 81.7
+        },
+        "JuJu Smith-Schuster": {
+            "id": "3120348",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3120348.png",
+            "position": "WR",
+            "team": "KC",
+            "roster_pct": 30.4
+        },
+        "Isaiah Likely": {
+            "id": "4361050",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4361050.png",
+            "position": "TE",
+            "team": "BAL",
+            "roster_pct": 56.7
+        },
+        "Sam LaPorta": {
+            "id": "4430027",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4430027.png",
+            "position": "TE",
+            "team": "DET",
+            "roster_pct": 96.5
+        },
+        "Tucker Kraft": {
+            "id": "4572680",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4572680.png",
+            "position": "TE",
+            "team": "GB",
+            "roster_pct": 52.5
+        },
+        "Travis Kelce": {
+            "id": "15847",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/15847.png",
+            "position": "TE",
+            "team": "KC",
+            "roster_pct": 99.3
+        },
+        "Dallas Goedert": {
+            "id": "3121023",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3121023.png",
+            "position": "TE",
+            "team": "PHI",
+            "roster_pct": 82.4
+        },
+        "Pat Freiermuth": {
+            "id": "4361411",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4361411.png",
+            "position": "TE",
+            "team": "PIT",
+            "roster_pct": 65.2
+        },
+        "Mark Andrews": {
+            "id": "3116365",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3116365.png",
+            "position": "TE",
+            "team": "BAL",
+            "roster_pct": 87.7
+        },
+        "Chris Boswell": {
+            "id": "17372",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/17372.png",
+            "position": "K",
+            "team": "PIT",
+            "roster_pct": 52.5
+        },
+        "Ka'imi Fairbairn": {
+            "id": "2971573",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2971573.png",
+            "position": "K",
+            "team": "HOU",
+            "roster_pct": 91.1
+        },
+        "Chase McLaughlin": {
+            "id": "3150744",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3150744.png",
+            "position": "K",
+            "team": "TB",
+            "roster_pct": 51.4
+        },
+        "Cameron Dicker": {
+            "id": "4362081",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4362081.png",
+            "position": "K",
+            "team": "LAC",
+            "roster_pct": 55.3
+        },
+        "Jake Elliott": {
+            "id": "3050478",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3050478.png",
+            "position": "K",
+            "team": "PHI",
+            "roster_pct": 65.4
+        },
+        "Tyler Bass": {
+            "id": "3917232",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3917232.png",
+            "position": "K",
+            "team": "BUF",
+            "roster_pct": 50.4
+        },
+        "Harrison Butker": {
+            "id": "3055899",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3055899.png",
+            "position": "K",
+            "team": "KC",
+            "roster_pct": 91.5
+        },
+        "Jake Bates": {
+            "id": "4689936",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4689936.png",
+            "position": "K",
+            "team": "DET",
+            "roster_pct": 41.7
+        },
+        "Justin Tucker": {
+            "id": "15683",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/15683.png",
+            "position": "K",
+            "team": "BAL",
+            "roster_pct": 98.9
+        },
+        "Austin Seibert": {
+            "id": "3821683",
+            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3821683.png",
+            "position": "K",
+            "team": "WAS",
+            "roster_pct": 58.2
+        }
+    },
+    "not_found": [
+        "Marquise Brown"
+    ]
+}
