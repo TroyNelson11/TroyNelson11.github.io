@@ -393,7 +393,7 @@
                         "name": "Los Angeles Rams",
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/los-angeles-rams-football-logo-png.png",
                         "primary_color": "#003594", 
-                        "secondary_color": "#B3995D",
+                        "secondary_color": "#ffd100",
                         "seed" : 3
 
                     },
@@ -420,7 +420,7 @@
                         "name": "Tampa Bay Buccaneers",
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/tampa-bay-buccaneers-logo-emblem-png.png",
                         "primary_color": "#34302B", 
-                        "secondary_color": "#A5ACAF",
+                        "secondary_color": "#D50A0A",
                         "seed" : 9
 
                     },
@@ -527,7 +527,7 @@
                             filteredPlayers[position].forEach(player => {
                                 const option = document.createElement("option");
                                 option.value = player.name;
-                                option.textContent = player.name;
+                                option.textContent = player.name + ' (' + player.team + ')';
                                 option.dataset.team = player.team;
                                 select.appendChild(option);
                             });
