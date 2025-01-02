@@ -42,7 +42,25 @@
         <div id="section4" class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">Submit Your Team</div>
+                    <div class="card-header flex items-center">
+                        <span class="mr-8">Submit Your Team</span>
+                        <a href="#" class="help-link text-sm font-normal" id="helpLink">Need help?</a>
+                    </div>
+                    
+                    <!-- Add Modal -->
+                    <div id="helpModal" class="modal hidden">
+                        <div class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <h2 class="font-bold mb-6">How does this work?</h2>
+                            <p>
+                                Selecting a team for this fantasy format involves picking only one player from each team. There are 14 teams in the playoffs, and you will need to select: 2 Quarterbacks, 4 Runningbacks, 4 Wide Receivers or Tight Ends, 2 Kickers, and 2 Defenses. Once you pick a player, that team's logo will be grayed out to help keep track.
+                                <br><br>
+                                In general, the players who play the most games get the most points. Thus, keep in mind who is likely to win in the first round and who is not. Kickers and defense typically score the least amount of points. 
+                                <br><br>
+                                Lastly, the tiebreaker is a guess at the total points scored in the superbowl. Closest wins any ties.
+                            </p>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <form id="teamForm">
                             <div class="row">
@@ -630,6 +648,38 @@
                     }
                 });
             });
+    
+        // Modal functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('helpModal');
+            const helpLink = document.getElementById('helpLink');
+            const closeButton = document.querySelector('.close-button');
+
+            helpLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                modal.classList.add('show');
+            });
+
+            closeButton.addEventListener('click', function() {
+                modal.classList.remove('show');
+            });
+
+            // Close modal when clicking outside
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.remove('show');
+                }
+            });
+
+            // Prevent scrolling when modal is open
+            modal.addEventListener('show', function() {
+                document.body.style.overflow = 'hidden';
+            });
+
+            modal.addEventListener('hide', function() {
+                document.body.style.overflow = 'auto';
+            });
+        });
     
         </script>
     </body>

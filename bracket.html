@@ -42,7 +42,23 @@
      <div id="container" class="container">
         <div class="col-md-12">
             <div class="bracketcard">
-                <div class="card-header">Pick the AFC and NFC winners</div>
+                <div class="card-header flex items-center justify-center relative">
+                    <span class="text-center w-1/2">Pick the AFC and NFC winners</span>
+                    <a href="#" class="help-link text-sm" id="helpLink">What is this?</a>
+                </div>
+                
+                <!-- Add Modal -->
+                <div id="helpModal" class="modal hidden">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <h2 class="font-bold mb-6">Is this apart of the competition?</h2>
+                        <p>
+                            <!-- Add your help text here when ready -->
+                            
+                            This is not apart of the competition, this 2025 NFL Playoff Bracket and is just meant to help you predict how many games a team might win / play this Postseason. The minus or plus number is the point spread for the home team. The over / under is the number of points expected in that game. Counting the number of times you see the logo will help count up how many games you predict a team will play. 
+                        </p>
+                    </div>
+                </div>
                         <div>
                             <div class="bracket disable-image">
                                 <div class="column one">
@@ -1134,6 +1150,38 @@ const handleSuperBowlClick = (e) => {
         }
     });
 };
+
+// Modal functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('helpModal');
+    const helpLink = document.getElementById('helpLink');
+    const closeButton = document.querySelector('.close-button');
+
+    helpLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        modal.classList.add('show');
+    });
+
+    closeButton.addEventListener('click', function() {
+        modal.classList.remove('show');
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.classList.remove('show');
+        }
+    });
+
+    // Prevent scrolling when modal is open
+    modal.addEventListener('show', function() {
+        document.body.style.overflow = 'hidden';
+    });
+
+    modal.addEventListener('hide', function() {
+        document.body.style.overflow = 'auto';
+    });
+});
 
         </script>
     </div>
