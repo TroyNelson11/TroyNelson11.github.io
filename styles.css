@@ -569,6 +569,25 @@ input#tiebreaker {
         right: 10px;
         top: 5px;
     }
+    /* Help Link Style */
+    .help-link {
+        color: #006400;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+}
+
+/* Make the help link styles more specific */
+.card-header .help-link {
+    color: #006400 !important;
+    text-decoration: underline !important;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.card-header .help-link:hover {
+    color: #004d00 !important;
 }
 
 

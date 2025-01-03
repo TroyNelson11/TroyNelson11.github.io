@@ -655,14 +655,18 @@
             const helpLink = document.getElementById('helpLink');
             const closeButton = document.querySelector('.close-button');
 
-            helpLink.addEventListener('click', function(e) {
-                e.preventDefault();
-                modal.classList.add('show');
-            });
+            if (helpLink) {  // Add check to ensure element exists
+                helpLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    modal.classList.add('show');
+                });
+            }
 
-            closeButton.addEventListener('click', function() {
-                modal.classList.remove('show');
-            });
+            if (closeButton) {  // Add check to ensure element exists
+                closeButton.addEventListener('click', function() {
+                    modal.classList.remove('show');
+                });
+            }
 
             // Close modal when clicking outside
             window.addEventListener('click', function(e) {
