@@ -528,16 +528,16 @@ div[id^="bracket-container"] .team-div[data-result="lose"] {
     .card-header span {
         width: 100% !important;  /* Full width */
         text-align: center;
-        font-size: 4vw;         /* Larger font size for main title */
-        order: 1;               /* Show title first */
+        font-size: 4vw !important;         /* Larger font size for main title */
+        order: 1 !important;               /* Show title first */
     }
 
     .help-link {
         position: relative !important;  /* Remove absolute positioning */
         right: auto !important;        /* Reset right position */
         font-size: 3.5vw !important;   /* Adjusted font size */
-        order: 2;                      /* Show help link second */
-        margin-top: 1vw;              /* Space between title and link */
+        order: 2 !important;                      /* Show help link second */
+        margin-top: 1vw !important;              /* Space between title and link */
     }
 
     .modal-content {
