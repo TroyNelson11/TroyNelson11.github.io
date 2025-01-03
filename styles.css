@@ -558,24 +558,31 @@ input#tiebreaker {
 
 /* Mobile-friendly adjustments */
 @media (max-width: 768px) {
+    .help-link {
+        font-size: 3.5vw !important;  /* Increased from 3vw */
+    }
+
     .modal-content {
         width: 95%;
         margin: 10px;
         padding: 15px;
     }
 
-    .close-button {
-        font-size: 24px;
-        right: 10px;
-        top: 5px;
-    }
-    /* Help Link Style */
-    .help-link {
-        color: #006400;
-        text-decoration: underline;
-        cursor: pointer;
+    .modal-content h2 {
+        font-size: 5vw !important;    /* Larger title size */
+        margin-bottom: 4vw !important; /* Increased spacing */
     }
 
+    .modal-content p {
+        font-size: 3.8vw !important;   /* Larger paragraph text */
+        line-height: 1.4 !important;   /* Better readability */
+    }
+
+    .close-button {
+        font-size: 7vw !important;     /* Larger close button */
+        right: 3vw;
+        top: 1vw;
+    }
 }
 
 /* Make the help link styles more specific */

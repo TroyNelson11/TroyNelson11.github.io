@@ -518,9 +518,26 @@ div[id^="bracket-container"] .team-div[data-result="lose"] {
 
 /* Mobile-friendly adjustments */
 @media (max-width: 768px) {
+    .card-header {
+        flex-direction: column !important;  /* Stack items vertically */
+        gap: 2vw !important;               /* Space between items */
+        padding: 2vw !important;           /* Padding around content */
+        align-items: center !important;    /* Center items horizontally */
+    }
+
+    .card-header span {
+        width: 100% !important;  /* Full width */
+        text-align: center;
+        font-size: 4vw;         /* Larger font size for main title */
+        order: 1;               /* Show title first */
+    }
+
     .help-link {
-        font-size: 3vw;
-        right: 15%; /* Adjusted for mobile */
+        position: relative !important;  /* Remove absolute positioning */
+        right: auto !important;        /* Reset right position */
+        font-size: 3.5vw !important;   /* Adjusted font size */
+        order: 2;                      /* Show help link second */
+        margin-top: 1vw;              /* Space between title and link */
     }
 
     .modal-content {
@@ -529,10 +546,20 @@ div[id^="bracket-container"] .team-div[data-result="lose"] {
         padding: 15px;
     }
 
+    .modal-content h2 {
+        font-size: 5vw !important;
+        margin-bottom: 4vw !important;
+    }
+
+    .modal-content p {
+        font-size: 3.8vw !important;
+        line-height: 1.4 !important;
+    }
+
     .close-button {
-        font-size: 24px;
-        right: 10px;
-        top: 5px;
+        font-size: 7vw !important;
+        right: 3vw;
+        top: 1vw;
     }
 }
 
