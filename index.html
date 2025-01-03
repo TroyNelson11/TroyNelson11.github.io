@@ -16,33 +16,685 @@
  <body>
      <!-- Navigation Bar -->
  
-     <div class="nav-bar">
-        <div class="navbar-brand">
-             
-            <div class="title"><img src="https://raw.githubusercontent.com/TroyNelson11/TroyNelson11.github.io/main/src/drawn_gator_logo.png" alt="Logo" class="logo">GOOF</div>
-            <div class="brand-text">
-               <span class="subtitle">Playoff Fantasy Football</span>
+     
+
+    <!-- Main Content Container -->
+    <div id="mainContent">
+        <body>
+            <!-- Navigation Bar -->
+        
+            <div class="nav-bar">
+                <div class="navbar-brand">
+                    
+                    <div class="title"><img src="https://raw.githubusercontent.com/TroyNelson11/TroyNelson11.github.io/main/src/drawn_gator_logo.png" alt="Logo" class="logo">GOOF</div>
+                    <div class="brand-text">
+                       <span class="subtitle">Playoff Fantasy Football</span>
+                    </div>
+                </div>
+                <div class="navbar-nav">
+                    <div class="nav-item">
+                        <a class="nav-link" href="submitTeam.html">Submit Team</a>
+                    </div>
+                    <div class="nav-item" hidden>
+                        <a class="nav-link" href="scoring.html">Scoring</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="players.html">Players</a>
+                    </div>
+                    <div class="nav-item">
+                       <a class="nav-link" href="bracket.html">Bracket</a>
+                   </div>
+                </div>
             </div>
-        </div>
-         <div class="navbar-nav">
-             <div class="nav-item">
-                 <a class="nav-link" href="submitTeam.html">Submit Team</a>
-             </div>
-             <div class="nav-item" hidden>
-                 <a class="nav-link" href="scoring.html">Scoring</a>
-             </div>
-             <div class="nav-item">
-                 <a class="nav-link" href="players.html">Players</a>
-             </div>
-             <div class="nav-item">
-                <a class="nav-link" href="bracket.html">Bracket</a>
-            </div>
-         </div>
-     </div>
-    <script>
-        window.onload = function() {
-            window.location.href = 'submitTeam.html'; // Redirects to submitTeam.html
-        };
-    </script>
+           <div class="container">
+               <div id="section4" class="row">
+                   <div class="col-md-12">
+                       <div class="card">
+                           <div class="card-header flex items-center">
+                               <span class="mr-8">Submit Your Team</span>
+                               <a href="#" class="help-link font-normal" id="helpLink">Need help?</a>
+                           </div>
+                           
+                           <!-- Add Modal -->
+                           <div id="helpModal" class="modal hidden">
+                               <div class="modal-content">
+                                   <span class="close-button">&times;</span>
+                                   <h2 class="font-bold mb-6">How does this work?</h2>
+                                   <p>
+                                       Selecting a team for this fantasy format involves picking only one player from each team. There are 14 teams in the playoffs, and you will need to select: 2 Quarterbacks, 4 Runningbacks, 4 Wide Receivers or Tight Ends, 2 Kickers, and 2 Defenses. Once you pick a player, that team's logo will be grayed out to help keep track.
+                                       <br><br>
+                                       In general, the players who play the most games get the most points. Thus, keep in mind who is likely to win in the first round and who is not. Kickers and defense typically score the least amount of points. 
+                                       <br><br>
+                                       Lastly, the tiebreaker is a guess at the total points scored in the superbowl. Closest wins any ties.
+                                   </p>
+                               </div>
+                           </div>
+                           <div class="card-body">
+                               <form id="teamForm">
+                                   <div class="row">
+                                       <div class="grid grid-cols-1 md:grid-cols-12 gap-4 w-full">
+           
+                                           <!-- Left Column (Quarterbacks, Runningbacks, etc.) -->
+                                           <div class="md:col-span-5 space-y-1">
+                                               <!-- Email and Team Name -->
+                                               <div class="flex items-center">
+                                                   <label for="email" class="w-1/3 text-sm font-bold text-gray-700">Email:</label>
+                                                   <input type="email" id="email" name="email" required class="mt-1 block w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                               </div>
+                                               <div class="flex items-center mb-4">
+                                                   <label for="teamName" class="w-1/3 text-sm font-bold text-gray-700">Team Name:</label>
+                                                   <input type="text" id="teamName" name="teamName" required class="mt-1 block w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                               </div>
+       
+                                       
+                                               <!-- Quarterbacks -->
+                                               <div class="mb-4 flex items-center space-x-4">
+                                                   <label for="qb1" class="w-1/3 text-sm font-bold text-gray-700">Quarterback 1:</label>
+                                                   <select id="qb1" name="qb1" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="qb" required>
+                                                       <option value="" disabled selected>Select Quarterback</option>
+                                                   </select>
+                                               </div>
+                                               <div class="mb-4 flex items-center space-x-4">
+                                                   <label for="qb2" class="w-1/3 text-sm font-bold text-gray-700">Quarterback 2:</label>
+                                                   <select id="qb2" name="qb2" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="qb" required>
+                                                       <option value="" disabled selected>Select Quarterback</option>
+                                                   </select>
+                                               </div>
+                                               <!-- Runningbacks -->
+                                               <div class="mb-4 flex items-center space-x-4">
+                                                   <label for="rb1" class="w-1/3 text-sm font-bold text-gray-700">Runningback 1:</label>
+                                                   <select id="rb1" name="rb1" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="rb" required>
+                                                       <option value="" disabled selected>Select Runningback</option>
+                                                   </select>
+                                               </div>
+       
+                                               <div class="mb-4 flex items-center space-x-4">
+                                                   <label for="rb2" class="w-1/3 text-sm font-bold text-gray-700">Runningback 2:</label>
+                                                   <select id="rb2" name="rb2" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="rb" required>
+                                                       <option value="" disabled selected>Select Runningback</option>
+                                                   </select>
+                                               </div>
+       
+                                               <div class="mb-4 flex items-center space-x-4">
+                                                   <label for="rb3" class="w-1/3 text-sm font-bold text-gray-700">Runningback 3:</label>
+                                                   <select id="rb3" name="rb3" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="rb" required>
+                                                       <option value="" disabled selected>Select Runningback</option>
+                                                   </select>
+                                               </div>
+       
+                                               <div class="mb-4 flex items-center space-x-4">
+                                                   <label for="rb4" class="w-1/3 text-sm font-bold text-gray-700">Runningback 4:</label>
+                                                   <select id="rb4" name="rb4" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="rb" required>
+                                                       <option value="" disabled selected>Select Runningback</option>
+                                                   </select>
+                                               </div>
+       
+                                               
+                                           </div>
+                                           
+                                           <!-- Center Column (Wide Receiver/Tight End, Defense, Kicker) -->
+                                           <div class="md:col-span-5 space-y-1">
+                                               <!-- Wide Receiver/Tight End -->
+                                               <div class="flex items-center space-x-4">
+                                                   <label for="wr1" class="w-1/3 text-sm font-bold text-gray-700">Wide Receiver/ Tight End 1:</label>
+                                                   <select id="wr1" name="wr1" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="wr" required>
+                                                       <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
+                                                   </select>
+                                               </div>
+       
+                                               <div class="mb-4 flex items-center space-x-4">
+                                                   <label for="wr2" class="w-1/3 text-sm font-bold text-gray-700">Wide Receiver/ Tight End 2:</label>
+                                                   <select id="wr2" name="wr2" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="wr" required>
+                                                       <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
+                                                   </select>
+                                               </div>
+       
+                                               <div class="mb-4 flex items-center space-x-4">
+                                                   <label for="wr3" class="w-1/3 text-sm font-bold text-gray-700">Wide Receiver/ Tight End 3:</label>
+                                                   <select id="wr3" name="wr3" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="wr" required>
+                                                       <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
+                                                   </select>
+                                               </div>
+       
+                                               <div class="mb-4 flex items-center space-x-4">
+                                                   <label for="wr4" class="w-1/3 text-sm font-bold text-gray-700">Wide Receiver/ Tight End 4:</label>
+                                                   <select id="wr4" name="wr4" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="wr" required>
+                                                       <option value="" disabled selected>Select Wide Receiver/ Tight End</option>
+                                                   </select>
+                                               </div>
+                                               <!-- Defense -->
+                                               <div class="mb-4 flex items-center space-x-4">
+                                                   <label for="def1" class="w-1/3 text-sm font-bold text-gray-700">Defense 1:</label>
+                                                   <select id="def1" name="def1" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="def" required>
+                                                       <option value="" disabled selected>Select Defense</option>
+                                                   </select>
+                                               </div>
+       
+                                               <div class="mb-4 flex items-center space-x-4">
+                                                   <label for="def2" class="w-1/3 text-sm font-bold text-gray-700">Defense 2:</label>
+                                                   <select id="def2" name="def2" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="def" required>
+                                                       <option value="" disabled selected>Select Defense</option>
+                                                   </select>
+                                               </div>
+                                               <!-- Kicker -->
+                                               <div class="mb-4 flex items-center space-x-4">
+                                                   <label for="k1" class="w-1/3 text-sm font-bold text-gray-700">Kicker 1:</label>
+                                                   <select id="k1" name="k1" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="k" required>
+                                                       <option value="" disabled selected>Select Kicker</option>
+                                                   </select>
+                                               </div>
+       
+                                               <div class="mb-4 flex items-center space-x-4">
+                                                   <label for="k2" class="w-1/3 text-sm font-bold text-gray-700">Kicker 2:</label>
+                                                   <select id="k2" name="k2" class="w-2/3 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" data-position="k" required>
+                                                       <option value="" disabled selected>Select Kicker</option>
+                                                   </select>
+                                               </div>
+                                           
+                                           </div>  
+                                           <!-- Right Column (Sidebar) -->
+                                           <div class="md:col-span-2">
+                                               <div id="nfl-teams" class="font-semibold text-lg"></div>
+                                           </div>           
+                                       </div>
+                                   </div>
+                                   <div class="label-container">
+                                       <label for="tiebreaker">Enter a Tiebreaker:</label>
+                                       <input type="number" id="tiebreaker" name="tiebreaker" min="30" max="70" step="1" style="max-width: 100px;" required>
+                                   </div>
+                                   <div id="teamsErrorContainer" style="text-align: center; color: red; font-weight: bold; display: none;">
+                                       <small id="teamsError">You've selected two positions from the same team.</small>
+                                   </div>                            
+                                   <div class="flex justify-center mt-4 w-full max-w-md mx-auto">
+                                       <button type="submit" class="px-6 py-3 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-gray-300 hover:bg-[#006400] hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-lg">
+                                           Submit
+                                       </button>
+                                   </div>
+                                   
+                               </form>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       
+           <!-- Scripts -->
+                   <!-- Scripts -->
+                   <script>
+                       // Define player data
+                       const players = {
+           "qb": [
+               { "name": "Baker Mayfield", "team": "TB" }, 
+               { "name": "Bo Nix", "team": "DEN" },        
+               { "name": "C.J. Stroud", "team": "HOU" },   
+               { "name": "Jalen Hurts", "team": "PHI" },   
+               { "name": "Jared Goff", "team": "DET" },    
+               { "name": "Jayden Daniels", "team": "WAS" },
+               { "name": "Jordan Love", "team": "GB" },    
+               { "name": "Josh Allen", "team": "BUF" },    
+               { "name": "Justin Fields", "team": "PIT" }, 
+               { "name": "Justin Herbert", "team": "LAC" },
+               { "name": "Lamar Jackson", "team": "BAL" }, 
+               { "name": "Matthew Stafford", "team": "LAR" },
+               { "name": "Patrick Mahomes II", "team": "KC" },
+               { "name": "Russell Wilson", "team": "PIT" },
+               { "name": "Sam Darnold", "team": "MIN" },
+           ],
+           "rb": [
+               { "name": "Aaron Jones", "team": "MIN" },
+               { "name": "Aaron Jones Sr.", "team": "MIN" },
+               { "name": "Austin Ekeler", "team": "WAS" },
+               { "name": "Brian Robinson Jr.", "team": "WAS" },
+               { "name": "Bucky Irving", "team": "TB" },
+               { "name": "David Montgomery", "team": "DET" },
+               { "name": "Derrick Henry", "team": "BAL" },
+               { "name": "Gus Edwards", "team": "LAC" },
+               { "name": "Isiah Pacheco", "team": "KC" },
+               { "name": "J.K. Dobbins", "team": "LAC" },
+               { "name": "Jahmyr Gibbs", "team": "DET" },
+               { "name": "James Cook", "team": "BUF" },
+               { "name": "Javonte Williams", "team": "DEN" },
+               { "name": "Jaylen Warren", "team": "PIT" },
+               { "name": "Joe Mixon", "team": "HOU" },
+               { "name": "Josh Jacobs", "team": "GB" },
+               { "name": "Kareem Hunt", "team": "KC" },
+               { "name": "Kyren Williams", "team": "LAR" },
+               { "name": "Najee Harris", "team": "PIT" },
+               { "name": "Rachaad White", "team": "TB" },
+               { "name": "Saquon Barkley", "team": "PHI" },
+               { "name": "Ty Chandler", "team": "MIN" },
+           ],
+           "wr": [
+               { "name": "A.J. Brown", "team": "PHI" },
+               { "name": "Amari Cooper", "team": "BUF" },
+               { "name": "Amon-Ra St. Brown", "team": "DET" },
+               { "name": "Chris Godwin", "team": "TB" },
+               { "name": "Christian Watson", "team": "GB" },
+               { "name": "Cooper Kupp", "team": "LAR" },
+               { "name": "Courtland Sutton", "team": "DEN" },
+               { "name": "DeAndre Hopkins", "team": "KC" },
+               { "name": "DeVonta Smith", "team": "PHI" },
+               { "name": "Demarcus Robinson", "team": "LAR" },
+               { "name": "Diontae Johnson", "team": "HOU" },
+               { "name": "George Pickens", "team": "PIT" },
+               { "name": "Jalen McMillan", "team": "TB" },
+               { "name": "Jameson Williams", "team": "DET" },
+               { "name": "Jayden Reed", "team": "GB" },
+               { "name": "Jordan Addison", "team": "MIN" },
+               { "name": "JuJu Smith-Schuster", "team": "KC" },
+               { "name": "Justin Jefferson", "team": "MIN" },
+               { "name": "Keon Coleman", "team": "BUF" },
+               { "name": "Khalil Shakir", "team": "BUF" },
+               { "name": "Ladd McConkey", "team": "LAC" },
+               { "name": "Marquise Brown", "team": "KC" },
+               { "name": "Mike Evans", "team": "TB" },
+               { "name": "Nico Collins", "team": "HOU" },
+               { "name": "Puka Nacua", "team": "LAR" },
+               { "name": "Quentin Johnston", "team": "LAC" },
+               { "name": "Rashee Rice", "team": "KC" },
+               { "name": "Rashod Bateman", "team": "BAL" },
+               { "name": "Romeo Doubs", "team": "GB" },
+               { "name": "Stefon Diggs", "team": "HOU" },
+               { "name": "Tank Dell", "team": "HOU" },
+               { "name": "Terry McLaurin", "team": "WAS" },
+               { "name": "Xavier Worthy", "team": "KC" },
+               { "name": "Zay Flowers", "team": "BAL" },
+           ],
+           "k": [
+               { "name": "Austin Seibert", "team": "WAS" },
+               { "name": "Cameron Dicker", "team": "LAC" },
+               { "name": "Chase McLaughlin", "team": "TB" },
+               { "name": "Chris Boswell", "team": "PIT" },
+               { "name": "Harrison Butker", "team": "KC" },
+               { "name": "Jake Bates", "team": "DET" },
+               { "name": "Jake Elliott", "team": "PHI" },
+               { "name": "Justin Tucker", "team": "BAL" },
+               { "name": "Ka'imi Fairbairn", "team": "HOU" },
+               { "name": "Tyler Bass", "team": "BUF" },
+           ],
+           "dst": [
+               { "name": "Baltimore Ravens", "team": "BAL" },
+               { "name": "Buffalo Bills", "team": "BUF" },
+               { "name": "Denver Broncos", "team": "DEN" },
+               { "name": "Detroit Lions", "team": "DET" },
+               { "name": "Green Bay Packers", "team": "GB" },
+               { "name": "Houston Texans", "team": "HOU" },
+               { "name": "Kansas City Chiefs", "team": "KC" },
+               { "name": "Los Angeles Chargers", "team": "LAC" },
+               { "name": "Minnesota Vikings", "team": "MIN" },
+               { "name": "Philadelphia Eagles", "team": "PHI" },
+               { "name": "Pittsburgh Steelers", "team": "PIT" },
+               { "name": "Tampa Bay Buccaneers", "team": "TB" },
+               { "name": "Washington Commanders", "team": "WAS" },
+           ],
+           "te": [
+               { "name": "Dallas Goedert", "team": "PHI" },
+               { "name": "David Njoku", "team": "HOU" },
+               { "name": "George Kittle", "team": "GB" },
+               { "name": "Isaiah Likely", "team": "BAL" },
+               { "name": "Jake Ferguson", "team": "TB" },
+               { "name": "Mark Andrews", "team": "BAL" },
+               { "name": "Pat Freiermuth", "team": "PIT" },
+               { "name": "Sam LaPorta", "team": "DET" },
+               { "name": "Travis Kelce", "team": "KC" },
+               { "name": "Tucker Kraft", "team": "GB" }
+           ]
+       };
+       
+                       const playoffTeams = ["KC", "DET","BUF", "PHI", "BAL", "LAR", "HOU", "TB", "PIT", "MIN","LAC", "WAS", "DEN",  "GB"];
+                       const detailedPlayoffTeams = [
+                           {
+                               "abbreviation": "KC",
+                               "name": "Kansas City Chiefs",
+                               "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/kansas-city-chiefs-logo-emblem-png.png",
+                               "primary_color": "#C8102E", 
+                               "secondary_color": "#FFB612",
+                               "seed" : 1
+                           },
+                           {
+                               "abbreviation": "BUF",
+                               "name": "Buffalo Bills",
+                               "logo": "https://content.sportslogos.net/logos/7/149/full/buffalo_bills_logo_primary_19747050.png",
+                               "primary_color": "#003DA5", 
+                               "secondary_color": "#C8102E",
+                               "seed" : 2
+       
+                           },
+                           {
+                               "abbreviation": "BAL",
+                               "name": "Baltimore Ravens",
+                               "logo": "https://content.sportslogos.net/logos/7/153/full/baltimore_ravens_logo_primary_19996038.png",
+                               "primary_color": "#3B0A45", 
+                               "secondary_color": "#FFC20E",
+                               "seed" : 5
+       
+                           },
+                           {
+                               "abbreviation": "HOU",
+                               "name": "Houston Texans",
+                               "logo": "https://content.sportslogos.net/logos/7/157/full/houston_texans_logo_primary_2024_sportslogosnet-5890.png",
+                               "primary_color": "#03202F", 
+                               "secondary_color": "#A71930",
+                               "seed" : 4
+       
+                           },
+                           {
+                               "abbreviation": "PIT",
+                               "name": "Pittsburgh Steelers",
+                               "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/pittsburgh-steelers-logo-emblem-png.png",
+                               "primary_color": "#FFC20E", 
+                               "secondary_color": "#000000",
+                               "seed" : 3
+       
+                           },
+                           {
+                               "abbreviation": "DEN",
+                               "name": "Denver Broncos",
+                               "logo": "https://content.sportslogos.net/logos/7/161/full/denver_broncos_logo_primary_19973076.png",
+                               "primary_color": "#FB4F14", 
+                               "secondary_color": "#002244",
+                               "seed" : 7
+       
+                           },
+                           {
+                               "abbreviation": "LAC",
+                               "name": "Los Angeles Chargers",
+                               "logo": "https://content.sportslogos.net/logos/7/6446/full/los_angeles_chargers_logo_primary_20203514.png",
+                               "primary_color": "#0080C6", 
+                               "secondary_color": "#FFC20E",
+                               "seed" : 6
+       
+                           },
+                           {
+                               "abbreviation": "PHI",
+                               "name": "Philadelphia Eagles",
+                               "logo": "https://content.sportslogos.net/logos/7/167/full/philadelphia_eagles_logo_primary_19964867.png",
+                               "primary_color": "#004C54", 
+                               "secondary_color": "#A5ACAF",
+                               "seed" : 2
+       
+                           },
+                           {
+                               "abbreviation": "LAR",
+                               "name": "Los Angeles Rams",
+                               "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/los-angeles-rams-football-logo-png.png",
+                               "primary_color": "#003594", 
+                               "secondary_color": "#ffd100",
+                               "seed" : 3
+       
+                           },
+                           {
+                               "abbreviation": "DET",
+                               "name": "Detroit Lions",
+                               "logo": "https://content.sportslogos.net/logos/7/170/full/detroit_lions_logo_primary_20172565.png",
+                               "primary_color": "#0076B6", 
+                               "secondary_color": "#A5ACAF",
+                               "seed" : 1
+       
+                           },
+                           {
+                               "abbreviation": "MIN",
+                               "name": "Minnesota Vikings",
+                               "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/minnesota-vikings-logo-emblem-png.png",
+                               "primary_color": "#4F2765", 
+                               "secondary_color": "#FFD100",
+                               "seed" : 5
+       
+                           },
+                           {
+                               "abbreviation": "TB",
+                               "name": "Tampa Bay Buccaneers",
+                               "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/tampa-bay-buccaneers-logo-emblem-png.png",
+                               "primary_color": "#34302B", 
+                               "secondary_color": "#D50A0A",
+                               "seed" : 9
+       
+                           },
+                           {
+                               "abbreviation": "WAS",
+                               "name": "Washington Commanders",
+                               "logo": "https://content.sportslogos.net/logos/7/6832/full/washington_commanders_logo_primary_20228587.png",
+                               "primary_color": "#5A1414", 
+                               "secondary_color": "#FFC20E",
+                               "seed" : 7
+       
+                           },
+                           {
+                               "abbreviation": "GB",
+                               "name": "Green Bay Packers",
+                               "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/green-bay-packers-symbol-logo-png.png",
+                               "primary_color": "#203731", 
+                               "secondary_color": "#FFB612",
+                               "seed" : 6
+       
+                           },
+                           {
+                               "abbreviation": "ATL",
+                               "name": "Atlanta Falcons",
+                               "logo": "https://nfldesigns.com/wp-content/uploads/2023/06/atlanta-falcons-logo-hex-colors.png",
+                               "primary_color": "#000",
+                               "secondary_color": "#A71930",
+                               "seed" : 4
+                           },
+                           {
+                               "abbreviation": "ARI",
+                               "name": "Arizona Cardinals",
+                               "logo": "https://nfldesigns.com/wp-content/uploads/2023/06/arizona-cardinals-team-logo-png.png",
+                               "primary_color": "#97233F",
+                               "secondary_color": "#FFCB05",
+                               "seed" : 10
+       
+                           },
+                           {
+                               "abbreviation": "SEA",
+                               "name": "Seattle Seahawks",
+                               "logo": "https://content.sportslogos.net/logos/7/180/full/seattle_seahawks_logo_primary_20121228.png",
+                               "primary_color": "#002246",
+                               "secondary_color": "#69BE28",
+                               "seed" : 8
+       
+                           }
+                       ]
+              
+                       function populateTeams() {
+                           const teamsContainer = document.getElementById('nfl-teams');
+                           const orderedTeams = detailedPlayoffTeams.sort((a, b) => {
+                           // Compare based on the index in the playoffTeams array
+                           return playoffTeams.indexOf(a.abbreviation) - playoffTeams.indexOf(b.abbreviation);
+                           });
+                           orderedTeams.forEach(team => {
+                               if (!playoffTeams.includes(team.abbreviation)) {
+                                   // Skip this team if its abbreviation is not in the playoffTeams array
+                                   return;
+                               }
+                               const teamDiv = document.createElement('div');
+                               teamDiv.className = 'team';
+                               teamDiv.setAttribute('data-team', team.abbreviation);
+                               teamDiv.innerHTML = `
+           <img src="${team.logo}" alt="${team.abbreviation}" class="team-logo" style="vertical-align: middle; margin-right: 5px;">
+           <span class="team-name" style="color: ${team.secondary_color}; background-color: ${team.primary_color}; padding: 2px 5px; border-radius: 3px;">${team.abbreviation}</span>
+                                               `;
+                               teamsContainer.appendChild(teamDiv);
+       
+                           });
+                       }
+       
+                       // Call the function to populate teams on page load
+                       document.addEventListener('DOMContentLoaded', populateTeams)
+                       function populatePlayers(position) {
+                           const selects = document.querySelectorAll(`select[data-position="${position}"]`);
+       
+                           // Create filteredPlayers based on the current players and playoff teams
+                           const filteredPlayers = Object.fromEntries(
+                               Object.entries(players).map(([pos, playersList]) => [
+                                   pos,
+                                   playersList
+                                       .filter(player => playoffTeams.includes(player.team))
+                                       .sort((a, b) => a.name.localeCompare(b.name)) // Sort by player name
+                               ])
+                           );
+                           selects.forEach(select => {
+                               // Check the viewport width on page load
+                               if (window.innerWidth <= 1023) {
+                                   // Set the select element's text to the uppercase version of position
+                                   select.options[0].textContent = "Select " + position.toUpperCase(); // Change the placeholder text
+       
+                                   // Select the corresponding label for the current select
+                                   const positionLabel = document.querySelector(`label[for="${select.id}"]`);
+                                   if (positionLabel) {
+                                       positionLabel.textContent = `${select.id.toUpperCase()}:`; // Update the label text dynamically
+                                   }
+                               }
+       
+       
+       
+                               // Populate the select with filtered players for the current position
+                               if (filteredPlayers[position]) { // Check if filteredPlayers has the current position
+                                   filteredPlayers[position].forEach(player => {
+                                       const option = document.createElement("option");
+                                       option.value = player.name;
+                                       option.textContent = player.name + ' (' + player.team + ')';
+                                       option.dataset.team = player.team;
+                                       select.appendChild(option);
+                                   });
+                               } else {
+                                   console.warn(`No players found for position: ${position}`); // Warn if there are no players
+                               }
+                           });
+                       }
+                 
+                       // Function to check for team conflicts (i.e., two players from the same team)
+                       function checkForTeamErrors() {
+                           const elementIds = ['qb1', 'qb2', 'rb1', 'rb2', 'rb3', 'rb4', 'wr1', 'wr2', 'wr3', 'wr4', 'def1', 'def2', 'k1', 'k2']; // Array of element IDs
+                           let teams = []; // Array to hold the team values
+                           // Loop through each element ID
+                           for (const id of elementIds) {
+                               const element = document.getElementById(id);
+                               const team = element?.options[element.selectedIndex]?.dataset.team; // Get the data-team attribute
+                               teams.push(team); // Add the team to the array
+                           }
+                           teams = teams.filter(item => item);
+                           const allTeams = document.querySelectorAll('.team'); // Select all team elements
+                           allTeams.forEach(t => {
+                               t.querySelector('.team-name').classList.remove('selected'); // unselect the team names
+                               t.querySelector('.team-logo').classList.remove('selected'); // unselect the team logos
+                           });
+                           for (const team of new Set(teams)) {
+                               const teamElement = document.querySelector(`.team[data-team="${team}"]`);
+                               if (teamElement) {
+                                   teamElement.querySelector('.team-name').classList.add('selected');
+                                   teamElement.querySelector('.team-logo').classList.add('selected');
+                               }
+                               
+       
+                           }
+                           const teamsError = document.getElementById('teamsError');
+                           const submitButton = document.querySelector('button[type="submit"]');
+           
+                           teamsError.style.display = 'none';
+                           submitButton.disabled = false; // Reset the button state
+           
+                           if (new Set(teams).size !== teams.length) {
+                               teamsError.style.display = 'block';
+                               submitButton.disabled = true; // Disable button if error is present
+                           }
+                       }
+           
+                       // Populate positions
+                       ['qb', 'rb', 'wr', 'def', 'k'].forEach(position => populatePlayers(position));
+                   
+                       // Add event listeners to detect when a dropdown changes
+                       document.querySelectorAll('select').forEach(selectElement => {
+                           selectElement.addEventListener('change', checkForTeamErrors);
+                       });
+           
+                       
+                   // Default to showing the Submit Team tab on page load
+                   document.addEventListener("DOMContentLoaded", function() {
+                   });
+                   document.addEventListener("DOMContentLoaded", function() {
+                       document.getElementById("teamForm").addEventListener("submit", async function(event) {
+                           event.preventDefault(); // Prevent the default form submission
+                           let url = 'https://api.sheety.co/53366c2a7fe168bb6cb67c0f8024400d/goofTeamSubmissions/sheet1';
+                           // Collect form data
+                           const formData = {
+                                   email: document.getElementById("email").value,
+                                   name: document.getElementById("teamName").value,
+                                   qb1: document.getElementById("qb1").value,
+                                   qb2: document.getElementById("qb2").value,
+                                   rb1: document.getElementById("rb1").value,
+                                   rb2: document.getElementById("rb2").value,
+                                   rb3: document.getElementById("rb3").value,
+                                   rb4: document.getElementById("rb4").value,
+                                   wr1: document.getElementById("wr1").value,
+                                   wr2: document.getElementById("wr2").value,
+                                   wr3: document.getElementById("wr3").value,
+                                   wr4: document.getElementById("wr4").value,
+                                   k1: document.getElementById("k1").value,
+                                   k2: document.getElementById("k2").value,
+                                   def1: document.getElementById("def1").value,
+                                   def2: document.getElementById("def2").value,
+                                   tiebreak: document.getElementById("tiebreaker").value
+                               };
+                           try {
+                               const response = await fetch(url, {
+                                   method: 'POST',
+                                   headers: {
+                                       "Content-Type": "application/json"
+                                   },
+                                   body: JSON.stringify({sheet1:formData})
+                               });
+                               // Check if the response is OK (status code 200)
+                               if (!response.ok) {
+                                   throw new Error('Network response was not ok: ' + response.statusText);
+                               }
+                               window.location.replace("submitted.html");
+           
+                           } catch (error) {
+                               console.error("Error submitting form:", error);
+                               alert("There was a problem with your submission. Please try again.");
+                           }
+                       });
+                   });
+           
+               // Modal functionality
+               document.addEventListener('DOMContentLoaded', function() {
+                   const modal = document.getElementById('helpModal');
+                   const helpLink = document.getElementById('helpLink');
+                   const closeButton = document.querySelector('.close-button');
+       
+                   if (helpLink) {  // Add check to ensure element exists
+                       helpLink.addEventListener('click', function(e) {
+                           e.preventDefault();
+                           modal.classList.add('show');
+                       });
+                   }
+       
+                   if (closeButton) {  // Add check to ensure element exists
+                       closeButton.addEventListener('click', function() {
+                           modal.classList.remove('show');
+                       });
+                   }
+       
+                   // Close modal when clicking outside
+                   window.addEventListener('click', function(e) {
+                       if (e.target === modal) {
+                           modal.classList.remove('show');
+                       }
+                   });
+       
+                   // Prevent scrolling when modal is open
+                   modal.addEventListener('show', function() {
+                       document.body.style.overflow = 'hidden';
+                   });
+       
+                   modal.addEventListener('hide', function() {
+                       document.body.style.overflow = 'auto';
+                   });
+               });
+           
+               </script>
+           </body>
+    </div>
 </body>
 </html>
