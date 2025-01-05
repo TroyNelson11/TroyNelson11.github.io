@@ -403,8 +403,8 @@ html, body {
 .bracket .team-div[data-result="win"],
 .match .team-div[data-result="win"],
 div[id^="bracket-container"] .team-div[data-result="win"] {
-  border: 0.1vw solid black !important;
-  outline: 0.2vw solid black !important;
+  border: 0.2vh solid black !important;
+  outline: 0.25vh solid black !important;
 }
 
 .bracket .team-div[data-result="lose"],
