@@ -101,7 +101,7 @@
     
         <script>
              const playoffTeams = [ "KC", "BUF", "BAL", "HOU", "PIT", "LAC",  "DEN", "DET", "PHI", "LAR", "TB", "MIN",  "WAS", "GB"];
-                const detailedPlayoffTeams = [
+            const detailedPlayoffTeams = [
                     {
                         "abbreviation": "KC",
                         "name": "Kansas City Chiefs",
@@ -206,7 +206,7 @@
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/tampa-bay-buccaneers-logo-emblem-png.png",
                         "primary_color": "#34302B", 
                         "secondary_color": "#A5ACAF",
-                        "seed" : 9
+                        "seed" : 4
 
                     },
                     {
@@ -215,7 +215,7 @@
                         "logo": "https://content.sportslogos.net/logos/7/6832/full/washington_commanders_logo_primary_20228587.png",
                         "primary_color": "#5A1414", 
                         "secondary_color": "#FFC20E",
-                        "seed" : 7
+                        "seed" : 6
 
                     },
                     {
@@ -224,7 +224,7 @@
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/green-bay-packers-symbol-logo-png.png",
                         "primary_color": "#203731", 
                         "secondary_color": "#FFB612",
-                        "seed" : 6
+                        "seed" : 7
 
                     },
                     {
@@ -233,7 +233,7 @@
                         "logo": "https://nfldesigns.com/wp-content/uploads/2023/06/atlanta-falcons-logo-hex-colors.png",
                         "primary_color": "#000",
                         "secondary_color": "#A71930",
-                        "seed" : 4
+                        "seed" : 9
                     },
                     {
                         "abbreviation": "ARI",
@@ -253,7 +253,97 @@
                         "seed" : 8
 
                     }
-                ]
+                ];
+            
+let match_details = [
+    {
+        "home": "BUF",
+        "away": "DEN",
+        "homeseed": 2,
+        "awayseed": 7,
+        "spread": -7.5,
+        "total": 45.5
+    },
+    {
+        "home": "BAL",
+        "away": "LAC",
+        "homeseed": 3,
+        "awayseed": 6,
+        "spread": -3.5,
+        "total": 41.5
+    },
+    {
+        "home": "HOU",
+        "away": "PIT",
+        "homeseed": 4,
+        "awayseed": 5,
+        "spread": "+5.5",
+        "total": 49.5
+    },
+    {
+        "home": "PHI",
+        "away": "GB",
+        "homeseed": 2,
+        "awayseed": 7,
+        "spread": -5.5,
+        "total": 47.5
+    },
+    {
+        "home": "LAR",
+        "away": "WAS",
+        "homeseed": 3,
+        "awayseed": 6,
+        "spread": "+3",
+        "total": 46.5
+    },
+    {
+        "home": "TB",
+        "away": "MIN",
+        "homeseed": 4,
+        "awayseed": 5,
+        "spread": "+2.5",
+        "total": 46.5
+    }
+];
+let secondRoundMatchDetails = [
+    // AFC
+    {
+        "home": "KC",
+        "away": null,
+        "homeseed": 1,
+        "awayseed": null,
+        "spread": null, 
+        "total": null
+    },
+    {
+        "home": null,
+        "away": null,
+        "homeseed": null,
+        "awayseed": null,
+        "spread": null,
+        "total": null
+    },
+
+    // NFC
+    {
+        "home": "DET",
+        "away": null,
+        "homeseed": 1,
+        "awayseed": null,
+        "spread": null, 
+        "total": null
+    },
+    {
+        "home": null,
+        "away": null,
+        "homeseed": null,
+        "awayseed": null,
+        "spread": null,
+        "total": null
+    },
+    
+];
+    
                 const generateTeamDivs = (teams) => {
     const container = document.getElementById('teams-container'); // Replace with your container's ID
 
@@ -706,95 +796,6 @@ const updateNFCMatches = () => {
     });
     addNewEventDelegation();
 };
-
-let match_details = [
-    {
-        "home": "BUF",
-        "away": "DEN",
-        "homeseed": 2,
-        "awayseed": 7,
-        "spread": -7.5,
-        "total": 45.5
-    },
-    {
-        "home": "BAL",
-        "away": "LAC",
-        "homeseed": 3,
-        "awayseed": 6,
-        "spread": -3.5,
-        "total": 41.5
-    },
-    {
-        "home": "HOU",
-        "away": "PIT",
-        "homeseed": 4,
-        "awayseed": 5,
-        "spread": "+5.5",
-        "total": 49.5
-    },
-    {
-        "home": "PHI",
-        "away": "GB",
-        "homeseed": 2,
-        "awayseed": 7,
-        "spread": -5.5,
-        "total": 47.5
-    },
-    {
-        "home": "LAR",
-        "away": "WAS",
-        "homeseed": 3,
-        "awayseed": 6,
-        "spread": "+3",
-        "total": 46.5
-    },
-    {
-        "home": "TB",
-        "away": "MIN",
-        "homeseed": 4,
-        "awayseed": 5,
-        "spread": "+2.5",
-        "total": 46.5
-    }
-];
-let secondRoundMatchDetails = [
-    // AFC
-    {
-        "home": "KC",
-        "away": null,
-        "homeseed": 1,
-        "awayseed": null,
-        "spread": null, 
-        "total": null
-    },
-    {
-        "home": null,
-        "away": null,
-        "homeseed": null,
-        "awayseed": null,
-        "spread": null,
-        "total": null
-    },
-
-    // NFC
-    {
-        "home": "DET",
-        "away": null,
-        "homeseed": 1,
-        "awayseed": null,
-        "spread": null, 
-        "total": null
-    },
-    {
-        "home": null,
-        "away": null,
-        "homeseed": null,
-        "awayseed": null,
-        "spread": null,
-        "total": null
-    },
-    
-];
 const updateMatches = () => {
     const containers = [
         document.getElementById('bracket-container-2'),
