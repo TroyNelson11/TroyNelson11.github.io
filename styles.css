@@ -583,6 +583,9 @@ input#tiebreaker {
         right: 3vw;
         top: 1vw;
     }
+    #teamsError {
+        font-size: 4vw !important;
+    }
 }
 
 /* Make the help link styles more specific */
