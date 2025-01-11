@@ -1218,5 +1218,47 @@ body {
     }
 }
 
+/* Main leaderboard table styles */
+.main-leaderboard {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Table cell styles */
+.main-leaderboard td:first-child {
+    max-width: 150px; /* Adjust this value as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Make sure table doesn't exceed container */
+.main-leaderboard table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Column widths for main leaderboard */
+.main-leaderboard th:first-child,
+.main-leaderboard td:first-child {
+    width: 20%;
+    min-width: 20%;
+    max-width: 20%;
+    text-align: left;
+    padding: 8px 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main-leaderboard th:not(:first-child),
+.main-leaderboard td:not(:first-child) {
+    width: 16%;
+    min-width: 16%;
+    max-width: 16%;
+    text-align: center;
+    padding: 8px 0;
+}
+
 
  
