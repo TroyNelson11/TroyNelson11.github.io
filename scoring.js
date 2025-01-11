@@ -8848,6 +8848,24 @@ const fantasy_team_submissions = [
         "def1":"Pittsburgh Steelers",
         "def2":"Washington Commanders",
         "tiebreak":52
+    },
+    {
+        "name":"Southpaws2",
+        "qb1":"Josh Allen",
+        "qb2":"Jared Goff",
+        "rb1":"Derrick Henry",
+        "rb2":"Rachaad White",
+        "rb3":"Saquon Barkley",
+        "rb4":"Austin Ekeler",
+        "wr1":"Jordan Addison",
+        "wr2":"Nico Collins",
+        "wr3":"Puka Nacua",
+        "wr4":"George Pickens",
+        "k1":"Wil Lutz",
+        "k2":"Brandon McManus",
+        "def1":"Los Angeles Chargers",
+        "def2":"Kansas City Chiefs",
+        "tiebreak":57
     }
 ];
         function populateScores() {
