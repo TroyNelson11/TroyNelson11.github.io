@@ -185,13 +185,14 @@ body {
 .leaderboard-container {
     display: grid;
     grid-template-columns: minmax(auto, 800px) minmax(auto, 400px);
-    gap: 10px;
+    gap: 20px;
     margin-top: 20px;
     justify-content: center;
     align-items: start;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 20px;
 }
 
 /* Common table styles */
@@ -526,11 +527,10 @@ body {
     font-size: 1.2vw;
 }
 .ownership-stats {
-    width: 80%;
-    max-width: 80%;
-    min-width: 80%;
-    margin: 0 -1vw;
+    width: 100%;
+    margin: 0;
     padding: 0;
+    position: relative;
 }
 /* Mobile styles */
 @media (max-width: 768px) {
@@ -1208,6 +1208,13 @@ body {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+}
+
+/* Only apply the mobile-specific margins in mobile view */
+@media (min-width: 769px) {
+    .ownership-stats {
+        margin: 0;
     }
 }
 
