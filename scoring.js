@@ -822,7 +822,7 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Green Bay Packers",
-      "SACKS": 0,
+      "SACKS": 1.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -830,8 +830,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 10,
       "G": 1,
-      "FPTS": 4,
-      "FPTS/G": 4,
+      "FPTS": 5.0,
+      "FPTS/G": 5.0,
       "ROST": "12.8%",
       "POS": "def"
     }
@@ -1079,8 +1079,8 @@ const player_stats = {
       "Rank": 0,
       "Player": "Jalen Hurts",
       "CMP": 6,
-      "ATT": 10,
-      "PCT": 60.0,
+      "ATT": 11,
+      "PCT": 54.5,
       "YDS": 39,
       "TD": 1,
       "INT": 0,
