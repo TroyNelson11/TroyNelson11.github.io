@@ -187,16 +187,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Denver Broncos",
-      "SACKS": 1.0,
+      "SACKS": 2.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 10,
+      "PA": 13,
       "G": 1,
-      "FPTS": 5.0,
-      "FPTS/G": 5.0,
+      "FPTS": 6.0,
+      "FPTS/G": 6.0,
       "ROST": "48.7%",
       "POS": "def"
     }
@@ -753,8 +753,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 17,
-      "YDS.1": 112,
+      "ATT.1": 18,
+      "YDS.1": 111,
       "TD.1": 1,
       "FL": 0,
       "REC": 0,
@@ -762,8 +762,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 17.2,
-      "FPTS/G": 17.2,
+      "FPTS": 17.1,
+      "FPTS/G": 17.1,
       "ROST": "17.9%",
       "POS": "qb"
     }
