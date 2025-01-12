@@ -53,14 +53,14 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Josh Allen",
-      "CMP": 0,
-      "ATT": 0,
-      "PCT": 0,
-      "YDS": 0,
+      "CMP": 3,
+      "ATT": 5,
+      "PCT": 60.0,
+      "YDS": 26,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 1,
+      "YDS.1": 3,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -68,8 +68,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 1.3,
+      "FPTS/G": 1.3,
       "ROST": "79.5%",
       "POS": "qb"
     }
@@ -193,10 +193,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 0,
+      "PA": 3,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 7,
+      "FPTS/G": 7,
       "ROST": "48.7%",
       "POS": "def"
     }
@@ -414,8 +414,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Wil Lutz",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 1,
+      "FPTS/G": 1,
       "ROST": "35.9%",
       "POS": "k"
     },
@@ -753,8 +753,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 4,
+      "YDS.1": 29,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -762,8 +762,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 2.9,
+      "FPTS/G": 2.9,
       "ROST": "17.9%",
       "POS": "qb"
     }
@@ -850,13 +850,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 19,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 2.9,
+      "FPTS/G": 2.9,
       "ROST": "12.8%",
       "POS": "qb"
     }
@@ -1445,8 +1445,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 3,
+      "YDS.1": 13,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -1454,8 +1454,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 1.3,
+      "FPTS/G": 1.3,
       "ROST": "2.6%",
       "POS": "qb"
     }
@@ -1644,7 +1644,8 @@ const player_stats = {
       "POS": "qb"
     }
   }
-};
+};;
+
 const fantasy_team_submissions = [
   {
       "name":"HolySchlitz!",
