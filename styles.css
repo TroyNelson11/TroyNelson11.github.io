@@ -55,6 +55,33 @@ th, td {
 th {
     background-color: #f2f2f2;
     font-weight: bold;
+    color: #333;
+}
+
+/* Specific table column styles */
+.team-name-col {
+    width: 35%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.score-col {
+    width: 13%;
+    text-align: center;
+}
+
+/* Mobile adjustments for tables */
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px;
+        font-size: 3.5vw;
+    }
+    
+    .team-name-col {
+        font-size: 3.5vw;
+    }
 }
 
 /* Player Score Table Styling */
