@@ -195,8 +195,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 10,
-      "FPTS/G": 10,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "48.7%",
       "POS": "def"
     }
