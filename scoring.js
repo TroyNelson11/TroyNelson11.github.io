@@ -2026,7 +2026,7 @@ const fantasy_team_submissions = [
       "tiebreak":50
   },
   {
-      "name":"Mac",
+      "name":"Mac's Team",
       "qb1":"Jared Goff",
       "qb2":"Lamar Jackson",
       "rb1":"Saquon Barkley",
@@ -2314,7 +2314,7 @@ const fantasy_team_submissions = [
       "tiebreak":52
   },
   {
-      "name":"Mason mercer",
+      "name":"Mason's Team",
       "qb1":"Jared Goff",
       "qb2":"Lamar Jackson",
       "rb1":"James Cook",
