@@ -33,7 +33,7 @@ function calculateLast4WeeksAvg(stats) {
     let total = 0;
     let weeks = 0;
     // Start from most recent week (17) and go back 4 weeks
-    for (let i = 17; i > 13; i--) {
+    for (let i = 4; i > 0; i--) {
         const points = calculateFantasyPoints(stats, i);
         if (points > 0) {
             total += points;
@@ -47,7 +47,7 @@ function calculateLast4WeeksAvg(stats) {
 function calculateSeasonAvg(stats) {
     let total = 0;
     let weeks = 0;
-    for (let i = 1; i <= 17; i++) {
+    for (let i = 1; i <= 4; i++) {
         const points = calculateFantasyPoints(stats, i);
         if (points > 0) {
             total += points;
@@ -60,7 +60,7 @@ function calculateSeasonAvg(stats) {
 // Calculate total season points
 function calculateTotalPoints(stats) {
     let total = 0;
-    for (let i = 1; i <= 17; i++) {
+    for (let i = 1; i <= 4; i++) {
         total += calculateFantasyPoints(stats, i);
     }
     return total.toFixed(1);
@@ -68,8 +68,8 @@ function calculateTotalPoints(stats) {
 
 // Get key stats for a player
 function getPlayerStats(stats) {
-    if (!stats || !stats["week 17"]) return null;
-    const latestWeek = stats["week 17"];
+    if (!stats || !stats["week 1"]) return null;
+    const latestWeek = stats["week 1"];
     return {
         completions: latestWeek.CMP || 0,
         attempts: latestWeek.ATT || 0,
@@ -178,7 +178,7 @@ function hasRecentActivity(stats) {
     
     // Check the last 3 weeks of the regular season (weeks 15-17)
     let inactiveWeeks = 0;
-    for (let week = 15; week <= 17; week++) {
+    for (let week = 1; week <= 4; week++) {
         const points = calculateFantasyPoints(stats, week);
         if (points === 0) {
             inactiveWeeks++;

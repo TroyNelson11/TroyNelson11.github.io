@@ -14,6 +14,92 @@ body {
     background: linear-gradient(to top, #006400 0%, white 35%, #eeeeee 100%);
     min-width: 320px;
 }
+/* Main leaderboard table styles - ensure no overflow */
+.leaderboard-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.main-leaderboard {
+    width: 100% !important;
+    max-width: 800px !important;
+    table-layout: fixed !important;
+}
+
+.main-leaderboard table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Column width adjustments - total should be 100% */
+.main-leaderboard th:first-child,
+.main-leaderboard td:first-child {
+    width: 35% !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    text-align: left !important;
+    padding: 12px 8px;
+    font-size: 0.9rem;
+}
+
+.main-leaderboard th:not(:first-child),
+.main-leaderboard td:not(:first-child) {
+    width: 13% !important;
+    text-align: center !important;
+    padding: 12px 4px;
+    font-size: 0.8rem;
+}
+
+/* Total column */
+.main-leaderboard th:last-child,
+.main-leaderboard td:last-child {
+    width: 13% !important;
+}
+/* Main leaderboard table styles */
+.main-leaderboard {
+    width: 100%;
+    max-width: 800px;
+    table-layout: fixed;
+}
+
+/* Header and cell styles */
+.main-leaderboard th,
+.main-leaderboard td {
+    font-size: 1rem; /* Keep text size consistent */
+}
+
+/* First column (team names) */
+.main-leaderboard th:first-child,
+.main-leaderboard td:first-child {
+    width: 35%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    padding: 12px 8px;
+}
+
+/* Score columns */
+.main-leaderboard th:not(:first-child),
+.main-leaderboard td:not(:first-child) {
+    width: 13%;
+    text-align: center;
+    padding: 12px 4px;
+}
+
+/* Total column */
+.main-leaderboard th:last-child,
+.main-leaderboard td:last-child {
+    width: 13%;
+}
+
+/* Ensure table cells don't wrap */
+.main-leaderboard td {
+    white-space: nowrap;
+}
+
 .main-leaderboard {
     margin-left: 0vw;
 }
@@ -1217,50 +1303,53 @@ body {
         margin: 0;
     }
 }
+    /* Navigation */
+    .nav-bar {
+        padding: 2px;
+        max-width: 100%;
+        min-width: 100%;
+        flex-wrap: wrap; /* Allows wrapping if space is constrained */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
 
-/* Main leaderboard table styles - ensure no overflow */
-.leaderboard-container {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
+    .navbar-nav {
+        gap: 4vw;
+        justify-content: center;
+        align-items: center;
+    }
 
-.main-leaderboard {
-    width: 100% !important;
-    max-width: 800px !important;
-    table-layout: fixed !important;
-}
+    /* Add hover effects to the empty matches */
+    .navbar-nav .nav-item .nav-link {
+        color: white;
+        font-weight: bold;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: 3.8em;
+        padding: 2px 2px;
+        white-space: nowrap; /* Prevents wrapping for nav links */
+        transition: color 0.3s;
+        display: block; /* Ensure nav-link behaves like a block element */
+      }
+    
 
-.main-leaderboard table {
-    width: 100%;
-    table-layout: fixed;
-}
+      .title {
+        font-size: 12.6em;
+        color: white;
+      }
+      .subtitle {
+        font-size: 5.0em;
+        color: white;
+        margin: 0;
+        padding-left: 3vw;
 
-/* Column width adjustments - total should be 100% */
-.main-leaderboard th:first-child,
-.main-leaderboard td:first-child {
-    width: 35% !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    text-align: left !important;
-    padding: 12px 8px;
-    font-size: 0.9rem;
-}
+      }
+      .navbar-brand {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
-.main-leaderboard th:not(:first-child),
-.main-leaderboard td:not(:first-child) {
-    width: 13% !important;
-    text-align: center !important;
-    padding: 12px 4px;
-    font-size: 0.8rem;
-}
-
-/* Total column */
-.main-leaderboard th:last-child,
-.main-leaderboard td:last-child {
-    width: 13% !important;
-}
 
 /* Mobile-specific font sizes */
 @media (max-width: 768px) {
@@ -1271,6 +1360,25 @@ body {
     .main-leaderboard td:not(:first-child) {
         font-size: 3.5vw !important;
     }
+}
+/* Column width adjustments - total should be 100% */
+.main-leaderboard th:first-child,
+.main-leaderboard td:first-child {
+    width: 35% !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    text-align: left !important;
+    padding: 12px 8px;
+    font-size: 2vw !important;
+}
+
+.main-leaderboard th:not(:first-child),
+.main-leaderboard td:not(:first-child) {
+    width: 13% !important;
+    text-align: center !important;
+    padding: 12px 4px;
+    font-size: 2.2vw !important;
 }
 
 /* Critical mobile styles */
@@ -1293,21 +1401,6 @@ body {
     }
 
     /* Navigation essentials */
-    .nav-bar {
-        width: 100%;
-        padding: 10px 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .title {
-        font-size: 8vw;
-    }
-
-    .subtitle {
-        font-size: 4vw;
-    }
 
     /* Main leaderboard mobile adjustments */
     .main-leaderboard td:first-child {
@@ -1414,49 +1507,6 @@ body {
     .ownership-stats {
         margin: 0;
     }
-}
-
-/* Main leaderboard table styles */
-.main-leaderboard {
-    width: 100%;
-    max-width: 800px;
-    table-layout: fixed;
-}
-
-/* Header and cell styles */
-.main-leaderboard th,
-.main-leaderboard td {
-    font-size: 1rem; /* Keep text size consistent */
-}
-
-/* First column (team names) */
-.main-leaderboard th:first-child,
-.main-leaderboard td:first-child {
-    width: 35%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: left;
-    padding: 12px 8px;
-}
-
-/* Score columns */
-.main-leaderboard th:not(:first-child),
-.main-leaderboard td:not(:first-child) {
-    width: 13%;
-    text-align: center;
-    padding: 12px 4px;
-}
-
-/* Total column */
-.main-leaderboard th:last-child,
-.main-leaderboard td:last-child {
-    width: 13%;
-}
-
-/* Ensure table cells don't wrap */
-.main-leaderboard td {
-    white-space: nowrap;
 }
 
 
