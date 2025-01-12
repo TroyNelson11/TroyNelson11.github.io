@@ -286,8 +286,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 1,
+      "YDS.1": 2,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -295,8 +295,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 0.2,
+      "FPTS/G": 0.2,
       "ROST": "43.6%",
       "POS": "qb"
     }
@@ -828,10 +828,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 0,
+      "PA": 7,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 4,
+      "FPTS/G": 4,
       "ROST": "12.8%",
       "POS": "def"
     }
@@ -1078,11 +1078,11 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Jalen Hurts",
-      "CMP": 0,
-      "ATT": 0,
-      "PCT": 0,
-      "YDS": 0,
-      "TD": 0,
+      "CMP": 1,
+      "ATT": 1,
+      "PCT": 100.0,
+      "YDS": 11,
+      "TD": 1,
       "INT": 0,
       "ATT.1": 0,
       "YDS.1": 0,
@@ -1093,8 +1093,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 4.4,
+      "FPTS/G": 4.4,
       "ROST": "5.1%",
       "POS": "qb"
     }
