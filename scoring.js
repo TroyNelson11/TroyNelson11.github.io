@@ -236,8 +236,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 9,
-      "YDS.1": 48,
+      "ATT.1": 12,
+      "YDS.1": 61,
       "TD.1": 0,
       "FL": 0,
       "REC": 1,
@@ -245,8 +245,8 @@ const player_stats = {
       "YDS.2": 2,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 6.0,
-      "FPTS/G": 6.0,
+      "FPTS": 7.3,
+      "FPTS/G": 7.3,
       "ROST": "46.2%",
       "POS": "qb"
     }
@@ -516,7 +516,7 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Washington Commanders",
-      "SACKS": 0,
+      "SACKS": 1.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -524,8 +524,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 10,
       "G": 1,
-      "FPTS": 4,
-      "FPTS/G": 4,
+      "FPTS": 5.0,
+      "FPTS/G": 5.0,
       "ROST": "23.1%",
       "POS": "def"
     }
