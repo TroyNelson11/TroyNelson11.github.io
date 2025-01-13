@@ -1550,5 +1550,83 @@ body {
     justify-content: center !important;
 }
 
+/* Highest possible team styles */
+.highest-possible-div {
+    width: 75%;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.highest-possible-div h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+    background-color: #006400;
+    padding: 0.75rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.highest-possible-content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    color: black;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+.highest-possible-content p {
+    width: calc(50% - 1rem);
+    margin: 0.25rem 0;
+    padding: 0.25rem 0.5rem;
+    color: #4a5568;  /* Gray text for all players on desktop */
+}
+.highest-possible-content p {
+    background-color: #e5e7eb !important;
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .highest-possible-content p:nth-child(odd) {
+        background-color: #f3f4f6 !important;
+    }
+    .highest-possible-content p:nth-child(even) {
+        background-color: #ffffff !important;
+    }
+    .highest-possible-div {
+        width: 90%;
+        max-height: none;
+        padding: 0;
+    }
+
+    .highest-possible-div h3 {
+        font-size: 4.5vw;
+        margin-bottom: 0;
+    }
+
+    .highest-possible-content {
+        flex-direction: column;
+        font-size: 3.5vw;
+    }
+
+    .highest-possible-content p {
+        width: 100%;
+        margin: 0.25rem 0;
+        color: black;  /* Reset to black for mobile */
+    }
+
+    .highest-possible-content p:nth-child(odd) {
+        background-color: #f3f4f6;  /* Alternating backgrounds only on mobile */
+    }
+}
+
 
  

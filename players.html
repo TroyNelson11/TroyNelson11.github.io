@@ -93,25 +93,19 @@
                     <div class="text-sm text-gray-600 mb-3">
                         <span class="player-position"></span>
                     </div>
-                    <div class="grid grid-cols-2 gap-4 text-sm">
-                        <div class="stat-box">
-                            <div class="stat-label">Season Avg</div>
-                            <div class="avg-points stat-value"></div>
-                        </div>
-                        <div class="stat-box">
-                            <div class="stat-label">Last 4 Weeks</div>
-                            <div class="last-4-avg stat-value"></div>
-                        </div>
-                        <div class="stat-box">
-                            <div class="stat-label">Total Points</div>
-                            <div class="total-points stat-value"></div>
-                        </div>
-                        <div class="stat-box">
-                            <div class="stat-label">Roster %</div>
-                            <div class="roster-percent stat-value"></div>
-                        </div>
+                    
+                    <!-- Position-specific stats -->
+                    <div class="position-stats mb-3 text-sm">
+                        <!-- Stats will be inserted here based on position -->
                     </div>
                     
+                    <!-- Fantasy Points -->
+                    <div class="fantasy-points-container bg-gray-100 p-2 rounded">
+                        <div class="text-center">
+                            <div class="text-sm font-semibold text-gray-600">Fantasy Points</div>
+                            <div class="fantasy-points text-xl font-bold"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -6,8 +6,135 @@ const sortBy = document.getElementById('sortBy');
 const template = document.getElementById('playerCardTemplate');
 
 // Store player data globally
-let allPlayers = [];
-let espnPlayerIds = {};
+let allPlayers = [
+    // QBs
+    { "name": "Baker Mayfield", "team": "TB", "position": "QB" }, 
+    { "name": "Bo Nix", "team": "DEN", "position": "QB" },        
+    { "name": "C.J. Stroud", "team": "HOU", "position": "QB" },   
+    { "name": "Jalen Hurts", "team": "PHI", "position": "QB" },   
+    { "name": "Jared Goff", "team": "DET", "position": "QB" },    
+    { "name": "Jayden Daniels", "team": "WAS", "position": "QB" },
+    { "name": "Jordan Love", "team": "GB", "position": "QB" },    
+    { "name": "Josh Allen", "team": "BUF", "position": "QB" },    
+    { "name": "Justin Fields", "team": "PIT", "position": "QB" }, 
+    { "name": "Justin Herbert", "team": "LAC", "position": "QB" },
+    { "name": "Lamar Jackson", "team": "BAL", "position": "QB" }, 
+    { "name": "Matthew Stafford", "team": "LAR", "position": "QB" },
+    { "name": "Patrick Mahomes II", "team": "KC", "position": "QB" },
+    { "name": "Russell Wilson", "team": "PIT", "position": "QB" },
+    { "name": "Sam Darnold", "team": "MIN", "position": "QB" },
+    // RBs
+    { "name": "Aaron Jones Sr.", "team": "MIN", "position": "RB" },
+    { "name": "Austin Ekeler", "team": "WAS", "position": "RB" },
+    { "name": "Brian Robinson Jr.", "team": "WAS", "position": "RB" },
+    { "name": "Bucky Irving", "team": "TB", "position": "RB" },
+    { "name": "David Montgomery", "team": "DET", "position": "RB" },
+    { "name": "Derrick Henry", "team": "BAL", "position": "RB" },
+    { "name": "Gus Edwards", "team": "LAC", "position": "RB" },
+    { "name": "Isiah Pacheco", "team": "KC", "position": "RB" },
+    { "name": "J.K. Dobbins", "team": "LAC", "position": "RB" },
+    { "name": "Jahmyr Gibbs", "team": "DET", "position": "RB" },
+    { "name": "James Cook", "team": "BUF", "position": "RB" },
+    { "name": "Javonte Williams", "team": "DEN", "position": "RB" },
+    { "name": "Jaylen Warren", "team": "PIT", "position": "RB" },
+    { "name": "Joe Mixon", "team": "HOU", "position": "RB" },
+    { "name": "Josh Jacobs", "team": "GB", "position": "RB" },
+    { "name": "Kareem Hunt", "team": "KC", "position": "RB" },
+    { "name": "Kyren Williams", "team": "LAR", "position": "RB" },
+    { "name": "Najee Harris", "team": "PIT", "position": "RB" },
+    { "name": "Rachaad White", "team": "TB", "position": "RB" },
+    { "name": "Saquon Barkley", "team": "PHI", "position": "RB" },
+    { "name": "Ty Chandler", "team": "MIN", "position": "RB" },
+    // WRs and TEs
+    { "name": "A.J. Brown", "team": "PHI", "position": "WR" },
+    { "name": "Amari Cooper", "team": "BUF", "position": "WR" },
+    { "name": "Amon-Ra St. Brown", "team": "DET", "position": "WR" },
+    { "name": "Cooper Kupp", "team": "LAR", "position": "WR" },
+    { "name": "Courtland Sutton", "team": "DEN", "position": "WR" },
+    { "name": "DeAndre Hopkins", "team": "KC", "position": "WR" },
+    { "name": "DeVonta Smith", "team": "PHI", "position": "WR" },
+    { "name": "George Pickens", "team": "PIT", "position": "WR" },
+    { "name": "Jalen McMillan", "team": "TB", "position": "WR" },
+    { "name": "Jameson Williams", "team": "DET", "position": "WR" },
+    { "name": "Jayden Reed", "team": "GB", "position": "WR" },
+    { "name": "Jordan Addison", "team": "MIN", "position": "WR" },
+    { "name": "JuJu Smith-Schuster", "team": "KC", "position": "WR" },
+    { "name": "Justin Jefferson", "team": "MIN", "position": "WR" },
+    { "name": "Keon Coleman", "team": "BUF", "position": "WR" },
+    { "name": "Khalil Shakir", "team": "BUF", "position": "WR" },
+    { "name": "Ladd McConkey", "team": "LAC", "position": "WR" },
+    { "name": "Marquise Brown", "team": "KC", "position": "WR" },
+    { "name": "Mike Evans", "team": "TB", "position": "WR" },
+    { "name": "Nico Collins", "team": "HOU", "position": "WR" },
+    { "name": "Puka Nacua", "team": "LAR", "position": "WR" },
+    { "name": "Quentin Johnston", "team": "LAC", "position": "WR" },
+    { "name": "Rashee Rice", "team": "KC", "position": "WR" },
+    { "name": "Rashod Bateman", "team": "BAL", "position": "WR" },
+    { "name": "Romeo Doubs", "team": "GB", "position": "WR" },
+    { "name": "Stefon Diggs", "team": "HOU", "position": "WR" },
+    { "name": "Tank Dell", "team": "HOU", "position": "WR" },
+    { "name": "Terry McLaurin", "team": "WAS", "position": "WR" },
+    { "name": "Xavier Worthy", "team": "KC", "position": "WR" },
+    { "name": "Zay Flowers", "team": "BAL", "position": "WR" },
+    { "name": "Dallas Goedert", "team": "PHI", "position": "TE" },
+    { "name": "Dalton Kincaid", "team": "BUF", "position": "TE" },
+    { "name": "Cade Otton", "team": "TB", "position": "TE" },
+    { "name": "Isaiah Likely", "team": "BAL", "position": "TE" },
+    { "name": "TJ Hockenson", "team": "MIN", "position": "TE" },
+    { "name": "Mark Andrews", "team": "BAL", "position": "TE" },
+    { "name": "Pat Freiermuth", "team": "PIT", "position": "TE" },
+    { "name": "Sam LaPorta", "team": "DET", "position": "TE" },
+    { "name": "Travis Kelce", "team": "KC", "position": "TE" },
+    { "name": "Tucker Kraft", "team": "GB", "position": "TE" },
+    // Kickers
+    { "name": "Zane Gonzalez", "team": "WAS", "position": "K" },
+    { "name": "Cameron Dicker", "team": "LAC", "position": "K" },
+    { "name": "Chase McLaughlin", "team": "TB", "position": "K" },
+    { "name": "Chris Boswell", "team": "PIT", "position": "K" },
+    { "name": "Harrison Butker", "team": "KC", "position": "K" },
+    { "name": "Jake Bates", "team": "DET", "position": "K" },
+    { "name": "Jake Elliott", "team": "PHI", "position": "K" },
+    { "name": "Justin Tucker", "team": "BAL", "position": "K" },
+    { "name": "Ka'imi Fairbairn", "team": "HOU", "position": "K" },
+    { "name": "Tyler Bass", "team": "BUF", "position": "K" },
+    { "name": "Joshua Karty", "team": "LAR", "position": "K" },
+    { "name": "Wil Lutz", "team": "DEN", "position": "K" },
+    { "name": "Brandon McManus", "team": "GB", "position": "K" },
+    { "name": "Wil Reichard", "team": "MIN", "position": "K" },
+    // Defense
+    { "name": "Baltimore Ravens", "team": "BAL", "position": "DEF" },
+    { "name": "Buffalo Bills", "team": "BUF", "position": "DEF" },
+    { "name": "Denver Broncos", "team": "DEN", "position": "DEF" },
+    { "name": "Detroit Lions", "team": "DET", "position": "DEF" },
+    { "name": "Green Bay Packers", "team": "GB", "position": "DEF" },
+    { "name": "Houston Texans", "team": "HOU", "position": "DEF" },
+    { "name": "Kansas City Chiefs", "team": "KC", "position": "DEF" },
+    { "name": "Los Angeles Chargers", "team": "LAC", "position": "DEF" },
+    { "name": "Minnesota Vikings", "team": "MIN", "position": "DEF" },
+    { "name": "Philadelphia Eagles", "team": "PHI", "position": "DEF" },
+    { "name": "Pittsburgh Steelers", "team": "PIT", "position": "DEF" },
+    { "name": "Tampa Bay Buccaneers", "team": "TB", "position": "DEF" },
+    { "name": "Washington Commanders", "team": "WAS", "position": "DEF" },
+    { "name": "Los Angeles Rams", "team": "LAR", "position": "DEF" }
+];
+
+// Add the team logos data
+const teamLogos = {
+    "Kansas City Chiefs": "https://nfldesigns.com/wp-content/uploads/2023/09/kansas-city-chiefs-logo-emblem-png.png",
+    "Buffalo Bills": "https://content.sportslogos.net/logos/7/149/full/buffalo_bills_logo_primary_19747050.png",
+    "Baltimore Ravens": "https://content.sportslogos.net/logos/7/153/full/baltimore_ravens_logo_primary_19996038.png",
+    "Houston Texans": "https://content.sportslogos.net/logos/7/157/full/houston_texans_logo_primary_2024_sportslogosnet-5890.png",
+    "Pittsburgh Steelers": "https://nfldesigns.com/wp-content/uploads/2023/09/pittsburgh-steelers-logo-emblem-png.png",
+    "Denver Broncos": "https://content.sportslogos.net/logos/7/161/full/denver_broncos_logo_primary_19973076.png",
+    "Los Angeles Chargers": "https://content.sportslogos.net/logos/7/6446/full/los_angeles_chargers_logo_primary_20203514.png",
+    "Philadelphia Eagles": "https://content.sportslogos.net/logos/7/167/full/philadelphia_eagles_logo_primary_19964867.png",
+    "Los Angeles Rams": "https://nfldesigns.com/wp-content/uploads/2023/09/los-angeles-rams-football-logo-png.png",
+    "Detroit Lions": "https://content.sportslogos.net/logos/7/170/full/detroit_lions_logo_primary_20172565.png",
+    "Minnesota Vikings": "https://nfldesigns.com/wp-content/uploads/2023/09/minnesota-vikings-logo-emblem-png.png",
+    "Tampa Bay Buccaneers": "https://nfldesigns.com/wp-content/uploads/2023/09/tampa-bay-buccaneers-logo-emblem-png.png",
+    "Washington Commanders": "https://content.sportslogos.net/logos/7/6832/full/washington_commanders_logo_primary_20228587.png",
+    "Green Bay Packers": "https://nfldesigns.com/wp-content/uploads/2023/09/green-bay-packers-symbol-logo-png.png"
+};
 
 // Load ESPN IDs from espn_player_ids.json
 fetch('espn_player_ids.json')
@@ -69,20 +196,72 @@ function calculateTotalPoints(stats) {
 // Get key stats for a player
 function getPlayerStats(stats) {
     if (!stats || !stats["week 1"]) return null;
-    const latestWeek = stats["week 1"];
+    
+    const week1 = stats["week 1"];
+    
+    // Check if it's a defense by looking at the stats structure
+    const isDefense = week1.hasOwnProperty('SACKS');
+    
+    if (isDefense) {
+        // Add debug logging
+        console.log('Defense stats for:', stats.Player);
+        console.log('Week 1 data:', week1);
+        console.log('PA value:', week1.PA);
+        
+        return {
+            // Defense Stats
+            sacks: week1.SACKS || 0,
+            defInt: week1["INT.1"] || 0,
+            fumbles: week1.FR || 0,
+            safeties: week1.SAFE || 0,
+            touchdowns: week1["TD.3"] || 0,
+            pointsAllowed: week1.PA || 0,
+            fantasyPoints: week1.FPTS || 0,
+            position: 'def'
+        };
+    }
+    
+    // Regular player stats
     return {
-        completions: latestWeek.CMP || 0,
-        attempts: latestWeek.ATT || 0,
-        yards: latestWeek.YDS || 0,
-        touchdowns: latestWeek.TD || 0,
-        interceptions: latestWeek.INT || 0,
-        rushYards: latestWeek["YDS.1"] || 0,
-        rushTD: latestWeek["TD.1"] || 0
+        // QB Stats
+        completions: week1.CMP || 0,
+        attempts: week1.ATT || 0,
+        passYards: week1.YDS || 0,
+        passTD: week1.TD || 0,
+        interceptions: week1.INT || 0,
+        
+        // RB/WR Stats
+        rushYards: week1["YDS.1"] || 0,
+        rushTD: week1["TD.1"] || 0,
+        receptions: week1.REC || 0,
+        recYards: week1["YDS.2"] || 0,
+        recTD: week1["TD.2"] || 0,
+        
+        // Fantasy Points
+        fantasyPoints: week1.FPTS || 0,
+        
+        // Position
+        position: week1.POS
     };
 }
 
 // Get player image URL using ESPN data
-function getPlayerImageUrl(playerName) {
+function getPlayerImageUrl(playerName, position) {
+    // If it's a defense, return the team logo
+    if (position?.toLowerCase() === 'def') {
+        // Remove 'Defense' or 'DST' from the name to match our teamLogos object
+        const teamName = playerName
+            .replace(' Defense', '')
+            .replace(' DST', '');
+            
+        console.log('Looking for team logo:', teamName); // Debug log
+        const logoUrl = teamLogos[teamName];
+        console.log('Found logo URL:', logoUrl); // Debug log
+        
+        return logoUrl || 'https://static.www.nfl.com/image/private/t_player_profile_landscape/f_auto/league/q7dpdlxyu5rs05rgh1le';
+    }
+    
+    // For other players, use ESPN data
     const playerData = espnPlayerIds.players[playerName];
     if (playerData?.photo) {
         return playerData.photo;
@@ -94,39 +273,84 @@ function getPlayerImageUrl(playerName) {
 // Create a player card
 async function createPlayerCard(player) {
     const clone = template.content.cloneNode(true);
-    const espnData = espnPlayerIds.players[player.name];
-    
-    // Set player image
-    const playerImage = clone.querySelector('.player-image');
-    const imageUrl = getPlayerImageUrl(player.name);
-    console.log(`Loading image for ${player.name} from ${imageUrl}`);
-    playerImage.src = imageUrl;
-    playerImage.alt = player.name;
-    
-    playerImage.onerror = () => {
-        console.log(`Failed to load image for ${player.name} from ${imageUrl}`);
-        playerImage.src = 'https://static.www.nfl.com/image/private/t_player_profile_landscape/f_auto/league/q7dpdlxyu5rs05rgh1le';
-    };
-    
-    // Add a load event handler to verify successful loads
-    playerImage.onload = () => {
-        console.log(`Successfully loaded image for ${player.name}`);
-    };
+    const stats = getPlayerStats(player.stats);
     
     // Set player info
     clone.querySelector('.player-name').textContent = player.name;
-    clone.querySelector('.player-position').textContent = `${espnData?.position || player.position} - ${espnData?.team || player.team}`;
+    clone.querySelector('.player-position').textContent = player.position;
     
-    // Calculate and set stats
-    const seasonAvg = calculateSeasonAvg(player_stats[player.name]);
-    const last4Avg = calculateLast4WeeksAvg(player_stats[player.name]);
-    const totalPoints = calculateTotalPoints(player_stats[player.name]);
-    const rosterPercent = espnData?.roster_pct ? `${espnData.roster_pct}%` : "0%";
+    // Set player image using ESPN data
+    const playerImage = clone.querySelector('.player-image');
+    playerImage.src = getPlayerImageUrl(player.name, player.position);
+    if (player.position?.toLowerCase() === 'def') {
+        playerImage.classList.add('defense-logo');
+    }
+    playerImage.alt = player.name;
     
-    clone.querySelector('.avg-points').textContent = seasonAvg;
-    clone.querySelector('.last-4-avg').textContent = last4Avg;
-    clone.querySelector('.total-points').textContent = totalPoints;
-    clone.querySelector('.roster-percent').textContent = rosterPercent;
+    // Update stats display based on position
+    const statsContainer = clone.querySelector('.position-stats');
+    statsContainer.innerHTML = ''; // Clear existing stats
+
+    if (stats) {
+        switch (player.position.toLowerCase()) {
+            case 'qb':
+                statsContainer.innerHTML = `
+                    <div class="stat-item">
+                        <span class="stat-label">Pass: ${stats.completions}/${stats.attempts}</span>
+                        <span class="stat-value">${stats.passYards} YDS</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">TD/INT</span>
+                        <span class="stat-value">${stats.passTD}/${stats.interceptions}</span>
+                    </div>`;
+                break;
+            
+            case 'rb':
+                statsContainer.innerHTML = `
+                    <div class="stat-item">
+                        <span class="stat-label">Rush</span>
+                        <span class="stat-value">${stats.rushYards} YDS, ${stats.rushTD} TD</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Rec</span>
+                        <span class="stat-value">${stats.receptions} REC, ${stats.recYards} YDS, ${stats.recTD} TD</span>
+                    </div>`;
+                break;
+            
+            case 'wr':
+            case 'te':
+                statsContainer.innerHTML = `
+                    <div class="stat-item">
+                        <span class="stat-label">Receiving</span>
+                        <span class="stat-value">${stats.receptions} REC, ${stats.recYards} YDS</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">TD</span>
+                        <span class="stat-value">${stats.recTD}</span>
+                    </div>`;
+                break;
+            
+            case 'def':
+                statsContainer.innerHTML = `
+                    <div class="stat-item">
+                        <span class="stat-label">Points Allowed</span>
+                        <span class="stat-value">${stats.pointsAllowed}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Defense</span>
+                        <span class="stat-value">${stats.sacks} SACKS, ${stats.defInt} INT</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Misc</span>
+                        <span class="stat-value">FR: ${stats.fumbles}, TD: ${stats.touchdowns}</span>
+                    </div>`;
+                break;
+        }
+    }
+
+    // Add fantasy points
+    clone.querySelector('.fantasy-points').textContent = 
+        stats ? stats.fantasyPoints.toFixed(1) : "0.0";
     
     return clone;
 }
@@ -134,12 +358,12 @@ async function createPlayerCard(player) {
 // Filter and sort players
 function filterAndSortPlayers() {
     const searchTerm = playerSearch.value.toLowerCase();
-    const position = positionFilter.value;
+    const position = positionFilter.value.toLowerCase();
     const sortingMethod = sortBy.value;
     
     let filtered = allPlayers.filter(player => {
         const matchesSearch = player.name.toLowerCase().includes(searchTerm);
-        const matchesPosition = position === 'all' || player.position === position;
+        const matchesPosition = position === 'all' || player.position.toLowerCase() === position;
         return matchesSearch && matchesPosition;
     });
     
@@ -148,16 +372,19 @@ function filterAndSortPlayers() {
             case 'name':
                 return a.name.localeCompare(b.name);
             case 'avgPoints':
-                return calculateSeasonAvg(player_stats[b.name]) - calculateSeasonAvg(player_stats[a.name]);
-            case 'last4':
-                return calculateLast4WeeksAvg(player_stats[b.name]) - calculateLast4WeeksAvg(player_stats[a.name]);
             case 'totalPoints':
-                return calculateTotalPoints(player_stats[b.name]) - calculateTotalPoints(player_stats[a.name]);
-            case 'team':
-                return a.team.localeCompare(b.team);
+                const aStats = getPlayerStats(a.stats);
+                const bStats = getPlayerStats(b.stats);
+                return (bStats?.fantasyPoints || 0) - (aStats?.fantasyPoints || 0);
             default:
                 return 0;
         }
+    });
+
+    // Filter out players with no fantasy points
+    filtered = filtered.filter(player => {
+        const stats = player.stats?.["week 1"];
+        return stats && stats.FPTS > 0;
     });
     
     renderPlayers(filtered);
@@ -176,45 +403,26 @@ async function renderPlayers(players) {
 function hasRecentActivity(stats) {
     if (!stats) return false;
     
-    // Check the last 3 weeks of the regular season (weeks 15-17)
-    let inactiveWeeks = 0;
-    for (let week = 1; week <= 4; week++) {
-        const points = calculateFantasyPoints(stats, week);
-        if (points === 0) {
-            inactiveWeeks++;
-        }
-    }
-    
-    // Return false if player has been inactive for all 3 recent weeks
-    return inactiveWeeks < 3;
+    // Check if player has any stats in week 1
+    return stats["week 1"] && stats["week 1"].FPTS > 0;
 }
 
 // Initialize the page
 function initialize() {
-    const playoffTeams = ["TB", "DEN", "HOU", "PHI", "DET", "WAS", "GB", "BUF", "PIT", "LAC", "BAL", "LAR", "KC", "MIN"];
-    
-    // Convert player_stats into our player array format
-    allPlayers = Object.keys(espnPlayerIds.players)
-        .filter(name => {
-            const playerData = espnPlayerIds.players[name];
-            const totalPoints = calculateTotalPoints(player_stats[name]);
-            return playoffTeams.includes(playerData.team) && 
-                   parseFloat(totalPoints) >= 40 && 
-                   hasRecentActivity(player_stats[name]);
-        })
-        .map(name => {
-            const playerData = espnPlayerIds.players[name];
-            return {
-                name: name,
-                position: playerData.position,
-                team: playerData.team,
-                photo: playerData.photo,
-                roster_pct: playerData.roster_pct
-            };
-        });
+    // Merge stats with player data
+    allPlayers = allPlayers.map(player => ({
+        ...player,
+        stats: player_stats[player.name] || null
+    }));
 
-    // Set default sort to totalPoints
-    document.getElementById('sortBy').value = 'totalPoints';
+    console.log('Initialized players with stats:', allPlayers.length);
+    
+    // Debug log to check stats matching
+    allPlayers.forEach(player => {
+        if (!player.stats) {
+            console.log(`No stats found for: ${player.name}`);
+        }
+    });
 
     // Set up event listeners
     playerSearch.addEventListener('input', filterAndSortPlayers);
@@ -224,6 +432,29 @@ function initialize() {
     // Initial render
     filterAndSortPlayers();
 }
+
+// Add helper function to determine player position
+function getPlayerPosition(playerName) {
+    const player = espnPlayerIds.players[playerName];
+    if (!player) {
+        // Fallback logic for defense
+        if (playerName.includes('Defense') || playerName.endsWith('DST')) {
+            return 'DST';
+        }
+        console.warn(`No position data found for ${playerName}`);
+        return '';
+    }
+    return player.position;
+}
+
+// Add console logging to help debug
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM Content Loaded');
+    console.log('allPlayers from scoring.js:', window.allPlayers?.length || 'Not loaded');
+    console.log('espnPlayerIds:', espnPlayerIds);
+    console.log('player_stats:', player_stats);
+    initialize();
+});
 
 // Start the app
 document.addEventListener('DOMContentLoaded', initialize);

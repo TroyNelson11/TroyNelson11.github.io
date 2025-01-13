@@ -627,6 +627,20 @@ input#tiebreaker {
     color: #004d00 !important;
 }
 
+.highest-score-row {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.highest-score-row:hover {
+    background-color: #45a049 !important;
+}
+
+.highest-score-row td {
+    border-color: #45a049 !important;
+}
+
 
 
  

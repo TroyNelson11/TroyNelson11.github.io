@@ -2467,9 +2467,31 @@ const fantasy_team_submissions = [
       "def1":"Los Angeles Chargers",
       "def2":"Kansas City Chiefs",
       "tiebreak":57
-  }
+  },
+
 ];
 
+// Add this to the filterAndSortTeams function to always keep it at the bottom
+function filterAndSortTeams(teams) {
+    // Separate the highest possible team
+    const highestPossibleTeam = teams.find(team => team.name === "Highest Possible Score");
+    const regularTeams = teams.filter(team => team.name !== "Highest Possible Score");
+    
+    // Sort regular teams by points
+    const sortedTeams = regularTeams.sort((a, b) => b.totalPoints - a.totalPoints);
+    
+    // Add highest possible team back at the end
+    if (highestPossibleTeam) {
+        sortedTeams.push(highestPossibleTeam);
+    }
+    
+    // Combine them with highest possible at the end
+    const finalSortedTeams = [...sortedTeams];
+    const firstTeam = finalSortedTeams.shift(); // Remove first element
+    finalSortedTeams.push(firstTeam); // Add it to the end
+    
+    return finalSortedTeams;
+}
 
       function populateScores() {
           const tbody = document.getElementById("scoreTableBody");
@@ -2569,6 +2591,34 @@ const fantasy_team_submissions = [
           });
       
           calculateOwnershipStats();
+
+          // After the main table, add the highest possible team div
+          const highestPossibleDiv = document.createElement('div');
+          highestPossibleDiv.className = 'highest-possible-div';
+          highestPossibleDiv.innerHTML = `
+              <h3>Highest Possible Score (5 Games)</h3>
+              <div class="highest-possible-content">
+                  <p>QB1: Josh Allen</p>
+                  <p>QB2: Jayden Daniels</p>
+                  <p>RB1: Derrick Henry</p>
+                  <p>RB2: Josh Jacobs</p>
+                  <p>RB3: Bucky Irving</p>
+                  <p>RB4: Saquon Barkley</p>
+                  <p>WR1: Ladd McConkey</p>
+                  <p>WR2: Nico Collins</p>
+                  <p>WR3: George Pickens</p>
+                  <p>WR4: Courtland Sutton</p>
+                  <p>K1: Harrison Butker</p>
+                  <p>K2: Jake Bates</p>
+                  <p>DEF1: Minnesota Vikings</p>
+                  <p>DEF2: Los Angeles Rams</p>
+                  <p>Total: 220.2</p>
+              </div>
+          `;
+
+          // Insert after the leaderboard container
+          const leaderboardContainer = document.querySelector('.leaderboard-container');
+          leaderboardContainer.parentNode.insertBefore(highestPossibleDiv, leaderboardContainer.nextSibling);
       }
       
       function createTeamDetailCard(teamScore, index) {
@@ -2775,4 +2825,88 @@ window.addEventListener('resize', () => {
       
       // Call on page load
       window.onload = populateScores;
+
+function renderScoreTable(sortedTeams) {
+    const tableBody = document.querySelector('#scoreTable tbody');
+    tableBody.innerHTML = '';
+    // First render all regular teams
+    sortedTeams.forEach((team, index) => {
+        const row = createTableRow(team, index + 1);
+        tableBody.appendChild(row);
+    });
+
+}
+
+function displayLeaderboard() {
+    // Calculate total points for each team (excluding highest possible)
+    const teamsWithPoints = fantasy_team_submissions
+        .filter(team => team.name !== "Highest Possible Score")
+        .map(team => ({
+            ...team,
+            totalPoints: calculateTeamPoints(team)
+        }))
+        .sort((a, b) => b.totalPoints - a.totalPoints);
+
+    // Create highest possible team separately
+    const highestPossibleTeam = {
+        "name": "Highest Possible Score",
+        "qb1": "Josh Allen",
+        "qb2": "Jayden Daniels",
+        "rb1": "Derrick Henry",
+        "rb2": "Josh Jacobs",
+        "rb3": "Bucky Irving",
+        "rb4": "Saquon Barkley",
+        "wr1": "Ladd McConkey",
+        "wr2": "Nico Collins",
+        "wr3": "George Pickens",
+        "wr4": "Courtland Sutton",
+        "k1": "Harrison Butker",
+        "k2": "Jake Bates",
+        "def1": "Minnesota Vikings",
+        "def2": "Los Angeles Rams",
+        totalPoints: calculateTeamPoints({
+            "name": "Highest Possible Score",
+            "qb1": "Josh Allen",
+            "qb2": "Jayden Daniels",
+            "rb1": "Derrick Henry",
+            "rb2": "Josh Jacobs",
+            "rb3": "Bucky Irving",
+            "rb4": "Saquon Barkley",
+            "wr1": "Ladd McConkey",
+            "wr2": "Nico Collins",
+            "wr3": "George Pickens",
+            "wr4": "Courtland Sutton",
+            "k1": "Harrison Butker",
+            "k2": "Jake Bates",
+            "def1": "Minnesota Vikings",
+            "def2": "Los Angeles Rams"
+        })
+    };
+
+    // Combine regular teams with highest possible at the end
+    const finalSortedTeams = [...teamsWithPoints, highestPossibleTeam];
+    
+    console.log('Final order:', finalSortedTeams.map(t => t.name));
+
+    // Display the sorted teams
+    renderScoreTable(finalSortedTeams);
+}
+
+function calculateTeamPoints(team) {
+    // Special case for Highest Possible Score - make points negative to force to bottom
+    if (team.name === "Highest Possible Score") {
+        return -999999; // This will ensure it's always last
+    }
+
+    // Regular point calculation for all other teams
+    const positions = ['qb1', 'qb2', 'rb1', 'rb2', 'rb3', 'rb4', 'wr1', 'wr2', 'wr3', 'wr4', 'k1', 'k2', 'def1', 'def2'];
+    return positions.reduce((total, pos) => {
+        const playerName = team[pos];
+        const playerStats = player_stats[playerName];
+        if (playerStats && playerStats["week 1"]) {
+            return total + (playerStats["week 1"].FPTS || 0);
+        }
+        return total;
+    }, 0);
+}
 

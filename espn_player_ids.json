@@ -574,12 +574,26 @@
             "team": "BAL",
             "roster_pct": 98.9
         },
-        "Austin Seibert": {
-            "id": "3821683",
-            "photo": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3821683.png",
+        "Zane Gonzalez": {
+            "id": "3043234",
+            "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3043234.png",
             "position": "K",
             "team": "WAS",
-            "roster_pct": 58.2
+            "roster_pct": 0.0
+        },
+        "Brandon McManus": {
+            "id": "16339",
+            "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/16339.png",
+            "position": "K",
+            "team": "GB",
+            "roster_pct": 0.0
+        },
+        "Wil Lutz": {
+            "id": "2985659",
+            "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/2985659.png",
+            "position": "K",
+            "team": "DEN",
+            "roster_pct": 0.0
         }
     },
     "not_found": [
