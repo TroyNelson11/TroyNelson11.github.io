@@ -713,8 +713,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Zane Gonzalez",
-      "FPTS": 1,
-      "FPTS/G": 1,
+      "FPTS": 6,
+      "FPTS/G": 6,
       "ROST": "17.9%",
       "POS": "k"
     },
@@ -954,7 +954,7 @@ const player_stats = {
       "CMP": 8,
       "ATT": 11,
       "PCT": 72.7,
-      "YDS": 106,
+      "YDS": 107,
       "TD": 0,
       "INT": 0,
       "ATT.1": 4,
@@ -966,8 +966,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 6.3,
-      "FPTS/G": 6.3,
+      "FPTS": 6.4,
+      "FPTS/G": 6.4,
       "ROST": "10.3%",
       "POS": "qb"
     }
