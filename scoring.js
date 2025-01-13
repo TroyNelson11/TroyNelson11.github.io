@@ -1001,9 +1001,9 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Chase McLaughlin",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "0%",
+      "FPTS": 5,
+      "FPTS/G": 5,
+      "ROST": "10.3%",
       "POS": "k"
     },
     "week 2": {
@@ -1035,14 +1035,14 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Jayden Daniels",
-      "CMP": 7,
-      "ATT": 10,
-      "PCT": 70.0,
-      "YDS": 81,
+      "CMP": 8,
+      "ATT": 11,
+      "PCT": 72.7,
+      "YDS": 87,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 4,
-      "YDS.1": 17,
+      "ATT.1": 5,
+      "YDS.1": 15,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -1050,8 +1050,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 4.9,
-      "FPTS/G": 4.9,
+      "FPTS": 5.0,
+      "FPTS/G": 5.0,
       "ROST": "7.7%",
       "POS": "rb"
     }
@@ -1155,7 +1155,7 @@ const player_stats = {
       "Player": "Joshua Karty",
       "FPTS": 0,
       "FPTS/G": 0,
-      "ROST": "0%",
+      "ROST": "5.1%",
       "POS": "k"
     },
     "week 2": {
@@ -1189,7 +1189,7 @@ const player_stats = {
       "Player": "Wil Reichard",
       "FPTS": 0,
       "FPTS/G": 0,
-      "ROST": "0%",
+      "ROST": "5.1%",
       "POS": "k"
     },
     "week 2": {
@@ -1491,7 +1491,7 @@ const player_stats = {
       "Player": "Harrison Butker",
       "FPTS": 0,
       "FPTS/G": 0,
-      "ROST": "0%",
+      "ROST": "2.6%",
       "POS": "k"
     },
     "week 2": {
