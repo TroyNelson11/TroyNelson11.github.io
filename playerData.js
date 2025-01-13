@@ -717,10 +717,10 @@ const player_stats = {
       "POS": "k"
     }
   },
-  "Austin Seibert": {
+  "Zane Gonzalez": {
     "week 1": {
       "Rank": 0,
-      "Player": "Austin Seibert",
+      "Player": "Zane Gonzalez",
       "FPTS": 0,
       "FPTS/G": 0,
       "ROST": "17.9%",
@@ -728,7 +728,7 @@ const player_stats = {
     },
     "week 2": {
       "Rank": 0,
-      "Player": "Austin Seibert",
+      "Player": "Zane Gonzalez",
       "FPTS": 0,
       "FPTS/G": 0,
       "ROST": "17.9%",
@@ -736,7 +736,7 @@ const player_stats = {
     },
     "week 3": {
       "Rank": 0,
-      "Player": "Austin Seibert",
+      "Player": "Zane Gonzalez",
       "FPTS": 0,
       "FPTS/G": 0,
       "ROST": "17.9%",
@@ -744,7 +744,7 @@ const player_stats = {
     },
     "week 4": {
       "Rank": 0,
-      "Player": "Austin Seibert",
+      "Player": "Zane Gonzalez",
       "FPTS": 0,
       "FPTS/G": 0,
       "ROST": "17.9%",
@@ -1756,7 +1756,7 @@ const fantasy_team_submissions = [
         "wr3":"George Kittle",
         "wr4":"Mike Evans",
         "k1":"Joshua Karty",
-        "k2":"Austin Seibert",
+        "k2":"Zane Gonzalez",
         "def1":"Los Angeles Chargers",
         "def2":"Denver Broncos",
         "tiebreak":46
@@ -1899,7 +1899,7 @@ const fantasy_team_submissions = [
         "wr2":"Justin Jefferson",
         "wr3":"Nico Collins",
         "wr4":"Travis Kelce",
-        "k1":"Austin Seibert",
+        "k1":"Zane Gonzalez",
         "k2":"Brandon McManus",
         "def1":"Pittsburgh Steelers",
         "def2":"Denver Broncos",
@@ -1917,7 +1917,7 @@ const fantasy_team_submissions = [
         "wr2":"Justin Jefferson",
         "wr3":"Nico Collins",
         "wr4":"Ladd McConkey",
-        "k1":"Austin Seibert",
+        "k1":"Zane Gonzalez",
         "k2":"Brandon McManus",
         "def1":"Denver Broncos",
         "def2":"Pittsburgh Steelers",
@@ -2025,7 +2025,7 @@ const fantasy_team_submissions = [
         "wr2":"Ladd McConkey",
         "wr3":"Xavier Worthy",
         "wr4":"Nico Collins",
-        "k1":"Austin Seibert",
+        "k1":"Zane Gonzalez",
         "k2":"Chris Boswell",
         "def1":"Denver Broncos",
         "def2":"Minnesota Vikings",
@@ -2296,7 +2296,7 @@ const fantasy_team_submissions = [
         "wr3":"Ladd McConkey",
         "wr4":"Justin Jefferson",
         "k1":"Chris Boswell",
-        "k2":"Austin Seibert",
+        "k2":"Zane Gonzalez",
         "def1":"Kansas City Chiefs",
         "def2":"Denver Broncos",
         "tiebreak":46
@@ -2332,7 +2332,7 @@ const fantasy_team_submissions = [
         "wr3":"Puka Nacua",
         "wr4":"Amon-Ra St. Brown",
         "k1":"Cameron Dicker",
-        "k2":"Austin Seibert",
+        "k2":"Zane Gonzalez",
         "def1":"Pittsburgh Steelers",
         "def2":"Denver Broncos",
         "tiebreak":64
@@ -2350,7 +2350,7 @@ const fantasy_team_submissions = [
         "wr3":"Travis Kelce",
         "wr4":"Puka Nacua",
         "k1":"Chris Boswell",
-        "k2":"Austin Seibert",
+        "k2":"Zane Gonzalez",
         "def1":"Houston Texans",
         "def2":"Denver Broncos",
         "tiebreak":52
