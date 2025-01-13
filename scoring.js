@@ -240,13 +240,13 @@ const player_stats = {
       "YDS.1": 61,
       "TD.1": 0,
       "FL": 0,
-      "REC": 1,
-      "TGT": 1,
-      "YDS.2": 2,
-      "TD.2": 0,
+      "REC": 2,
+      "TGT": 2,
+      "YDS.2": 6,
+      "TD.2": 1,
       "G": 1,
-      "FPTS": 7.3,
-      "FPTS/G": 7.3,
+      "FPTS": 14.7,
+      "FPTS/G": 14.7,
       "ROST": "46.2%",
       "POS": "qb"
     }
@@ -522,10 +522,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 10,
+      "PA": 17,
       "G": 1,
-      "FPTS": 5.0,
-      "FPTS/G": 5.0,
+      "FPTS": 2.0,
+      "FPTS/G": 2.0,
       "ROST": "23.1%",
       "POS": "def"
     }
@@ -713,8 +713,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Zane Gonzalez",
-      "FPTS": 6,
-      "FPTS/G": 6,
+      "FPTS": 8,
+      "FPTS/G": 8,
       "ROST": "17.9%",
       "POS": "k"
     },
@@ -951,11 +951,11 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Baker Mayfield",
-      "CMP": 11,
-      "ATT": 14,
-      "PCT": 78.6,
-      "YDS": 127,
-      "TD": 1,
+      "CMP": 12,
+      "ATT": 15,
+      "PCT": 80.0,
+      "YDS": 131,
+      "TD": 2,
       "INT": 0,
       "ATT.1": 4,
       "YDS.1": 21,
@@ -966,8 +966,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 11.2,
-      "FPTS/G": 11.2,
+      "FPTS": 15.3,
+      "FPTS/G": 15.3,
       "ROST": "10.3%",
       "POS": "qb"
     }
@@ -1001,8 +1001,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Chase McLaughlin",
-      "FPTS": 6,
-      "FPTS/G": 6,
+      "FPTS": 7,
+      "FPTS/G": 7,
       "ROST": "10.3%",
       "POS": "k"
     },
