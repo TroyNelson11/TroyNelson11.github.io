@@ -1035,10 +1035,10 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Jayden Daniels",
-      "CMP": 11,
-      "ATT": 16,
-      "PCT": 68.8,
-      "YDS": 108,
+      "CMP": 12,
+      "ATT": 17,
+      "PCT": 70.6,
+      "YDS": 116,
       "TD": 1,
       "INT": 0,
       "ATT.1": 9,
@@ -1050,8 +1050,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 11.3,
-      "FPTS/G": 11.3,
+      "FPTS": 11.6,
+      "FPTS/G": 11.6,
       "ROST": "7.7%",
       "POS": "qb"
     }
