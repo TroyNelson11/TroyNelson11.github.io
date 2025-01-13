@@ -2720,7 +2720,7 @@ function filterAndSortTeams(teams) {
           
           // Calculate how many rows will fit in the ownership stats table
           // Subtract 3 rows worth of space for header and pagination
-          const itemsPerPage = Math.floor(mainTableHeight / mainRowHeight) - 5;
+          const itemsPerPage = Math.floor(mainTableHeight / mainRowHeight) - 20;
           
           // Ensure we return a reasonable number (minimum 5, maximum mainTableRows.length)
           return Math.max(5, Math.min(itemsPerPage, mainTableRows.length));
