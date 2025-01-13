@@ -1001,8 +1001,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Chase McLaughlin",
-      "FPTS": 5,
-      "FPTS/G": 5,
+      "FPTS": 6,
+      "FPTS/G": 6,
       "ROST": "10.3%",
       "POS": "k"
     },
