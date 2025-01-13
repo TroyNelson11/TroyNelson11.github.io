@@ -474,8 +474,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Brandon McManus",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 2,
+      "FPTS/G": 2,
       "ROST": "38.5%",
       "POS": "k"
     },
