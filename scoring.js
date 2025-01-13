@@ -709,29 +709,38 @@ const player_stats = {
       "POS": "k"
     }
   },
-  "Austin Seibert": {
+  "Zane Gonzalez": {
     "week 1": {
       "Rank": 0,
-      "Player": "Austin Seibert",
-      "CMP": 0,
-      "ATT": 0,
-      "PCT": 0,
-      "YDS": 0,
-      "TD": 0,
-      "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
-      "TD.1": 0,
-      "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
-      "TD.2": 0,
-      "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "Player": "Zane Gonzalez",
+      "FPTS": 1,
+      "FPTS/G": 1,
       "ROST": "17.9%",
-      "POS": "qb"
+      "POS": "k"
+    },
+    "week 2": {
+      "Rank": 0,
+      "Player": "Zane Gonzalez",
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "17.9%",
+      "POS": "k"
+    },
+    "week 3": {
+      "Rank": 0,
+      "Player": "Zane Gonzalez",
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "17.9%",
+      "POS": "k"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Zane Gonzalez",
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "17.9%",
+      "POS": "k"
     }
   },
   "James Cook": {
