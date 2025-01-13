@@ -1,3 +1,122 @@
+// Create a single flat array of all players at the top of scoring.js
+const allPlayers = [
+    // QBs
+    { "name": "Baker Mayfield", "team": "TB" }, 
+    { "name": "Bo Nix", "team": "DEN" },        
+    { "name": "C.J. Stroud", "team": "HOU" },   
+    { "name": "Jalen Hurts", "team": "PHI" },   
+    { "name": "Jared Goff", "team": "DET" },    
+    { "name": "Jayden Daniels", "team": "WAS" },
+    { "name": "Jordan Love", "team": "GB" },    
+    { "name": "Josh Allen", "team": "BUF" },    
+    { "name": "Justin Fields", "team": "PIT" }, 
+    { "name": "Justin Herbert", "team": "LAC" },
+    { "name": "Lamar Jackson", "team": "BAL" }, 
+    { "name": "Matthew Stafford", "team": "LAR" },
+    { "name": "Patrick Mahomes II", "team": "KC" },
+    { "name": "Russell Wilson", "team": "PIT" },
+    { "name": "Sam Darnold", "team": "MIN" },
+    // RBs
+    { "name": "Aaron Jones Sr.", "team": "MIN" },
+    { "name": "Austin Ekeler", "team": "WAS" },
+    { "name": "Brian Robinson Jr.", "team": "WAS" },
+    { "name": "Bucky Irving", "team": "TB" },
+    { "name": "David Montgomery", "team": "DET" },
+    { "name": "Derrick Henry", "team": "BAL" },
+    { "name": "Gus Edwards", "team": "LAC" },
+    { "name": "Isiah Pacheco", "team": "KC" },
+    { "name": "J.K. Dobbins", "team": "LAC" },
+    { "name": "Jahmyr Gibbs", "team": "DET" },
+    { "name": "James Cook", "team": "BUF" },
+    { "name": "Javonte Williams", "team": "DEN" },
+    { "name": "Jaylen Warren", "team": "PIT" },
+    { "name": "Joe Mixon", "team": "HOU" },
+    { "name": "Josh Jacobs", "team": "GB" },
+    { "name": "Kareem Hunt", "team": "KC" },
+    { "name": "Kyren Williams", "team": "LAR" },
+    { "name": "Najee Harris", "team": "PIT" },
+    { "name": "Rachaad White", "team": "TB" },
+    { "name": "Saquon Barkley", "team": "PHI" },
+    { "name": "Ty Chandler", "team": "MIN" },
+    // WRs and TEs
+    { "name": "A.J. Brown", "team": "PHI" },
+    { "name": "Amari Cooper", "team": "BUF" },
+    { "name": "Amon-Ra St. Brown", "team": "DET" },
+    { "name": "Cooper Kupp", "team": "LAR" },
+    { "name": "Courtland Sutton", "team": "DEN" },
+    { "name": "DeAndre Hopkins", "team": "KC" },
+    { "name": "DeVonta Smith", "team": "PHI" },
+    { "name": "George Pickens", "team": "PIT" },
+    { "name": "Jalen McMillan", "team": "TB" },
+    { "name": "Jameson Williams", "team": "DET" },
+    { "name": "Jayden Reed", "team": "GB" },
+    { "name": "Jordan Addison", "team": "MIN" },
+    { "name": "JuJu Smith-Schuster", "team": "KC" },
+    { "name": "Justin Jefferson", "team": "MIN" },
+    { "name": "Keon Coleman", "team": "BUF" },
+    { "name": "Khalil Shakir", "team": "BUF" },
+    { "name": "Ladd McConkey", "team": "LAC" },
+    { "name": "Marquise Brown", "team": "KC" },
+    { "name": "Mike Evans", "team": "TB" },
+    { "name": "Nico Collins", "team": "HOU" },
+    { "name": "Puka Nacua", "team": "LAR" },
+    { "name": "Quentin Johnston", "team": "LAC" },
+    { "name": "Rashee Rice", "team": "KC" },
+    { "name": "Rashod Bateman", "team": "BAL" },
+    { "name": "Romeo Doubs", "team": "GB" },
+    { "name": "Stefon Diggs", "team": "HOU" },
+    { "name": "Tank Dell", "team": "HOU" },
+    { "name": "Terry McLaurin", "team": "WAS" },
+    { "name": "Xavier Worthy", "team": "KC" },
+    { "name": "Zay Flowers", "team": "BAL" },
+    { "name": "Dallas Goedert", "team": "PHI" },
+    { "name": "Dalton Kincaid", "team": "BUF" },
+    { "name": "Cade Otton", "team": "TB" },
+    { "name": "Isaiah Likely", "team": "BAL" },
+    { "name": "TJ Hockenson", "team": "MIN" },
+    { "name": "Mark Andrews", "team": "BAL" },
+    { "name": "Pat Freiermuth", "team": "PIT" },
+    { "name": "Sam LaPorta", "team": "DET" },
+    { "name": "Travis Kelce", "team": "KC" },
+    { "name": "Tucker Kraft", "team": "GB" },
+    // Kickers
+    { "name": "Zane Gonzalez", "team": "WAS" },
+    { "name": "Cameron Dicker", "team": "LAC" },
+    { "name": "Chase McLaughlin", "team": "TB" },
+    { "name": "Chris Boswell", "team": "PIT" },
+    { "name": "Harrison Butker", "team": "KC" },
+    { "name": "Jake Bates", "team": "DET" },
+    { "name": "Jake Elliott", "team": "PHI" },
+    { "name": "Justin Tucker", "team": "BAL" },
+    { "name": "Ka'imi Fairbairn", "team": "HOU" },
+    { "name": "Tyler Bass", "team": "BUF" },
+    { "name": "Joshua Karty", "team": "LAR" },
+    { "name": "Wil Lutz", "team": "DEN" },
+    { "name": "Brandon McManus", "team": "GB" },
+    { "name": "Wil Reichard", "team": "MIN" },
+    // Defense
+    { "name": "Baltimore Ravens", "team": "BAL" },
+    { "name": "Buffalo Bills", "team": "BUF" },
+    { "name": "Denver Broncos", "team": "DEN" },
+    { "name": "Detroit Lions", "team": "DET" },
+    { "name": "Green Bay Packers", "team": "GB" },
+    { "name": "Houston Texans", "team": "HOU" },
+    { "name": "Kansas City Chiefs", "team": "KC" },
+    { "name": "Los Angeles Chargers", "team": "LAC" },
+    { "name": "Minnesota Vikings", "team": "MIN" },
+    { "name": "Philadelphia Eagles", "team": "PHI" },
+    { "name": "Pittsburgh Steelers", "team": "PIT" },
+    { "name": "Tampa Bay Buccaneers", "team": "TB" },
+    { "name": "Washington Commanders", "team": "WAS" },
+    { "name": "Los Angeles Rams", "team": "LAR" },
+];
+
+// Simplified helper function
+function getTeamFromPlayerName(playerName) {
+    const player = allPlayers.find(p => p.name === playerName);
+    return player ? player.team : 'FA';
+}
+
 const player_stats = {
   "Saquon Barkley": {
     "week 1": {
@@ -713,8 +832,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Zane Gonzalez",
-      "FPTS": 8,
-      "FPTS/G": 8,
+      "FPTS": 11,
+      "FPTS/G": 11,
       "ROST": "17.9%",
       "POS": "k"
     },
@@ -2350,6 +2469,8 @@ const fantasy_team_submissions = [
       "tiebreak":57
   }
 ];
+
+
       function populateScores() {
           const tbody = document.getElementById("scoreTableBody");
           tbody.innerHTML = "";
@@ -2514,8 +2635,9 @@ const fantasy_team_submissions = [
                   });
               }
               
+              const team = allPlayers.find(p => p.name === player)?.team || 'FA';
               row.innerHTML = `
-                  <td>${player} (${player_stats[player]?.Team || 'FA'})</td>
+                  <td>${player} (${team})</td>
                   ${weeklyScores.map(({score}) => 
                       `<td>${score}</td>`
                   ).join('')}
@@ -2555,70 +2677,71 @@ const fantasy_team_submissions = [
       }
 
 function calculateOwnershipStats() {
-  const ownershipTableBody = document.getElementById("ownershipTableBody");
-  ownershipTableBody.innerHTML = "";
+    const ownershipTableBody = document.getElementById("ownershipTableBody");
+    ownershipTableBody.innerHTML = "";
 
-  // Get total number of teams (excluding test teams)
-  const validTeams = fantasy_team_submissions.filter(team => 
-      team.name !== "tbfootballplayer" && team.name !== "asd"
-  );
-  const totalTeams = validTeams.length;
+    const validTeams = fantasy_team_submissions.filter(team => 
+        team.name !== "tbfootballplayer" && team.name !== "asd"
+    );
+    const totalTeams = validTeams.length;
 
-  // Create a map to count player occurrences
-  const playerCounts = new Map();
+    const playerCounts = new Map();
 
-  validTeams.forEach(team => {
-      const players = Object.entries(team)
-          .filter(([key]) => key !== "name" && key !== "tiebreak")
-          .map(([_, value]) => value);
+    validTeams.forEach(team => {
+        const players = Object.entries(team)
+            .filter(([key]) => key !== "name" && key !== "tiebreak")
+            .map(([_, value]) => value);
 
-      new Set(players).forEach(player => {
-          playerCounts.set(player, (playerCounts.get(player) || 0) + 1);
-      });
-  });
+        new Set(players).forEach(player => {
+            playerCounts.set(player, (playerCounts.get(player) || 0) + 1);
+        });
+    });
 
-  ownershipStatsData = Array.from(playerCounts.entries())
-      .map(([player, count]) => ({
-          player: `${player} (${player_stats[player]?.Team || 'FA'})`,
-          percentage: (count / totalTeams) * 100
-      }))
-      .sort((a, b) => b.percentage - a.percentage);
+    // Let's log what we're working with
+    console.log("Player Counts:", playerCounts);
 
-  // Calculate items per page after data is loaded
-  const itemsPerPage = calculateItemsPerPage();
-  displayOwnershipPage(1, itemsPerPage);
-  setupPagination(itemsPerPage);
+    ownershipStatsData = Array.from(playerCounts.entries())
+        .map(([player, count]) => ({
+            player: player,  // Keep original for now
+            percentage: (count / totalTeams) * 100
+        }))
+        .sort((a, b) => b.percentage - a.percentage);
+
+    const itemsPerPage = calculateItemsPerPage();
+    displayOwnershipPage(1, itemsPerPage);
+    setupPagination(itemsPerPage);
 }
 
 function displayOwnershipPage(page, itemsPerPage) {
-  const ownershipTableBody = document.getElementById("ownershipTableBody");
-  ownershipTableBody.innerHTML = "";
-  
-  const startIndex = (page - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const pageData = ownershipStatsData.slice(startIndex, endIndex);
-  let tracker = 0;
-  pageData.forEach(({ player, percentage }) => {
-      const row = document.createElement("tr");
-      row.className = tracker % 2 === 0 ? 'bg-inherit' : 'bg-gray-100';
-              tracker++;
-      row.innerHTML = `
-          <td>${player}</td>
-          <td>${percentage.toFixed(1)}%</td>
-      `;
-      ownershipTableBody.appendChild(row);
-  });
+    const ownershipTableBody = document.getElementById("ownershipTableBody");
+    ownershipTableBody.innerHTML = "";
+    
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const pageData = ownershipStatsData.slice(startIndex, endIndex);
+    let tracker = 0;
+    pageData.forEach(({ player, percentage }) => {
+        const team = allPlayers.find(p => p.name === player)?.team || 'FA';
+        const row = document.createElement("tr");
+        row.className = tracker % 2 === 0 ? 'bg-inherit' : 'bg-gray-100';
+        tracker++;
+        row.innerHTML = `
+            <td>${player} (${team})</td>
+            <td>${percentage.toFixed(1)}%</td>
+        `;
+        ownershipTableBody.appendChild(row);
+    });
 
-  const pageInfo = document.getElementById("pageInfo");
-  const totalPages = Math.ceil(ownershipStatsData.length / itemsPerPage);
-  pageInfo.textContent = `Page ${page} of ${totalPages}`;
+    const pageInfo = document.getElementById("pageInfo");
+    const totalPages = Math.ceil(ownershipStatsData.length / itemsPerPage);
+    pageInfo.textContent = `Page ${page} of ${totalPages}`;
 
-  const prevBtn = document.getElementById("prevPage");
-  const nextBtn = document.getElementById("nextPage");
-  prevBtn.disabled = page === 1;
-  nextBtn.disabled = page === totalPages;
+    const prevBtn = document.getElementById("prevPage");
+    const nextBtn = document.getElementById("nextPage");
+    prevBtn.disabled = page === 1;
+    nextBtn.disabled = page === totalPages;
 
-  currentPage = page;
+    currentPage = page;
 }
 
 function setupPagination(itemsPerPage) {
