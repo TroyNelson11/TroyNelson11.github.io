@@ -330,8 +330,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 1,
+      "YDS.1": 7,
       "TD.1": 0,
       "FL": 0,
       "REC": 4,
@@ -339,8 +339,8 @@ const player_stats = {
       "YDS.2": 43,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 8.3,
-      "FPTS/G": 8.3,
+      "FPTS": 9.0,
+      "FPTS/G": 9.0,
       "ROST": "48.7%",
       "POS": "qb"
     }
@@ -1365,16 +1365,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Minnesota Vikings",
-      "SACKS": 0,
+      "SACKS": 1.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 24,
+      "PA": 27,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 1.0,
+      "FPTS/G": 1.0,
       "ROST": "5.1%",
       "POS": "def"
     }
