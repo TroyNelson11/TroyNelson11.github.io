@@ -1002,16 +1002,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Los Angeles Rams",
-      "SACKS": 3.0,
-      "FR": 0,
+      "SACKS": 5.0,
+      "FR": 1,
       "INT.1": 1,
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
       "PA": 3,
       "G": 1,
-      "FPTS": 12.0,
-      "FPTS/G": 12.0,
+      "FPTS": 16.0,
+      "FPTS/G": 16.0,
       "ROST": "10.3%",
       "POS": "def"
     }
@@ -1371,10 +1371,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 10,
+      "PA": 17,
       "G": 1,
-      "FPTS": 4,
-      "FPTS/G": 4,
+      "FPTS": 1,
+      "FPTS/G": 1,
       "ROST": "5.1%",
       "POS": "def"
     }
