@@ -591,8 +591,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 10,
-      "YDS.1": 45,
+      "ATT.1": 13,
+      "YDS.1": 64,
       "TD.1": 0,
       "FL": 0,
       "REC": 3,
@@ -600,8 +600,8 @@ const player_stats = {
       "YDS.2": 16,
       "TD.2": 1,
       "G": 1,
-      "FPTS": 15.1,
-      "FPTS/G": 15.1,
+      "FPTS": 17.0,
+      "FPTS/G": 17.0,
       "ROST": "25.6%",
       "POS": "qb"
     }
@@ -1002,7 +1002,7 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Los Angeles Rams",
-      "SACKS": 6.0,
+      "SACKS": 7.0,
       "FR": 1,
       "INT.1": 1,
       "TD.3": 0,
@@ -1010,8 +1010,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 9,
       "G": 1,
-      "FPTS": 14.0,
-      "FPTS/G": 14.0,
+      "FPTS": 15.0,
+      "FPTS/G": 15.0,
       "ROST": "10.3%",
       "POS": "def"
     }
@@ -1365,7 +1365,7 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Minnesota Vikings",
-      "SACKS": 1.0,
+      "SACKS": 2.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -1373,8 +1373,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 27,
       "G": 1,
-      "FPTS": 1.0,
-      "FPTS/G": 1.0,
+      "FPTS": 2.0,
+      "FPTS/G": 2.0,
       "ROST": "5.1%",
       "POS": "def"
     }
