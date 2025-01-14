@@ -1272,8 +1272,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Joshua Karty",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 4,
+      "FPTS/G": 4,
       "ROST": "5.1%",
       "POS": "k"
     },
@@ -1306,8 +1306,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Wil Reichard",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 3,
+      "FPTS/G": 3,
       "ROST": "5.1%",
       "POS": "k"
     },
