@@ -591,8 +591,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 8,
-      "YDS.1": 43,
+      "ATT.1": 9,
+      "YDS.1": 41,
       "TD.1": 0,
       "FL": 0,
       "REC": 3,
@@ -600,8 +600,8 @@ const player_stats = {
       "YDS.2": 16,
       "TD.2": 1,
       "G": 1,
-      "FPTS": 14.9,
-      "FPTS/G": 14.9,
+      "FPTS": 14.7,
+      "FPTS/G": 14.7,
       "ROST": "25.6%",
       "POS": "qb"
     }
@@ -1272,8 +1272,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Joshua Karty",
-      "FPTS": 4,
-      "FPTS/G": 4,
+      "FPTS": 10,
+      "FPTS/G": 10,
       "ROST": "5.1%",
       "POS": "k"
     },
