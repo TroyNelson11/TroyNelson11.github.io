@@ -1444,7 +1444,7 @@ const player_stats = {
       "TD.1": 0,
       "FL": 0,
       "REC": 3,
-      "TGT": 5,
+      "TGT": 6,
       "YDS.2": 29,
       "TD.2": 0,
       "G": 1,
