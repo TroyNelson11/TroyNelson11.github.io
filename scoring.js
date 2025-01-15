@@ -2596,7 +2596,7 @@ function filterAndSortTeams(teams) {
           const highestPossibleDiv = document.createElement('div');
           highestPossibleDiv.className = 'highest-possible-div';
           highestPossibleDiv.innerHTML = `
-              <h3>Highest Possible Score (5 Games)</h3>
+              <h3>Highest Possible Score (Wildcard)</h3>
               <div class="highest-possible-content">
                   <p>QB1: Josh Allen</p>
                   <p>QB2: Jayden Daniels</p>
@@ -2608,11 +2608,11 @@ function filterAndSortTeams(teams) {
                   <p>WR2: Nico Collins</p>
                   <p>WR3: George Pickens</p>
                   <p>WR4: Courtland Sutton</p>
-                  <p>K1: Harrison Butker</p>
+                  <p>K1: Wil Reichard</p>
                   <p>K2: Jake Bates</p>
-                  <p>DEF1: Minnesota Vikings</p>
-                  <p>DEF2: Los Angeles Rams</p>
-                  <p>Total: 220.2</p>
+                  <p>DEF1: Los Angeles Rams</p>
+                  <p>DEF2: Kansas City Chiefs</p>
+                  <p>Total: 244.2</p>
               </div>
           `;
 
