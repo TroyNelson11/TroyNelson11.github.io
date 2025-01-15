@@ -309,37 +309,37 @@ let secondRoundMatchDetails = [
     // AFC
     {
         "home": "KC",
-        "away": null,
+        "away": "HOU",
         "homeseed": 1,
-        "awayseed": null,
-        "spread": null, 
-        "total": null
+        "awayseed": 4,
+        "spread": -8.5, 
+        "total": 41.5
     },
     {
-        "home": null,
-        "away": null,
-        "homeseed": null,
-        "awayseed": null,
-        "spread": null,
-        "total": null
+        "home": "BUF",
+        "away": "BAL",
+        "homeseed": 2,
+        "awayseed": 3,
+        "spread": "+1",
+        "total": 51.5
     },
 
     // NFC
     {
         "home": "DET",
-        "away": null,
+        "away": "WAS",
         "homeseed": 1,
-        "awayseed": null,
-        "spread": null, 
-        "total": null
+        "awayseed": 6,
+        "spread": -9.5, 
+        "total": 55.5
     },
     {
-        "home": null,
-        "away": null,
-        "homeseed": null,
-        "awayseed": null,
-        "spread": null,
-        "total": null
+        "home": "PHI",
+        "away": "LAR",
+        "homeseed": 2,
+        "awayseed": 4,
+        "spread": -6,
+        "total": 44.0
     },
     
 ];
@@ -1184,6 +1184,62 @@ document.addEventListener('DOMContentLoaded', function() {
     modal.addEventListener('hide', function() {
         document.body.style.overflow = 'auto';
     });
+});
+
+// First round results
+const firstRoundWinners = [
+    "HOU",  // Won against 
+    "BAL",  // Won against 
+    "BUF",  // Won against 
+    "PHI",   // Won against 
+    "WAS",   // Won against 
+    "LAR"   // Won against 
+];
+
+// Add this function to lock ONLY first round results
+const lockFirstRoundResults = () => {
+    // Handle AFC side (bracket-container)
+    const afc = document.getElementById('bracket-container');
+    const afcMatches = afc.querySelectorAll('.match');
+    
+    // Handle NFC side (bracket-container-5)
+    const nfc = document.getElementById('bracket-container-5');
+    const nfcMatches = nfc.querySelectorAll('.match');
+    
+    // Combine all first round matches
+    const allFirstRoundMatches = [...afcMatches, ...nfcMatches];
+    
+    allFirstRoundMatches.forEach(match => {
+        const teams = match.querySelectorAll('.team-div');
+        teams.forEach(team => {
+            const teamCode = team.getAttribute('data-team');
+            if (firstRoundWinners.includes(teamCode)) {
+                team.setAttribute('data-result', 'win');
+                const teamSeed = team.closest('.team-and-seed');
+                const seed = teamSeed.querySelector('.seed');
+                seed.style.color = 'black';
+                seed.style.fontWeight = 'bold';
+            } else {
+                team.setAttribute('data-result', 'lose');
+                const teamSeed = team.closest('.team-and-seed');
+                const seed = teamSeed.querySelector('.seed');
+                seed.style.color = 'rgb(107 114 128)';
+                seed.style.fontWeight = '';
+            }
+            // Disable clicking for first round only
+            team.style.pointerEvents = 'none';
+        });
+    });
+    
+    // Update second round matches but don't lock them
+    updateMatches();
+    addEventDelegation(); // Re-add click handlers for remaining rounds
+};
+
+// Call this after your bracket is initialized
+document.addEventListener('DOMContentLoaded', () => {
+    // ... your existing initialization code ...
+    lockFirstRoundResults();
 });
 
         </script>

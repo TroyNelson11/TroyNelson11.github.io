@@ -128,5 +128,6 @@
     "Zamir"
   ],
   "search-node-modules.path": "typescript-version/full-version/node_modules",
-  "markdown.extension.toc.updateOnSave": false
+  "markdown.extension.toc.updateOnSave": false,
+  "liveServer.settings.port": 5501
 }
