@@ -74,6 +74,10 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    .fantasy-points-container div {
+        font-size: 4vw !important;
+        line-height: 6rem !important;
+    }
     .control-panel {
         display: flex;
         justify-content: center;
