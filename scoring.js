@@ -801,15 +801,15 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 23,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 3.3,
+      "FPTS/G": 3.3,
       "ROST": "35.9%",
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "Wil Lutz": {
@@ -1021,10 +1021,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Patrick Mahomes II",
-      "CMP": 0,
-      "ATT": 2,
-      "PCT": 0.0,
-      "YDS": 0,
+      "CMP": 2,
+      "ATT": 5,
+      "PCT": 40.0,
+      "YDS": 44,
       "TD": 0,
       "INT": 0,
       "ATT.1": 0,
@@ -1036,8 +1036,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 1.8,
+      "FPTS/G": 1.8,
       "ROST": "23.1%",
       "POS": "qb"
     }
@@ -1591,15 +1591,15 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 21,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 3.1,
+      "FPTS/G": 3.1,
       "ROST": "10.3%",
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "Cooper Kupp": {
