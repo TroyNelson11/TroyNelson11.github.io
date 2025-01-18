@@ -1022,7 +1022,7 @@ const player_stats = {
       "Rank": 0,
       "Player": "Patrick Mahomes II",
       "CMP": 0,
-      "ATT": 1,
+      "ATT": 2,
       "PCT": 0.0,
       "YDS": 0,
       "TD": 0,
@@ -1150,10 +1150,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 0,
+      "PA": 3,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 7,
+      "FPTS/G": 7,
       "ROST": "20.5%",
       "POS": "def"
     }
