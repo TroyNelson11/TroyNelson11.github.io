@@ -735,13 +735,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 1,
-      "TGT": 2,
-      "YDS.2": 13,
+      "REC": 2,
+      "TGT": 3,
+      "YDS.2": 27,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 2.3,
-      "FPTS/G": 2.3,
+      "FPTS": 4.7,
+      "FPTS/G": 4.7,
       "ROST": "38.5%",
       "POS": "wr"
     }
@@ -1191,8 +1191,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 3,
-      "YDS.1": 10,
+      "ATT.1": 5,
+      "YDS.1": 20,
       "TD.1": 0,
       "FL": 0,
       "REC": 1,
@@ -1200,8 +1200,8 @@ const player_stats = {
       "YDS.2": 6,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 2.6,
-      "FPTS/G": 2.6,
+      "FPTS": 3.6,
+      "FPTS/G": 3.6,
       "ROST": "20.5%",
       "POS": "wr"
     }
@@ -1506,7 +1506,7 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Kansas City Chiefs",
-      "SACKS": 0,
+      "SACKS": 1.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -1514,8 +1514,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 3,
       "G": 1,
-      "FPTS": 7,
-      "FPTS/G": 7,
+      "FPTS": 8.0,
+      "FPTS/G": 8.0,
       "ROST": "12.8%",
       "POS": "def"
     }
