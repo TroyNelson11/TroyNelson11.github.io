@@ -801,13 +801,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 3,
-      "TGT": 4,
-      "YDS.2": 84,
+      "REC": 4,
+      "TGT": 5,
+      "YDS.2": 102,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 11.4,
-      "FPTS/G": 11.4,
+      "FPTS": 14.2,
+      "FPTS/G": 14.2,
       "ROST": "35.9%",
       "POS": "wr"
     }
@@ -1021,10 +1021,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Patrick Mahomes II",
-      "CMP": 10,
-      "ATT": 17,
-      "PCT": 58.8,
-      "YDS": 135,
+      "CMP": 11,
+      "ATT": 18,
+      "PCT": 61.1,
+      "YDS": 153,
       "TD": 0,
       "INT": 0,
       "ATT.1": 4,
@@ -1036,8 +1036,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 7.5,
-      "FPTS/G": 7.5,
+      "FPTS": 8.2,
+      "FPTS/G": 8.2,
       "ROST": "23.1%",
       "POS": "rb"
     }
@@ -1144,7 +1144,7 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Houston Texans",
-      "SACKS": 2.0,
+      "SACKS": 3.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -1152,8 +1152,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 13,
       "G": 1,
-      "FPTS": 6.0,
-      "FPTS/G": 6.0,
+      "FPTS": 7.0,
+      "FPTS/G": 7.0,
       "ROST": "20.5%",
       "POS": "def"
     }
@@ -1927,8 +1927,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 2,
-      "YDS.1": 5,
+      "ATT.1": 4,
+      "YDS.1": 15,
       "TD.1": 1,
       "FL": 0,
       "REC": 1,
@@ -1936,8 +1936,8 @@ const player_stats = {
       "YDS.2": 2,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 7.7,
-      "FPTS/G": 7.7,
+      "FPTS": 8.7,
+      "FPTS/G": 8.7,
       "ROST": "5.1%",
       "POS": "wr"
     }
