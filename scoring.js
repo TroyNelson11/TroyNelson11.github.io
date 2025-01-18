@@ -276,30 +276,6 @@ const player_stats = {
       "FPTS/G": 2,
       "ROST": "48.7%",
       "POS": "k"
-    },
-    "week 2": {
-      "Rank": 0,
-      "Player": "Chris Boswell",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "48.7%",
-      "POS": "k"
-    },
-    "week 3": {
-      "Rank": 0,
-      "Player": "Chris Boswell",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "48.7%",
-      "POS": "k"
-    },
-    "week 4": {
-      "Rank": 0,
-      "Player": "Chris Boswell",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "48.7%",
-      "POS": "k"
     }
   },
   "Denver Broncos": {
@@ -478,30 +454,6 @@ const player_stats = {
       "FPTS/G": 2,
       "ROST": "38.5%",
       "POS": "k"
-    },
-    "week 2": {
-      "Rank": 0,
-      "Player": "Brandon McManus",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "38.5%",
-      "POS": "k"
-    },
-    "week 3": {
-      "Rank": 0,
-      "Player": "Brandon McManus",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "38.5%",
-      "POS": "k"
-    },
-    "week 4": {
-      "Rank": 0,
-      "Player": "Brandon McManus",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "38.5%",
-      "POS": "k"
     }
   },
   "Travis Kelce": {
@@ -535,30 +487,6 @@ const player_stats = {
       "Player": "Wil Lutz",
       "FPTS": 1,
       "FPTS/G": 1,
-      "ROST": "35.9%",
-      "POS": "k"
-    },
-    "week 2": {
-      "Rank": 0,
-      "Player": "Wil Lutz",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "35.9%",
-      "POS": "k"
-    },
-    "week 3": {
-      "Rank": 0,
-      "Player": "Wil Lutz",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "35.9%",
-      "POS": "k"
-    },
-    "week 4": {
-      "Rank": 0,
-      "Player": "Wil Lutz",
-      "FPTS": 0,
-      "FPTS/G": 0,
       "ROST": "35.9%",
       "POS": "k"
     }
@@ -768,30 +696,6 @@ const player_stats = {
       "FPTS/G": 13,
       "ROST": "17.9%",
       "POS": "k"
-    },
-    "week 2": {
-      "Rank": 0,
-      "Player": "Ka'imi Fairbairn",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "17.9%",
-      "POS": "k"
-    },
-    "week 3": {
-      "Rank": 0,
-      "Player": "Ka'imi Fairbairn",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "17.9%",
-      "POS": "k"
-    },
-    "week 4": {
-      "Rank": 0,
-      "Player": "Ka'imi Fairbairn",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "17.9%",
-      "POS": "k"
     }
   },
   "Cameron Dicker": {
@@ -802,30 +706,6 @@ const player_stats = {
       "FPTS/G": 6,
       "ROST": "17.9%",
       "POS": "k"
-    },
-    "week 2": {
-      "Rank": 0,
-      "Player": "Cameron Dicker",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "17.9%",
-      "POS": "k"
-    },
-    "week 3": {
-      "Rank": 0,
-      "Player": "Cameron Dicker",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "17.9%",
-      "POS": "k"
-    },
-    "week 4": {
-      "Rank": 0,
-      "Player": "Cameron Dicker",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "17.9%",
-      "POS": "k"
     }
   },
   "Zane Gonzalez": {
@@ -834,30 +714,6 @@ const player_stats = {
       "Player": "Zane Gonzalez",
       "FPTS": 11,
       "FPTS/G": 11,
-      "ROST": "17.9%",
-      "POS": "k"
-    },
-    "week 2": {
-      "Rank": 0,
-      "Player": "Zane Gonzalez",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "17.9%",
-      "POS": "k"
-    },
-    "week 3": {
-      "Rank": 0,
-      "Player": "Zane Gonzalez",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "17.9%",
-      "POS": "k"
-    },
-    "week 4": {
-      "Rank": 0,
-      "Player": "Zane Gonzalez",
-      "FPTS": 0,
-      "FPTS/G": 0,
       "ROST": "17.9%",
       "POS": "k"
     }
@@ -1124,30 +980,6 @@ const player_stats = {
       "FPTS/G": 10,
       "ROST": "10.3%",
       "POS": "k"
-    },
-    "week 2": {
-      "Rank": 0,
-      "Player": "Chase McLaughlin",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "10.3%",
-      "POS": "k"
-    },
-    "week 3": {
-      "Rank": 0,
-      "Player": "Chase McLaughlin",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "10.3%",
-      "POS": "k"
-    },
-    "week 4": {
-      "Rank": 0,
-      "Player": "Chase McLaughlin",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "10.3%",
-      "POS": "k"
     }
   },
   "Jayden Daniels": {
@@ -1276,30 +1108,6 @@ const player_stats = {
       "FPTS/G": 10,
       "ROST": "5.1%",
       "POS": "k"
-    },
-    "week 2": {
-      "Rank": 0,
-      "Player": "Joshua Karty",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "5.1%",
-      "POS": "k"
-    },
-    "week 3": {
-      "Rank": 0,
-      "Player": "Joshua Karty",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "5.1%",
-      "POS": "k"
-    },
-    "week 4": {
-      "Rank": 0,
-      "Player": "Joshua Karty",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "5.1%",
-      "POS": "k"
     }
   },
   "Wil Reichard": {
@@ -1308,30 +1116,6 @@ const player_stats = {
       "Player": "Wil Reichard",
       "FPTS": 3,
       "FPTS/G": 3,
-      "ROST": "5.1%",
-      "POS": "k"
-    },
-    "week 2": {
-      "Rank": 0,
-      "Player": "Wil Reichard",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "5.1%",
-      "POS": "k"
-    },
-    "week 3": {
-      "Rank": 0,
-      "Player": "Wil Reichard",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "5.1%",
-      "POS": "k"
-    },
-    "week 4": {
-      "Rank": 0,
-      "Player": "Wil Reichard",
-      "FPTS": 0,
-      "FPTS/G": 0,
       "ROST": "5.1%",
       "POS": "k"
     }
@@ -1606,30 +1390,6 @@ const player_stats = {
   },
   "Harrison Butker": {
     "week 1": {
-      "Rank": 0,
-      "Player": "Harrison Butker",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "2.6%",
-      "POS": "k"
-    },
-    "week 2": {
-      "Rank": 0,
-      "Player": "Harrison Butker",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "2.6%",
-      "POS": "k"
-    },
-    "week 3": {
-      "Rank": 0,
-      "Player": "Harrison Butker",
-      "FPTS": 0,
-      "FPTS/G": 0,
-      "ROST": "2.6%",
-      "POS": "k"
-    },
-    "week 4": {
       "Rank": 0,
       "Player": "Harrison Butker",
       "FPTS": 0,
