@@ -1191,8 +1191,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 9,
-      "YDS.1": 38,
+      "ATT.1": 11,
+      "YDS.1": 46,
       "TD.1": 0,
       "FL": 0,
       "REC": 1,
@@ -1200,8 +1200,8 @@ const player_stats = {
       "YDS.2": 6,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 5.4,
-      "FPTS/G": 5.4,
+      "FPTS": 6.2,
+      "FPTS/G": 6.2,
       "ROST": "20.5%",
       "POS": "wr"
     }
