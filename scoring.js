@@ -1218,8 +1218,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Ka'imi Fairbairn",
-      "FPTS": 3,
-      "FPTS/G": 3,
+      "FPTS": 7,
+      "FPTS/G": 7,
       "ROST": "17.9%",
       "POS": "k"
     }
@@ -1506,16 +1506,16 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Kansas City Chiefs",
-      "SACKS": 2.0,
+      "SACKS": 3.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 3,
+      "PA": 6,
       "G": 1,
-      "FPTS": 9.0,
-      "FPTS/G": 9.0,
+      "FPTS": 10.0,
+      "FPTS/G": 10.0,
       "ROST": "12.8%",
       "POS": "def"
     }
@@ -2552,8 +2552,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Harrison Butker",
-      "FPTS": 6,
-      "FPTS/G": 6,
+      "FPTS": 7,
+      "FPTS/G": 7,
       "ROST": "2.6%",
       "POS": "k"
     }
