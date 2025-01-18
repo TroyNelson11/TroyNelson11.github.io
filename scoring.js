@@ -735,15 +735,15 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 2,
+      "YDS.2": 13,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 2.3,
+      "FPTS/G": 2.3,
       "ROST": "38.5%",
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "Brandon McManus": {
@@ -1191,19 +1191,19 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 3,
+      "YDS.1": 10,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 6,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 2.6,
+      "FPTS/G": 2.6,
       "ROST": "20.5%",
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "Ka'imi Fairbairn": {
