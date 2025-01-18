@@ -1191,8 +1191,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 7,
-      "YDS.1": 33,
+      "ATT.1": 9,
+      "YDS.1": 38,
       "TD.1": 0,
       "FL": 0,
       "REC": 1,
@@ -1200,8 +1200,8 @@ const player_stats = {
       "YDS.2": 6,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 4.9,
-      "FPTS/G": 4.9,
+      "FPTS": 5.4,
+      "FPTS/G": 5.4,
       "ROST": "20.5%",
       "POS": "wr"
     }
@@ -1506,7 +1506,7 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Kansas City Chiefs",
-      "SACKS": 1.0,
+      "SACKS": 2.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -1514,8 +1514,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 3,
       "G": 1,
-      "FPTS": 8.0,
-      "FPTS/G": 8.0,
+      "FPTS": 9.0,
+      "FPTS/G": 9.0,
       "ROST": "12.8%",
       "POS": "def"
     }
