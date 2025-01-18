@@ -1021,9 +1021,9 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Patrick Mahomes II",
-      "CMP": 12,
-      "ATT": 19,
-      "PCT": 63.2,
+      "CMP": 13,
+      "ATT": 21,
+      "PCT": 61.9,
       "YDS": 164,
       "TD": 1,
       "INT": 0,
@@ -1506,7 +1506,7 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Kansas City Chiefs",
-      "SACKS": 3.0,
+      "SACKS": 4.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -1514,8 +1514,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 12,
       "G": 1,
-      "FPTS": 7.0,
-      "FPTS/G": 7.0,
+      "FPTS": 8.0,
+      "FPTS/G": 8.0,
       "ROST": "12.8%",
       "POS": "def"
     }
@@ -1591,13 +1591,13 @@ const player_stats = {
       "YDS.1": -8,
       "TD.1": 0,
       "FL": 0,
-      "REC": 3,
-      "TGT": 3,
+      "REC": 4,
+      "TGT": 4,
       "YDS.2": 36,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 5.8,
-      "FPTS/G": 5.8,
+      "FPTS": 6.8,
+      "FPTS/G": 6.8,
       "ROST": "10.3%",
       "POS": "wr"
     }
@@ -1927,8 +1927,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 4,
-      "YDS.1": 16,
+      "ATT.1": 5,
+      "YDS.1": 17,
       "TD.1": 1,
       "FL": 0,
       "REC": 1,
@@ -1936,8 +1936,8 @@ const player_stats = {
       "YDS.2": 2,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 8.8,
-      "FPTS/G": 8.8,
+      "FPTS": 8.9,
+      "FPTS/G": 8.9,
       "ROST": "5.1%",
       "POS": "wr"
     }
