@@ -2552,8 +2552,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Harrison Butker",
-      "FPTS": 3,
-      "FPTS/G": 3,
+      "FPTS": 6,
+      "FPTS/G": 6,
       "ROST": "2.6%",
       "POS": "k"
     }
