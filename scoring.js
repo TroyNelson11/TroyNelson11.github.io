@@ -1218,8 +1218,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Ka'imi Fairbairn",
-      "FPTS": 7,
-      "FPTS/G": 7,
+      "FPTS": 9,
+      "FPTS/G": 9,
       "ROST": "17.9%",
       "POS": "k"
     }
