@@ -151,8 +151,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 13,
-      "YDS.1": 95,
+      "ATT.1": 15,
+      "YDS.1": 104,
       "TD.1": 1,
       "FL": 0,
       "REC": 3,
@@ -160,8 +160,8 @@ const player_stats = {
       "YDS.2": 24,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 20.9,
-      "FPTS/G": 20.9,
+      "FPTS": 21.8,
+      "FPTS/G": 21.8,
       "ROST": "89.7%",
       "POS": "qb"
     }
@@ -1540,7 +1540,7 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Los Angeles Rams",
-      "SACKS": 4.0,
+      "SACKS": 5.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -1548,8 +1548,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 13,
       "G": 1,
-      "FPTS": 8.0,
-      "FPTS/G": 8.0,
+      "FPTS": 9.0,
+      "FPTS/G": 9.0,
       "ROST": "10.3%",
       "POS": "def"
     }
@@ -1873,10 +1873,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Jalen Hurts",
-      "CMP": 10,
-      "ATT": 14,
-      "PCT": 71.4,
-      "YDS": 73,
+      "CMP": 12,
+      "ATT": 17,
+      "PCT": 70.6,
+      "YDS": 109,
       "TD": 0,
       "INT": 0,
       "ATT.1": 6,
@@ -1888,8 +1888,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 16.0,
-      "FPTS/G": 16.0,
+      "FPTS": 17.5,
+      "FPTS/G": 17.5,
       "ROST": "5.1%",
       "POS": "qb"
     }
@@ -2596,7 +2596,7 @@ const player_stats = {
       "TD.1": 0,
       "FL": 0,
       "REC": 1,
-      "TGT": 5,
+      "TGT": 6,
       "YDS.2": 5,
       "TD.2": 0,
       "G": 1,
