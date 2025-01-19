@@ -295,8 +295,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 4,
-      "YDS.1": 58,
+      "ATT.1": 6,
+      "YDS.1": 71,
       "TD.1": 1,
       "FL": 0,
       "REC": 1,
@@ -304,8 +304,8 @@ const player_stats = {
       "YDS.2": 23,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 15.1,
-      "FPTS/G": 15.1,
+      "FPTS": 16.4,
+      "FPTS/G": 16.4,
       "ROST": "61.5%",
       "POS": "qb"
     }
@@ -939,10 +939,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Jared Goff",
-      "CMP": 5,
-      "ATT": 7,
-      "PCT": 71.4,
-      "YDS": 69,
+      "CMP": 6,
+      "ATT": 8,
+      "PCT": 75.0,
+      "YDS": 103,
       "TD": 0,
       "INT": 0,
       "ATT.1": 0,
@@ -954,8 +954,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.8,
-      "FPTS/G": 0.8,
+      "FPTS": 2.1,
+      "FPTS/G": 2.1,
       "ROST": "23.1%",
       "POS": "qb"
     }
@@ -1254,8 +1254,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Zane Gonzalez",
-      "FPTS": 4,
-      "FPTS/G": 4,
+      "FPTS": 5,
+      "FPTS/G": 5,
       "ROST": "17.9%",
       "POS": "k"
     }
@@ -1345,13 +1345,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 1,
-      "TGT": 1,
-      "YDS.2": 7,
+      "REC": 2,
+      "TGT": 2,
+      "YDS.2": 41,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 1.7,
-      "FPTS/G": 1.7,
+      "FPTS": 6.1,
+      "FPTS/G": 6.1,
       "ROST": "15.4%",
       "POS": "qb"
     }
