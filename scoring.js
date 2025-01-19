@@ -2002,8 +2002,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Joshua Karty",
-      "FPTS": 4,
-      "FPTS/G": 4,
+      "FPTS": 7,
+      "FPTS/G": 7,
       "ROST": "5.1%",
       "POS": "k"
     }
