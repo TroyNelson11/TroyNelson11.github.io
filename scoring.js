@@ -687,13 +687,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 4,
-      "TGT": 6,
-      "YDS.2": 87,
+      "REC": 3,
+      "TGT": 5,
+      "YDS.2": 75,
       "TD.2": 1,
       "G": 1,
-      "FPTS": 18.7,
-      "FPTS/G": 18.7,
+      "FPTS": 16.5,
+      "FPTS/G": 16.5,
       "ROST": "41.0%",
       "POS": "qb"
     }
@@ -1254,8 +1254,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Zane Gonzalez",
-      "FPTS": 8,
-      "FPTS/G": 8,
+      "FPTS": 9,
+      "FPTS/G": 9,
       "ROST": "17.9%",
       "POS": "k"
     }
@@ -1791,10 +1791,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Jayden Daniels",
-      "CMP": 21,
-      "ATT": 30,
-      "PCT": 70.0,
-      "YDS": 279,
+      "CMP": 20,
+      "ATT": 29,
+      "PCT": 69.0,
+      "YDS": 267,
       "TD": 2,
       "INT": 0,
       "ATT.1": 14,
@@ -1806,8 +1806,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 24.3,
-      "FPTS/G": 24.3,
+      "FPTS": 23.8,
+      "FPTS/G": 23.8,
       "ROST": "7.7%",
       "POS": "qb"
     }
