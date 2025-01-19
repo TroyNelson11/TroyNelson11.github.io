@@ -296,7 +296,7 @@ const player_stats = {
       "TD": 0,
       "INT": 0,
       "ATT.1": 6,
-      "YDS.1": 71,
+      "YDS.1": 70,
       "TD.1": 1,
       "FL": 0,
       "REC": 1,
@@ -304,8 +304,8 @@ const player_stats = {
       "YDS.2": 23,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 16.4,
-      "FPTS/G": 16.4,
+      "FPTS": 16.3,
+      "FPTS/G": 16.3,
       "ROST": "61.5%",
       "POS": "qb"
     }
@@ -939,11 +939,11 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Jared Goff",
-      "CMP": 6,
-      "ATT": 8,
-      "PCT": 75.0,
-      "YDS": 103,
-      "TD": 0,
+      "CMP": 8,
+      "ATT": 10,
+      "PCT": 80.0,
+      "YDS": 120,
+      "TD": 1,
       "INT": 0,
       "ATT.1": 0,
       "YDS.1": 0,
@@ -954,8 +954,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 2.1,
-      "FPTS/G": 2.1,
+      "FPTS": 6.8,
+      "FPTS/G": 6.8,
       "ROST": "23.1%",
       "POS": "qb"
     }
@@ -986,10 +986,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 7,
+      "PA": 14,
       "G": 1,
-      "FPTS": 7.0,
-      "FPTS/G": 7.0,
+      "FPTS": 4.0,
+      "FPTS/G": 4.0,
       "ROST": "23.1%",
       "POS": "def"
     }
