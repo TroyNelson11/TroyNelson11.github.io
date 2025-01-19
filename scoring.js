@@ -495,13 +495,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 3,
-      "TGT": 9,
-      "YDS.2": 29,
+      "REC": 4,
+      "TGT": 10,
+      "YDS.2": 50,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 5.9,
-      "FPTS/G": 5.9,
+      "FPTS": 9.0,
+      "FPTS/G": 9.0,
       "ROST": "48.7%",
       "POS": "qb"
     }
@@ -897,8 +897,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 18,
-      "YDS.1": 108,
+      "ATT.1": 19,
+      "YDS.1": 106,
       "TD.1": 0,
       "FL": 1,
       "REC": 1,
@@ -906,8 +906,8 @@ const player_stats = {
       "YDS.2": -1,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 9.7,
-      "FPTS/G": 9.7,
+      "FPTS": 9.5,
+      "FPTS/G": 9.5,
       "ROST": "25.6%",
       "POS": "qb"
     }
@@ -1639,13 +1639,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 2,
-      "TGT": 3,
-      "YDS.2": 39,
+      "REC": 3,
+      "TGT": 4,
+      "YDS.2": 50,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 5.9,
-      "FPTS/G": 5.9,
+      "FPTS": 8.0,
+      "FPTS/G": 8.0,
       "ROST": "10.3%",
       "POS": "qb"
     }
@@ -2002,8 +2002,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Joshua Karty",
-      "FPTS": 7,
-      "FPTS/G": 7,
+      "FPTS": 8,
+      "FPTS/G": 8,
       "ROST": "5.1%",
       "POS": "k"
     }
