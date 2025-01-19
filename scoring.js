@@ -1149,11 +1149,11 @@ const player_stats = {
       "INT.1": 0,
       "TD.3": 0,
       "BK": 0,
-      "SAFE": 0,
+      "SAFE": 1,
       "PA": 23,
       "G": 1,
-      "FPTS": 3.0,
-      "FPTS/G": 3.0,
+      "FPTS": 5.0,
+      "FPTS/G": 5.0,
       "ROST": "20.5%",
       "POS": "def"
     }
