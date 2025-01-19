@@ -1027,8 +1027,8 @@ const player_stats = {
       "YDS": 177,
       "TD": 1,
       "INT": 0,
-      "ATT.1": 5,
-      "YDS.1": 23,
+      "ATT.1": 7,
+      "YDS.1": 14,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -1036,8 +1036,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 13.4,
-      "FPTS/G": 13.4,
+      "FPTS": 12.5,
+      "FPTS/G": 12.5,
       "ROST": "23.1%",
       "POS": "rb"
     }
@@ -1512,10 +1512,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 12,
+      "PA": 14,
       "G": 1,
-      "FPTS": 12.0,
-      "FPTS/G": 12.0,
+      "FPTS": 9.0,
+      "FPTS/G": 9.0,
       "ROST": "12.8%",
       "POS": "def"
     }
@@ -1927,8 +1927,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 7,
-      "YDS.1": 40,
+      "ATT.1": 8,
+      "YDS.1": 44,
       "TD.1": 1,
       "FL": 0,
       "REC": 1,
@@ -1936,8 +1936,8 @@ const player_stats = {
       "YDS.2": 2,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 11.2,
-      "FPTS/G": 11.2,
+      "FPTS": 11.6,
+      "FPTS/G": 11.6,
       "ROST": "5.1%",
       "POS": "wr"
     }
@@ -2552,8 +2552,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Harrison Butker",
-      "FPTS": 8,
-      "FPTS/G": 8,
+      "FPTS": 11,
+      "FPTS/G": 11,
       "ROST": "2.6%",
       "POS": "k"
     }
