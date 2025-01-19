@@ -897,8 +897,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 13,
-      "YDS.1": 92,
+      "ATT.1": 14,
+      "YDS.1": 100,
       "TD.1": 0,
       "FL": 0,
       "REC": 1,
@@ -906,8 +906,8 @@ const player_stats = {
       "YDS.2": -1,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 10.1,
-      "FPTS/G": 10.1,
+      "FPTS": 10.9,
+      "FPTS/G": 10.9,
       "ROST": "25.6%",
       "POS": "qb"
     }
@@ -1540,16 +1540,16 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Los Angeles Rams",
-      "SACKS": 5.0,
+      "SACKS": 6.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
       "BK": 0,
-      "SAFE": 0,
+      "SAFE": 1,
       "PA": 16,
       "G": 1,
-      "FPTS": 6.0,
-      "FPTS/G": 6.0,
+      "FPTS": 9.0,
+      "FPTS/G": 9.0,
       "ROST": "10.3%",
       "POS": "def"
     }
