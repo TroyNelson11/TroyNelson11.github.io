@@ -1506,7 +1506,7 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Kansas City Chiefs",
-      "SACKS": 4.0,
+      "SACKS": 5.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -1514,8 +1514,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 12,
       "G": 1,
-      "FPTS": 8.0,
-      "FPTS/G": 8.0,
+      "FPTS": 9.0,
+      "FPTS/G": 9.0,
       "ROST": "12.8%",
       "POS": "def"
     }
