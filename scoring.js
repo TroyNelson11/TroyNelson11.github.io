@@ -1254,8 +1254,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Zane Gonzalez",
-      "FPTS": 6,
-      "FPTS/G": 6,
+      "FPTS": 7,
+      "FPTS/G": 7,
       "ROST": "17.9%",
       "POS": "k"
     }
@@ -1791,11 +1791,11 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Jayden Daniels",
-      "CMP": 13,
-      "ATT": 20,
-      "PCT": 65.0,
-      "YDS": 237,
-      "TD": 1,
+      "CMP": 14,
+      "ATT": 21,
+      "PCT": 66.7,
+      "YDS": 242,
+      "TD": 2,
       "INT": 0,
       "ATT.1": 7,
       "YDS.1": 30,
@@ -1806,8 +1806,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 16.5,
-      "FPTS/G": 16.5,
+      "FPTS": 20.7,
+      "FPTS/G": 20.7,
       "ROST": "7.7%",
       "POS": "qb"
     }
