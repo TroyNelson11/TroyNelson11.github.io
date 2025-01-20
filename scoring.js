@@ -337,10 +337,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Lamar Jackson",
-      "CMP": 10,
-      "ATT": 16,
-      "PCT": 62.5,
-      "YDS": 154,
+      "CMP": 11,
+      "ATT": 17,
+      "PCT": 64.7,
+      "YDS": 158,
       "TD": 1,
       "INT": 1,
       "ATT.1": 5,
@@ -352,8 +352,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 10.3,
-      "FPTS/G": 10.3,
+      "FPTS": 10.4,
+      "FPTS/G": 10.4,
       "ROST": "51.3%",
       "POS": "qb"
     }
@@ -391,8 +391,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 14,
-      "YDS.1": 79,
+      "ATT.1": 16,
+      "YDS.1": 84,
       "TD.1": 1,
       "FL": 0,
       "REC": 0,
@@ -400,8 +400,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 13.9,
-      "FPTS/G": 13.9,
+      "FPTS": 14.4,
+      "FPTS/G": 14.4,
       "ROST": "48.7%",
       "POS": "qb"
     }
