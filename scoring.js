@@ -3631,23 +3631,23 @@ function filterAndSortTeams(teams) {
           const highestPossibleDiv = document.createElement('div');
           highestPossibleDiv.className = 'highest-possible-div';
           highestPossibleDiv.innerHTML = `
-              <h3>Highest Possible Score (Wildcard)</h3>
+          <h3>Highest Possible Score (Divisional)</h3>
               <div class="highest-possible-content">
-                  <p>QB1: Josh Allen</p>
-                  <p>QB2: Jayden Daniels</p>
-                  <p>RB1: Derrick Henry</p>
-                  <p>RB2: Josh Jacobs</p>
-                  <p>RB3: Bucky Irving</p>
-                  <p>RB4: Saquon Barkley</p>
-                  <p>WR1: Ladd McConkey</p>
-                  <p>WR2: Nico Collins</p>
-                  <p>WR3: George Pickens</p>
-                  <p>WR4: Courtland Sutton</p>
-                  <p>K1: Wil Reichard</p>
-                  <p>K2: Jake Bates</p>
-                  <p>DEF1: Los Angeles Rams</p>
-                  <p>DEF2: Kansas City Chiefs</p>
-                  <p>Total: 246.2</p>
+                  <p>QB1: Jayden Daniels</p>
+                  <p>QB2: Josh Allen</p>
+                  <p>RB1: Saquon Barkley</p>
+                  <p>RB2: Derrick Henry</p>
+                  <p>RB3: Jahmyr Gibbs</p>
+                  <p>RB4: Kyren Williams</p>
+                  <p>WR1: Nico Collins</p>
+                  <p>WR2: Ladd McConkey</p>
+                  <p>WR3: Mike Evans</p>
+                  <p>WR4: George Pickens</p>
+                  <p>K1: Harrison Butker</p>
+                  <p>K2: Wil Reichard</p>
+                  <p>DEF1: Green Bay Packers</p>
+                  <p>DEF2: Denver Broncos</p>
+                  <p>Total: 383.6</p>
               </div>
           `;
 
