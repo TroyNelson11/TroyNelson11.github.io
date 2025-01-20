@@ -194,55 +194,77 @@ function calculateTotalPoints(stats) {
 }
 
 // Get key stats for a player
+// Get key stats for a player
+// Get key stats for a player
 function getPlayerStats(stats) {
-    if (!stats || !stats["week 1"]) return null;
+    if (!stats) return null;
     
-    const week1 = stats["week 1"];
-    
-    // Check if it's a defense by looking at the stats structure
-    const isDefense = week1.hasOwnProperty('SACKS');
-    
-    if (isDefense) {
-        // Add debug logging
-        console.log('Defense stats for:', stats.Player);
-        console.log('Week 1 data:', week1);
-        console.log('PA value:', week1.PA);
-        
-        return {
-            // Defense Stats
-            sacks: week1.SACKS || 0,
-            defInt: week1["INT.1"] || 0,
-            fumbles: week1.FR || 0,
-            safeties: week1.SAFE || 0,
-            touchdowns: week1["TD.3"] || 0,
-            pointsAllowed: week1.PA || 0,
-            fantasyPoints: week1.FPTS || 0,
-            position: 'def'
-        };
-    }
-    
-    // Regular player stats
-    return {
+    // Initialize cumulative stats
+    let cumulativeStats = {
         // QB Stats
-        completions: week1.CMP || 0,
-        attempts: week1.ATT || 0,
-        passYards: week1.YDS || 0,
-        passTD: week1.TD || 0,
-        interceptions: week1.INT || 0,
+        completions: 0,
+        attempts: 0,
+        passYards: 0,
+        passTD: 0,
+        interceptions: 0,
         
         // RB/WR Stats
-        rushYards: week1["YDS.1"] || 0,
-        rushTD: week1["TD.1"] || 0,
-        receptions: week1.REC || 0,
-        recYards: week1["YDS.2"] || 0,
-        recTD: week1["TD.2"] || 0,
+        rushYards: 0,
+        rushTD: 0,
+        receptions: 0,
+        recYards: 0,
+        recTD: 0,
+        
+        // Defense Stats
+        sacks: 0,
+        defInt: 0,
+        fumbles: 0,
+        safeties: 0,
+        touchdowns: 0,
+        pointsAllowed: 0,
         
         // Fantasy Points
-        fantasyPoints: week1.FPTS || 0,
+        fantasyPoints: 0,
         
-        // Position
-        position: week1.POS
+        // Position from week 1
+        position: stats["week 1"]?.POS || 'unknown'
     };
+    
+    // Sum up stats from all available weeks
+    Object.keys(stats).forEach(week => {
+        if (week.startsWith('week')) {
+            const weekStats = stats[week];
+            
+            // Check if it's a defense
+            if (weekStats.hasOwnProperty('SACKS')) {
+                cumulativeStats.sacks += weekStats.SACKS || 0;
+                cumulativeStats.defInt += weekStats["INT.1"] || 0;
+                cumulativeStats.fumbles += weekStats.FR || 0;
+                cumulativeStats.safeties += weekStats.SAFE || 0;
+                cumulativeStats.touchdowns += weekStats["TD.3"] || 0;
+                cumulativeStats.pointsAllowed += weekStats.PA || 0;
+                cumulativeStats.fantasyPoints += weekStats.FPTS || 0;
+                cumulativeStats.position = 'def';
+            } else {
+                // Regular player stats
+                cumulativeStats.completions += weekStats.CMP || 0;
+                cumulativeStats.attempts += weekStats.ATT || 0;
+                cumulativeStats.passYards += weekStats.YDS || 0;
+                cumulativeStats.passTD += weekStats.TD || 0;
+                cumulativeStats.interceptions += weekStats.INT || 0;
+                
+                cumulativeStats.rushYards += weekStats["YDS.1"] || 0;
+                cumulativeStats.rushTD += weekStats["TD.1"] || 0;
+                cumulativeStats.receptions += weekStats.REC || 0;
+                cumulativeStats.recYards += weekStats["YDS.2"] || 0;
+                cumulativeStats.recTD += weekStats["TD.2"] || 0;
+                
+                cumulativeStats.fantasyPoints += weekStats.FPTS || 0;
+            }
+        }
+    });
+    
+    return cumulativeStats;
 }
 
 // Get player image URL using ESPN data
