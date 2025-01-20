@@ -3631,7 +3631,7 @@ function filterAndSortTeams(teams) {
           const highestPossibleDiv = document.createElement('div');
           highestPossibleDiv.className = 'highest-possible-div';
           highestPossibleDiv.innerHTML = `
-              <h3>Highest Possible Score (Total Points Across All Weeks)</h3>
+              <h3>Highest Possible Score (Divisional)</h3>
               <div class="highest-possible-content">
                   <p>QB1: Jayden Daniels (47.4)</p>
                   <p>QB2: Josh Allen (42.6)</p>
