@@ -1200,8 +1200,8 @@ const firstRoundWinners = [
 const secondRoundWinners = [
     "KC",   // Won against Bills
     "BUF",  // Won against Chiefs
-    "WAS",  // Won against Eagles
-    "PHI"   // Won against Commanders
+    "PHI",  // Won against Eagles
+    "WAS"   // Won against Commanders
 ];
 
 // Modify the existing function to handle both rounds
@@ -1277,36 +1277,36 @@ const lockFirstRoundResults = () => {
                 const afcChampionship = container.querySelector('.match:last-child');
                 const teams = generateTeamDivs(detailedPlayoffTeams);
                 
-                // Create KC and BUF match rows with spread and over/under
-                const homeTeam = teams['KC'].cloneNode(true);
-                const awayTeam = teams['BUF'].cloneNode(true);
+                // Create KC (#1 seed) and BUF (#2 seed) match rows with spread and over/under
+                const topTeam = teams['KC'].cloneNode(true);
+                const bottomTeam = teams['BUF'].cloneNode(true);
                 
-                homeTeam.addEventListener('click', (e) => handleChampionshipClick(e, homeTeam, true));
-                awayTeam.addEventListener('click', (e) => handleChampionshipClick(e, awayTeam, true));
+                topTeam.addEventListener('click', (e) => handleChampionshipClick(e, topTeam, true));
+                bottomTeam.addEventListener('click', (e) => handleChampionshipClick(e, bottomTeam, true));
                 
-                const homeRow = addMatchDetails(homeTeam, 1, -1.5, 47.5, true);
-                const awayRow = addMatchDetails(awayTeam, 2, null, null, false);
+                const topRow = addMatchDetails(topTeam, 1, -1.5, 47.5, true);
+                const bottomRow = addMatchDetails(bottomTeam, 2, null, null, false);
                 
-                afcChampionship.replaceChild(homeRow, afcChampionship.children[0]);
-                afcChampionship.replaceChild(awayRow, afcChampionship.children[1]);
+                afcChampionship.replaceChild(topRow, afcChampionship.children[0]);
+                afcChampionship.replaceChild(bottomRow, afcChampionship.children[1]);
                 
             } else {
                 // NFC Championship
                 const nfcChampionship = container.querySelector('.match:last-child');
                 const teams = generateTeamDivs(detailedPlayoffTeams);
                 
-                // Create WAS and PHI match rows with spread and over/under
-                const homeTeam = teams['WAS'].cloneNode(true);
-                const awayTeam = teams['PHI'].cloneNode(true);
+                // Create PHI (#2 seed) and WAS (#6 seed) match rows with spread and over/under
+                const lowerSeedTeam = teams['PHI'].cloneNode(true);
+                const higherSeedTeam = teams['WAS'].cloneNode(true);
                 
-                homeTeam.addEventListener('click', (e) => handleChampionshipClick(e, homeTeam, false));
-                awayTeam.addEventListener('click', (e) => handleChampionshipClick(e, awayTeam, false));
+                lowerSeedTeam.addEventListener('click', (e) => handleChampionshipClick(e, lowerSeedTeam, false));
+                higherSeedTeam.addEventListener('click', (e) => handleChampionshipClick(e, higherSeedTeam, false));
                 
-                const homeRow = addMatchDetails(homeTeam, 6, -5.5, 47.5, true);
-                const awayRow = addMatchDetails(awayTeam, 2, null, null, false);
+                const lowerSeedRow = addMatchDetails(lowerSeedTeam, 2, -5.5, 47.5, true);
+                const higherSeedRow = addMatchDetails(higherSeedTeam, 6, null, null, false);
                 
-                nfcChampionship.replaceChild(homeRow, nfcChampionship.children[0]);
-                nfcChampionship.replaceChild(awayRow, nfcChampionship.children[1]);
+                nfcChampionship.replaceChild(lowerSeedRow, nfcChampionship.children[0]);
+                nfcChampionship.replaceChild(higherSeedRow, nfcChampionship.children[1]);
             }
         }
     });
