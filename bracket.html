@@ -1188,15 +1188,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // First round results
 const firstRoundWinners = [
-    "HOU",  // Won against 
-    "BAL",  // Won against 
-    "BUF",  // Won against 
-    "PHI",   // Won against 
-    "WAS",   // Won against 
-    "LAR"   // Won against 
+    "HOU",  // Won against Browns
+    "BAL",  // Won against Texans
+    "BUF",  // Won against Steelers
+    "PHI",  // Won against Buccaneers
+    "WAS",  // Won against Cowboys
+    "LAR"   // Won against Lions
 ];
 
-// Add this function to lock ONLY first round results
+// Second round results
+const secondRoundWinners = [
+    "KC",   // Won against Bills
+    "BUF",  // Won against Chiefs
+    "WAS",  // Won against Eagles
+    "PHI"   // Won against Commanders
+];
+
+// Modify the existing function to handle both rounds
 const lockFirstRoundResults = () => {
     // Handle AFC side (bracket-container)
     const afc = document.getElementById('bracket-container');
@@ -1209,6 +1217,7 @@ const lockFirstRoundResults = () => {
     // Combine all first round matches
     const allFirstRoundMatches = [...afcMatches, ...nfcMatches];
     
+    // Lock first round
     allFirstRoundMatches.forEach(match => {
         const teams = match.querySelectorAll('.team-div');
         teams.forEach(team => {
@@ -1226,13 +1235,84 @@ const lockFirstRoundResults = () => {
                 seed.style.color = 'rgb(107 114 128)';
                 seed.style.fontWeight = '';
             }
-            // Disable clicking for first round only
             team.style.pointerEvents = 'none';
         });
     });
     
-    // Update second round matches but don't lock them
-    updateMatches();
+    // Lock second round and propagate winners to conference games
+    const secondRoundContainers = ['bracket-container-2', 'bracket-container-4'];
+    secondRoundContainers.forEach(containerId => {
+        const container = document.getElementById(containerId);
+        if (container) {
+            const matches = container.querySelectorAll('.match');
+            matches.forEach(match => {
+                const teams = match.querySelectorAll('.team-div');
+                teams.forEach(team => {
+                    const teamCode = team.getAttribute('data-team');
+                    if (secondRoundWinners.includes(teamCode)) {
+                        // Set winner styling
+                        team.setAttribute('data-result', 'win');
+                        team.style.border = '0.1vw solid black';
+                        team.style.outline = '0.2vw solid black';
+                        const teamSeed = team.closest('.team-and-seed');
+                        const seed = teamSeed.querySelector('.seed');
+                        seed.style.color = 'black';
+                        seed.style.fontWeight = 'bold';
+                    } else {
+                        // Set loser styling
+                        team.setAttribute('data-result', 'lose');
+                        team.style.border = '0.1vw solid transparent';
+                        const teamSeed = team.closest('.team-and-seed');
+                        const seed = teamSeed.querySelector('.seed');
+                        seed.style.color = 'rgb(107 114 128)';
+                        seed.style.fontWeight = '';
+                    }
+                    team.style.pointerEvents = 'none';
+                });
+            });
+
+            // Place winners in conference championship games
+            if (containerId === 'bracket-container-2') {
+                // AFC Championship
+                const afcChampionship = container.querySelector('.match:last-child');
+                const teams = generateTeamDivs(detailedPlayoffTeams);
+                
+                // Create KC and BUF match rows with spread and over/under
+                const homeTeam = teams['KC'].cloneNode(true);
+                const awayTeam = teams['BUF'].cloneNode(true);
+                
+                homeTeam.addEventListener('click', (e) => handleChampionshipClick(e, homeTeam, true));
+                awayTeam.addEventListener('click', (e) => handleChampionshipClick(e, awayTeam, true));
+                
+                const homeRow = addMatchDetails(homeTeam, 1, -1.5, 47.5, true);
+                const awayRow = addMatchDetails(awayTeam, 2, null, null, false);
+                
+                afcChampionship.replaceChild(homeRow, afcChampionship.children[0]);
+                afcChampionship.replaceChild(awayRow, afcChampionship.children[1]);
+                
+            } else {
+                // NFC Championship
+                const nfcChampionship = container.querySelector('.match:last-child');
+                const teams = generateTeamDivs(detailedPlayoffTeams);
+                
+                // Create WAS and PHI match rows with spread and over/under
+                const homeTeam = teams['WAS'].cloneNode(true);
+                const awayTeam = teams['PHI'].cloneNode(true);
+                
+                homeTeam.addEventListener('click', (e) => handleChampionshipClick(e, homeTeam, false));
+                awayTeam.addEventListener('click', (e) => handleChampionshipClick(e, awayTeam, false));
+                
+                const homeRow = addMatchDetails(homeTeam, 6, -5.5, 47.5, true);
+                const awayRow = addMatchDetails(awayTeam, 2, null, null, false);
+                
+                nfcChampionship.replaceChild(homeRow, nfcChampionship.children[0]);
+                nfcChampionship.replaceChild(awayRow, nfcChampionship.children[1]);
+            }
+        }
+    });
+    
+    // Update conference games styling
+    updateLateRounds();
     addEventDelegation(); // Re-add click handlers for remaining rounds
 };
 
