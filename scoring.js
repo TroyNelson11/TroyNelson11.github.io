@@ -2717,14 +2717,14 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Jalen Hurts",
-      "CMP": 4,
-      "ATT": 5,
-      "PCT": 80.0,
-      "YDS": 56,
+      "CMP": 7,
+      "ATT": 9,
+      "PCT": 77.8,
+      "YDS": 87,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 1,
+      "YDS.1": 1,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -2732,10 +2732,10 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 2.2,
-      "FPTS/G": 2.2,
+      "FPTS": 3.6,
+      "FPTS/G": 3.6,
       "ROST": "5.1%",
-      "POS": "qb"
+      "POS": "rb"
     }
   },
   "Kareem Hunt": {
@@ -3779,7 +3779,7 @@ const player_stats = {
       "TD.1": 0,
       "FL": 0,
       "REC": 2,
-      "TGT": 3,
+      "TGT": 4,
       "YDS.2": 26,
       "TD.2": 0,
       "G": 1,
