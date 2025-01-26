@@ -2596,10 +2596,10 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Jayden Daniels",
-      "CMP": 8,
-      "ATT": 13,
-      "PCT": 61.5,
-      "YDS": 44,
+      "CMP": 9,
+      "ATT": 14,
+      "PCT": 64.3,
+      "YDS": 50,
       "TD": 0,
       "INT": 0,
       "ATT.1": 2,
@@ -2611,8 +2611,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 2.4,
-      "FPTS/G": 2.4,
+      "FPTS": 2.6,
+      "FPTS/G": 2.6,
       "ROST": "7.7%",
       "POS": "rb"
     }
@@ -2717,10 +2717,10 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Jalen Hurts",
-      "CMP": 0,
-      "ATT": 0,
-      "PCT": 0,
-      "YDS": 0,
+      "CMP": 2,
+      "ATT": 3,
+      "PCT": 66.7,
+      "YDS": 30,
       "TD": 0,
       "INT": 0,
       "ATT.1": 0,
@@ -2732,8 +2732,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 1.2,
+      "FPTS/G": 1.2,
       "ROST": "5.1%",
       "POS": "qb"
     }
@@ -3109,8 +3109,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 2,
-      "YDS.1": 8,
+      "ATT.1": 3,
+      "YDS.1": 11,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -3118,8 +3118,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.8,
-      "FPTS/G": 0.8,
+      "FPTS": 1.1,
+      "FPTS/G": 1.1,
       "ROST": "5.1%",
       "POS": "rb"
     }
@@ -3920,15 +3920,15 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 20,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 3.0,
+      "FPTS/G": 3.0,
       "ROST": "2.6%",
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "DeAndre Hopkins": {
