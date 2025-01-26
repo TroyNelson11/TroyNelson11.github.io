@@ -964,15 +964,15 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 7,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 1.7,
+      "FPTS/G": 1.7,
       "ROST": "41.0%",
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "Nico Collins": {
@@ -2596,10 +2596,10 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Jayden Daniels",
-      "CMP": 1,
-      "ATT": 1,
-      "PCT": 100.0,
-      "YDS": 4,
+      "CMP": 4,
+      "ATT": 5,
+      "PCT": 80.0,
+      "YDS": 21,
       "TD": 0,
       "INT": 0,
       "ATT.1": 1,
@@ -2611,8 +2611,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.3,
-      "FPTS/G": 0.3,
+      "FPTS": 0.9,
+      "FPTS/G": 0.9,
       "ROST": "7.7%",
       "POS": "rb"
     }
@@ -3109,8 +3109,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 1,
+      "YDS.1": 5,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -3118,8 +3118,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 0.5,
+      "FPTS/G": 0.5,
       "ROST": "5.1%",
       "POS": "rb"
     }
