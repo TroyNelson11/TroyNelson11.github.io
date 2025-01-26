@@ -1796,8 +1796,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Zane Gonzalez",
-      "FPTS": 3,
-      "FPTS/G": 3,
+      "FPTS": 7,
+      "FPTS/G": 7,
       "ROST": "17.9%",
       "POS": "k"
     }
@@ -2597,8 +2597,8 @@ const player_stats = {
       "Rank": 0,
       "Player": "Jayden Daniels",
       "CMP": 10,
-      "ATT": 16,
-      "PCT": 62.5,
+      "ATT": 18,
+      "PCT": 55.6,
       "YDS": 74,
       "TD": 0,
       "INT": 0,
