@@ -1461,10 +1461,10 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Patrick Mahomes II",
-      "CMP": 3,
-      "ATT": 3,
+      "CMP": 4,
+      "ATT": 4,
       "PCT": 100.0,
-      "YDS": 30,
+      "YDS": 61,
       "TD": 0,
       "INT": 0,
       "ATT.1": 1,
@@ -1476,8 +1476,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 1.6,
-      "FPTS/G": 1.6,
+      "FPTS": 2.8,
+      "FPTS/G": 2.8,
       "ROST": "23.1%",
       "POS": "qb"
     }
@@ -2988,8 +2988,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 1,
+      "YDS.1": 3,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -2997,8 +2997,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 0.3,
+      "FPTS/G": 0.3,
       "ROST": "5.1%",
       "POS": "qb"
     }
@@ -3712,8 +3712,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Harrison Butker",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 1,
+      "FPTS/G": 1,
       "ROST": "2.6%",
       "POS": "k"
     }
@@ -3849,13 +3849,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 31,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 4.1,
+      "FPTS/G": 4.1,
       "ROST": "2.6%",
       "POS": "qb"
     }
