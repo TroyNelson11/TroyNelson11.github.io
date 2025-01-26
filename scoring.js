@@ -2596,10 +2596,10 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Jayden Daniels",
-      "CMP": 22,
-      "ATT": 33,
-      "PCT": 66.7,
-      "YDS": 217,
+      "CMP": 24,
+      "ATT": 39,
+      "PCT": 61.5,
+      "YDS": 229,
       "TD": 1,
       "INT": 0,
       "ATT.1": 6,
@@ -2611,8 +2611,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 23.5,
-      "FPTS/G": 23.5,
+      "FPTS": 24.0,
+      "FPTS/G": 24.0,
       "ROST": "7.7%",
       "POS": "rb"
     }
@@ -3180,8 +3180,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 2,
-      "YDS.1": 5,
+      "ATT.1": 3,
+      "YDS.1": 3,
       "TD.1": 0,
       "FL": 1,
       "REC": 4,
@@ -3189,8 +3189,8 @@ const player_stats = {
       "YDS.2": 17,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 4.2,
-      "FPTS/G": 4.2,
+      "FPTS": 4.0,
+      "FPTS/G": 4.0,
       "ROST": "5.1%",
       "POS": "wr"
     }
