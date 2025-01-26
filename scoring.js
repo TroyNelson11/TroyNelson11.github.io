@@ -174,19 +174,19 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
-      "TD.1": 0,
+      "ATT.1": 1,
+      "YDS.1": 60,
+      "TD.1": 1,
       "FL": 0,
       "REC": 0,
       "TGT": 0,
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 12.0,
+      "FPTS/G": 12.0,
       "ROST": "89.7%",
-      "POS": "qb"
+      "POS": "rb"
     }
   },
   "Justin Jefferson": {
@@ -1403,10 +1403,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 0,
+      "PA": 6,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 7,
+      "FPTS/G": 7,
       "ROST": "23.1%",
       "POS": "def"
     }
