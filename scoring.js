@@ -1397,7 +1397,7 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Washington Commanders",
-      "SACKS": 1.0,
+      "SACKS": 2.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -1405,8 +1405,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 27,
       "G": 1,
-      "FPTS": 1.0,
-      "FPTS/G": 1.0,
+      "FPTS": 2.0,
+      "FPTS/G": 2.0,
       "ROST": "23.1%",
       "POS": "def"
     }
@@ -2717,14 +2717,14 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Jalen Hurts",
-      "CMP": 12,
-      "ATT": 18,
-      "PCT": 66.7,
-      "YDS": 141,
+      "CMP": 13,
+      "ATT": 19,
+      "PCT": 68.4,
+      "YDS": 151,
       "TD": 1,
       "INT": 0,
-      "ATT.1": 6,
-      "YDS.1": 8,
+      "ATT.1": 7,
+      "YDS.1": 6,
       "TD.1": 1,
       "FL": 0,
       "REC": 0,
@@ -2732,8 +2732,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 16.4,
-      "FPTS/G": 16.4,
+      "FPTS": 16.6,
+      "FPTS/G": 16.6,
       "ROST": "5.1%",
       "POS": "rb"
     }
