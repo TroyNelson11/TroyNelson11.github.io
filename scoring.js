@@ -2717,10 +2717,10 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Jalen Hurts",
-      "CMP": 9,
-      "ATT": 14,
-      "PCT": 64.3,
-      "YDS": 126,
+      "CMP": 10,
+      "ATT": 15,
+      "PCT": 66.7,
+      "YDS": 133,
       "TD": 0,
       "INT": 0,
       "ATT.1": 5,
@@ -2732,8 +2732,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 11.5,
-      "FPTS/G": 11.5,
+      "FPTS": 11.8,
+      "FPTS/G": 11.8,
       "ROST": "5.1%",
       "POS": "rb"
     }
