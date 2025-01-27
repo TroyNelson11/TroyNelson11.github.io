@@ -4073,7 +4073,7 @@ const player_stats = {
       "POS": "qb"
     }
   }
-};;
+};
 
 const fantasy_team_submissions = [
   {
