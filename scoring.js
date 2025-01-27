@@ -1461,10 +1461,10 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Patrick Mahomes II",
-      "CMP": 9,
-      "ATT": 11,
-      "PCT": 81.8,
-      "YDS": 106,
+      "CMP": 10,
+      "ATT": 12,
+      "PCT": 83.3,
+      "YDS": 132,
       "TD": 1,
       "INT": 0,
       "ATT.1": 4,
@@ -1476,8 +1476,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 7.9,
-      "FPTS/G": 7.9,
+      "FPTS": 9.0,
+      "FPTS/G": 9.0,
       "ROST": "23.1%",
       "POS": "qb"
     }
@@ -2292,17 +2292,17 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 2,
+      "ATT.1": 3,
       "YDS.1": 16,
       "TD.1": 0,
       "FL": 0,
-      "REC": 4,
-      "TGT": 4,
-      "YDS.2": 36,
+      "REC": 5,
+      "TGT": 5,
+      "YDS.2": 62,
       "TD.2": 1,
       "G": 1,
-      "FPTS": 15.2,
-      "FPTS/G": 15.2,
+      "FPTS": 18.8,
+      "FPTS/G": 18.8,
       "ROST": "10.3%",
       "POS": "qb"
     }
@@ -3712,8 +3712,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Harrison Butker",
-      "FPTS": 1,
-      "FPTS/G": 1,
+      "FPTS": 2,
+      "FPTS/G": 2,
       "ROST": "2.6%",
       "POS": "k"
     }
