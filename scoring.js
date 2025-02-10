@@ -197,19 +197,20 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 11,
-      "YDS.1": 29,
+      "ATT.1": 18,
+      "YDS.1": 47,
       "TD.1": 0,
       "FL": 0,
-      "REC": 3,
-      "TGT": 4,
-      "YDS.2": 3,
+      "REC": 5,
+      "TGT": 6,
+      "YDS.2": 29,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 6.2,
-      "FPTS/G": 6.2,
+      "FPTS": 12.6,
+      "FPTS/G": 12.6,
       "ROST": "89.7%",
       "POS": "wr"
+
     }
   },
   "Justin Jefferson": {
@@ -1527,27 +1528,26 @@ const player_stats = {
       "ROST": "23.1%",
       "POS": "qb"
     },
-    "week 3": {
+    "week 4": {
       "Rank": 0,
       "Player": "Patrick Mahomes II",
-      "CMP": 6,
-      "ATT": 15,
-      "PCT": 40.0,
-      "YDS": 33,
-      "TD": 0,
+      "CMP": 12,
+      "ATT": 22,
+      "PCT": 54.5,
+      "YDS": 148,
+      "TD": 1,
       "INT": 2,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 2,
+      "YDS.1": 11,
       "TD.1": 0,
-
       "FL": 0,
       "REC": 0,
       "TGT": 0,
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": -0.7,
-      "FPTS/G": -0.7,
+      "FPTS": 7.0,
+      "FPTS/G": 7.0,
       "ROST": "23.1%",
       "POS": "qb"
 
@@ -2266,10 +2266,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 24,
+      "PA": 34,
       "G": 1,
-      "FPTS": 3.0,
-      "FPTS/G": 3.0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "12.8%",
       "POS": "def"
     }
@@ -2407,15 +2407,16 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 1,
-      "TGT": 1,
-      "YDS.2": 1,
-      "TD.2": 0,
+      "REC": 4,
+      "TGT": 4,
+      "YDS.2": 83,
+      "TD.2": 1,
       "G": 1,
-      "FPTS": 1.1,
-      "FPTS/G": 1.1,
+      "FPTS": 18.3,
+      "FPTS/G": 18.3,
       "ROST": "10.3%",
       "POS": "qb"
+
     }
   },
   "Cooper Kupp": {
@@ -2851,15 +2852,14 @@ const player_stats = {
     "week 4": {
       "Rank": 0,
       "Player": "Jalen Hurts",
-      "CMP": 11,
-      "ATT": 15,
-      "PCT": 73.3,
-      "YDS": 123,
-      "TD": 1,
+      "CMP": 15,
+      "ATT": 20,
+      "PCT": 75.0,
+      "YDS": 201,
+      "TD": 2,
       "INT": 1,
-      "ATT.1": 8,
-      "YDS.1": 25,
-
+      "ATT.1": 10,
+      "YDS.1": 55,
       "TD.1": 1,
       "FL": 0,
       "REC": 0,
@@ -2867,11 +2867,10 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 12.9,
-      "FPTS/G": 12.9,
+      "FPTS": 27.5,
+      "FPTS/G": 27.5,
       "ROST": "5.1%",
       "POS": "rb"
-
 
     }
   },
