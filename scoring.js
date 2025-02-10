@@ -1179,15 +1179,16 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 2,
-      "YDS.2": 0,
+      "REC": 2,
+      "TGT": 4,
+      "YDS.2": 22,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 4.2,
+      "FPTS/G": 4.2,
       "ROST": "35.9%",
       "POS": "qb"
+
     }
   },
   "Wil Lutz": {
