@@ -187,6 +187,29 @@ const player_stats = {
       "FPTS/G": 31.2,
       "ROST": "89.7%",
       "POS": "wr"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Saquon Barkley",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 11,
+      "YDS.1": 29,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 3,
+      "TGT": 4,
+      "YDS.2": 3,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 6.2,
+      "FPTS/G": 6.2,
+      "ROST": "89.7%",
+      "POS": "wr"
     }
   },
   "Justin Jefferson": {
@@ -1141,6 +1164,29 @@ const player_stats = {
       "FPTS/G": 3.9,
       "ROST": "35.9%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Travis Kelce",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 2,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "35.9%",
+      "POS": "qb"
     }
   },
   "Wil Lutz": {
@@ -1480,6 +1526,32 @@ const player_stats = {
       "FPTS/G": 28.1,
       "ROST": "23.1%",
       "POS": "qb"
+    },
+    "week 3": {
+      "Rank": 0,
+      "Player": "Patrick Mahomes II",
+      "CMP": 6,
+      "ATT": 15,
+      "PCT": 40.0,
+      "YDS": 33,
+      "TD": 0,
+      "INT": 2,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": -0.7,
+      "FPTS/G": -0.7,
+      "ROST": "23.1%",
+      "POS": "qb"
+
+
     }
   },
   "Mike Evans": {
@@ -2305,6 +2377,29 @@ const player_stats = {
       "FPTS/G": 22.1,
       "ROST": "10.3%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Xavier Worthy",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 1,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 1.1,
+      "FPTS/G": 1.1,
+      "ROST": "10.3%",
+      "POS": "qb"
     }
   },
   "Cooper Kupp": {
@@ -2736,6 +2831,32 @@ const player_stats = {
       "FPTS/G": 33.4,
       "ROST": "5.1%",
       "POS": "rb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Jalen Hurts",
+      "CMP": 11,
+      "ATT": 15,
+      "PCT": 73.3,
+      "YDS": 123,
+      "TD": 1,
+      "INT": 1,
+      "ATT.1": 8,
+      "YDS.1": 25,
+
+      "TD.1": 1,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 12.9,
+      "FPTS/G": 12.9,
+      "ROST": "5.1%",
+      "POS": "rb"
+
+
     }
   },
   "Kareem Hunt": {
@@ -2807,6 +2928,30 @@ const player_stats = {
       "FPTS/G": 14.0,
       "ROST": "5.1%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Kareem Hunt",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 1,
+      "YDS.1": 2,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 5,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 1.7,
+      "FPTS/G": 1.7,
+      "ROST": "5.1%",
+      "POS": "qb"
+
     }
   },
   "Najee Harris": {
@@ -3001,6 +3146,30 @@ const player_stats = {
       "FPTS/G": 4.4,
       "ROST": "5.1%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Isiah Pacheco",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 2,
+      "YDS.1": 1,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.1,
+      "FPTS/G": 0.1,
+      "ROST": "5.1%",
+      "POS": "qb"
+
     }
   },
   "Minnesota Vikings": {
@@ -3787,6 +3956,29 @@ const player_stats = {
       "FPTS/G": 21.6,
       "ROST": "2.6%",
       "POS": "wr"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "A.J. Brown",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 2,
+      "TGT": 4,
+      "YDS.2": 34,
+      "TD.2": 1,
+      "G": 1,
+      "FPTS": 11.4,
+      "FPTS/G": 11.4,
+      "ROST": "2.6%",
+      "POS": "wr"
     }
   },
   "JuJu Smith-Schuster": {
@@ -3929,6 +4121,30 @@ const player_stats = {
       "FPTS/G": 8.5,
       "ROST": "2.6%",
       "POS": "wr"
+    },
+    "week 3": {
+      "Rank": 0,
+      "Player": "DeVonta Smith",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 2,
+      "TGT": 2,
+      "YDS.2": 17,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 3.7,
+      "FPTS/G": 3.7,
+      "ROST": "2.6%",
+      "POS": "wr"
+
     }
   },
   "DeAndre Hopkins": {
