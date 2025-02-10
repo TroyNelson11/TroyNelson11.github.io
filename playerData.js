@@ -69,6 +69,29 @@ const player_stats = {
       "FPTS/G": 31.2,
       "ROST": "89.7%",
       "POS": "wr"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Saquon Barkley",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 25,
+      "YDS.1": 57,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 6,
+      "TGT": 7,
+      "YDS.2": 40,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 15.7,
+      "FPTS/G": 15.7,
+      "ROST": "89.7%",
+      "POS": "wr"
     }
   },
   "Justin Jefferson": {
@@ -119,6 +142,29 @@ const player_stats = {
       "POS": "qb"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Justin Jefferson",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "82.1%",
+      "POS": "qb"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Justin Jefferson",
       "CMP": 0,
@@ -211,6 +257,29 @@ const player_stats = {
       "FPTS/G": 21.4,
       "ROST": "79.5%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Josh Allen",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "79.5%",
+      "POS": "qb"
     }
   },
   "Jahmyr Gibbs": {
@@ -261,6 +330,29 @@ const player_stats = {
       "POS": "qb"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Jahmyr Gibbs",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "61.5%",
+      "POS": "qb"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Jahmyr Gibbs",
       "CMP": 0,
@@ -353,6 +445,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "51.3%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Lamar Jackson",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "51.3%",
+      "POS": "qb"
     }
   },
   "Derrick Henry": {
@@ -424,6 +539,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "48.7%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Derrick Henry",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "48.7%",
+      "POS": "qb"
     }
   },
   "Chris Boswell": {
@@ -444,6 +582,14 @@ const player_stats = {
       "POS": "k"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Chris Boswell",
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "48.7%",
+      "POS": "k"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Chris Boswell",
       "FPTS": 0,
@@ -486,6 +632,22 @@ const player_stats = {
       "POS": "def"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Denver Broncos",
+      "SACKS": 0,
+      "FR": 0,
+      "INT.1": 0,
+      "TD.3": 0,
+      "BK": 0,
+      "SAFE": 0,
+      "PA": 0,
+      "G": 1,
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "48.7%",
+      "POS": "def"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Denver Broncos",
       "SACKS": 0,
@@ -550,6 +712,29 @@ const player_stats = {
       "POS": "qb"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Puka Nacua",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "48.7%",
+      "POS": "qb"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Puka Nacua",
       "CMP": 0,
@@ -642,6 +827,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "46.2%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Bucky Irving",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "46.2%",
+      "POS": "qb"
     }
   },
   "Ladd McConkey": {
@@ -692,6 +900,29 @@ const player_stats = {
       "POS": "qb"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Ladd McConkey",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "46.2%",
+      "POS": "qb"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Ladd McConkey",
       "CMP": 0,
@@ -784,6 +1015,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "43.6%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Josh Jacobs",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "43.6%",
+      "POS": "qb"
     }
   },
   "Terry McLaurin": {
@@ -855,6 +1109,29 @@ const player_stats = {
       "FPTS/G": 14.1,
       "ROST": "41.0%",
       "POS": "wr"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Terry McLaurin",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "41.0%",
+      "POS": "qb"
     }
   },
   "Nico Collins": {
@@ -926,6 +1203,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "38.5%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Nico Collins",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "38.5%",
+      "POS": "qb"
     }
   },
   "Brandon McManus": {
@@ -946,6 +1246,14 @@ const player_stats = {
       "POS": "k"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Brandon McManus",
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "38.5%",
+      "POS": "k"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Brandon McManus",
       "FPTS": 0,
@@ -1023,6 +1331,29 @@ const player_stats = {
       "FPTS/G": 3.9,
       "ROST": "35.9%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Travis Kelce",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 4,
+      "TGT": 6,
+      "YDS.2": 39,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 7.9,
+      "FPTS/G": 7.9,
+      "ROST": "35.9%",
+      "POS": "wr"
     }
   },
   "Wil Lutz": {
@@ -1043,6 +1374,14 @@ const player_stats = {
       "POS": "k"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Wil Lutz",
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "35.9%",
+      "POS": "k"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Wil Lutz",
       "FPTS": 0,
@@ -1085,6 +1424,22 @@ const player_stats = {
       "POS": "def"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Pittsburgh Steelers",
+      "SACKS": 0,
+      "FR": 0,
+      "INT.1": 0,
+      "TD.3": 0,
+      "BK": 0,
+      "SAFE": 0,
+      "PA": 0,
+      "G": 1,
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "35.9%",
+      "POS": "def"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Pittsburgh Steelers",
       "SACKS": 0,
@@ -1149,6 +1504,29 @@ const player_stats = {
       "POS": "qb"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Kyren Williams",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "25.6%",
+      "POS": "qb"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Kyren Williams",
       "CMP": 0,
@@ -1241,6 +1619,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "23.1%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Jared Goff",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "23.1%",
+      "POS": "qb"
     }
   },
   "Washington Commanders": {
@@ -1289,6 +1690,22 @@ const player_stats = {
       "G": 1,
       "FPTS": -2.0,
       "FPTS/G": -2.0,
+      "ROST": "23.1%",
+      "POS": "def"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Washington Commanders",
+      "SACKS": 0,
+      "FR": 0,
+      "INT.1": 0,
+      "TD.3": 0,
+      "BK": 0,
+      "SAFE": 0,
+      "PA": 0,
+      "G": 1,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "23.1%",
       "POS": "def"
     }
@@ -1362,6 +1779,29 @@ const player_stats = {
       "FPTS/G": 28.1,
       "ROST": "23.1%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Patrick Mahomes II",
+      "CMP": 21,
+      "ATT": 32,
+      "PCT": 65.6,
+      "YDS": 257,
+      "TD": 3,
+      "INT": 2,
+      "ATT.1": 4,
+      "YDS.1": 25,
+      "TD.1": 0,
+      "FL": 1,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 20.8,
+      "FPTS/G": 20.8,
+      "ROST": "23.1%",
+      "POS": "rb"
     }
   },
   "Mike Evans": {
@@ -1433,6 +1873,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "23.1%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Mike Evans",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "23.1%",
+      "POS": "qb"
     }
   },
   "Los Angeles Chargers": {
@@ -1483,6 +1946,22 @@ const player_stats = {
       "FPTS/G": 0,
       "ROST": "23.1%",
       "POS": "def"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Los Angeles Chargers",
+      "SACKS": 0,
+      "FR": 0,
+      "INT.1": 0,
+      "TD.3": 0,
+      "BK": 0,
+      "SAFE": 0,
+      "PA": 0,
+      "G": 1,
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "23.1%",
+      "POS": "def"
     }
   },
   "Houston Texans": {
@@ -1519,6 +1998,22 @@ const player_stats = {
       "POS": "def"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Houston Texans",
+      "SACKS": 0,
+      "FR": 0,
+      "INT.1": 0,
+      "TD.3": 0,
+      "BK": 0,
+      "SAFE": 0,
+      "PA": 0,
+      "G": 1,
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "20.5%",
+      "POS": "def"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Houston Texans",
       "SACKS": 0,
@@ -1604,6 +2099,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "20.5%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Joe Mixon",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "20.5%",
+      "POS": "qb"
     }
   },
   "Ka'imi Fairbairn": {
@@ -1624,6 +2142,14 @@ const player_stats = {
       "POS": "k"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Ka'imi Fairbairn",
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "17.9%",
+      "POS": "k"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Ka'imi Fairbairn",
       "FPTS": 0,
@@ -1656,6 +2182,14 @@ const player_stats = {
       "FPTS/G": 0,
       "ROST": "17.9%",
       "POS": "k"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Cameron Dicker",
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "17.9%",
+      "POS": "k"
     }
   },
   "Zane Gonzalez": {
@@ -1680,6 +2214,14 @@ const player_stats = {
       "Player": "Zane Gonzalez",
       "FPTS": 11,
       "FPTS/G": 11,
+      "ROST": "17.9%",
+      "POS": "k"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Zane Gonzalez",
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "17.9%",
       "POS": "k"
     }
@@ -1753,6 +2295,29 @@ const player_stats = {
       "FPTS/G": 28.4,
       "ROST": "17.9%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "James Cook",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "17.9%",
+      "POS": "qb"
     }
   },
   "Amon-Ra St. Brown": {
@@ -1803,6 +2368,29 @@ const player_stats = {
       "POS": "qb"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Amon-Ra St. Brown",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "15.4%",
+      "POS": "qb"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Amon-Ra St. Brown",
       "CMP": 0,
@@ -1895,6 +2483,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "12.8%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "J.K. Dobbins",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "12.8%",
+      "POS": "qb"
     }
   },
   "Green Bay Packers": {
@@ -1931,6 +2542,22 @@ const player_stats = {
       "POS": "def"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Green Bay Packers",
+      "SACKS": 0,
+      "FR": 0,
+      "INT.1": 0,
+      "TD.3": 0,
+      "BK": 0,
+      "SAFE": 0,
+      "PA": 0,
+      "G": 1,
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "12.8%",
+      "POS": "def"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Green Bay Packers",
       "SACKS": 0,
@@ -2016,6 +2643,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "12.8%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Courtland Sutton",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "12.8%",
+      "POS": "qb"
     }
   },
   "Kansas City Chiefs": {
@@ -2066,6 +2716,22 @@ const player_stats = {
       "FPTS/G": 1.0,
       "ROST": "12.8%",
       "POS": "def"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Kansas City Chiefs",
+      "SACKS": 2.0,
+      "FR": 0,
+      "INT.1": 1,
+      "TD.3": 0,
+      "BK": 0,
+      "SAFE": 0,
+      "PA": 40,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "12.8%",
+      "POS": "def"
     }
   },
   "Los Angeles Rams": {
@@ -2102,6 +2768,22 @@ const player_stats = {
       "POS": "def"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Los Angeles Rams",
+      "SACKS": 0,
+      "FR": 0,
+      "INT.1": 0,
+      "TD.3": 0,
+      "BK": 0,
+      "SAFE": 0,
+      "PA": 0,
+      "G": 1,
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "10.3%",
+      "POS": "def"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Los Angeles Rams",
       "SACKS": 0,
@@ -2187,6 +2869,29 @@ const player_stats = {
       "FPTS/G": 22.1,
       "ROST": "10.3%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Xavier Worthy",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 8,
+      "TGT": 8,
+      "YDS.2": 157,
+      "TD.2": 2,
+      "G": 1,
+      "FPTS": 35.7,
+      "FPTS/G": 35.7,
+      "ROST": "10.3%",
+      "POS": "wr"
     }
   },
   "Cooper Kupp": {
@@ -2237,6 +2942,29 @@ const player_stats = {
       "POS": "qb"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Cooper Kupp",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "10.3%",
+      "POS": "qb"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Cooper Kupp",
       "CMP": 0,
@@ -2329,6 +3057,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "10.3%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Baker Mayfield",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "10.3%",
+      "POS": "qb"
     }
   },
   "George Pickens": {
@@ -2400,6 +3151,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "10.3%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "George Pickens",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "10.3%",
+      "POS": "qb"
     }
   },
   "Chase McLaughlin": {
@@ -2420,6 +3194,14 @@ const player_stats = {
       "POS": "k"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Chase McLaughlin",
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "10.3%",
+      "POS": "k"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Chase McLaughlin",
       "FPTS": 0,
@@ -2497,6 +3279,29 @@ const player_stats = {
       "FPTS/G": 24.0,
       "ROST": "7.7%",
       "POS": "rb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Jayden Daniels",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "7.7%",
+      "POS": "qb"
     }
   },
   "Tampa Bay Buccaneers": {
@@ -2533,6 +3338,22 @@ const player_stats = {
       "POS": "def"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Tampa Bay Buccaneers",
+      "SACKS": 0,
+      "FR": 0,
+      "INT.1": 0,
+      "TD.3": 0,
+      "BK": 0,
+      "SAFE": 0,
+      "PA": 0,
+      "G": 1,
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "7.7%",
+      "POS": "def"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Tampa Bay Buccaneers",
       "SACKS": 0,
@@ -2618,6 +3439,29 @@ const player_stats = {
       "FPTS/G": 33.4,
       "ROST": "5.1%",
       "POS": "rb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Jalen Hurts",
+      "CMP": 17,
+      "ATT": 22,
+      "PCT": 77.3,
+      "YDS": 221,
+      "TD": 2,
+      "INT": 1,
+      "ATT.1": 11,
+      "YDS.1": 72,
+      "TD.1": 1,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 29.0,
+      "FPTS/G": 29.0,
+      "ROST": "5.1%",
+      "POS": "rb"
     }
   },
   "Kareem Hunt": {
@@ -2689,6 +3533,29 @@ const player_stats = {
       "FPTS/G": 14.0,
       "ROST": "5.1%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Kareem Hunt",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 3,
+      "YDS.1": 9,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 5,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 2.4,
+      "FPTS/G": 2.4,
+      "ROST": "5.1%",
+      "POS": "wr"
     }
   },
   "Najee Harris": {
@@ -2760,6 +3627,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "5.1%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Najee Harris",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "5.1%",
+      "POS": "qb"
     }
   },
   "Joshua Karty": {
@@ -2786,6 +3676,14 @@ const player_stats = {
       "FPTS/G": 0,
       "ROST": "5.1%",
       "POS": "k"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Joshua Karty",
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "5.1%",
+      "POS": "k"
     }
   },
   "Wil Reichard": {
@@ -2806,6 +3704,14 @@ const player_stats = {
       "POS": "k"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Wil Reichard",
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "5.1%",
+      "POS": "k"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Wil Reichard",
       "FPTS": 0,
@@ -2883,6 +3789,29 @@ const player_stats = {
       "FPTS/G": 4.4,
       "ROST": "5.1%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Isiah Pacheco",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 3,
+      "YDS.1": 7,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 1,
+      "TGT": 2,
+      "YDS.2": 5,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 2.2,
+      "FPTS/G": 2.2,
+      "ROST": "5.1%",
+      "POS": "wr"
     }
   },
   "Minnesota Vikings": {
@@ -2919,6 +3848,22 @@ const player_stats = {
       "POS": "def"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Minnesota Vikings",
+      "SACKS": 0,
+      "FR": 0,
+      "INT.1": 0,
+      "TD.3": 0,
+      "BK": 0,
+      "SAFE": 0,
+      "PA": 0,
+      "G": 1,
+      "FPTS": 0,
+      "FPTS/G": 0,
+      "ROST": "5.1%",
+      "POS": "def"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Minnesota Vikings",
       "SACKS": 0,
@@ -3004,6 +3949,29 @@ const player_stats = {
       "FPTS/G": 3.6,
       "ROST": "5.1%",
       "POS": "rb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Brian Robinson Jr.",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "5.1%",
+      "POS": "rb"
     }
   },
   "Austin Ekeler": {
@@ -3075,6 +4043,29 @@ const player_stats = {
       "FPTS/G": 6.2,
       "ROST": "5.1%",
       "POS": "wr"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Austin Ekeler",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "5.1%",
+      "POS": "qb"
     }
   },
   "Jordan Addison": {
@@ -3125,6 +4116,29 @@ const player_stats = {
       "POS": "qb"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Jordan Addison",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "5.1%",
+      "POS": "qb"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Jordan Addison",
       "CMP": 0,
@@ -3217,6 +4231,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "2.6%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Aaron Jones",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "2.6%",
+      "POS": "qb"
     }
   },
   "Diontae Johnson": {
@@ -3267,6 +4304,29 @@ const player_stats = {
       "POS": "qb"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Diontae Johnson",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "2.6%",
+      "POS": "qb"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Diontae Johnson",
       "CMP": 0,
@@ -3359,6 +4419,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "2.6%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Tucker Kraft",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "2.6%",
+      "POS": "qb"
     }
   },
   "Romeo Doubs": {
@@ -3409,6 +4492,29 @@ const player_stats = {
       "POS": "qb"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Romeo Doubs",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "2.6%",
+      "POS": "qb"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Romeo Doubs",
       "CMP": 0,
@@ -3501,6 +4607,29 @@ const player_stats = {
       "FPTS/G": 0.0,
       "ROST": "2.6%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Javonte Williams",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "2.6%",
+      "POS": "qb"
     }
   },
   "Amari Cooper": {
@@ -3572,6 +4701,29 @@ const player_stats = {
       "FPTS/G": 7.3,
       "ROST": "2.6%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Amari Cooper",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "2.6%",
+      "POS": "qb"
     }
   },
   "Harrison Butker": {
@@ -3596,6 +4748,14 @@ const player_stats = {
       "Player": "Harrison Butker",
       "FPTS": 5,
       "FPTS/G": 5,
+      "ROST": "2.6%",
+      "POS": "k"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Harrison Butker",
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "2.6%",
       "POS": "k"
     }
@@ -3669,6 +4829,29 @@ const player_stats = {
       "FPTS/G": 21.6,
       "ROST": "2.6%",
       "POS": "wr"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "A.J. Brown",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 3,
+      "TGT": 5,
+      "YDS.2": 43,
+      "TD.2": 1,
+      "G": 1,
+      "FPTS": 13.3,
+      "FPTS/G": 13.3,
+      "ROST": "2.6%",
+      "POS": "wr"
     }
   },
   "JuJu Smith-Schuster": {
@@ -3740,6 +4923,29 @@ const player_stats = {
       "FPTS/G": 8.0,
       "ROST": "2.6%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "JuJu Smith-Schuster",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 2,
+      "TGT": 2,
+      "YDS.2": 16,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 3.6,
+      "FPTS/G": 3.6,
+      "ROST": "2.6%",
+      "POS": "wr"
     }
   },
   "DeVonta Smith": {
@@ -3809,6 +5015,29 @@ const player_stats = {
       "G": 1,
       "FPTS": 8.5,
       "FPTS/G": 8.5,
+      "ROST": "2.6%",
+      "POS": "wr"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "DeVonta Smith",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 4,
+      "TGT": 5,
+      "YDS.2": 69,
+      "TD.2": 1,
+      "G": 1,
+      "FPTS": 16.9,
+      "FPTS/G": 16.9,
       "ROST": "2.6%",
       "POS": "wr"
     }
@@ -3882,6 +5111,29 @@ const player_stats = {
       "FPTS/G": 2.1,
       "ROST": "2.6%",
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "DeAndre Hopkins",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 2,
+      "TGT": 5,
+      "YDS.2": 18,
+      "TD.2": 1,
+      "G": 1,
+      "FPTS": 9.8,
+      "FPTS/G": 9.8,
+      "ROST": "2.6%",
+      "POS": "wr"
     }
   },
   "Rachaad White": {
@@ -3932,6 +5184,29 @@ const player_stats = {
       "POS": "qb"
     },
     "week 3": {
+      "Rank": 0,
+      "Player": "Rachaad White",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
+      "ROST": "2.6%",
+      "POS": "qb"
+    },
+    "week 4": {
       "Rank": 0,
       "Player": "Rachaad White",
       "CMP": 0,
