@@ -207,11 +207,7 @@ const player_stats = {
       "TD.2": 0,
       "G": 1,
       "FPTS": 15.7,
-<<<<<<< HEAD
       "FPTS/G": 15.7,
-=======
-      "FPTS/G": 12.6,
->>>>>>> 4217f90c8af411732b7ff433081a319143b900c6
       "ROST": "89.7%",
       "POS": "wr"
     }
@@ -1473,11 +1469,7 @@ const player_stats = {
       "TD.2": 0,
       "G": 1,
       "FPTS": 7.9,
-<<<<<<< HEAD
       "FPTS/G": 7.9,
-=======
-      "FPTS/G": 4.2,
->>>>>>> 4217f90c8af411732b7ff433081a319143b900c6
       "ROST": "35.9%",
       "POS": "wr"
     }
@@ -1924,13 +1916,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-<<<<<<< HEAD
       "FPTS": 20.8,
       "FPTS/G": 20.8,
-=======
-      "FPTS": 20.7,
-      "FPTS/G": 20.7,
->>>>>>> 4217f90c8af411732b7ff433081a319143b900c6
       "ROST": "23.1%",
       "POS": "rb"
     }
@@ -2859,7 +2846,7 @@ const player_stats = {
       "SAFE": 0,
       "PA": 40,
       "G": 1,
-      "FPTS": 1.0,
+      "FPTS": 0.0,
       "FPTS/G": 0.0,
       "ROST": "12.8%",
       "POS": "def"
@@ -3020,11 +3007,7 @@ const player_stats = {
       "TD.2": 2,
       "G": 1,
       "FPTS": 35.7,
-<<<<<<< HEAD
       "FPTS/G": 35.7,
-=======
-      "FPTS/G": 18.3,
->>>>>>> 4217f90c8af411732b7ff433081a319143b900c6
       "ROST": "10.3%",
       "POS": "wr"
     }
@@ -3593,13 +3576,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-<<<<<<< HEAD
       "FPTS": 29.0,
       "FPTS/G": 29.0,
-=======
-      "FPTS": 28.0,
-      "FPTS/G": 27.5,
->>>>>>> 4217f90c8af411732b7ff433081a319143b900c6
       "ROST": "5.1%",
       "POS": "rb"
     }
@@ -3948,13 +3926,8 @@ const player_stats = {
       "YDS.2": 5,
       "TD.2": 0,
       "G": 1,
-<<<<<<< HEAD
       "FPTS": 2.2,
       "FPTS/G": 2.2,
-=======
-      "FPTS": 1.2,
-      "FPTS/G": 0.1,
->>>>>>> 4217f90c8af411732b7ff433081a319143b900c6
       "ROST": "5.1%",
       "POS": "wr"
     }
@@ -4993,13 +4966,8 @@ const player_stats = {
       "YDS.2": 43,
       "TD.2": 1,
       "G": 1,
-<<<<<<< HEAD
       "FPTS": 13.3,
       "FPTS/G": 13.3,
-=======
-      "FPTS": 12.3,
-      "FPTS/G": 11.4,
->>>>>>> 4217f90c8af411732b7ff433081a319143b900c6
       "ROST": "2.6%",
       "POS": "wr"
     }
