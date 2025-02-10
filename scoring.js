@@ -206,7 +206,7 @@ const player_stats = {
       "YDS.2": 29,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 12.6,
+      "FPTS": 15.7,
       "FPTS/G": 12.6,
       "ROST": "89.7%",
       "POS": "wr"
@@ -1184,7 +1184,7 @@ const player_stats = {
       "YDS.2": 22,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 4.2,
+      "FPTS": 7.9,
       "FPTS/G": 4.2,
       "ROST": "35.9%",
       "POS": "qb"
@@ -1547,8 +1547,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 7.0,
-      "FPTS/G": 7.0,
+      "FPTS": 20.7,
+      "FPTS/G": 20.7,
       "ROST": "23.1%",
       "POS": "qb"
 
@@ -2269,7 +2269,7 @@ const player_stats = {
       "SAFE": 0,
       "PA": 34,
       "G": 1,
-      "FPTS": 0.0,
+      "FPTS": 1.0,
       "FPTS/G": 0.0,
       "ROST": "12.8%",
       "POS": "def"
@@ -2413,7 +2413,7 @@ const player_stats = {
       "YDS.2": 83,
       "TD.2": 1,
       "G": 1,
-      "FPTS": 18.3,
+      "FPTS": 35.7,
       "FPTS/G": 18.3,
       "ROST": "10.3%",
       "POS": "qb"
@@ -2868,7 +2868,7 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 27.5,
+      "FPTS": 28.0,
       "FPTS/G": 27.5,
       "ROST": "5.1%",
       "POS": "rb"
@@ -3181,7 +3181,7 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.1,
+      "FPTS": 1.2,
       "FPTS/G": 0.1,
       "ROST": "5.1%",
       "POS": "qb"
@@ -3991,7 +3991,7 @@ const player_stats = {
       "YDS.2": 34,
       "TD.2": 1,
       "G": 1,
-      "FPTS": 11.4,
+      "FPTS": 12.3,
       "FPTS/G": 11.4,
       "ROST": "2.6%",
       "POS": "wr"
