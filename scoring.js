@@ -6181,23 +6181,23 @@ function filterAndSortTeams(teams) {
           const highestPossibleDiv = document.createElement('div');
           highestPossibleDiv.className = 'highest-possible-div';
           highestPossibleDiv.innerHTML = `
-              <h3>Highest Possible Score (Total Points Across All Weeks)</h3>
+              <h3>Highest Possible Score</h3>
               <div class="highest-possible-content">
                   <p>QB1: Jayden Daniels (71.4)</p>
                   <p>QB2: Josh Allen (64.0)</p>
-                  <p>RB1: Saquon Barkley (84.7)</p>
+                  <p>RB1: Saquon Barkley (100.4)</p>
                   <p>RB2: Derrick Henry (45.0)</p>
                   <p>RB3: Jahmyr Gibbs (35.5)</p>
                   <p>RB4: Josh Jacobs (21.1)</p>
-                  <p>WR1: Nico Collins (38.3)</p>
-                  <p>WR2: Ladd McConkey (34.7)</p>
-                  <p>WR3: Xavier Worthy (30.8)</p>
+                  <p>WR1: Xavier Worthy (66.5)</p>
+                  <p>WR2: Nico Collins (38.3)</p>
+                  <p>WR3: Ladd McConkey (34.7)</p>
                   <p>WR4: Puka Nacua (25.8)</p>
                   <p>K1: Chase McLaughlin (10.0)</p>
                   <p>K2: Chris Boswell (2.0)</p>
                   <p>DEF1: Minnesota Vikings (2.0)</p>
                   <p>DEF2: Denver Broncos (1.0)</p>
-                  <p>Total Points: 466.3</p>
+                  <p>Total Points: 517.7</p>
               </div>
           `;
 
