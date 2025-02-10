@@ -402,12 +402,6 @@ function filterAndSortPlayers() {
                 return 0;
         }
     });
-
-    // Filter out players with no fantasy points
-    filtered = filtered.filter(player => {
-        const stats = player.stats?.["week 1"];
-        return stats && stats.FPTS > 0;
-    });
     
     renderPlayers(filtered);
 }
