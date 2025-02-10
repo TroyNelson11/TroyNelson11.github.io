@@ -2256,6 +2256,22 @@ const player_stats = {
       "FPTS/G": 1.0,
       "ROST": "12.8%",
       "POS": "def"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Kansas City Chiefs",
+      "SACKS": 1.0,
+      "FR": 0,
+      "INT.1": 1,
+      "TD.3": 0,
+      "BK": 0,
+      "SAFE": 0,
+      "PA": 24,
+      "G": 1,
+      "FPTS": 3.0,
+      "FPTS/G": 3.0,
+      "ROST": "12.8%",
+      "POS": "def"
     }
   },
   "Los Angeles Rams": {
