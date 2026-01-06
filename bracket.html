@@ -100,8 +100,8 @@
         </div>
     
         <script>
-            const playoffTeams = ["DEN", "NE", "JAX", "PIT", "HOU", "BUF", "LAC", "SEA", "CHI", "PHI", "CAR", "LAR", "SF", "GB"]
-                
+            const playoffTeams = ["DEN", "NE", "JAX", "PIT", "HOU", "BUF", "LAC", "SEA", "CHI", "PHI", "CAR", "LAR", "SF", "GB"];
+
             const nflTeams = [
   {
     abbreviation: "ARI",
@@ -328,7 +328,25 @@
     secondary_color: "#FFC20E"
   }
 ];
-
+  // Assign seeds to nflTeams based on playoffTeams array order (AFC 1-7, NFC 1-7)
+// Assign seeds to only playoff teams in nflTeams
+(function assignPlayoffSeeds() {
+  // Each conference gets 7 teams. First 7 are AFC (1-7), next 7 are NFC (1-7).
+  for (let i = 0; i < playoffTeams.length; i++) {
+    const teamAbbr = playoffTeams[i];
+    let seed;
+    if (i < 7) {
+      seed = i + 1; // AFC seeds 1-7
+    } else {
+      seed = (i - 7) + 1; // NFC seeds 1-7
+    }
+    // Find the corresponding team object in nflTeams
+    const teamObj = nflTeams.find(team => team.abbreviation === teamAbbr);
+    if (teamObj) {
+      teamObj.seed = seed;
+    }
+  }
+})();
        
 let match_details = [
     {
