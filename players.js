@@ -139,7 +139,7 @@ const players = {
         { "name": "San Francisco 49ers", "team": "SF" },
         { "name": "Seattle Seahawks", "team": "SEA" },
     ],
-};
+}
 
 const position_map = {
     "qb": "QB",
@@ -151,14 +151,14 @@ const position_map = {
 }
 
 // Convert to flat array format (JS version)
-let all_players = [];
+let allPlayers = [];
 for (const pos_key in position_map) {
     const pos_code = position_map[pos_key];
     if (players[pos_key]) {
         // Optionally, add comment line for clarity (JS can't append comments inside array)
-        // all_players.push(`// ${pos_code}`); 
+        // allPlayers.push(`// ${pos_code}`); 
         for (const player of players[pos_key]) {
-            all_players.push({ 
+            allPlayers.push({ 
                 "name": player.name, 
                 "team": player.team, 
                 "position": pos_code 
@@ -184,6 +184,9 @@ const teamLogos = {
     "San Francisco 49ers": "https://content.sportslogos.net/logos/7/179/full/9455_san_francisco_49ers-primary-2009.png",
     "Green Bay Packers": "https://nfldesigns.com/wp-content/uploads/2023/09/green-bay-packers-symbol-logo-png.png"
 };
+
+// Declare espnPlayerIds globally
+let espnPlayerIds = { players: {} };
 
 // Load ESPN IDs from espn_player_ids.json
 fetch('espn_player_ids.json')
@@ -515,11 +518,8 @@ function getPlayerPosition(playerName) {
 // Add console logging to help debug
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM Content Loaded');
-    console.log('allPlayers from scoring.js:', window.allPlayers?.length || 'Not loaded');
+    console.log('allPlayers:', allPlayers?.length || 'Not loaded');
     console.log('espnPlayerIds:', espnPlayerIds);
-    console.log('player_stats:', player_stats);
-    initialize();
+    console.log('player_stats:', typeof player_stats !== 'undefined' ? 'Loaded' : 'Not loaded');
+    // initialize() is called from the fetch promise or will be called if fetch fails
 });
-
-// Start the app
-document.addEventListener('DOMContentLoaded', initialize);
