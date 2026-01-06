@@ -232,10 +232,12 @@ function calculateTotalPoints(stats) {
 }
 
 // Get key stats for a player
-// Get key stats for a player
-// Get key stats for a player
-function getPlayerStats(stats) {
+function getPlayerStats(stats, playerPosition = null) {
     if (!stats) return null;
+    
+    // Get position from player object first, then from stats
+    const firstWeek = stats["week 1"] || stats["week 2"] || stats["week 3"] || stats["week 4"];
+    let position = playerPosition?.toLowerCase() || (firstWeek?.position || firstWeek?.POS || 'unknown').toLowerCase();
     
     // Initialize cumulative stats
     let cumulativeStats = {
@@ -264,8 +266,8 @@ function getPlayerStats(stats) {
         // Fantasy Points
         fantasyPoints: 0,
         
-        // Position from week 1
-        position: stats["week 1"]?.POS || 'unknown'
+        // Position
+        position: position
     };
     
     // Sum up stats from all available weeks
@@ -273,31 +275,72 @@ function getPlayerStats(stats) {
         if (week.startsWith('week')) {
             const weekStats = stats[week];
             
-            // Check if it's a defense
-            if (weekStats.hasOwnProperty('SACKS')) {
-                cumulativeStats.sacks += weekStats.SACKS || 0;
-                cumulativeStats.defInt += weekStats["INT.1"] || 0;
-                cumulativeStats.fumbles += weekStats.FR || 0;
-                cumulativeStats.safeties += weekStats.SAFE || 0;
-                cumulativeStats.touchdowns += weekStats["TD.3"] || 0;
-                cumulativeStats.pointsAllowed += weekStats.PA || 0;
-                cumulativeStats.fantasyPoints += weekStats.FPTS || 0;
-                cumulativeStats.position = 'def';
+            // Check if it's a defense - check position first
+            // Defenses have SACKS/SACK but NOT CMP/ATT (which QBs have)
+            // Only use SACKS check if position is unknown
+            const isDefense = position === 'def' || position === 'dst' || 
+                             (position === 'unknown' && 
+                              (weekStats.hasOwnProperty('SACKS') || weekStats.hasOwnProperty('SACK')) &&
+                              !weekStats.hasOwnProperty('CMP') && !weekStats.hasOwnProperty('ATT'));
+            
+            if (isDefense) {
+                // Defense stats
+                cumulativeStats.sacks += (weekStats.SACKS || weekStats.SACK || 0);
+                cumulativeStats.defInt += (weekStats["INT.1"] || weekStats.INT || 0);
+                cumulativeStats.fumbles += (weekStats.FR || 0);
+                cumulativeStats.safeties += (weekStats.SFTY || weekStats.SAFE || 0);
+                cumulativeStats.touchdowns += (weekStats["TD.3"] || weekStats["DEF TD"] || 0);
+                cumulativeStats.pointsAllowed += (weekStats.PA || 0);
+                cumulativeStats.fantasyPoints += (weekStats.FPTS || 0);
+            } else if (position === 'qb') {
+                // QB stats
+                cumulativeStats.completions += (weekStats.CMP || 0);
+                cumulativeStats.attempts += (weekStats.ATT || 0);
+                cumulativeStats.passYards += (weekStats.YDS || 0);
+                cumulativeStats.passTD += (weekStats.TD || 0);
+                cumulativeStats.interceptions += (weekStats.INT || 0);
+                
+                // QB rushing stats (ATT.1, YDS.1, TD.1)
+                cumulativeStats.rushYards += (weekStats["YDS.1"] || 0);
+                cumulativeStats.rushTD += (weekStats["TD.1"] || 0);
+                
+                cumulativeStats.fantasyPoints += (weekStats.FPTS || 0);
+            } else if (position === 'rb') {
+                // RB stats - YDS is rushing, YDS.1 is receiving
+                cumulativeStats.rushYards += (weekStats.YDS || 0);
+                cumulativeStats.rushTD += (weekStats.TD || 0);
+                
+                cumulativeStats.receptions += (weekStats.REC || 0);
+                cumulativeStats.recYards += (weekStats["YDS.1"] || 0);
+                cumulativeStats.recTD += (weekStats["TD.1"] || 0);
+                
+                cumulativeStats.fantasyPoints += (weekStats.FPTS || 0);
+            } else if (position === 'wr' || position === 'te') {
+                // WR/TE stats - YDS.2 is receiving, YDS.1 is rushing
+                cumulativeStats.receptions += (weekStats.REC || 0);
+                cumulativeStats.recYards += (weekStats["YDS.2"] || 0);
+                cumulativeStats.recTD += (weekStats["TD.2"] || 0);
+                
+                // Rushing stats for WRs/TEs (if any)
+                cumulativeStats.rushYards += (weekStats["YDS.1"] || 0);
+                cumulativeStats.rushTD += (weekStats["TD.1"] || 0);
+                
+                cumulativeStats.fantasyPoints += (weekStats.FPTS || 0);
             } else {
-                // Regular player stats
-                cumulativeStats.completions += weekStats.CMP || 0;
-                cumulativeStats.attempts += weekStats.ATT || 0;
-                cumulativeStats.passYards += weekStats.YDS || 0;
-                cumulativeStats.passTD += weekStats.TD || 0;
-                cumulativeStats.interceptions += weekStats.INT || 0;
+                // Fallback: try to extract any available stats
+                cumulativeStats.completions += (weekStats.CMP || 0);
+                cumulativeStats.attempts += (weekStats.ATT || 0);
+                cumulativeStats.passYards += (weekStats.YDS || 0);
+                cumulativeStats.passTD += (weekStats.TD || 0);
+                cumulativeStats.interceptions += (weekStats.INT || 0);
                 
-                cumulativeStats.rushYards += weekStats["YDS.1"] || 0;
-                cumulativeStats.rushTD += weekStats["TD.1"] || 0;
-                cumulativeStats.receptions += weekStats.REC || 0;
-                cumulativeStats.recYards += weekStats["YDS.2"] || 0;
-                cumulativeStats.recTD += weekStats["TD.2"] || 0;
+                cumulativeStats.rushYards += (weekStats["YDS.1"] || 0);
+                cumulativeStats.rushTD += (weekStats["TD.1"] || 0);
+                cumulativeStats.receptions += (weekStats.REC || 0);
+                cumulativeStats.recYards += (weekStats["YDS.2"] || 0);
+                cumulativeStats.recTD += (weekStats["TD.2"] || 0);
                 
-                cumulativeStats.fantasyPoints += weekStats.FPTS || 0;
+                cumulativeStats.fantasyPoints += (weekStats.FPTS || 0);
             }
         }
     });
@@ -313,7 +356,8 @@ function normalizePlayerName(name) {
 // Get player image URL using ESPN data
 function getPlayerImageUrl(player) {
     // If it's a defense, return the team logo
-    if (player.position?.toLowerCase() === 'def') {
+    const pos = player.position?.toLowerCase();
+    if (pos === 'def' || pos === 'dst') {
         // Remove 'Defense' or 'DST' from the name to match our teamLogos object
         const teamName = player.name
             .replace(' Defense', '')
@@ -339,7 +383,7 @@ function getPlayerImageUrl(player) {
 // Create a player card
 async function createPlayerCard(player) {
     const clone = template.content.cloneNode(true);
-    const stats = getPlayerStats(player.stats);
+    const stats = getPlayerStats(player.stats, player.position);
     
     // Set player info
     clone.querySelector('.player-name').textContent = player.name;
@@ -352,7 +396,8 @@ async function createPlayerCard(player) {
     playerImage.onerror = function() {
         console.log(`Image failed to load for ${player.name}: ${imageUrl}`);
     };
-    if (player.position?.toLowerCase() === 'def') {
+    const pos = player.position?.toLowerCase();
+    if (pos === 'def' || pos === 'dst') {
         playerImage.classList.add('defense-logo');
     }
     playerImage.alt = player.name;
@@ -362,8 +407,13 @@ async function createPlayerCard(player) {
     statsContainer.innerHTML = ''; // Clear existing stats
 
     if (stats) {
-        switch (player.position.toLowerCase()) {
-            case 'qb':
+        const pos = player.position?.toUpperCase();
+        console.log(`Player: ${player.name}, Position: ${pos}, Has Stats: ${!!stats}, Stats Object:`, stats);
+        console.log(`  - Completions: ${stats.completions}, Attempts: ${stats.attempts}, PassYards: ${stats.passYards}`);
+        console.log(`  - RushYards: ${stats.rushYards}, Receptions: ${stats.receptions}, RecYards: ${stats.recYards}`);
+        
+        switch (pos) {
+            case 'QB':
                 statsContainer.innerHTML = `
                     <div class="stat-item">
                         <span class="stat-label">Pass: ${stats.completions}/${stats.attempts}</span>
@@ -375,7 +425,7 @@ async function createPlayerCard(player) {
                     </div>`;
                 break;
             
-            case 'rb':
+            case 'RB':
                 statsContainer.innerHTML = `
                     <div class="stat-item">
                         <span class="stat-label">Rush</span>
@@ -387,8 +437,8 @@ async function createPlayerCard(player) {
                     </div>`;
                 break;
             
-            case 'wr':
-            case 'te':
+            case 'WR':
+            case 'TE':
                 statsContainer.innerHTML = `
                     <div class="stat-item">
                         <span class="stat-label">Receiving</span>
@@ -400,7 +450,8 @@ async function createPlayerCard(player) {
                     </div>`;
                 break;
             
-            case 'def':
+            case 'DEF':
+            case 'DST':
                 statsContainer.innerHTML = `
                     <div class="stat-item">
                         <span class="stat-label">Points Allowed</span>
@@ -415,7 +466,36 @@ async function createPlayerCard(player) {
                         <span class="stat-value">FR: ${stats.fumbles}, TD: ${stats.touchdowns}</span>
                     </div>`;
                 break;
+            
+            case 'K':
+                // Kickers don't have detailed stats in the current structure
+                statsContainer.innerHTML = `
+                    <div class="stat-item">
+                        <span class="stat-label">Kicker</span>
+                        <span class="stat-value">Field Goals & PATs</span>
+                    </div>`;
+                break;
+            
+            default:
+                console.warn(`Unknown position for ${player.name}: ${pos}`);
+                // Show generic stats if position doesn't match
+                if (stats.completions > 0 || stats.attempts > 0) {
+                    statsContainer.innerHTML = `
+                        <div class="stat-item">
+                            <span class="stat-label">Pass: ${stats.completions}/${stats.attempts}</span>
+                            <span class="stat-value">${stats.passYards} YDS</span>
+                        </div>`;
+                } else if (stats.rushYards > 0 || stats.receptions > 0) {
+                    statsContainer.innerHTML = `
+                        <div class="stat-item">
+                            <span class="stat-label">Rush: ${stats.rushYards} YDS</span>
+                            <span class="stat-value">Rec: ${stats.receptions} REC, ${stats.recYards} YDS</span>
+                        </div>`;
+                }
+                break;
         }
+    } else {
+        console.warn(`No stats found for ${player.name}`);
     }
 
     // Add fantasy points
@@ -434,7 +514,12 @@ function filterAndSortPlayers() {
     let filtered = allPlayers.filter(player => {
         const matchesSearch = player.name.toLowerCase().includes(searchTerm);
         const matchesPosition = position === 'all' || player.position.toLowerCase() === position;
-        return matchesSearch && matchesPosition;
+        
+        // Filter out players with zero fantasy points
+        const playerStats = getPlayerStats(player.stats, player.position);
+        const hasPoints = playerStats && playerStats.fantasyPoints > 0;
+        
+        return matchesSearch && matchesPosition && hasPoints;
     });
     
     filtered.sort((a, b) => {
@@ -463,12 +548,13 @@ async function renderPlayers(players) {
     }
 }
 
-// Add this helper function to check recent activity
+// Add this helper function to check if player has any fantasy points
 function hasRecentActivity(stats) {
     if (!stats) return false;
     
-    // Check if player has any stats in week 1
-    return stats["week 1"] && stats["week 1"].FPTS > 0;
+    // Check if player has any fantasy points across all weeks
+    const playerStats = getPlayerStats(stats);
+    return playerStats && playerStats.fantasyPoints > 0;
 }
 
 // Initialize the page
