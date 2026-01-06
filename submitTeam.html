@@ -217,288 +217,369 @@
             <script>
                 // Define player data
                 const players = {
-    "qb": [
-        { "name": "Baker Mayfield", "team": "TB" }, 
-        { "name": "Bo Nix", "team": "DEN" },        
-        { "name": "C.J. Stroud", "team": "HOU" },   
-        { "name": "Jalen Hurts", "team": "PHI" },   
-        { "name": "Jared Goff", "team": "DET" },    
-        { "name": "Jayden Daniels", "team": "WAS" },
-        { "name": "Jordan Love", "team": "GB" },    
-        { "name": "Josh Allen", "team": "BUF" },    
-        { "name": "Justin Fields", "team": "PIT" }, 
-        { "name": "Justin Herbert", "team": "LAC" },
-        { "name": "Lamar Jackson", "team": "BAL" }, 
-        { "name": "Matthew Stafford", "team": "LAR" },
-        { "name": "Patrick Mahomes II", "team": "KC" },
-        { "name": "Russell Wilson", "team": "PIT" },
-        { "name": "Sam Darnold", "team": "MIN" },
-    ],
-    "rb": [
-        { "name": "Aaron Jones Sr.", "team": "MIN" },
-        { "name": "Austin Ekeler", "team": "WAS" },
-        { "name": "Brian Robinson Jr.", "team": "WAS" },
-        { "name": "Bucky Irving", "team": "TB" },
-        { "name": "David Montgomery", "team": "DET" },
-        { "name": "Derrick Henry", "team": "BAL" },
-        { "name": "Gus Edwards", "team": "LAC" },
-        { "name": "Isiah Pacheco", "team": "KC" },
-        { "name": "J.K. Dobbins", "team": "LAC" },
-        { "name": "Jahmyr Gibbs", "team": "DET" },
-        { "name": "James Cook", "team": "BUF" },
-        { "name": "Javonte Williams", "team": "DEN" },
-        { "name": "Jaylen Warren", "team": "PIT" },
-        { "name": "Joe Mixon", "team": "HOU" },
-        { "name": "Josh Jacobs", "team": "GB" },
-        { "name": "Kareem Hunt", "team": "KC" },
-        { "name": "Kyren Williams", "team": "LAR" },
-        { "name": "Najee Harris", "team": "PIT" },
-        { "name": "Rachaad White", "team": "TB" },
-        { "name": "Saquon Barkley", "team": "PHI" },
-        { "name": "Ty Chandler", "team": "MIN" },
-    ],
-    "wr": [
-        { "name": "A.J. Brown", "team": "PHI" },
-        { "name": "Amari Cooper", "team": "BUF" },
-        { "name": "Amon-Ra St. Brown", "team": "DET" },
-        { "name": "Cooper Kupp", "team": "LAR" },
-        { "name": "Courtland Sutton", "team": "DEN" },
-        { "name": "DeAndre Hopkins", "team": "KC" },
-        { "name": "DeVonta Smith", "team": "PHI" },
-        { "name": "George Pickens", "team": "PIT" },
-        { "name": "Jalen McMillan", "team": "TB" },
-        { "name": "Jameson Williams", "team": "DET" },
-        { "name": "Jayden Reed", "team": "GB" },
-        { "name": "Jordan Addison", "team": "MIN" },
-        { "name": "JuJu Smith-Schuster", "team": "KC" },
-        { "name": "Justin Jefferson", "team": "MIN" },
-        { "name": "Keon Coleman", "team": "BUF" },
-        { "name": "Khalil Shakir", "team": "BUF" },
-        { "name": "Ladd McConkey", "team": "LAC" },
-        { "name": "Marquise Brown", "team": "KC" },
-        { "name": "Mike Evans", "team": "TB" },
-        { "name": "Nico Collins", "team": "HOU" },
-        { "name": "Puka Nacua", "team": "LAR" },
-        { "name": "Quentin Johnston", "team": "LAC" },
-        { "name": "Rashee Rice", "team": "KC" },
-        { "name": "Rashod Bateman", "team": "BAL" },
-        { "name": "Romeo Doubs", "team": "GB" },
-        { "name": "Stefon Diggs", "team": "HOU" },
-        { "name": "Tank Dell", "team": "HOU" },
-        { "name": "Terry McLaurin", "team": "WAS" },
-        { "name": "Xavier Worthy", "team": "KC" },
-        { "name": "Zay Flowers", "team": "BAL" },
-        { "name": "Dallas Goedert", "team": "PHI" },
-        { "name": "Dalton Kincaid", "team": "BUF" },
-        { "name": "Cade Otton", "team": "TB" },
-        { "name": "Isaiah Likely", "team": "BAL" },
-        { "name": "TJ Hockenson", "team": "MIN" },
-        { "name": "Mark Andrews", "team": "BAL" },
-        { "name": "Pat Freiermuth", "team": "PIT" },
-        { "name": "Sam LaPorta", "team": "DET" },
-        { "name": "Travis Kelce", "team": "KC" },
-        { "name": "Tucker Kraft", "team": "GB" }
-    ],
-    "k": [
-        { "name": "Zane Gonzalez", "team": "WAS" },
-        { "name": "Cameron Dicker", "team": "LAC" },
-        { "name": "Chase McLaughlin", "team": "TB" },
-        { "name": "Chris Boswell", "team": "PIT" },
-        { "name": "Harrison Butker", "team": "KC" },
-        { "name": "Jake Bates", "team": "DET" },
-        { "name": "Jake Elliott", "team": "PHI" },
-        { "name": "Justin Tucker", "team": "BAL" },
-        { "name": "Ka'imi Fairbairn", "team": "HOU" },
-        { "name": "Tyler Bass", "team": "BUF" },
-        { "name": "Joshua Karty", "team": "LAR" },
-        { "name": "Wil Lutz", "team": "DEN" },
-        { "name": "Brandon McManus", "team": "GB" },
-        { "name": "Wil Reichard", "team": "MIN" },
-    ],
-    "def": [
-        { "name": "Baltimore Ravens", "team": "BAL" },
-        { "name": "Buffalo Bills", "team": "BUF" },
-        { "name": "Denver Broncos", "team": "DEN" },
-        { "name": "Detroit Lions", "team": "DET" },
-        { "name": "Green Bay Packers", "team": "GB" },
-        { "name": "Houston Texans", "team": "HOU" },
-        { "name": "Kansas City Chiefs", "team": "KC" },
-        { "name": "Los Angeles Chargers", "team": "LAC" },
-        { "name": "Minnesota Vikings", "team": "MIN" },
-        { "name": "Philadelphia Eagles", "team": "PHI" },
-        { "name": "Pittsburgh Steelers", "team": "PIT" },
-        { "name": "Tampa Bay Buccaneers", "team": "TB" },
-        { "name": "Washington Commanders", "team": "WAS" },
-        { "name": "Los Angeles Rams", "team": "LAR" },
-    ],
-    "te": [
-        { "name": "Dallas Goedert", "team": "PHI" },
-        { "name": "Dalton Kincaid", "team": "BUF" },
-        { "name": "Cade Otton", "team": "TB" },
-        { "name": "Isaiah Likely", "team": "BAL" },
-        { "name": "TJ Hockenson", "team": "MIN" },
-        { "name": "Mark Andrews", "team": "BAL" },
-        { "name": "Pat Freiermuth", "team": "PIT" },
-        { "name": "Sam LaPorta", "team": "DET" },
-        { "name": "Travis Kelce", "team": "KC" },
-        { "name": "Tucker Kraft", "team": "GB" }
-    ]
-};
+        "qb": [
+            { "name": "Aaron Rodgers", "team": "PIT" },
+            { "name": "Bo Nix", "team": "DEN" },
+            { "name": "Brock Purdy", "team": "SF" },
+            { "name": "Bryce Young", "team": "CAR" },
+            { "name": "C.J. Stroud", "team": "HOU" },
+            { "name": "Caleb Williams", "team": "CHI" },
+            { "name": "Drake Maye", "team": "NE" },
+            { "name": "Jalen Hurts", "team": "PHI" },
+            { "name": "Jordan Love", "team": "GB" },
+            { "name": "Josh Allen", "team": "BUF" },
+            { "name": "Justin Herbert", "team": "LAC" },
+            { "name": "Malik Willis", "team": "GB" },
+            { "name": "Matthew Stafford", "team": "LAR" },
+            { "name": "Sam Darnold", "team": "SEA" },
+            { "name": "Trevor Lawrence", "team": "JAC" },
+        ],
+        "rb": [
+            { "name": "Bhayshul Tuten", "team": "JAC" },
+            { "name": "Blake Corum", "team": "LAR" },
+            { "name": "Brian Robinson Jr.", "team": "SF" },
+            { "name": "Christian McCaffrey", "team": "SF" },
+            { "name": "Chuba Hubbard", "team": "CAR" },
+            { "name": "D'Andre Swift", "team": "CHI" },
+            { "name": "Emanuel Wilson", "team": "GB" },
+            { "name": "J.K. Dobbins", "team": "DEN" },
+            { "name": "James Cook III", "team": "BUF" },
+            { "name": "Jawhar Jordan", "team": "HOU" },
+            { "name": "Jaylen Warren", "team": "PIT" },
+            { "name": "Joe Mixon", "team": "HOU" },
+            { "name": "Josh Jacobs", "team": "GB" },
+            { "name": "Kenneth Gainwell", "team": "PIT" },
+            { "name": "Kenneth Walker III", "team": "SEA" },
+            { "name": "Kimani Vidal", "team": "LAC" },
+            { "name": "Kyle Juszczyk", "team": "SF" },
+            { "name": "Kyle Monangai", "team": "CHI" },
+            { "name": "Kyren Williams", "team": "LAR" },
+            { "name": "Nick Chubb", "team": "HOU" },
+            { "name": "Omarion Hampton", "team": "LAC" },
+            { "name": "RJ Harvey", "team": "DEN" },
+            { "name": "Rhamondre Stevenson", "team": "NE" },
+            { "name": "Rico Dowdle", "team": "CAR" },
+            { "name": "Saquon Barkley", "team": "PHI" },
+            { "name": "Tank Bigsby", "team": "PHI" },
+            { "name": "Travis Etienne Jr.", "team": "JAC" },
+            { "name": "TreVeyon Henderson", "team": "NE" },
+            { "name": "Ty Johnson", "team": "BUF" },
+            { "name": "Woody Marks", "team": "HOU" },
+            { "name": "Zach Charbonnet", "team": "SEA" },
+        ],
+        "wr": [
+            { "name": "A.J. Brown", "team": "PHI" },
+            { "name": "Brandin Cooks", "team": "BUF" },
+            { "name": "Brandon Aiyuk", "team": "SF" },
+            { "name": "Brian Thomas Jr.", "team": "JAC" },
+            { "name": "Christian Watson", "team": "GB" },
+            { "name": "Cooper Kupp", "team": "SEA" },
+            { "name": "Courtland Sutton", "team": "DEN" },
+            { "name": "DJ Moore", "team": "CHI" },
+            { "name": "DK Metcalf", "team": "PIT" },
+            { "name": "Davante Adams", "team": "LAR" },
+            { "name": "DeVonta Smith", "team": "PHI" },
+            { "name": "Demarcus Robinson", "team": "SF" },
+            { "name": "Efton Chism III", "team": "NE" },
+            { "name": "Jahdae Walker", "team": "CHI" },
+            { "name": "Jakobi Meyers", "team": "JAC" },
+            { "name": "Jalen Coker", "team": "CAR" },
+            { "name": "Jauan Jennings", "team": "SF" },
+            { "name": "Jaxon Smith-Njigba", "team": "SEA" },
+            { "name": "Jayden Higgins", "team": "HOU" },
+            { "name": "Jayden Reed", "team": "GB" },
+            { "name": "Jaylin Noel", "team": "HOU" },
+            { "name": "KeAndre Lambert-Smith", "team": "LAC" },
+            { "name": "Keenan Allen", "team": "LAC" },
+            { "name": "Keon Coleman", "team": "BUF" },
+            { "name": "Khalil Shakir", "team": "BUF" },
+            { "name": "Kyle Williams", "team": "NE" },
+            { "name": "Ladd McConkey", "team": "LAC" },
+            { "name": "Lil'Jordan Humphrey", "team": "DEN" },
+            { "name": "Luther Burden III", "team": "CHI" },
+            { "name": "Mack Hollins", "team": "NE" },
+            { "name": "Marquez Valdes-Scantling", "team": "PIT" },
+            { "name": "Marvin Mims Jr.", "team": "DEN" },
+            { "name": "Matthew Golden", "team": "GB" },
+            { "name": "Michael Bandy", "team": "DEN" },
+            { "name": "Nico Collins", "team": "HOU" },
+            { "name": "Parker Washington", "team": "JAC" },
+            { "name": "Puka Nacua", "team": "LAR" },
+            { "name": "Quentin Johnston", "team": "LAC" },
+            { "name": "Rashid Shaheed", "team": "SEA" },
+            { "name": "Ricky Pearsall", "team": "SF" },
+            { "name": "Rome Odunze", "team": "CHI" },
+            { "name": "Romeo Doubs", "team": "GB" },
+            { "name": "Stefon Diggs", "team": "NE" },
+            { "name": "Tetairoa McMillan", "team": "CAR" },
+            { "name": "Travis Hunter", "team": "JAC" },
+            { "name": "Tre Harris", "team": "LAC" },
+            { "name": "Troy Franklin", "team": "DEN" },
+            { "name": "Xavier Smith", "team": "LAR" },
+        ],
+        "k": [
+            { "name": "Andy Borregales", "team": "NE" },
+            { "name": "Brandon McManus", "team": "GB" },
+            { "name": "Cairo Santos", "team": "CHI" },
+            { "name": "Cam Little", "team": "JAC" },
+            { "name": "Cameron Dicker", "team": "LAC" },
+            { "name": "Chris Boswell", "team": "PIT" },
+            { "name": "Eddy Pineiro", "team": "SF" },
+            { "name": "Harrison Mevis", "team": "LAR" },
+            { "name": "Jake Elliott", "team": "PHI" },
+            { "name": "Jason Myers", "team": "SEA" },
+            { "name": "Ka'imi Fairbairn", "team": "HOU" },
+            { "name": "Matt Prater", "team": "BUF" },
+            { "name": "Ryan Fitzgerald", "team": "CAR" },
+            { "name": "Wil Lutz", "team": "DEN" },
+        ],
+        "dst": [
+            { "name": "Buffalo Bills", "team": "BUF" },
+            { "name": "Carolina Panthers", "team": "CAR" },
+            { "name": "Chicago Bears", "team": "CHI" },
+            { "name": "Denver Broncos", "team": "DEN" },
+            { "name": "Green Bay Packers", "team": "GB" },
+            { "name": "Houston Texans", "team": "HOU" },
+            { "name": "Jacksonville Jaguars", "team": "JAC" },
+            { "name": "Los Angeles Chargers", "team": "LAC" },
+            { "name": "Los Angeles Rams", "team": "LAR" },
+            { "name": "New England Patriots", "team": "NE" },
+            { "name": "Philadelphia Eagles", "team": "PHI" },
+            { "name": "Pittsburgh Steelers", "team": "PIT" },
+            { "name": "San Francisco 49ers", "team": "SF" },
+            { "name": "Seattle Seahawks", "team": "SEA" },
+        ],
+    };
 
-                const playoffTeams = ["KC", "DET","BUF", "PHI", "BAL", "TB",  "HOU", "LAR", "LAC", "MIN", "PIT", "WAS", "DEN",  "GB"];
-                const detailedPlayoffTeams = [
-                    {
-                        "abbreviation": "KC",
-                        "name": "Kansas City Chiefs",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/kansas-city-chiefs-logo-emblem-png.png",
-                        "primary_color": "#C8102E", 
-                        "secondary_color": "#FFB612",
-                        "seed" : 1
-                    },
-                    {
-                        "abbreviation": "BUF",
-                        "name": "Buffalo Bills",
-                        "logo": "https://content.sportslogos.net/logos/7/149/full/buffalo_bills_logo_primary_19747050.png",
-                        "primary_color": "#003DA5", 
-                        "secondary_color": "#C8102E",
-                        "seed" : 2
+                const playoffTeams = ["DEN", "NE", "JAC", "PIT", "HOU", "BUF", "LAC", "SEA", "CHI", "PHI", "CAR", "LAR", "SF", "GB"]
+                
+                const nflTeams = [
+  {
+    abbreviation: "ARI",
+    name: "Arizona Cardinals",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/06/arizona-cardinals-team-logo-png.png",
+    primary_color: "#97233F",
+    secondary_color: "#FFCB05"
+  },
+  {
+    abbreviation: "ATL",
+    name: "Atlanta Falcons",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/06/atlanta-falcons-logo-hex-colors.png",
+    primary_color: "#000000",
+    secondary_color: "#A71930"
+  },
+  {
+    abbreviation: "BAL",
+    name: "Baltimore Ravens",
+    logo: "https://content.sportslogos.net/logos/7/153/full/baltimore_ravens_logo_primary_19996038.png",
+    primary_color: "#3B0A45",
+    secondary_color: "#FFC20E"
+  },
+  {
+    abbreviation: "BUF",
+    name: "Buffalo Bills",
+    logo: "https://content.sportslogos.net/logos/7/149/full/buffalo_bills_logo_primary_19747050.png",
+    primary_color: "#003DA5",
+    secondary_color: "#C8102E"
+  },
+  {
+    abbreviation: "CAR",
+    name: "Carolina Panthers",
+    logo: "https://content.sportslogos.net/logos/7/174/full/carolina_panthers_logo_primary_20125906.png",
+    primary_color: "#0085CA",
+    secondary_color: "#101820"
+  },
+  {
+    abbreviation: "CHI",
+    name: "Chicago Bears",
+    logo: "https://content.sportslogos.net/logos/7/169/full/chicago_bears_logo_primary_2023_sportslogosnet-7594.png",
+    primary_color: "#0B162A",
+    secondary_color: "#C83803"
+  },
+  {
+    abbreviation: "CIN",
+    name: "Cincinnati Bengals",
+    logo: "https://content.sportslogos.net/logos/7/154/full/cincinnati_bengals_logo_primary_2021_sportslogosnet-2049.png",
+    primary_color: "#FB4F14",
+    secondary_color: "#000000"
+  },
+  {
+    abbreviation: "CLE",
+    name: "Cleveland Browns",
+    logo: "https://content.sportslogos.net/logos/7/155/full/cleveland_browns_logo_primary_2024_sportslogosnet-6696.png",
+    primary_color: "#311D00",
+    secondary_color: "#FF3C00"
+  },
+  {
+    abbreviation: "DAL",
+    name: "Dallas Cowboys",
+    logo: "https://content.sportslogos.net/logos/7/165/full/dallas_cowboys_logo_primary_19964601.png",
+    primary_color: "#003594",
+    secondary_color: "#869397"
+  },
+  {
+    abbreviation: "DEN",
+    name: "Denver Broncos",
+    logo: "https://content.sportslogos.net/logos/7/161/full/denver_broncos_logo_primary_19973076.png",
+    primary_color: "#FB4F14",
+    secondary_color: "#002244"
+  },
+  {
+    abbreviation: "DET",
+    name: "Detroit Lions",
+    logo: "https://content.sportslogos.net/logos/7/170/full/detroit_lions_logo_primary_20172565.png",
+    primary_color: "#0076B6",
+    secondary_color: "#A5ACAF"
+  },
+  {
+    abbreviation: "GB",
+    name: "Green Bay Packers",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/09/green-bay-packers-symbol-logo-png.png",
+    primary_color: "#203731",
+    secondary_color: "#FFB612"
+  },
+  {
+    abbreviation: "HOU",
+    name: "Houston Texans",
+    logo: "https://content.sportslogos.net/logos/7/157/full/houston_texans_logo_primary_2024_sportslogosnet-5890.png",
+    primary_color: "#03202F",
+    secondary_color: "#A71930"
+  },
+  {
+    abbreviation: "IND",
+    name: "Indianapolis Colts",
+    logo: "https://content.sportslogos.net/logos/7/158/full/indianapolis_colts_logo_primary_20043652.png",
+    primary_color: "#002C5F",
+    secondary_color: "#A2AAAD"
+  },
+  {
+    abbreviation: "JAX",
+    name: "Jacksonville Jaguars",
+    logo: "https://content.sportslogos.net/logos/7/159/full/jacksonville_jaguars_logo_primary_20132171.png",
+    primary_color: "#006778",
+    secondary_color: "#9F792C"
+  },
+  {
+    abbreviation: "KC",
+    name: "Kansas City Chiefs",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/09/kansas-city-chiefs-logo-emblem-png.png",
+    primary_color: "#C8102E",
+    secondary_color: "#FFB612"
+  },
+  {
+    abbreviation: "LAC",
+    name: "Los Angeles Chargers",
+    logo: "https://content.sportslogos.net/logos/7/6446/full/los_angeles_chargers_logo_primary_20203514.png",
+    primary_color: "#0080C6",
+    secondary_color: "#FFC20E"
+  },
+  {
+    abbreviation: "LAR",
+    name: "Los Angeles Rams",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/09/los-angeles-rams-football-logo-png.png",
+    primary_color: "#003594",
+    secondary_color: "#FFD100"
+  },
+  {
+    abbreviation: "LV",
+    name: "Las Vegas Raiders",
+    logo: "https://content.sportslogos.net/logos/7/6708/full/8521_las_vegas_raiders-primary-20201.png",
+    primary_color: "#000000",
+    secondary_color: "#A5ACAF"
+  },
+  {
+    abbreviation: "MIA",
+    name: "Miami Dolphins",
+    logo: "https://content.sportslogos.net/logos/7/150/full/miami_dolphins_logo_primary_2018sportslogosnet4756.png",
+    primary_color: "#008E97",
+    secondary_color: "#FC4C02"
+  },
+  {
+    abbreviation: "MIN",
+    name: "Minnesota Vikings",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/09/minnesota-vikings-logo-emblem-png.png",
+    primary_color: "#4F2765",
+    secondary_color: "#FFD100"
+  },
+  {
+    abbreviation: "NE",
+    name: "New England Patriots",
+    logo: "https://content.sportslogos.net/logos/7/151/full/new_england_patriots_logo_primary_20005480.png",
+    primary_color: "#002244",
+    secondary_color: "#C60C30"
+  },
+  {
+    abbreviation: "NO",
+    name: "New Orleans Saints",
+    logo: "https://content.sportslogos.net/logos/7/175/full/907.png",
+    primary_color: "#D3BC8D",
+    secondary_color: "#101820"
+  },
+  {
+    abbreviation: "NYG",
+    name: "New York Giants",
+    logo: "https://content.sportslogos.net/logos/7/166/full/new_york_giants_logo_primary_20005208.png",
+    primary_color: "#0B2265",
+    secondary_color: "#A71930"
+  },
+  {
+    abbreviation: "NYJ",
+    name: "New York Jets",
+    logo: "https://content.sportslogos.net/logos/7/152/full/new_york_jets_logo_primary_2024_sportslogosnet-7417.png",
+    primary_color: "#125740",
+    secondary_color: "#000000"
+  },
+  {
+    abbreviation: "PHI",
+    name: "Philadelphia Eagles",
+    logo: "https://content.sportslogos.net/logos/7/167/full/philadelphia_eagles_logo_primary_19964867.png",
+    primary_color: "#004C54",
+    secondary_color: "#A5ACAF"
+  },
+  {
+    abbreviation: "PIT",
+    name: "Pittsburgh Steelers",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/09/pittsburgh-steelers-logo-emblem-png.png",
+    primary_color: "#FFC20E",
+    secondary_color: "#000000"
+  },
+  {
+    abbreviation: "SEA",
+    name: "Seattle Seahawks",
+    logo: "https://content.sportslogos.net/logos/7/180/full/seattle_seahawks_logo_primary_20121228.png",
+    primary_color: "#002244",
+    secondary_color: "#69BE28"
+  },
+  {
+    abbreviation: "SF",
+    name: "San Francisco 49ers",
+    logo: "https://content.sportslogos.net/logos/7/179/full/9455_san_francisco_49ers-primary-2009.png",
+    primary_color: "#AA0000",
+    secondary_color: "#B3995D"
+  },
+  {
+    abbreviation: "TB",
+    name: "Tampa Bay Buccaneers",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/09/tampa-bay-buccaneers-logo-emblem-png.png",
+    primary_color: "#34302B",
+    secondary_color: "#D50A0A"
+  },
+  {
+    abbreviation: "TEN",
+    name: "Tennessee Titans",
+    logo: "https://content.sportslogos.net/logos/7/160/full/tennessee_titans_logo_primary_19995026.png",
+    primary_color: "#0C2340",
+    secondary_color: "#4B92DB"
+  },
+  {
+    abbreviation: "WAS",
+    name: "Washington Commanders",
+    logo: "https://content.sportslogos.net/logos/7/6832/full/washington_commanders_logo_primary_20228587.png",
+    primary_color: "#5A1414",
+    secondary_color: "#FFC20E"
+  }
+];
 
-                    },
-                    {
-                        "abbreviation": "BAL",
-                        "name": "Baltimore Ravens",
-                        "logo": "https://content.sportslogos.net/logos/7/153/full/baltimore_ravens_logo_primary_19996038.png",
-                        "primary_color": "#3B0A45", 
-                        "secondary_color": "#FFC20E",
-                        "seed" : 3
-
-                    },
-                    {
-                        "abbreviation": "HOU",
-                        "name": "Houston Texans",
-                        "logo": "https://content.sportslogos.net/logos/7/157/full/houston_texans_logo_primary_2024_sportslogosnet-5890.png",
-                        "primary_color": "#03202F", 
-                        "secondary_color": "#A71930",
-                        "seed" : 4
-
-                    },
-                    {
-                        "abbreviation": "PIT",
-                        "name": "Pittsburgh Steelers",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/pittsburgh-steelers-logo-emblem-png.png",
-                        "primary_color": "#FFC20E", 
-                        "secondary_color": "#000000",
-                        "seed" : 6
-
-                    },
-                    {
-                        "abbreviation": "DEN",
-                        "name": "Denver Broncos",
-                        "logo": "https://content.sportslogos.net/logos/7/161/full/denver_broncos_logo_primary_19973076.png",
-                        "primary_color": "#FB4F14", 
-                        "secondary_color": "#002244",
-                        "seed" : 7
-
-                    },
-                    {
-                        "abbreviation": "LAC",
-                        "name": "Los Angeles Chargers",
-                        "logo": "https://content.sportslogos.net/logos/7/6446/full/los_angeles_chargers_logo_primary_20203514.png",
-                        "primary_color": "#0080C6", 
-                        "secondary_color": "#FFC20E",
-                        "seed" : 5
-
-                    },
-                    {
-                        "abbreviation": "PHI",
-                        "name": "Philadelphia Eagles",
-                        "logo": "https://content.sportslogos.net/logos/7/167/full/philadelphia_eagles_logo_primary_19964867.png",
-                        "primary_color": "#004C54", 
-                        "secondary_color": "#A5ACAF",
-                        "seed" : 2
-
-                    },
-                    {
-                        "abbreviation": "LAR",
-                        "name": "Los Angeles Rams",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/los-angeles-rams-football-logo-png.png",
-                        "primary_color": "#003594", 
-                        "secondary_color": "#ffd100",
-                        "seed" : 4
-
-                    },
-                    {
-                        "abbreviation": "DET",
-                        "name": "Detroit Lions",
-                        "logo": "https://content.sportslogos.net/logos/7/170/full/detroit_lions_logo_primary_20172565.png",
-                        "primary_color": "#0076B6", 
-                        "secondary_color": "#A5ACAF",
-                        "seed" : 1
-
-                    },
-                    {
-                        "abbreviation": "MIN",
-                        "name": "Minnesota Vikings",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/minnesota-vikings-logo-emblem-png.png",
-                        "primary_color": "#4F2765", 
-                        "secondary_color": "#FFD100",
-                        "seed" : 5
-
-                    },
-                    {
-                        "abbreviation": "TB",
-                        "name": "Tampa Bay Buccaneers",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/tampa-bay-buccaneers-logo-emblem-png.png",
-                        "primary_color": "#34302B", 
-                        "secondary_color": "#D50A0A",
-                        "seed" : 3
-
-                    },
-                    {
-                        "abbreviation": "WAS",
-                        "name": "Washington Commanders",
-                        "logo": "https://content.sportslogos.net/logos/7/6832/full/washington_commanders_logo_primary_20228587.png",
-                        "primary_color": "#5A1414", 
-                        "secondary_color": "#FFC20E",
-                        "seed" : 6
-
-                    },
-                    {
-                        "abbreviation": "GB",
-                        "name": "Green Bay Packers",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/green-bay-packers-symbol-logo-png.png",
-                        "primary_color": "#203731", 
-                        "secondary_color": "#FFB612",
-                        "seed" : 7
-
-                    },
-                    {
-                        "abbreviation": "ATL",
-                        "name": "Atlanta Falcons",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/06/atlanta-falcons-logo-hex-colors.png",
-                        "primary_color": "#000",
-                        "secondary_color": "#A71930",
-                        "seed" : 9
-                    },
-                    {
-                        "abbreviation": "ARI",
-                        "name": "Arizona Cardinals",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/06/arizona-cardinals-team-logo-png.png",
-                        "primary_color": "#97233F",
-                        "secondary_color": "#FFCB05",
-                        "seed" : 10
-
-                    },
-                    {
-                        "abbreviation": "SEA",
-                        "name": "Seattle Seahawks",
-                        "logo": "https://content.sportslogos.net/logos/7/180/full/seattle_seahawks_logo_primary_20121228.png",
-                        "primary_color": "#002246",
-                        "secondary_color": "#69BE28",
-                        "seed" : 8
-
-                    }
-                ]
        
                 function populateTeams() {
                     const teamsContainer = document.getElementById('nfl-teams');
