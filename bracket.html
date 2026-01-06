@@ -100,246 +100,321 @@
         </div>
     
         <script>
-             const playoffTeams = [ "KC", "BUF", "BAL", "HOU", "PIT", "LAC",  "DEN", "DET", "PHI", "TB", "LAR", "MIN",  "WAS", "GB"];
-            const detailedPlayoffTeams = [
-                    {
-                        "abbreviation": "KC",
-                        "name": "Kansas City Chiefs",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/kansas-city-chiefs-logo-emblem-png.png",
-                        "primary_color": "#C8102E", 
-                        "secondary_color": "#FFB612",
-                        "seed" : 1
-                    },
-                    {
-                        "abbreviation": "BUF",
-                        "name": "Buffalo Bills",
-                        "logo": "https://content.sportslogos.net/logos/7/149/full/buffalo_bills_logo_primary_19747050.png",
-                        "primary_color": "#003DA5", 
-                        "secondary_color": "#C8102E",
-                        "seed" : 2
+            const playoffTeams = ["DEN", "NE", "JAX", "PIT", "HOU", "BUF", "LAC", "SEA", "CHI", "PHI", "CAR", "LAR", "SF", "GB"]
+                
+            const nflTeams = [
+  {
+    abbreviation: "ARI",
+    name: "Arizona Cardinals",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/06/arizona-cardinals-team-logo-png.png",
+    primary_color: "#97233F",
+    secondary_color: "#FFCB05"
+  },
+  {
+    abbreviation: "ATL",
+    name: "Atlanta Falcons",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/06/atlanta-falcons-logo-hex-colors.png",
+    primary_color: "#000000",
+    secondary_color: "#A71930"
+  },
+  {
+    abbreviation: "BAL",
+    name: "Baltimore Ravens",
+    logo: "https://content.sportslogos.net/logos/7/153/full/baltimore_ravens_logo_primary_19996038.png",
+    primary_color: "#3B0A45",
+    secondary_color: "#FFC20E"
+  },
+  {
+    abbreviation: "BUF",
+    name: "Buffalo Bills",
+    logo: "https://content.sportslogos.net/logos/7/149/full/buffalo_bills_logo_primary_19747050.png",
+    primary_color: "#003DA5",
+    secondary_color: "#C8102E"
+  },
+  {
+    abbreviation: "CAR",
+    name: "Carolina Panthers",
+    logo: "https://content.sportslogos.net/logos/7/174/full/carolina_panthers_logo_primary_20125906.png",
+    primary_color: "#0085CA",
+    secondary_color: "#101820"
+  },
+  {
+    abbreviation: "CHI",
+    name: "Chicago Bears",
+    logo: "https://content.sportslogos.net/logos/7/169/full/chicago_bears_logo_primary_2023_sportslogosnet-7594.png",
+    primary_color: "#0B162A",
+    secondary_color: "#C83803"
+  },
+  {
+    abbreviation: "CIN",
+    name: "Cincinnati Bengals",
+    logo: "https://content.sportslogos.net/logos/7/154/full/cincinnati_bengals_logo_primary_2021_sportslogosnet-2049.png",
+    primary_color: "#FB4F14",
+    secondary_color: "#000000"
+  },
+  {
+    abbreviation: "CLE",
+    name: "Cleveland Browns",
+    logo: "https://content.sportslogos.net/logos/7/155/full/cleveland_browns_logo_primary_2024_sportslogosnet-6696.png",
+    primary_color: "#311D00",
+    secondary_color: "#FF3C00"
+  },
+  {
+    abbreviation: "DAL",
+    name: "Dallas Cowboys",
+    logo: "https://content.sportslogos.net/logos/7/165/full/dallas_cowboys_logo_primary_19964601.png",
+    primary_color: "#003594",
+    secondary_color: "#869397"
+  },
+  {
+    abbreviation: "DEN",
+    name: "Denver Broncos",
+    logo: "https://content.sportslogos.net/logos/7/161/full/denver_broncos_logo_primary_19973076.png",
+    primary_color: "#FB4F14",
+    secondary_color: "#002244"
+  },
+  {
+    abbreviation: "DET",
+    name: "Detroit Lions",
+    logo: "https://content.sportslogos.net/logos/7/170/full/detroit_lions_logo_primary_20172565.png",
+    primary_color: "#0076B6",
+    secondary_color: "#A5ACAF"
+  },
+  {
+    abbreviation: "GB",
+    name: "Green Bay Packers",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/09/green-bay-packers-symbol-logo-png.png",
+    primary_color: "#203731",
+    secondary_color: "#FFB612"
+  },
+  {
+    abbreviation: "HOU",
+    name: "Houston Texans",
+    logo: "https://content.sportslogos.net/logos/7/157/full/houston_texans_logo_primary_2024_sportslogosnet-5890.png",
+    primary_color: "#03202F",
+    secondary_color: "#A71930"
+  },
+  {
+    abbreviation: "IND",
+    name: "Indianapolis Colts",
+    logo: "https://content.sportslogos.net/logos/7/158/full/indianapolis_colts_logo_primary_20043652.png",
+    primary_color: "#002C5F",
+    secondary_color: "#A2AAAD"
+  },
+  {
+    abbreviation: "JAX",
+    name: "Jacksonville Jaguars",
+    logo: "https://content.sportslogos.net/logos/7/159/full/jacksonville_jaguars_logo_primary_20132171.png",
+    primary_color: "#006778",
+    secondary_color: "#9F792C"
+  },
+  {
+    abbreviation: "KC",
+    name: "Kansas City Chiefs",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/09/kansas-city-chiefs-logo-emblem-png.png",
+    primary_color: "#C8102E",
+    secondary_color: "#FFB612"
+  },
+  {
+    abbreviation: "LAC",
+    name: "Los Angeles Chargers",
+    logo: "https://content.sportslogos.net/logos/7/6446/full/los_angeles_chargers_logo_primary_20203514.png",
+    primary_color: "#0080C6",
+    secondary_color: "#FFC20E"
+  },
+  {
+    abbreviation: "LAR",
+    name: "Los Angeles Rams",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/09/los-angeles-rams-football-logo-png.png",
+    primary_color: "#003594",
+    secondary_color: "#FFD100"
+  },
+  {
+    abbreviation: "LV",
+    name: "Las Vegas Raiders",
+    logo: "https://content.sportslogos.net/logos/7/6708/full/8521_las_vegas_raiders-primary-20201.png",
+    primary_color: "#000000",
+    secondary_color: "#A5ACAF"
+  },
+  {
+    abbreviation: "MIA",
+    name: "Miami Dolphins",
+    logo: "https://content.sportslogos.net/logos/7/150/full/miami_dolphins_logo_primary_2018sportslogosnet4756.png",
+    primary_color: "#008E97",
+    secondary_color: "#FC4C02"
+  },
+  {
+    abbreviation: "MIN",
+    name: "Minnesota Vikings",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/09/minnesota-vikings-logo-emblem-png.png",
+    primary_color: "#4F2765",
+    secondary_color: "#FFD100"
+  },
+  {
+    abbreviation: "NE",
+    name: "New England Patriots",
+    logo: "https://content.sportslogos.net/logos/7/151/full/new_england_patriots_logo_primary_20005480.png",
+    primary_color: "#002244",
+    secondary_color: "#C60C30"
+  },
+  {
+    abbreviation: "NO",
+    name: "New Orleans Saints",
+    logo: "https://content.sportslogos.net/logos/7/175/full/907.png",
+    primary_color: "#D3BC8D",
+    secondary_color: "#101820"
+  },
+  {
+    abbreviation: "NYG",
+    name: "New York Giants",
+    logo: "https://content.sportslogos.net/logos/7/166/full/new_york_giants_logo_primary_20005208.png",
+    primary_color: "#0B2265",
+    secondary_color: "#A71930"
+  },
+  {
+    abbreviation: "NYJ",
+    name: "New York Jets",
+    logo: "https://content.sportslogos.net/logos/7/152/full/new_york_jets_logo_primary_2024_sportslogosnet-7417.png",
+    primary_color: "#125740",
+    secondary_color: "#000000"
+  },
+  {
+    abbreviation: "PHI",
+    name: "Philadelphia Eagles",
+    logo: "https://content.sportslogos.net/logos/7/167/full/philadelphia_eagles_logo_primary_19964867.png",
+    primary_color: "#004C54",
+    secondary_color: "#A5ACAF"
+  },
+  {
+    abbreviation: "PIT",
+    name: "Pittsburgh Steelers",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/09/pittsburgh-steelers-logo-emblem-png.png",
+    primary_color: "#FFC20E",
+    secondary_color: "#000000"
+  },
+  {
+    abbreviation: "SEA",
+    name: "Seattle Seahawks",
+    logo: "https://content.sportslogos.net/logos/7/180/full/seattle_seahawks_logo_primary_20121228.png",
+    primary_color: "#002244",
+    secondary_color: "#69BE28"
+  },
+  {
+    abbreviation: "SF",
+    name: "San Francisco 49ers",
+    logo: "https://content.sportslogos.net/logos/7/179/full/9455_san_francisco_49ers-primary-2009.png",
+    primary_color: "#AA0000",
+    secondary_color: "#B3995D"
+  },
+  {
+    abbreviation: "TB",
+    name: "Tampa Bay Buccaneers",
+    logo: "https://nfldesigns.com/wp-content/uploads/2023/09/tampa-bay-buccaneers-logo-emblem-png.png",
+    primary_color: "#34302B",
+    secondary_color: "#D50A0A"
+  },
+  {
+    abbreviation: "TEN",
+    name: "Tennessee Titans",
+    logo: "https://content.sportslogos.net/logos/7/160/full/tennessee_titans_logo_primary_19995026.png",
+    primary_color: "#0C2340",
+    secondary_color: "#4B92DB"
+  },
+  {
+    abbreviation: "WAS",
+    name: "Washington Commanders",
+    logo: "https://content.sportslogos.net/logos/7/6832/full/washington_commanders_logo_primary_20228587.png",
+    primary_color: "#5A1414",
+    secondary_color: "#FFC20E"
+  }
+];
 
-                    },
-                    {
-                        "abbreviation": "BAL",
-                        "name": "Baltimore Ravens",
-                        "logo": "https://content.sportslogos.net/logos/7/153/full/baltimore_ravens_logo_primary_19996038.png",
-                        "primary_color": "#3B0A45", 
-                        "secondary_color": "#FFC20E",
-                        "seed" : 3
-
-                    },
-                    {
-                        "abbreviation": "HOU",
-                        "name": "Houston Texans",
-                        "logo": "https://content.sportslogos.net/logos/7/157/full/houston_texans_logo_primary_2024_sportslogosnet-5890.png",
-                        "primary_color": "#03202F", 
-                        "secondary_color": "#003A70",
-                        "seed" : 4
-
-                    },
-                    {
-                        "abbreviation": "PIT",
-                        "name": "Pittsburgh Steelers",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/pittsburgh-steelers-logo-emblem-png.png",
-                        "primary_color": "#FFC20E", 
-                        "secondary_color": "#000000",
-                        "seed" : 3
-
-                    },
-                    {
-                        "abbreviation": "DEN",
-                        "name": "Denver Broncos",
-                        "logo": "https://content.sportslogos.net/logos/7/161/full/denver_broncos_logo_primary_19973076.png",
-                        "primary_color": "#FB4F14", 
-                        "secondary_color": "#002244",
-                        "seed" : 7
-
-                    },
-                    {
-                        "abbreviation": "LAC",
-                        "name": "Los Angeles Chargers",
-                        "logo": "https://content.sportslogos.net/logos/7/6446/full/los_angeles_chargers_logo_primary_20203514.png",
-                        "primary_color": "#0080C6", 
-                        "secondary_color": "#FFC20E",
-                        "seed" : 6
-
-                    },
-                    {
-                        "abbreviation": "PHI",
-                        "name": "Philadelphia Eagles",
-                        "logo": "https://content.sportslogos.net/logos/7/167/full/philadelphia_eagles_logo_primary_19964867.png",
-                        "primary_color": "#004C54", 
-                        "secondary_color": "#A5ACAF",
-                        "seed" : 2
-
-                    },
-                    {
-                        "abbreviation": "LAR",
-                        "name": "Los Angeles Rams",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/los-angeles-rams-football-logo-png.png",
-                        "primary_color": "#003594", 
-                        "secondary_color": "#B3995D",
-                        "seed" : 4
-
-                    },
-                    {
-                        "abbreviation": "DET",
-                        "name": "Detroit Lions",
-                        "logo": "https://content.sportslogos.net/logos/7/170/full/detroit_lions_logo_primary_20172565.png",
-                        "primary_color": "#0076B6", 
-                        "secondary_color": "#A5ACAF",
-                        "seed" : 1
-
-                    },
-                    {
-                        "abbreviation": "MIN",
-                        "name": "Minnesota Vikings",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/minnesota-vikings-logo-emblem-png.png",
-                        "primary_color": "#4F2765", 
-                        "secondary_color": "#FFD100",
-                        "seed" : 5
-
-                    },
-                    {
-                        "abbreviation": "TB",
-                        "name": "Tampa Bay Buccaneers",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/tampa-bay-buccaneers-logo-emblem-png.png",
-                        "primary_color": "#34302B", 
-                        "secondary_color": "#A5ACAF",
-                        "seed" : 3
-
-                    },
-                    {
-                        "abbreviation": "WAS",
-                        "name": "Washington Commanders",
-                        "logo": "https://content.sportslogos.net/logos/7/6832/full/washington_commanders_logo_primary_20228587.png",
-                        "primary_color": "#5A1414", 
-                        "secondary_color": "#FFC20E",
-                        "seed" : 6
-
-                    },
-                    {
-                        "abbreviation": "GB",
-                        "name": "Green Bay Packers",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/09/green-bay-packers-symbol-logo-png.png",
-                        "primary_color": "#203731", 
-                        "secondary_color": "#FFB612",
-                        "seed" : 7
-
-                    },
-                    {
-                        "abbreviation": "ATL",
-                        "name": "Atlanta Falcons",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/06/atlanta-falcons-logo-hex-colors.png",
-                        "primary_color": "#000",
-                        "secondary_color": "#A71930",
-                        "seed" : 9
-                    },
-                    {
-                        "abbreviation": "ARI",
-                        "name": "Arizona Cardinals",
-                        "logo": "https://nfldesigns.com/wp-content/uploads/2023/06/arizona-cardinals-team-logo-png.png",
-                        "primary_color": "#97233F",
-                        "secondary_color": "#FFCB05",
-                        "seed" : 10
-
-                    },
-                    {
-                        "abbreviation": "SEA",
-                        "name": "Seattle Seahawks",
-                        "logo": "https://content.sportslogos.net/logos/7/180/full/seattle_seahawks_logo_primary_20121228.png",
-                        "primary_color": "#002246",
-                        "secondary_color": "#69BE28",
-                        "seed" : 8
-
-                    }
-                ];
-            
+       
 let match_details = [
     {
-        "home": "BUF",
-        "away": "DEN",
+        "home": "NE",
+        "away": "LAC",
         "homeseed": 2,
         "awayseed": 7,
-        "spread": -9,
-        "total": 47.5
+        "spread": -3.5,
+        "total": 46.5
     },
     {
-        "home": "BAL",
-        "away": "PIT",
+        "home": "JAX",
+        "away": "BUF",
         "homeseed": 3,
         "awayseed": 6,
-        "spread": -9.5,
-        "total": 43.5
+        "spread": -1.5,
+        "total": 52.5
     },
     {
         "home": "HOU",
-        "away": "LAC",
+        "away": "PIT",
         "homeseed": 4,
         "awayseed": 5,
-        "spread": "+3",
-        "total": 41.5
+        "spread": -3,
+        "total": 39.5
     },
     {
-        "home": "PHI",
+        "home": "CHI",
         "away": "GB",
         "homeseed": 2,
         "awayseed": 7,
-        "spread": -5,
+        "spread": "+1.5",
         "total": 45.5
     },
     {
-        "home": "TB",
-        "away": "WAS",
+        "home": "PHI",
+        "away": "SF",
         "homeseed": 3,
         "awayseed": 6,
-        "spread": -3,
-        "total": 50.5
+        "spread": -4.5,
+        "total": 44.5
     },
     {
-        "home": "LAR",
-        "away": "MIN",
+        "home": "CAR",
+        "away": "LAR",
         "homeseed": 4,
         "awayseed": 5,
-        "spread": "+2.5",
-        "total": 48
+        "spread": "+10",
+        "total": 46.5
     }
 ];
 let secondRoundMatchDetails = [
     // AFC
     {
-        "home": "KC",
-        "away": "HOU",
+        "home": "DEN",
+        "away": null,
         "homeseed": 1,
-        "awayseed": 4,
-        "spread": -8.5, 
-        "total": 41.5
+        "awayseed": null,
+        "spread": null, 
+        "total": null
     },
     {
-        "home": "BUF",
-        "away": "BAL",
-        "homeseed": 2,
-        "awayseed": 3,
-        "spread": "+1",
-        "total": 51.5
+        "home": null,
+        "away": null,
+        "homeseed": null,
+        "awayseed": null,
+        "spread": null,
+        "total": null
     },
 
     // NFC
     {
-        "home": "DET",
-        "away": "WAS",
+        "home": "SEA",
+        "away": null,
         "homeseed": 1,
-        "awayseed": 6,
-        "spread": -9.5, 
-        "total": 55.5
+        "awayseed": null,
+        "spread": null, 
+        "total": null
     },
     {
-        "home": "PHI",
-        "away": "LAR",
-        "homeseed": 2,
-        "awayseed": 4,
-        "spread": -6,
-        "total": 44.0
+        "home": null,
+        "away": null,
+        "homeseed": null,
+        "awayseed": null,
+        "spread": null,
+        "total": null
     },
     
 ];
@@ -716,7 +791,7 @@ const updateAFCMatches = () => {
         // Update home team
         const homeDiv = match.children[0].querySelector('.team-div');
         if (homeDiv && m.home) {
-            const teams = generateTeamDivs(detailedPlayoffTeams);
+            const teams = generateTeamDivs(nflTeams);
             const newHomeDiv = teams[m.home].cloneNode(true);
             newHomeDiv.setAttribute("data-result", "lose");
             homeDiv.replaceWith(newHomeDiv);
@@ -733,7 +808,7 @@ const updateAFCMatches = () => {
         // Update away team
         const awayDiv = match.children[1].querySelector('.team-div');
         if (awayDiv && m.away) {
-            const teams = generateTeamDivs(detailedPlayoffTeams);
+            const teams = generateTeamDivs(nflTeams);
             const newAwayDiv = teams[m.away].cloneNode(true);
             newAwayDiv.setAttribute("data-result", "lose");
             awayDiv.replaceWith(newAwayDiv);
@@ -763,7 +838,7 @@ const updateNFCMatches = () => {
         // Update home team
         const homeDiv = match.children[0].querySelector('.team-div');
         if (homeDiv && m.home) {
-            const teams = generateTeamDivs(detailedPlayoffTeams);
+            const teams = generateTeamDivs(nflTeams);
             const newHomeDiv = teams[m.home].cloneNode(true);
             newHomeDiv.setAttribute("data-result", "lose");
             homeDiv.replaceWith(newHomeDiv);
@@ -780,7 +855,7 @@ const updateNFCMatches = () => {
         // Update away team
         const awayDiv = match.children[1].querySelector('.team-div');
         if (awayDiv && m.away) {
-            const teams = generateTeamDivs(detailedPlayoffTeams);
+            const teams = generateTeamDivs(nflTeams);
             const newAwayDiv = teams[m.away].cloneNode(true);
             newAwayDiv.setAttribute("data-result", "lose");
             awayDiv.replaceWith(newAwayDiv);
@@ -824,7 +899,7 @@ const updateMatches = () => {
             console.log((index*2) + matchIndex)
             const homeDiv = match.children[0].querySelector('.team-div'); // First child's team-div
             if (homeDiv &&  m.home) {
-                const teams = generateTeamDivs(detailedPlayoffTeams)
+                const teams = generateTeamDivs(nflTeams)
                 const newHomeDiv = teams[m.home].cloneNode(true);
                 newHomeDiv.setAttribute("data-result", "lose")
                 homeDiv.replaceWith(newHomeDiv);
@@ -835,7 +910,7 @@ const updateMatches = () => {
 
             const awayDiv = match.children[1].querySelector('.team-div'); // Second child's team-div
             if (awayDiv && m.away) {
-                const teams = generateTeamDivs(detailedPlayoffTeams)
+                const teams = generateTeamDivs(nflTeams)
                 const newAwayDiv = teams[m.away].cloneNode(true);
                 newAwayDiv.setAttribute("data-result", "lose")
 
@@ -852,7 +927,7 @@ const updateMatches = () => {
 };
 // Usage
 document.addEventListener('DOMContentLoaded', () => {
-    const teamDivs = generateTeamDivs(detailedPlayoffTeams);
+    const teamDivs = generateTeamDivs(nflTeams);
     // Example of reusing team divs for a match in the bracket
     const bracketContainer = document.getElementById('bracket-container'); // Replace with your bracket container's ID
     bracketContainer.appendChild(createGameTitle("Wildcard"))
@@ -1188,20 +1263,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // First round results
 const firstRoundWinners = [
-    "HOU",  // Won against Browns
-    "BAL",  // Won against Texans
-    "BUF",  // Won against Steelers
-    "PHI",  // Won against Buccaneers
-    "WAS",  // Won against Cowboys
-    "LAR"   // Won against Lions
+    //"HOU",  // Won against Browns
+   // "BAL",  // Won against Texans
+   // "BUF",  // Won against Steelers
+    //"PHI",  // Won against Buccaneers
+    //"WAS",  // Won against Cowboys
+    //"LAR"   // Won against Lions
 ];
 
 // Second round results
 const secondRoundWinners = [
-    "KC",   // Won against Bills
-    "BUF",  // Won against Chiefs
-    "PHI",  // Won against Eagles
-    "WAS"   // Won against Commanders
+    //"KC",   // Won against Bills
+    //"BUF",  // Won against Chiefs
+    //"PHI",  // Won against Eagles
+    //"WAS"   // Won against Commanders
 ];
 
 // Modify the existing function to handle both rounds
@@ -1275,7 +1350,7 @@ const lockFirstRoundResults = () => {
             if (containerId === 'bracket-container-2') {
                 // AFC Championship
                 const afcChampionship = container.querySelector('.match:last-child');
-                const teams = generateTeamDivs(detailedPlayoffTeams);
+                const teams = generateTeamDivs(nflTeams);
                 
                 // Create KC (#1 seed) and BUF (#2 seed) match rows with spread and over/under
                 const topTeam = teams['KC'].cloneNode(true);
@@ -1293,7 +1368,7 @@ const lockFirstRoundResults = () => {
             } else {
                 // NFC Championship
                 const nfcChampionship = container.querySelector('.match:last-child');
-                const teams = generateTeamDivs(detailedPlayoffTeams);
+                const teams = generateTeamDivs(nflTeams);
                 
                 // Create PHI (#2 seed) and WAS (#6 seed) match rows with spread and over/under
                 const lowerSeedTeam = teams['PHI'].cloneNode(true);
