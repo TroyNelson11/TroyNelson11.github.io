@@ -1314,78 +1314,81 @@ const lockFirstRoundResults = () => {
         });
     });
     
-    // Lock second round and propagate winners to conference games
-    const secondRoundContainers = ['bracket-container-2', 'bracket-container-4'];
-    secondRoundContainers.forEach(containerId => {
-        const container = document.getElementById(containerId);
-        if (container) {
-            const matches = container.querySelectorAll('.match');
-            matches.forEach(match => {
-                const teams = match.querySelectorAll('.team-div');
-                teams.forEach(team => {
-                    const teamCode = team.getAttribute('data-team');
-                    if (secondRoundWinners.includes(teamCode)) {
-                        // Set winner styling
-                        team.setAttribute('data-result', 'win');
-                        team.style.border = '0.1vw solid black';
-                        team.style.outline = '0.2vw solid black';
-                        const teamSeed = team.closest('.team-and-seed');
-                        const seed = teamSeed.querySelector('.seed');
-                        seed.style.color = 'black';
-                        seed.style.fontWeight = 'bold';
-                    } else {
-                        // Set loser styling
-                        team.setAttribute('data-result', 'lose');
-                        team.style.border = '0.1vw solid transparent';
-                        const teamSeed = team.closest('.team-and-seed');
-                        const seed = teamSeed.querySelector('.seed');
-                        seed.style.color = 'rgb(107 114 128)';
-                        seed.style.fontWeight = '';
-                    }
-                    team.style.pointerEvents = 'none';
+    // Only run this block once the first round of the playoffs is completed (conditional)
+    // For now, do NOT run (short-circuit with 'if (false)')
+    if (false) {
+        // Lock second round and propagate winners to conference games
+        const secondRoundContainers = ['bracket-container-2', 'bracket-container-4'];
+        secondRoundContainers.forEach(containerId => {
+            const container = document.getElementById(containerId);
+            if (container) {
+                const matches = container.querySelectorAll('.match');
+                matches.forEach(match => {
+                    const teams = match.querySelectorAll('.team-div');
+                    teams.forEach(team => {
+                        const teamCode = team.getAttribute('data-team');
+                        if (secondRoundWinners.includes(teamCode)) {
+                            // Set winner styling
+                            team.setAttribute('data-result', 'win');
+                            team.style.border = '0.1vw solid black';
+                            team.style.outline = '0.2vw solid black';
+                            const teamSeed = team.closest('.team-and-seed');
+                            const seed = teamSeed.querySelector('.seed');
+                            seed.style.color = 'black';
+                            seed.style.fontWeight = 'bold';
+                        } else {
+                            // Set loser styling
+                            team.setAttribute('data-result', 'lose');
+                            team.style.border = '0.1vw solid transparent';
+                            const teamSeed = team.closest('.team-and-seed');
+                            const seed = teamSeed.querySelector('.seed');
+                            seed.style.color = 'rgb(107 114 128)';
+                            seed.style.fontWeight = '';
+                        }
+                        team.style.pointerEvents = 'none';
+                    });
                 });
-            });
 
-            // Place winners in conference championship games
-            if (containerId === 'bracket-container-2') {
-                // AFC Championship
-                const afcChampionship = container.querySelector('.match:last-child');
-                const teams = generateTeamDivs(nflTeams);
-                
-                // Create KC (#1 seed) and BUF (#2 seed) match rows with spread and over/under
-                const topTeam = teams['KC'].cloneNode(true);
-                const bottomTeam = teams['BUF'].cloneNode(true);
-                
-                topTeam.addEventListener('click', (e) => handleChampionshipClick(e, topTeam, true));
-                bottomTeam.addEventListener('click', (e) => handleChampionshipClick(e, bottomTeam, true));
-                
-                const topRow = addMatchDetails(topTeam, 1, -1.5, 47.5, true);
-                const bottomRow = addMatchDetails(bottomTeam, 2, null, null, false);
-                
-                afcChampionship.replaceChild(topRow, afcChampionship.children[0]);
-                afcChampionship.replaceChild(bottomRow, afcChampionship.children[1]);
-                
-            } else {
-                // NFC Championship
-                const nfcChampionship = container.querySelector('.match:last-child');
-                const teams = generateTeamDivs(nflTeams);
-                
-                // Create PHI (#2 seed) and WAS (#6 seed) match rows with spread and over/under
-                const lowerSeedTeam = teams['PHI'].cloneNode(true);
-                const higherSeedTeam = teams['WAS'].cloneNode(true);
-                
-                lowerSeedTeam.addEventListener('click', (e) => handleChampionshipClick(e, lowerSeedTeam, false));
-                higherSeedTeam.addEventListener('click', (e) => handleChampionshipClick(e, higherSeedTeam, false));
-                
-                const lowerSeedRow = addMatchDetails(lowerSeedTeam, 2, -5.5, 47.5, true);
-                const higherSeedRow = addMatchDetails(higherSeedTeam, 6, null, null, false);
-                
-                nfcChampionship.replaceChild(lowerSeedRow, nfcChampionship.children[0]);
-                nfcChampionship.replaceChild(higherSeedRow, nfcChampionship.children[1]);
+                // Place winners in conference championship games
+                if (containerId === 'bracket-container-2') {
+                    // AFC Championship
+                    const afcChampionship = container.querySelector('.match:last-child');
+                    const teams = generateTeamDivs(nflTeams);
+                    
+                    // Create KC (#1 seed) and BUF (#2 seed) match rows with spread and over/under
+                    const topTeam = teams['KC'].cloneNode(true);
+                    const bottomTeam = teams['BUF'].cloneNode(true);
+                    
+                    topTeam.addEventListener('click', (e) => handleChampionshipClick(e, topTeam, true));
+                    bottomTeam.addEventListener('click', (e) => handleChampionshipClick(e, bottomTeam, true));
+                    
+                    const topRow = addMatchDetails(topTeam, 1, -1.5, 47.5, true);
+                    const bottomRow = addMatchDetails(bottomTeam, 2, null, null, false);
+                    
+                    afcChampionship.replaceChild(topRow, afcChampionship.children[0]);
+                    afcChampionship.replaceChild(bottomRow, afcChampionship.children[1]);
+                    
+                } else {
+                    // NFC Championship
+                    const nfcChampionship = container.querySelector('.match:last-child');
+                    const teams = generateTeamDivs(nflTeams);
+                    
+                    // Create PHI (#2 seed) and WAS (#6 seed) match rows with spread and over/under
+                    const lowerSeedTeam = teams['PHI'].cloneNode(true);
+                    const higherSeedTeam = teams['WAS'].cloneNode(true);
+                    
+                    lowerSeedTeam.addEventListener('click', (e) => handleChampionshipClick(e, lowerSeedTeam, false));
+                    higherSeedTeam.addEventListener('click', (e) => handleChampionshipClick(e, higherSeedTeam, false));
+                    
+                    const lowerSeedRow = addMatchDetails(lowerSeedTeam, 2, -5.5, 47.5, true);
+                    const higherSeedRow = addMatchDetails(higherSeedTeam, 6, null, null, false);
+                    
+                    nfcChampionship.replaceChild(lowerSeedRow, nfcChampionship.children[0]);
+                    nfcChampionship.replaceChild(higherSeedRow, nfcChampionship.children[1]);
+                }
             }
-        }
-    });
-    
+        });
+    }
     // Update conference games styling
     updateLateRounds();
     addEventDelegation(); // Re-add click handlers for remaining rounds
