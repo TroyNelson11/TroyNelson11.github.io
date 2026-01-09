@@ -388,6 +388,7 @@ async function createPlayerCard(player) {
     // Set player info
     clone.querySelector('.player-name').textContent = player.name;
     clone.querySelector('.player-position').textContent = player.position;
+    clone.querySelector('.player-team').textContent = player.team ? `• ${player.team}` : '';
     
     // Set player image using ESPN data
     const playerImage = clone.querySelector('.player-image');
@@ -526,11 +527,23 @@ function filterAndSortPlayers() {
         switch(sortingMethod) {
             case 'name':
                 return a.name.localeCompare(b.name);
+            case 'team': {
+                const teamA = (a.team || '').toUpperCase();
+                const teamB = (b.team || '').toUpperCase();
+                if (teamA !== teamB) {
+                    return teamA.localeCompare(teamB);
+                }
+                // If teams are the same, sort by total points (descending)
+                const aTeamStats = getPlayerStats(a.stats, a.position);
+                const bTeamStats = getPlayerStats(b.stats, b.position);
+                return (bTeamStats?.fantasyPoints || 0) - (aTeamStats?.fantasyPoints || 0);
+            }
             case 'avgPoints':
-            case 'totalPoints':
-                const aStats = getPlayerStats(a.stats);
-                const bStats = getPlayerStats(b.stats);
+            case 'totalPoints': {
+                const aStats = getPlayerStats(a.stats, a.position);
+                const bStats = getPlayerStats(b.stats, b.position);
                 return (bStats?.fantasyPoints || 0) - (aStats?.fantasyPoints || 0);
+            }
             default:
                 return 0;
         }
