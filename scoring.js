@@ -1112,7 +1112,7 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 3,
+      "ATT.1": 4,
       "YDS.1": 9,
       "TD.1": 0,
       "FL": 0,
