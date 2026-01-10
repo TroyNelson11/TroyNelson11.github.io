@@ -756,7 +756,7 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 17,
+      "PA": 20,
       "G": 1,
       "FPTS": 1,
       "FPTS/G": 1,
@@ -1252,8 +1252,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Harrison Mevis",
-      "FPTS": 6,
-      "FPTS/G": 6,
+      "FPTS": 10,
+      "FPTS/G": 10,
       "ROST": "5.3%",
       "POS": "k"
     }
