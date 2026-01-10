@@ -1542,7 +1542,7 @@ const player_stats = {
       "POS": "k"
     }
   }
-};;
+}
 
 const fantasy_team_submissions = [
     {
