@@ -366,10 +366,10 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Matthew Stafford",
-      "CMP": 11,
-      "ATT": 23,
-      "PCT": 47.8,
-      "YDS": 156,
+      "CMP": 12,
+      "ATT": 26,
+      "PCT": 46.2,
+      "YDS": 161,
       "TD": 1,
       "INT": 0,
       "ATT.1": 0,
@@ -381,8 +381,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 10.2,
-      "FPTS/G": 10.2,
+      "FPTS": 10.4,
+      "FPTS/G": 10.4,
       "ROST": "47.4%",
       "POS": "qb"
     }
@@ -402,7 +402,7 @@ const player_stats = {
       "TD.1": 1,
       "FL": 0,
       "REC": 6,
-      "TGT": 12,
+      "TGT": 13,
       "YDS.2": 63,
       "TD.2": 1,
       "G": 1,
@@ -1880,6 +1880,18 @@ function filterAndSortTeams(teams) {
 }
 
       function populateScores() {
+          // Calculate and display prize amounts
+          const numTeams = fantasy_team_submissions.length;
+          const totalPrizePool = numTeams * 20;
+          const firstPrize = Math.round(totalPrizePool * 0.6);
+          const secondPrize = Math.round(totalPrizePool * 0.3);
+          const thirdPrize = Math.round(totalPrizePool * 0.1);
+          
+          const prizeSubtitle = document.getElementById("prizeSubtitle");
+          if (prizeSubtitle) {
+              prizeSubtitle.textContent = `1st - $${firstPrize}     2nd - $${secondPrize}     3rd - $${thirdPrize}`;
+          }
+          
           const tbody = document.getElementById("scoreTableBody");
           tbody.innerHTML = "";
           
