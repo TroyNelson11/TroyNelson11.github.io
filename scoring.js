@@ -366,10 +366,10 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Matthew Stafford",
-      "CMP": 8,
-      "ATT": 11,
-      "PCT": 72.7,
-      "YDS": 114,
+      "CMP": 9,
+      "ATT": 13,
+      "PCT": 69.2,
+      "YDS": 123,
       "TD": 1,
       "INT": 0,
       "ATT.1": 0,
@@ -381,8 +381,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 8.6,
-      "FPTS/G": 8.6,
+      "FPTS": 8.9,
+      "FPTS/G": 8.9,
       "ROST": "47.4%",
       "POS": "qb"
     }
