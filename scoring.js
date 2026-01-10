@@ -354,7 +354,7 @@ const player_stats = {
       "Player": "Chris Boswell",
       "FPTS": 0,
       "FPTS/G": 0,
-      "ROST": "48.7%",
+      "ROST": "47.4%",
       "POS": "k"
     }
   },
@@ -439,7 +439,7 @@ const player_stats = {
       "Player": "Cameron Dicker",
       "FPTS": 0,
       "FPTS/G": 0,
-      "ROST": "17.9%",
+      "ROST": "42.1%",
       "POS": "k"
     }
   },
@@ -522,25 +522,10 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Ryan Fitzgerald",
-      "CMP": 0,
-      "ATT": 0,
-      "PCT": 0,
-      "YDS": 0,
-      "TD": 0,
-      "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
-      "TD.1": 0,
-      "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
-      "TD.2": 0,
-      "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "42.1%",
-      "POS": "qb"
+      "POS": "k"
     }
   },
   "Josh Jacobs": {
@@ -751,25 +736,10 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Cam Little",
-      "CMP": 0,
-      "ATT": 0,
-      "PCT": 0,
-      "YDS": 0,
-      "TD": 0,
-      "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
-      "TD.1": 0,
-      "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
-      "TD.2": 0,
-      "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "21.1%",
-      "POS": "qb"
+      "POS": "k"
     }
   },
   "Carolina Panthers": {
@@ -1064,7 +1034,7 @@ const player_stats = {
       "Player": "Brandon McManus",
       "FPTS": 0,
       "FPTS/G": 0,
-      "ROST": "38.5%",
+      "ROST": "10.5%",
       "POS": "k"
     }
   },
@@ -1074,7 +1044,7 @@ const player_stats = {
       "Player": "Ka'imi Fairbairn",
       "FPTS": 0,
       "FPTS/G": 0,
-      "ROST": "17.9%",
+      "ROST": "10.5%",
       "POS": "k"
     }
   },
@@ -1182,25 +1152,10 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Cairo Santos",
-      "CMP": 0,
-      "ATT": 0,
-      "PCT": 0,
-      "YDS": 0,
-      "TD": 0,
-      "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
-      "TD.1": 0,
-      "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
-      "TD.2": 0,
-      "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "5.3%",
-      "POS": "qb"
+      "POS": "k"
     }
   },
   "Chicago Bears": {
@@ -1293,25 +1248,10 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Harrison Mevis",
-      "CMP": 0,
-      "ATT": 0,
-      "PCT": 0,
-      "YDS": 0,
-      "TD": 0,
-      "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
-      "TD.1": 0,
-      "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
-      "TD.2": 0,
-      "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 2,
+      "FPTS/G": 2,
       "ROST": "5.3%",
-      "POS": "qb"
+      "POS": "k"
     }
   },
   "Jacksonville Jaguars": {
@@ -1336,50 +1276,20 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Jake Elliott",
-      "CMP": 0,
-      "ATT": 0,
-      "PCT": 0,
-      "YDS": 0,
-      "TD": 0,
-      "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
-      "TD.1": 0,
-      "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
-      "TD.2": 0,
-      "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "5.3%",
-      "POS": "qb"
+      "POS": "k"
     }
   },
   "Jason Myers": {
     "week 1": {
       "Rank": 0,
       "Player": "Jason Myers",
-      "CMP": 0,
-      "ATT": 0,
-      "PCT": 0,
-      "YDS": 0,
-      "TD": 0,
-      "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
-      "TD.1": 0,
-      "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
-      "TD.2": 0,
-      "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "5.3%",
-      "POS": "qb"
+      "POS": "k"
     }
   },
   "Kenneth Walker III": {
@@ -1538,7 +1448,7 @@ const player_stats = {
       "Player": "Wil Lutz",
       "FPTS": 0,
       "FPTS/G": 0,
-      "ROST": "35.9%",
+      "ROST": "5.3%",
       "POS": "k"
     }
   }
