@@ -367,8 +367,8 @@ const player_stats = {
       "Rank": 0,
       "Player": "Matthew Stafford",
       "CMP": 10,
-      "ATT": 15,
-      "PCT": 66.7,
+      "ATT": 17,
+      "PCT": 58.8,
       "YDS": 137,
       "TD": 1,
       "INT": 0,
@@ -402,7 +402,7 @@ const player_stats = {
       "TD.1": 1,
       "FL": 0,
       "REC": 6,
-      "TGT": 8,
+      "TGT": 10,
       "YDS.2": 63,
       "TD.2": 1,
       "G": 1,
@@ -526,8 +526,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Ryan Fitzgerald",
-      "FPTS": 1,
-      "FPTS/G": 1,
+      "FPTS": 2,
+      "FPTS/G": 2,
       "ROST": "42.1%",
       "POS": "k"
     }
