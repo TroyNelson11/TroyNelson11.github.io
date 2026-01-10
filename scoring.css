@@ -1404,6 +1404,10 @@ body {
     .main-leaderboard td:not(:first-child) {
         font-size: 3.5vw !important;
     }
+    
+    #prizeSubtitle {
+        font-size: 3.5vw !important;
+    }
 }
 
 
