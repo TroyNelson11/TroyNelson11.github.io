@@ -1604,7 +1604,7 @@ const fantasy_team_submissions = [
         "tiebreak":45
     },
     {
-        "name":"Drake and Josh",
+        "name":"Drake & Josh",
         "qb1":"Drake Maye",
         "qb2":"Josh Allen",
         "rb1":"Christian McCaffrey",
