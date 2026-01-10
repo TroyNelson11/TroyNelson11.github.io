@@ -1889,7 +1889,7 @@ function filterAndSortTeams(teams) {
           
           const prizeSubtitle = document.getElementById("prizeSubtitle");
           if (prizeSubtitle) {
-              prizeSubtitle.textContent = `1st - $${firstPrize}     2nd - $${secondPrize}     3rd - $${thirdPrize}`;
+              prizeSubtitle.innerHTML = `<span>1st - $${firstPrize}</span><span>2nd - $${secondPrize}</span><span>3rd - $${thirdPrize}</span>`;
           }
           
           const tbody = document.getElementById("scoreTableBody");
