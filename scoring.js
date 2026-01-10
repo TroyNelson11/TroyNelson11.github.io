@@ -352,8 +352,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Chris Boswell",
-      "FPTS": 2,
-      "FPTS/G": 2,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "48.7%",
       "POS": "k"
     }
@@ -362,10 +362,10 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Matthew Stafford",
-      "CMP": 5,
-      "ATT": 5,
+      "CMP": 6,
+      "ATT": 6,
       "PCT": 100.0,
-      "YDS": 67,
+      "YDS": 74,
       "TD": 1,
       "INT": 0,
       "ATT.1": 0,
@@ -377,8 +377,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 6.7,
-      "FPTS/G": 6.7,
+      "FPTS": 7.0,
+      "FPTS/G": 7.0,
       "ROST": "47.4%",
       "POS": "qb"
     }
@@ -393,17 +393,17 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
-      "TD.1": 0,
+      "ATT.1": 1,
+      "YDS.1": 5,
+      "TD.1": 1,
       "FL": 0,
-      "REC": 4,
-      "TGT": 4,
-      "YDS.2": 52,
+      "REC": 5,
+      "TGT": 5,
+      "YDS.2": 59,
       "TD.2": 1,
       "G": 1,
-      "FPTS": 15.2,
-      "FPTS/G": 15.2,
+      "FPTS": 23.4,
+      "FPTS/G": 23.4,
       "ROST": "47.4%",
       "POS": "wr"
     }
@@ -437,8 +437,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Cameron Dicker",
-      "FPTS": 6,
-      "FPTS/G": 6,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "17.9%",
       "POS": "k"
     }
@@ -782,10 +782,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 7,
+      "PA": 14,
       "G": 1,
-      "FPTS": 4,
-      "FPTS/G": 4,
+      "FPTS": 1,
+      "FPTS/G": 1,
       "ROST": "21.1%",
       "POS": "def"
     }
@@ -1062,8 +1062,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Brandon McManus",
-      "FPTS": 2,
-      "FPTS/G": 2,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "38.5%",
       "POS": "k"
     }
@@ -1072,8 +1072,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Ka'imi Fairbairn",
-      "FPTS": 13,
-      "FPTS/G": 13,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "17.9%",
       "POS": "k"
     }
@@ -1536,13 +1536,13 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Wil Lutz",
-      "FPTS": 1,
-      "FPTS/G": 1,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "35.9%",
       "POS": "k"
     }
   }
-}
+};;
 
 const fantasy_team_submissions = [
     {
