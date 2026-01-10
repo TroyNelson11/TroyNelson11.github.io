@@ -1050,31 +1050,37 @@ body {
         max-width: 100vw !important;
     }
     
-    /* Increase all table text sizes in landscape - scales with width */
+    /* Increase all table text sizes in landscape - scales with width (between portrait and desktop) */
     .main-leaderboard th,
+    .main-leaderboard thead th,
+    .main-leaderboard tbody td,
     .main-leaderboard td,
     .team-card th,
+    .team-card thead th,
+    .team-card tbody td,
     .team-card td,
     .ownership-stats th,
+    .ownership-stats thead th,
+    .ownership-stats tbody td,
     .ownership-stats td {
-        font-size: 5vw !important;
+        font-size: 4.2vw !important;
     }
     
     .team-card-header {
-        font-size: 6vw !important;
+        font-size: 5vw !important;
     }
     
     .ownership-stats h2 {
-        font-size: 5vw !important;
+        font-size: 4.2vw !important;
     }
     
     .team-name-link {
-        font-size: 5vw !important;
+        font-size: 4.2vw !important;
     }
     
     .pagination-btn,
     #pageInfo {
-        font-size: 4vw !important;
+        font-size: 3.5vw !important;
     }
 }
 
