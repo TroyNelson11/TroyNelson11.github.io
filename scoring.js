@@ -332,8 +332,8 @@ const player_stats = {
       "Rank": 0,
       "Player": "Josh Allen",
       "CMP": 19,
-      "ATT": 23,
-      "PCT": 82.6,
+      "ATT": 24,
+      "PCT": 79.2,
       "YDS": 170,
       "TD": 0,
       "INT": 0,
@@ -1262,7 +1262,7 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Jacksonville Jaguars",
-      "SACKS": 0,
+      "SACKS": 1.0,
       "FR": 1,
       "INT.1": 0,
       "TD.3": 0,
@@ -1270,8 +1270,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 13,
       "G": 1,
-      "FPTS": 6,
-      "FPTS/G": 6,
+      "FPTS": 7.0,
+      "FPTS/G": 7.0,
       "ROST": 4.5,
       "POS": "def"
     }
