@@ -356,8 +356,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Ryan Fitzgerald",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 8,
+      "FPTS/G": 8,
       "ROST": "42.1%",
       "POS": "k"
     }
@@ -436,13 +436,13 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Matthew Stafford",
-      "CMP": 0,
-      "ATT": 0,
-      "PCT": 0,
-      "YDS": 0,
-      "TD": 0,
-      "INT": 0,
-      "ATT.1": 0,
+      "CMP": 24,
+      "ATT": 42,
+      "PCT": 57.1,
+      "YDS": 304,
+      "TD": 3,
+      "INT": 1,
+      "ATT.1": 2,
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
@@ -451,10 +451,10 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 23.2,
+      "FPTS/G": 23.2,
       "ROST": 45.5,
-      "POS": "qb"
+      "POS": "rb"
     }
   },
   "Puka Nacua": {
@@ -467,19 +467,19 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
-      "TD.1": 0,
+      "ATT.1": 3,
+      "YDS.1": 14,
+      "TD.1": 1,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
-      "TD.2": 0,
+      "REC": 10,
+      "TGT": 18,
+      "YDS.2": 111,
+      "TD.2": 1,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 34.5,
+      "FPTS/G": 34.5,
       "ROST": 45.5,
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "Drake Maye": {
@@ -793,16 +793,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Carolina Panthers",
-      "SACKS": 0,
+      "SACKS": 1.0,
       "FR": 0,
-      "INT.1": 0,
+      "INT.1": 1,
       "TD.3": 0,
       "BK": 1,
       "SAFE": 0,
-      "PA": 0,
+      "PA": 34,
       "G": 1,
-      "FPTS": 2,
-      "FPTS/G": 2,
+      "FPTS": 4.0,
+      "FPTS/G": 4.0,
       "ROST": 18.2,
       "POS": "def"
     }
@@ -842,8 +842,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 2,
+      "YDS.1": 3,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -851,8 +851,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 0.3,
+      "FPTS/G": 0.3,
       "ROST": 18.2,
       "POS": "qb"
     }
@@ -896,13 +896,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 5,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 1.5,
+      "FPTS/G": 1.5,
       "ROST": 18.2,
       "POS": "qb"
     }
@@ -946,15 +946,15 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 5,
+      "TGT": 7,
+      "YDS.2": 81,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 13.1,
+      "FPTS/G": 13.1,
       "ROST": 18.2,
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "Bo Nix": {
@@ -1070,19 +1070,19 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
-      "TD.1": 0,
+      "ATT.1": 13,
+      "YDS.1": 46,
+      "TD.1": 2,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 2,
+      "TGT": 4,
+      "YDS.2": 13,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 19.9,
+      "FPTS/G": 19.9,
       "ROST": 9.1,
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "Ka'imi Fairbairn": {
@@ -1194,15 +1194,15 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 5,
+      "TGT": 13,
+      "YDS.2": 72,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 12.2,
+      "FPTS/G": 12.2,
       "ROST": 4.5,
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "DeVonta Smith": {
@@ -1252,8 +1252,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Harrison Mevis",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 12,
+      "FPTS/G": 12,
       "ROST": "5.3%",
       "POS": "k"
     }
@@ -1431,19 +1431,19 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 5,
+      "YDS.1": 9,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 2,
+      "YDS.2": 6,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 2.5,
+      "FPTS/G": 2.5,
       "ROST": 4.5,
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "Romeo Doubs": {
