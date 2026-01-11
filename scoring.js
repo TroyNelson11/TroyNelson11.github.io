@@ -1234,16 +1234,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Green Bay Packers",
-      "SACKS": 0,
+      "SACKS": 1.0,
       "FR": 0,
       "INT.1": 2,
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 6,
+      "PA": 9,
       "G": 1,
-      "FPTS": 11,
-      "FPTS/G": 11,
+      "FPTS": 9.0,
+      "FPTS/G": 9.0,
       "ROST": 4.5,
       "POS": "def"
     }
@@ -1331,8 +1331,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 7,
-      "YDS.1": 22,
+      "ATT.1": 8,
+      "YDS.1": 27,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -1340,8 +1340,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 2.2,
-      "FPTS/G": 2.2,
+      "FPTS": 2.7,
+      "FPTS/G": 2.7,
       "ROST": 4.5,
       "POS": "qb"
     }
