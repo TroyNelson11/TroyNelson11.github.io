@@ -1280,8 +1280,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Jake Elliott",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 1,
+      "FPTS/G": 1,
       "ROST": "5.3%",
       "POS": "k"
     }
