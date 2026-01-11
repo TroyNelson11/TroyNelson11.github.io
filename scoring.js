@@ -526,8 +526,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Ryan Fitzgerald",
-      "FPTS": 6,
-      "FPTS/G": 6,
+      "FPTS": 7,
+      "FPTS/G": 7,
       "ROST": "42.1%",
       "POS": "k"
     }
@@ -1190,17 +1190,17 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 11,
-      "YDS.1": 36,
-      "TD.1": 1,
+      "ATT.1": 12,
+      "YDS.1": 39,
+      "TD.1": 2,
       "FL": 0,
       "REC": 2,
       "TGT": 4,
       "YDS.2": 13,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 12.9,
-      "FPTS/G": 12.9,
+      "FPTS": 19.2,
+      "FPTS/G": 19.2,
       "ROST": "5.3%",
       "POS": "wr"
     }
