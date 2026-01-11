@@ -989,7 +989,7 @@ const player_stats = {
       "CMP": 5,
       "ATT": 7,
       "PCT": 71.4,
-      "YDS": 83,
+      "YDS": 82,
       "TD": 1,
       "INT": 0,
       "ATT.1": 1,
