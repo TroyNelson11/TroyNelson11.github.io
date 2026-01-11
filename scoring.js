@@ -366,14 +366,14 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Matthew Stafford",
-      "CMP": 14,
-      "ATT": 30,
-      "PCT": 46.7,
-      "YDS": 191,
-      "TD": 1,
+      "CMP": 15,
+      "ATT": 31,
+      "PCT": 48.4,
+      "YDS": 204,
+      "TD": 2,
       "INT": 1,
       "ATT.1": 1,
-      "YDS.1": 3,
+      "YDS.1": 2,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -381,8 +381,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 10.9,
-      "FPTS/G": 10.9,
+      "FPTS": 15.4,
+      "FPTS/G": 15.4,
       "ROST": "47.4%",
       "POS": "rb"
     }
@@ -397,8 +397,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 2,
-      "YDS.1": 10,
+      "ATT.1": 3,
+      "YDS.1": 14,
       "TD.1": 1,
       "FL": 0,
       "REC": 7,
@@ -406,8 +406,8 @@ const player_stats = {
       "YDS.2": 70,
       "TD.2": 1,
       "G": 1,
-      "FPTS": 27.0,
-      "FPTS/G": 27.0,
+      "FPTS": 27.4,
+      "FPTS/G": 27.4,
       "ROST": "47.4%",
       "POS": "wr"
     }
@@ -756,10 +756,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 20,
+      "PA": 27,
       "G": 1,
-      "FPTS": 4.0,
-      "FPTS/G": 4.0,
+      "FPTS": 3.0,
+      "FPTS/G": 3.0,
       "ROST": "21.1%",
       "POS": "def"
     }
@@ -1252,8 +1252,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Harrison Mevis",
-      "FPTS": 10,
-      "FPTS/G": 10,
+      "FPTS": 11,
+      "FPTS/G": 11,
       "ROST": "5.3%",
       "POS": "k"
     }
