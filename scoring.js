@@ -372,8 +372,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 2,
-      "YDS.1": 15,
+      "ATT.1": 3,
+      "YDS.1": 22,
       "TD.1": 0,
       "FL": 0,
       "REC": 3,
@@ -381,8 +381,8 @@ const player_stats = {
       "YDS.2": 21,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 6.6,
-      "FPTS/G": 6.6,
+      "FPTS": 7.3,
+      "FPTS/G": 7.3,
       "ROST": 50.0,
       "POS": "qb"
     }
@@ -758,10 +758,10 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Trevor Lawrence",
-      "CMP": 6,
-      "ATT": 9,
-      "PCT": 66.7,
-      "YDS": 33,
+      "CMP": 7,
+      "ATT": 11,
+      "PCT": 63.6,
+      "YDS": 45,
       "TD": 1,
       "INT": 1,
       "ATT.1": 0,
@@ -773,8 +773,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 4.3,
-      "FPTS/G": 4.3,
+      "FPTS": 4.8,
+      "FPTS/G": 4.8,
       "ROST": 22.7,
       "POS": "qb"
     }
