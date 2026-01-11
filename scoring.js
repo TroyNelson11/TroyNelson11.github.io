@@ -526,8 +526,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Ryan Fitzgerald",
-      "FPTS": 7,
-      "FPTS/G": 7,
+      "FPTS": 8,
+      "FPTS/G": 8,
       "ROST": "42.1%",
       "POS": "k"
     }
