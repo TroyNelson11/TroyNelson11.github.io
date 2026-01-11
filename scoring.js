@@ -1036,8 +1036,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Brandon McManus",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 3,
+      "FPTS/G": 3,
       "ROST": "10.5%",
       "POS": "k"
     }
@@ -1174,8 +1174,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Cairo Santos",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 13,
+      "FPTS/G": 13,
       "ROST": "5.3%",
       "POS": "k"
     }
