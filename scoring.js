@@ -372,8 +372,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 3,
-      "YDS.1": 22,
+      "ATT.1": 4,
+      "YDS.1": 48,
       "TD.1": 0,
       "FL": 0,
       "REC": 3,
@@ -381,8 +381,8 @@ const player_stats = {
       "YDS.2": 21,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 7.3,
-      "FPTS/G": 7.3,
+      "FPTS": 9.9,
+      "FPTS/G": 9.9,
       "ROST": 50.0,
       "POS": "qb"
     }
@@ -758,14 +758,14 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Trevor Lawrence",
-      "CMP": 9,
-      "ATT": 15,
-      "PCT": 60.0,
-      "YDS": 88,
+      "CMP": 10,
+      "ATT": 18,
+      "PCT": 55.6,
+      "YDS": 101,
       "TD": 1,
       "INT": 1,
-      "ATT.1": 3,
-      "YDS.1": 29,
+      "ATT.1": 4,
+      "YDS.1": 30,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -773,8 +773,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 9.4,
-      "FPTS/G": 9.4,
+      "FPTS": 10.0,
+      "FPTS/G": 10.0,
       "ROST": 22.7,
       "POS": "qb"
     }
@@ -783,8 +783,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Cam Little",
-      "FPTS": 1,
-      "FPTS/G": 1,
+      "FPTS": 5,
+      "FPTS/G": 5,
       "ROST": "21.1%",
       "POS": "k"
     }
@@ -1360,13 +1360,13 @@ const player_stats = {
       "YDS.1": -3,
       "TD.1": 0,
       "FL": 0,
-      "REC": 1,
-      "TGT": 4,
-      "YDS.2": 34,
+      "REC": 2,
+      "TGT": 5,
+      "YDS.2": 47,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 4.1,
-      "FPTS/G": 4.1,
+      "FPTS": 6.4,
+      "FPTS/G": 6.4,
       "ROST": 4.5,
       "POS": "qb"
     }
