@@ -1268,7 +1268,7 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 9,
+      "PA": 10,
       "G": 1,
       "FPTS": 6,
       "FPTS/G": 6,
