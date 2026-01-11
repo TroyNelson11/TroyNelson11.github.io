@@ -321,8 +321,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 10,
-      "FPTS/G": 10,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": 63.6,
       "POS": "def"
     }
@@ -619,8 +619,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 10,
-      "FPTS/G": 10,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": 27.3,
       "POS": "def"
     }
@@ -662,8 +662,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 10,
-      "FPTS/G": 10,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": 27.3,
       "POS": "def"
     }
@@ -730,8 +730,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 10,
-      "FPTS/G": 10,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": 22.7,
       "POS": "def"
     }
@@ -748,8 +748,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 10,
-      "FPTS/G": 10,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": 22.7,
       "POS": "def"
     }
@@ -1054,8 +1054,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 10,
-      "FPTS/G": 10,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": 9.1,
       "POS": "def"
     }
@@ -1270,8 +1270,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 10,
-      "FPTS/G": 10,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": 4.5,
       "POS": "def"
     }
