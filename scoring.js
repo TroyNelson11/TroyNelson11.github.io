@@ -758,11 +758,11 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Trevor Lawrence",
-      "CMP": 6,
-      "ATT": 9,
-      "PCT": 66.7,
-      "YDS": 33,
-      "TD": 1,
+      "CMP": 5,
+      "ATT": 8,
+      "PCT": 62.5,
+      "YDS": 30,
+      "TD": 0,
       "INT": 1,
       "ATT.1": 0,
       "YDS.1": 0,
@@ -773,8 +773,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 4.3,
-      "FPTS/G": 4.3,
+      "FPTS": 0.2,
+      "FPTS/G": 0.2,
       "ROST": 22.7,
       "POS": "qb"
     }
@@ -783,8 +783,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Cam Little",
-      "FPTS": 1,
-      "FPTS/G": 1,
+      "FPTS": 0,
+      "FPTS/G": 0,
       "ROST": "21.1%",
       "POS": "k"
     }
