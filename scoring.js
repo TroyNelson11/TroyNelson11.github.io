@@ -758,11 +758,11 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Trevor Lawrence",
-      "CMP": 5,
-      "ATT": 8,
-      "PCT": 62.5,
-      "YDS": 30,
-      "TD": 0,
+      "CMP": 6,
+      "ATT": 9,
+      "PCT": 66.7,
+      "YDS": 33,
+      "TD": 1,
       "INT": 1,
       "ATT.1": 0,
       "YDS.1": 0,
@@ -773,8 +773,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.2,
-      "FPTS/G": 0.2,
+      "FPTS": 4.3,
+      "FPTS/G": 4.3,
       "ROST": 22.7,
       "POS": "qb"
     }
@@ -783,8 +783,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Cam Little",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 1,
+      "FPTS/G": 1,
       "ROST": "21.1%",
       "POS": "k"
     }
@@ -1263,15 +1263,15 @@ const player_stats = {
       "Rank": 0,
       "Player": "Jacksonville Jaguars",
       "SACKS": 0,
-      "FR": 0,
+      "FR": 1,
       "INT.1": 0,
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
       "PA": 3,
       "G": 1,
-      "FPTS": 7,
-      "FPTS/G": 7,
+      "FPTS": 9,
+      "FPTS/G": 9,
       "ROST": 4.5,
       "POS": "def"
     }
