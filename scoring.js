@@ -372,8 +372,8 @@ const player_stats = {
       "YDS": 191,
       "TD": 1,
       "INT": 1,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 1,
+      "YDS.1": 3,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -381,10 +381,10 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 10.6,
-      "FPTS/G": 10.6,
+      "FPTS": 10.9,
+      "FPTS/G": 10.9,
       "ROST": "47.4%",
-      "POS": "qb"
+      "POS": "rb"
     }
   },
   "Puka Nacua": {
