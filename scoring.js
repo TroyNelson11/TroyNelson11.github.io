@@ -486,10 +486,10 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Drake Maye",
-      "CMP": 11,
-      "ATT": 21,
-      "PCT": 52.4,
-      "YDS": 152,
+      "CMP": 13,
+      "ATT": 23,
+      "PCT": 56.5,
+      "YDS": 213,
       "TD": 0,
       "INT": 1,
       "ATT.1": 6,
@@ -501,8 +501,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 9.2,
-      "FPTS/G": 9.2,
+      "FPTS": 11.6,
+      "FPTS/G": 11.6,
       "ROST": 40.9,
       "POS": "qb"
     }
@@ -611,7 +611,7 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Los Angeles Chargers",
-      "SACKS": 3.0,
+      "SACKS": 4.0,
       "FR": 1,
       "INT.1": 1,
       "TD.3": 0,
@@ -619,8 +619,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 6,
       "G": 1,
-      "FPTS": 14.0,
-      "FPTS/G": 14.0,
+      "FPTS": 15.0,
+      "FPTS/G": 15.0,
       "ROST": 27.3,
       "POS": "def"
     }
@@ -1406,8 +1406,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 6,
-      "YDS.1": 25,
+      "ATT.1": 8,
+      "YDS.1": 36,
       "TD.1": 0,
       "FL": 0,
       "REC": 3,
@@ -1415,8 +1415,8 @@ const player_stats = {
       "YDS.2": 75,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 13.0,
-      "FPTS/G": 13.0,
+      "FPTS": 14.1,
+      "FPTS/G": 14.1,
       "ROST": 4.5,
       "POS": "qb"
     }
