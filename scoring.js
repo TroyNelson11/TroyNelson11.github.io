@@ -230,7 +230,8 @@ const roster_percentages = {
     "Sam Darnold": 4.5,
     "TreVeyon Henderson": 4.5,
     "Troy Franklin": 4.5,
-    "Wil Lutz": 4.5
+    "Wil Lutz": 4.5,
+    "Kimani Vidal": 4.5
 };
 
 const player_stats = {
@@ -740,7 +741,7 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "New England Patriots",
-      "SACKS": 4.0,
+      "SACKS": 5.0,
       "FR": 1,
       "INT.1": 0,
       "TD.3": 0,
@@ -748,8 +749,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 3,
       "G": 1,
-      "FPTS": 13.0,
-      "FPTS/G": 13.0,
+      "FPTS": 14.0,
+      "FPTS/G": 14.0,
       "ROST": 22.7,
       "POS": "def"
     }
@@ -1134,13 +1135,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 1,
-      "TGT": 2,
-      "YDS.2": 20,
+      "REC": 2,
+      "TGT": 3,
+      "YDS.2": 26,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 3.0,
-      "FPTS/G": 3.0,
+      "FPTS": 4.6,
+      "FPTS/G": 4.6,
       "ROST": 9.1,
       "POS": "qb"
     }
@@ -1385,13 +1386,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 1,
-      "TGT": 4,
-      "YDS.2": 3,
+      "REC": 2,
+      "TGT": 5,
+      "YDS.2": 11,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 1.3,
-      "FPTS/G": 1.3,
+      "FPTS": 3.1,
+      "FPTS/G": 3.1,
       "ROST": 4.5,
       "POS": "qb"
     }
