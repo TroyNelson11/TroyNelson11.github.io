@@ -740,7 +740,7 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "New England Patriots",
-      "SACKS": 2.0,
+      "SACKS": 3.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -748,8 +748,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 3,
       "G": 1,
-      "FPTS": 9.0,
-      "FPTS/G": 9.0,
+      "FPTS": 10.0,
+      "FPTS/G": 10.0,
       "ROST": 22.7,
       "POS": "def"
     }
