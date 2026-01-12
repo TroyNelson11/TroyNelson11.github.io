@@ -611,7 +611,7 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Los Angeles Chargers",
-      "SACKS": 4.0,
+      "SACKS": 5.0,
       "FR": 1,
       "INT.1": 1,
       "TD.3": 0,
@@ -619,8 +619,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 16,
       "G": 1,
-      "FPTS": 9.0,
-      "FPTS/G": 9.0,
+      "FPTS": 10.0,
+      "FPTS/G": 10.0,
       "ROST": 27.3,
       "POS": "def"
     }
@@ -740,7 +740,7 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "New England Patriots",
-      "SACKS": 3.0,
+      "SACKS": 4.0,
       "FR": 1,
       "INT.1": 0,
       "TD.3": 0,
@@ -748,8 +748,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 3,
       "G": 1,
-      "FPTS": 12.0,
-      "FPTS/G": 12.0,
+      "FPTS": 13.0,
+      "FPTS/G": 13.0,
       "ROST": 22.7,
       "POS": "def"
     }
@@ -1506,8 +1506,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 5,
-      "YDS.1": 7,
+      "ATT.1": 7,
+      "YDS.1": 11,
       "TD.1": 0,
       "FL": 0,
       "REC": 1,
@@ -1515,8 +1515,8 @@ const player_stats = {
       "YDS.2": 9,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 2.6,
-      "FPTS/G": 2.6,
+      "FPTS": 3.0,
+      "FPTS/G": 3.0,
       "ROST": 4.5,
       "POS": "qb"
     }
