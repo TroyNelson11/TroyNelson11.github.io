@@ -740,7 +740,7 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "New England Patriots",
-      "SACKS": 0,
+      "SACKS": 1.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -748,8 +748,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 3,
       "G": 1,
-      "FPTS": 7,
-      "FPTS/G": 7,
+      "FPTS": 8.0,
+      "FPTS/G": 8.0,
       "ROST": 22.7,
       "POS": "def"
     }
@@ -1744,7 +1744,7 @@ const fantasy_team_submissions = [
         "qb1":"Brock Purdy",
         "qb2":"Josh Allen",
         "rb1":"Saquon Barkley",
-        "rb2":"Omarion Hampton",
+        "rb2":"Kimani Vidal",
         "rb3":"Rico Dowdle",
         "rb4":"D'Andre Swift",
         "wr1":"Jaxon Smith-Njigba",
