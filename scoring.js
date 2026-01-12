@@ -1556,6 +1556,31 @@ const player_stats = {
       "ROST": "5.3%",
       "POS": "k"
     }
+  },
+  "Kimani Vidal": {
+    "week 1": {
+      "Rank": 0,
+      "Player": "Kimani Vidal",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 11,
+      "YDS.1": 31,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 2,
+      "TGT": 3,
+      "YDS.2": 20,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 7.1,
+      "FPTS/G": 7.1,
+      "ROST": 4.5,
+      "POS": "qb"
+    }
   }
 };;
 
