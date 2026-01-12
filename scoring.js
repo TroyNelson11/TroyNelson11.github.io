@@ -391,8 +391,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Cameron Dicker",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 3,
+      "FPTS/G": 3,
       "ROST": "42.1%",
       "POS": "k"
     }
@@ -486,10 +486,10 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Drake Maye",
-      "CMP": 4,
-      "ATT": 8,
-      "PCT": 50.0,
-      "YDS": 82,
+      "CMP": 5,
+      "ATT": 9,
+      "PCT": 55.6,
+      "YDS": 92,
       "TD": 0,
       "INT": 1,
       "ATT.1": 2,
@@ -501,8 +501,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 2.9,
-      "FPTS/G": 2.9,
+      "FPTS": 3.3,
+      "FPTS/G": 3.3,
       "ROST": 40.9,
       "POS": "qb"
     }
@@ -746,10 +746,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 0,
+      "PA": 3,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 7,
+      "FPTS/G": 7,
       "ROST": 22.7,
       "POS": "def"
     }
@@ -1510,13 +1510,13 @@ const player_stats = {
       "YDS.1": 4,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 10,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.4,
-      "FPTS/G": 0.4,
+      "FPTS": 2.4,
+      "FPTS/G": 2.4,
       "ROST": 4.5,
       "POS": "qb"
     }
