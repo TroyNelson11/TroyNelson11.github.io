@@ -486,11 +486,11 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Drake Maye",
-      "CMP": 16,
-      "ATT": 28,
-      "PCT": 57.1,
-      "YDS": 240,
-      "TD": 0,
+      "CMP": 17,
+      "ATT": 29,
+      "PCT": 58.6,
+      "YDS": 268,
+      "TD": 1,
       "INT": 1,
       "ATT.1": 7,
       "YDS.1": 69,
@@ -501,8 +501,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 13.5,
-      "FPTS/G": 13.5,
+      "FPTS": 18.6,
+      "FPTS/G": 18.6,
       "ROST": 40.9,
       "POS": "qb"
     }
@@ -617,10 +617,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 9,
+      "PA": 16,
       "G": 1,
-      "FPTS": 12.0,
-      "FPTS/G": 12.0,
+      "FPTS": 9.0,
+      "FPTS/G": 9.0,
       "ROST": 27.3,
       "POS": "def"
     }
@@ -1406,8 +1406,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 9,
-      "YDS.1": 40,
+      "ATT.1": 10,
+      "YDS.1": 53,
       "TD.1": 0,
       "FL": 0,
       "REC": 3,
@@ -1415,8 +1415,8 @@ const player_stats = {
       "YDS.2": 75,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 14.5,
-      "FPTS/G": 14.5,
+      "FPTS": 15.8,
+      "FPTS/G": 15.8,
       "ROST": 4.5,
       "POS": "qb"
     }
