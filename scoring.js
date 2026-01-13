@@ -314,16 +314,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Houston Texans",
-      "SACKS": 2.0,
-      "FR": 0,
+      "SACKS": 3.0,
+      "FR": 1,
       "INT.1": 0,
-      "TD.3": 0,
+      "TD.3": 1,
       "BK": 0,
       "SAFE": 0,
       "PA": 6,
       "G": 1,
-      "FPTS": 9.0,
-      "FPTS/G": 9.0,
+      "FPTS": 18.0,
+      "FPTS/G": 18.0,
       "ROST": 63.6,
       "POS": "def"
     }
@@ -661,10 +661,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 10,
+      "PA": 17,
       "G": 1,
-      "FPTS": 13.0,
-      "FPTS/G": 13.0,
+      "FPTS": 10.0,
+      "FPTS/G": 10.0,
       "ROST": 27.3,
       "POS": "def"
     }
@@ -1090,8 +1090,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Ka'imi Fairbairn",
-      "FPTS": 6,
-      "FPTS/G": 6,
+      "FPTS": 7,
+      "FPTS/G": 7,
       "ROST": "10.5%",
       "POS": "k"
     }
@@ -1106,8 +1106,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 5,
-      "YDS.1": 22,
+      "ATT.1": 6,
+      "YDS.1": 20,
       "TD.1": 0,
       "FL": 0,
       "REC": 3,
@@ -1115,8 +1115,8 @@ const player_stats = {
       "YDS.2": 21,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 7.3,
-      "FPTS/G": 7.3,
+      "FPTS": 7.1,
+      "FPTS/G": 7.1,
       "ROST": 9.1,
       "POS": "qb"
     }
