@@ -316,14 +316,14 @@ const player_stats = {
       "Player": "Houston Texans",
       "SACKS": 4.0,
       "FR": 1,
-      "INT.1": 0,
-      "TD.3": 1,
+      "INT.1": 1,
+      "TD.3": 2,
       "BK": 0,
       "SAFE": 0,
       "PA": 6,
       "G": 1,
-      "FPTS": 19.0,
-      "FPTS/G": 19.0,
+      "FPTS": 27.0,
+      "FPTS/G": 27.0,
       "ROST": 63.6,
       "POS": "def"
     }
@@ -661,10 +661,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 24,
+      "PA": 30,
       "G": 1,
-      "FPTS": 9.0,
-      "FPTS/G": 9.0,
+      "FPTS": 8.0,
+      "FPTS/G": 8.0,
       "ROST": 27.3,
       "POS": "def"
     }
