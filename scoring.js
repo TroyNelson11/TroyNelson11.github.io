@@ -657,14 +657,14 @@ const player_stats = {
       "Player": "Pittsburgh Steelers",
       "SACKS": 2.0,
       "FR": 2,
-      "INT.1": 0,
+      "INT.1": 1,
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
       "PA": 7,
       "G": 1,
-      "FPTS": 10.0,
-      "FPTS/G": 10.0,
+      "FPTS": 12.0,
+      "FPTS/G": 12.0,
       "ROST": 27.3,
       "POS": "def"
     }
