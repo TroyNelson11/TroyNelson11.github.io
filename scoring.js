@@ -320,10 +320,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 0,
+      "PA": 3,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 7,
+      "FPTS/G": 7,
       "ROST": 63.6,
       "POS": "def"
     }
@@ -402,8 +402,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Chris Boswell",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 3,
+      "FPTS/G": 3,
       "ROST": "47.4%",
       "POS": "k"
     }
