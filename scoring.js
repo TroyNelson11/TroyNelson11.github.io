@@ -314,7 +314,7 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Houston Texans",
-      "SACKS": 1.0,
+      "SACKS": 2.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -322,8 +322,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 6,
       "G": 1,
-      "FPTS": 8.0,
-      "FPTS/G": 8.0,
+      "FPTS": 9.0,
+      "FPTS/G": 9.0,
       "ROST": 63.6,
       "POS": "def"
     }
