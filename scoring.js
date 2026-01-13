@@ -640,13 +640,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 2,
-      "TGT": 3,
-      "YDS.2": 8,
+      "REC": 3,
+      "TGT": 4,
+      "YDS.2": 21,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 2.8,
-      "FPTS/G": 2.8,
+      "FPTS": 5.1,
+      "FPTS/G": 5.1,
       "ROST": 27.3,
       "POS": "qb"
     }
