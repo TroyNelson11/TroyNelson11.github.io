@@ -314,16 +314,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Houston Texans",
-      "SACKS": 0,
+      "SACKS": 1.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 3,
+      "PA": 6,
       "G": 1,
-      "FPTS": 7,
-      "FPTS/G": 7,
+      "FPTS": 8.0,
+      "FPTS/G": 8.0,
       "ROST": 63.6,
       "POS": "def"
     }
@@ -402,8 +402,8 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Chris Boswell",
-      "FPTS": 3,
-      "FPTS/G": 3,
+      "FPTS": 6,
+      "FPTS/G": 6,
       "ROST": "47.4%",
       "POS": "k"
     }
