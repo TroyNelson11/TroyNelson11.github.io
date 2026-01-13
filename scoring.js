@@ -641,7 +641,7 @@ const player_stats = {
       "TD.1": 0,
       "FL": 0,
       "REC": 3,
-      "TGT": 5,
+      "TGT": 6,
       "YDS.2": 21,
       "TD.2": 0,
       "G": 1,
@@ -655,7 +655,7 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Pittsburgh Steelers",
-      "SACKS": 2.0,
+      "SACKS": 3.0,
       "FR": 2,
       "INT.1": 1,
       "TD.3": 0,
@@ -663,8 +663,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 7,
       "G": 1,
-      "FPTS": 12.0,
-      "FPTS/G": 12.0,
+      "FPTS": 13.0,
+      "FPTS/G": 13.0,
       "ROST": 27.3,
       "POS": "def"
     }
