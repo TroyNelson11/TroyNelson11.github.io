@@ -655,16 +655,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Pittsburgh Steelers",
-      "SACKS": 0,
-      "FR": 0,
+      "SACKS": 1.0,
+      "FR": 1,
       "INT.1": 0,
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 13.0,
+      "FPTS/G": 13.0,
       "ROST": 27.3,
       "POS": "def"
     }
