@@ -884,17 +884,17 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 2,
-      "YDS.1": 10,
+      "ATT.1": 3,
+      "YDS.1": 11,
       "TD.1": 0,
       "FL": 0,
-      "REC": 2,
-      "TGT": 3,
-      "YDS.2": 16,
+      "REC": 3,
+      "TGT": 4,
+      "YDS.2": 22,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 4.6,
-      "FPTS/G": 4.6,
+      "FPTS": 6.3,
+      "FPTS/G": 6.3,
       "ROST": 36.4,
       "POS": "wr"
     }
@@ -1179,7 +1179,7 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Denver Broncos",
-      "SACKS": 2.0,
+      "SACKS": 3.0,
       "FR": 3,
       "INT.1": 0,
       "TD.3": 0,
@@ -1187,8 +1187,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 10,
       "G": 1,
-      "FPTS": 12.0,
-      "FPTS/G": 12.0,
+      "FPTS": 13.0,
+      "FPTS/G": 13.0,
       "ROST": 22.7,
       "POS": "def"
     }
@@ -1642,10 +1642,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Bo Nix",
-      "CMP": 13,
-      "ATT": 23,
-      "PCT": 56.5,
-      "YDS": 150,
+      "CMP": 14,
+      "ATT": 24,
+      "PCT": 58.3,
+      "YDS": 156,
       "TD": 2,
       "INT": 0,
       "ATT.1": 8,
@@ -1657,8 +1657,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 16.9,
-      "FPTS/G": 16.9,
+      "FPTS": 17.1,
+      "FPTS/G": 17.1,
       "ROST": 13.6,
       "POS": "rb"
     }
@@ -2749,8 +2749,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Wil Lutz",
-      "FPTS": 10,
-      "FPTS/G": 10,
+      "FPTS": 13,
+      "FPTS/G": 13,
       "ROST": "5.3%",
       "POS": "k"
     }
