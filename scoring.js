@@ -888,15 +888,15 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 6,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 1.6,
+      "FPTS/G": 1.6,
       "ROST": 36.4,
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "Colston Loveland": {
@@ -1642,14 +1642,14 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Bo Nix",
-      "CMP": 1,
-      "ATT": 1,
+      "CMP": 5,
+      "ATT": 5,
       "PCT": 100.0,
-      "YDS": 12,
+      "YDS": 42,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 4,
+      "YDS.1": 12,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -1657,10 +1657,10 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.5,
-      "FPTS/G": 0.5,
+      "FPTS": 2.9,
+      "FPTS/G": 2.9,
       "ROST": 13.6,
-      "POS": "qb"
+      "POS": "rb"
     }
   },
   "Brock Purdy": {
