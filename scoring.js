@@ -884,8 +884,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 4,
-      "YDS.1": 16,
+      "ATT.1": 5,
+      "YDS.1": 17,
       "TD.1": 0,
       "FL": 0,
       "REC": 3,
@@ -893,8 +893,8 @@ const player_stats = {
       "YDS.2": 22,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 6.8,
-      "FPTS/G": 6.8,
+      "FPTS": 6.9,
+      "FPTS/G": 6.9,
       "ROST": 36.4,
       "POS": "wr"
     }
@@ -1642,10 +1642,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Bo Nix",
-      "CMP": 14,
-      "ATT": 26,
-      "PCT": 53.8,
-      "YDS": 156,
+      "CMP": 15,
+      "ATT": 30,
+      "PCT": 50.0,
+      "YDS": 175,
       "TD": 2,
       "INT": 1,
       "ATT.1": 8,
@@ -1657,8 +1657,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 16.1,
-      "FPTS/G": 16.1,
+      "FPTS": 16.9,
+      "FPTS/G": 16.9,
       "ROST": 13.6,
       "POS": "rb"
     }
