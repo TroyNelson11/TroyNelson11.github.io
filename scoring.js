@@ -440,10 +440,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Josh Allen",
-      "CMP": 5,
-      "ATT": 6,
-      "PCT": 83.3,
-      "YDS": 47,
+      "CMP": 8,
+      "ATT": 9,
+      "PCT": 88.9,
+      "YDS": 81,
       "TD": 1,
       "INT": 0,
       "ATT.1": 5,
@@ -455,8 +455,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 9.6,
-      "FPTS/G": 9.6,
+      "FPTS": 10.9,
+      "FPTS/G": 10.9,
       "ROST": 59.1,
       "POS": "rb"
     }
@@ -788,8 +788,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 9,
-      "YDS.1": 57,
+      "ATT.1": 10,
+      "YDS.1": 58,
       "TD.1": 0,
       "FL": 1,
       "REC": 1,
@@ -797,8 +797,8 @@ const player_stats = {
       "YDS.2": 24,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 7.1,
-      "FPTS/G": 7.1,
+      "FPTS": 7.2,
+      "FPTS/G": 7.2,
       "ROST": 40.9,
       "POS": "wr"
     }
@@ -1179,7 +1179,7 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Denver Broncos",
-      "SACKS": 0,
+      "SACKS": 1.0,
       "FR": 1,
       "INT.1": 0,
       "TD.3": 0,
@@ -1187,8 +1187,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 7,
       "G": 1,
-      "FPTS": 6,
-      "FPTS/G": 6,
+      "FPTS": 7.0,
+      "FPTS/G": 7.0,
       "ROST": 22.7,
       "POS": "def"
     }
