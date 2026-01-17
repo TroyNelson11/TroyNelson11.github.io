@@ -1642,10 +1642,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Bo Nix",
-      "CMP": 11,
-      "ATT": 20,
-      "PCT": 55.0,
-      "YDS": 106,
+      "CMP": 12,
+      "ATT": 21,
+      "PCT": 57.1,
+      "YDS": 121,
       "TD": 1,
       "INT": 0,
       "ATT.1": 8,
@@ -1657,8 +1657,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 11.1,
-      "FPTS/G": 11.1,
+      "FPTS": 11.7,
+      "FPTS/G": 11.7,
       "ROST": 13.6,
       "POS": "rb"
     }
