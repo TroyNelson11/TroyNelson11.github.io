@@ -440,14 +440,14 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Josh Allen",
-      "CMP": 1,
-      "ATT": 1,
+      "CMP": 3,
+      "ATT": 3,
       "PCT": 100.0,
-      "YDS": 10,
+      "YDS": 19,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 1,
+      "YDS.1": 1,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -455,10 +455,10 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.4,
-      "FPTS/G": 0.4,
+      "FPTS": 0.9,
+      "FPTS/G": 0.9,
       "ROST": 59.1,
-      "POS": "qb"
+      "POS": "rb"
     }
   },
   "Ryan Fitzgerald": {
@@ -788,8 +788,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 2,
-      "YDS.1": 34,
+      "ATT.1": 4,
+      "YDS.1": 40,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -797,8 +797,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 3.4,
-      "FPTS/G": 3.4,
+      "FPTS": 4.0,
+      "FPTS/G": 4.0,
       "ROST": 40.9,
       "POS": "rb"
     }
