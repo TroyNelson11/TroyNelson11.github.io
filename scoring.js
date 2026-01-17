@@ -446,8 +446,8 @@ const player_stats = {
       "YDS": 23,
       "TD": 1,
       "INT": 0,
-      "ATT.1": 3,
-      "YDS.1": 8,
+      "ATT.1": 4,
+      "YDS.1": 33,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -455,8 +455,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 5.7,
-      "FPTS/G": 5.7,
+      "FPTS": 8.2,
+      "FPTS/G": 8.2,
       "ROST": 59.1,
       "POS": "rb"
     }
@@ -788,8 +788,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 5,
-      "YDS.1": 36,
+      "ATT.1": 6,
+      "YDS.1": 41,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -797,8 +797,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 3.6,
-      "FPTS/G": 3.6,
+      "FPTS": 4.1,
+      "FPTS/G": 4.1,
       "ROST": 40.9,
       "POS": "rb"
     }
