@@ -440,11 +440,11 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Josh Allen",
-      "CMP": 11,
-      "ATT": 14,
-      "PCT": 78.6,
-      "YDS": 120,
-      "TD": 1,
+      "CMP": 13,
+      "ATT": 16,
+      "PCT": 81.2,
+      "YDS": 139,
+      "TD": 2,
       "INT": 0,
       "ATT.1": 7,
       "YDS.1": 43,
@@ -455,8 +455,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 9.1,
-      "FPTS/G": 9.1,
+      "FPTS": 13.9,
+      "FPTS/G": 13.9,
       "ROST": 59.1,
       "POS": "rb"
     }
@@ -1185,10 +1185,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 10,
+      "PA": 17,
       "G": 1,
-      "FPTS": 13.0,
-      "FPTS/G": 13.0,
+      "FPTS": 10.0,
+      "FPTS/G": 10.0,
       "ROST": 22.7,
       "POS": "def"
     }
