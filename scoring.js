@@ -1215,14 +1215,14 @@ const player_stats = {
       "Player": "New England Patriots",
       "SACKS": 0,
       "FR": 0,
-      "INT.1": 0,
+      "INT.1": 1,
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
       "PA": 3,
       "G": 1,
-      "FPTS": 7,
-      "FPTS/G": 7,
+      "FPTS": 9,
+      "FPTS/G": 9,
       "ROST": 22.7,
       "POS": "def"
     }
