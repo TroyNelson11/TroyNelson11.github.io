@@ -2290,8 +2290,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 8,
-      "YDS.1": 41,
+      "ATT.1": 11,
+      "YDS.1": 58,
       "TD.1": 1,
       "FL": 0,
       "REC": 2,
@@ -2299,8 +2299,8 @@ const player_stats = {
       "YDS.2": 14,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 13.5,
-      "FPTS/G": 13.5,
+      "FPTS": 15.2,
+      "FPTS/G": 15.2,
       "ROST": 4.5,
       "POS": "qb"
     }
@@ -2620,10 +2620,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Sam Darnold",
-      "CMP": 7,
-      "ATT": 12,
-      "PCT": 58.3,
-      "YDS": 68,
+      "CMP": 8,
+      "ATT": 13,
+      "PCT": 61.5,
+      "YDS": 79,
       "TD": 1,
       "INT": 0,
       "ATT.1": 0,
@@ -2635,8 +2635,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 6.7,
-      "FPTS/G": 6.7,
+      "FPTS": 7.2,
+      "FPTS/G": 7.2,
       "ROST": 4.5,
       "POS": "qb"
     }
