@@ -2749,8 +2749,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Wil Lutz",
-      "FPTS": 14,
-      "FPTS/G": 14,
+      "FPTS": 17,
+      "FPTS/G": 17,
       "ROST": "5.3%",
       "POS": "k"
     }
