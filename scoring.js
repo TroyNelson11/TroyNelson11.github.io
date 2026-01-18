@@ -1364,15 +1364,15 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 2,
+      "TGT": 5,
+      "YDS.2": 34,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 5.4,
+      "FPTS/G": 5.4,
       "ROST": 18.2,
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "D'Andre Swift": {
@@ -1642,10 +1642,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Bo Nix",
-      "CMP": 16,
-      "ATT": 32,
-      "PCT": 50.0,
-      "YDS": 175,
+      "CMP": 20,
+      "ATT": 36,
+      "PCT": 55.6,
+      "YDS": 208,
       "TD": 2,
       "INT": 1,
       "ATT.1": 8,
@@ -1657,8 +1657,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 16.9,
-      "FPTS/G": 16.9,
+      "FPTS": 18.2,
+      "FPTS/G": 18.2,
       "ROST": 13.6,
       "POS": "rb"
     }
