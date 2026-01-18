@@ -405,10 +405,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 21,
+      "PA": 28,
       "G": 1,
-      "FPTS": 11.0,
-      "FPTS/G": 11.0,
+      "FPTS": 10.0,
+      "FPTS/G": 10.0,
       "ROST": 63.6,
       "POS": "def"
     }
@@ -734,11 +734,11 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Drake Maye",
-      "CMP": 14,
-      "ATT": 23,
-      "PCT": 60.9,
-      "YDS": 133,
-      "TD": 2,
+      "CMP": 15,
+      "ATT": 24,
+      "PCT": 62.5,
+      "YDS": 165,
+      "TD": 3,
       "INT": 1,
       "ATT.1": 2,
       "YDS.1": 12,
@@ -749,8 +749,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 9.5,
-      "FPTS/G": 9.5,
+      "FPTS": 14.8,
+      "FPTS/G": 14.8,
       "ROST": 40.9,
       "POS": "qb"
     }
