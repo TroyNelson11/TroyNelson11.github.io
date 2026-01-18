@@ -1690,12 +1690,12 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Brock Purdy",
-      "CMP": 13,
-      "ATT": 22,
-      "PCT": 59.1,
-      "YDS": 122,
+      "CMP": 14,
+      "ATT": 24,
+      "PCT": 58.3,
+      "YDS": 133,
       "TD": 0,
-      "INT": 0,
+      "INT": 1,
       "ATT.1": 1,
       "YDS.1": 18,
       "TD.1": 0,
@@ -1705,8 +1705,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 6.7,
-      "FPTS/G": 6.7,
+      "FPTS": 6.1,
+      "FPTS/G": 6.1,
       "ROST": 13.6,
       "POS": "qb"
     }
