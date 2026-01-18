@@ -440,10 +440,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Josh Allen",
-      "CMP": 20,
-      "ATT": 27,
-      "PCT": 74.1,
-      "YDS": 225,
+      "CMP": 21,
+      "ATT": 29,
+      "PCT": 72.4,
+      "YDS": 234,
       "TD": 3,
       "INT": 1,
       "ATT.1": 11,
@@ -455,8 +455,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 22.2,
-      "FPTS/G": 22.2,
+      "FPTS": 22.6,
+      "FPTS/G": 22.6,
       "ROST": 59.1,
       "POS": "rb"
     }
@@ -1642,11 +1642,11 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Bo Nix",
-      "CMP": 21,
-      "ATT": 38,
-      "PCT": 55.3,
-      "YDS": 216,
-      "TD": 2,
+      "CMP": 22,
+      "ATT": 39,
+      "PCT": 56.4,
+      "YDS": 242,
+      "TD": 3,
       "INT": 1,
       "ATT.1": 9,
       "YDS.1": 35,
@@ -1657,8 +1657,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 19.1,
-      "FPTS/G": 19.1,
+      "FPTS": 24.2,
+      "FPTS/G": 24.2,
       "ROST": 13.6,
       "POS": "rb"
     }
@@ -2749,8 +2749,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Wil Lutz",
-      "FPTS": 13,
-      "FPTS/G": 13,
+      "FPTS": 14,
+      "FPTS/G": 14,
       "ROST": "5.3%",
       "POS": "k"
     }
