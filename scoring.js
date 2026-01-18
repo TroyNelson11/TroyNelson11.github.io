@@ -399,7 +399,7 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Houston Texans",
-      "SACKS": 4.0,
+      "SACKS": 5.0,
       "FR": 2,
       "INT.1": 1,
       "TD.3": 0,
@@ -407,8 +407,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 21,
       "G": 1,
-      "FPTS": 10.0,
-      "FPTS/G": 10.0,
+      "FPTS": 11.0,
+      "FPTS/G": 11.0,
       "ROST": 63.6,
       "POS": "def"
     }
@@ -734,10 +734,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Drake Maye",
-      "CMP": 12,
-      "ATT": 21,
-      "PCT": 57.1,
-      "YDS": 117,
+      "CMP": 14,
+      "ATT": 23,
+      "PCT": 60.9,
+      "YDS": 133,
       "TD": 2,
       "INT": 1,
       "ATT.1": 2,
@@ -749,8 +749,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 8.9,
-      "FPTS/G": 8.9,
+      "FPTS": 9.5,
+      "FPTS/G": 9.5,
       "ROST": 40.9,
       "POS": "qb"
     }
@@ -2486,13 +2486,13 @@ const player_stats = {
       "YDS.1": 32,
       "TD.1": 0,
       "FL": 0,
-      "REC": 3,
-      "TGT": 3,
-      "YDS.2": 9,
+      "REC": 4,
+      "TGT": 4,
+      "YDS.2": 11,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 7.1,
-      "FPTS/G": 7.1,
+      "FPTS": 8.3,
+      "FPTS/G": 8.3,
       "ROST": 4.5,
       "POS": "qb"
     }
