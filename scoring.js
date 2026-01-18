@@ -1213,7 +1213,7 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "New England Patriots",
-      "SACKS": 2.0,
+      "SACKS": 3.0,
       "FR": 1,
       "INT.1": 4,
       "TD.3": 1,
@@ -1221,8 +1221,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 16,
       "G": 1,
-      "FPTS": 19.0,
-      "FPTS/G": 19.0,
+      "FPTS": 20.0,
+      "FPTS/G": 20.0,
       "ROST": 22.7,
       "POS": "def"
     }
@@ -2482,8 +2482,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 12,
-      "YDS.1": 59,
+      "ATT.1": 13,
+      "YDS.1": 68,
       "TD.1": 0,
       "FL": 0,
       "REC": 4,
@@ -2491,8 +2491,8 @@ const player_stats = {
       "YDS.2": 11,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 11.0,
-      "FPTS/G": 11.0,
+      "FPTS": 11.9,
+      "FPTS/G": 11.9,
       "ROST": 4.5,
       "POS": "qb"
     }
