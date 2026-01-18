@@ -1690,10 +1690,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Brock Purdy",
-      "CMP": 2,
-      "ATT": 3,
-      "PCT": 66.7,
-      "YDS": 11,
+      "CMP": 3,
+      "ATT": 4,
+      "PCT": 75.0,
+      "YDS": 22,
       "TD": 0,
       "INT": 0,
       "ATT.1": 0,
@@ -1705,8 +1705,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.4,
-      "FPTS/G": 0.4,
+      "FPTS": 0.9,
+      "FPTS/G": 0.9,
       "ROST": 13.6,
       "POS": "qb"
     }
@@ -2620,10 +2620,10 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Sam Darnold",
-      "CMP": 3,
-      "ATT": 4,
-      "PCT": 75.0,
-      "YDS": 21,
+      "CMP": 4,
+      "ATT": 5,
+      "PCT": 80.0,
+      "YDS": 42,
       "TD": 0,
       "INT": 0,
       "ATT.1": 0,
@@ -2635,8 +2635,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.8,
-      "FPTS/G": 0.8,
+      "FPTS": 1.7,
+      "FPTS/G": 1.7,
       "ROST": 4.5,
       "POS": "qb"
     }
