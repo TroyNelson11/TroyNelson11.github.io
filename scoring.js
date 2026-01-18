@@ -268,8 +268,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 10,
-      "YDS.1": 27,
+      "ATT.1": 11,
+      "YDS.1": 35,
       "TD.1": 0,
       "FL": 0,
       "REC": 5,
@@ -277,8 +277,8 @@ const player_stats = {
       "YDS.2": 39,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 11.6,
-      "FPTS/G": 11.6,
+      "FPTS": 12.4,
+      "FPTS/G": 12.4,
       "ROST": 86.4,
       "POS": "qb"
     }
@@ -1690,14 +1690,14 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Brock Purdy",
-      "CMP": 14,
-      "ATT": 26,
-      "PCT": 53.8,
-      "YDS": 133,
+      "CMP": 15,
+      "ATT": 27,
+      "PCT": 55.6,
+      "YDS": 140,
       "TD": 0,
       "INT": 1,
-      "ATT.1": 2,
-      "YDS.1": 27,
+      "ATT.1": 5,
+      "YDS.1": 36,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -1705,8 +1705,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 7.0,
-      "FPTS/G": 7.0,
+      "FPTS": 8.2,
+      "FPTS/G": 8.2,
       "ROST": 13.6,
       "POS": "qb"
     }
@@ -2251,8 +2251,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Jason Myers",
-      "FPTS": 10,
-      "FPTS/G": 10,
+      "FPTS": 11,
+      "FPTS/G": 11,
       "ROST": "5.3%",
       "POS": "k"
     }
