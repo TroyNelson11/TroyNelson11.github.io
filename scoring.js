@@ -2251,8 +2251,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Jason Myers",
-      "FPTS": 9,
-      "FPTS/G": 9,
+      "FPTS": 10,
+      "FPTS/G": 10,
       "ROST": "5.3%",
       "POS": "k"
     }
