@@ -1219,10 +1219,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 3,
+      "PA": 10,
       "G": 1,
-      "FPTS": 9,
-      "FPTS/G": 9,
+      "FPTS": 6,
+      "FPTS/G": 6,
       "ROST": 22.7,
       "POS": "def"
     }
@@ -1871,8 +1871,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Ka'imi Fairbairn",
-      "FPTS": 3,
-      "FPTS/G": 3,
+      "FPTS": 4,
+      "FPTS/G": 4,
       "ROST": "10.5%",
       "POS": "k"
     }
