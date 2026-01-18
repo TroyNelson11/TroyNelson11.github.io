@@ -465,16 +465,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Ryan Fitzgerald",
-      "FPTS": 8,
-      "FPTS/G": 8,
+      "FPTS": 8.0,
+      "FPTS/G": 8.0,
       "ROST": "42.1%",
       "POS": "k"
     },
     "week 2": {
       "Rank": 0,
       "Player": "Ryan Fitzgerald",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "42.1%",
       "POS": "k"
     }
@@ -531,16 +531,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Cameron Dicker",
-      "FPTS": 3,
-      "FPTS/G": 3,
+      "FPTS": 3.0,
+      "FPTS/G": 3.0,
       "ROST": "42.1%",
       "POS": "k"
     },
     "week 2": {
       "Rank": 0,
       "Player": "Cameron Dicker",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "42.1%",
       "POS": "k"
     }
@@ -549,16 +549,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Chris Boswell",
-      "FPTS": 6,
-      "FPTS/G": 6,
+      "FPTS": 6.0,
+      "FPTS/G": 6.0,
       "ROST": "47.4%",
       "POS": "k"
     },
     "week 2": {
       "Rank": 0,
       "Player": "Chris Boswell",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "47.4%",
       "POS": "k"
     }
@@ -630,8 +630,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 23.2,
-      "FPTS/G": 23.2,
+      "FPTS": 23.1,
+      "FPTS/G": 23.1,
       "ROST": 45.5,
       "POS": "rb"
     },
@@ -797,8 +797,8 @@ const player_stats = {
       "YDS.2": 24,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 14.1,
-      "FPTS/G": 14.1,
+      "FPTS": 14.0,
+      "FPTS/G": 14.0,
       "ROST": 40.9,
       "POS": "wr"
     }
@@ -975,8 +975,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": 27.3,
       "POS": "def"
     }
@@ -1057,8 +1057,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": 27.3,
       "POS": "def"
     }
@@ -1171,8 +1171,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": 22.7,
       "POS": "def"
     },
@@ -1246,8 +1246,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 21.4,
-      "FPTS/G": 21.4,
+      "FPTS": 21.3,
+      "FPTS/G": 21.3,
       "ROST": 22.7,
       "POS": "qb"
     },
@@ -1279,16 +1279,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Cam Little",
-      "FPTS": 7,
-      "FPTS/G": 7,
+      "FPTS": 7.0,
+      "FPTS/G": 7.0,
       "ROST": "21.1%",
       "POS": "k"
     },
     "week 2": {
       "Rank": 0,
       "Player": "Cam Little",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "21.1%",
       "POS": "k"
     }
@@ -1321,8 +1321,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": 18.2,
       "POS": "def"
     }
@@ -1657,8 +1657,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 25.1,
-      "FPTS/G": 25.1,
+      "FPTS": 25.0,
+      "FPTS/G": 25.0,
       "ROST": 13.6,
       "POS": "rb"
     }
@@ -1682,8 +1682,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 18.9,
-      "FPTS/G": 18.9,
+      "FPTS": 18.8,
+      "FPTS/G": 18.8,
       "ROST": 13.6,
       "POS": "qb"
     },
@@ -1763,16 +1763,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Brandon McManus",
-      "FPTS": 3,
-      "FPTS/G": 3,
+      "FPTS": 3.0,
+      "FPTS/G": 3.0,
       "ROST": "10.5%",
       "POS": "k"
     },
     "week 2": {
       "Rank": 0,
       "Player": "Brandon McManus",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "10.5%",
       "POS": "k"
     }
@@ -1805,8 +1805,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": 9.1,
       "POS": "def"
     }
@@ -1863,16 +1863,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Ka'imi Fairbairn",
-      "FPTS": 8,
-      "FPTS/G": 8,
+      "FPTS": 8.0,
+      "FPTS/G": 8.0,
       "ROST": "10.5%",
       "POS": "k"
     },
     "week 2": {
       "Rank": 0,
       "Player": "Ka'imi Fairbairn",
-      "FPTS": 12,
-      "FPTS/G": 12,
+      "FPTS": 12.0,
+      "FPTS/G": 12.0,
       "ROST": "10.5%",
       "POS": "k"
     }
@@ -2025,16 +2025,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Cairo Santos",
-      "FPTS": 13,
-      "FPTS/G": 13,
+      "FPTS": 13.0,
+      "FPTS/G": 13.0,
       "ROST": "5.3%",
       "POS": "k"
     },
     "week 2": {
       "Rank": 0,
       "Player": "Cairo Santos",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "5.3%",
       "POS": "k"
     }
@@ -2163,8 +2163,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": 4.5,
       "POS": "def"
     }
@@ -2173,16 +2173,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Harrison Mevis",
-      "FPTS": 12,
-      "FPTS/G": 12,
+      "FPTS": 12.0,
+      "FPTS/G": 12.0,
       "ROST": "5.3%",
       "POS": "k"
     },
     "week 2": {
       "Rank": 0,
       "Player": "Harrison Mevis",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "5.3%",
       "POS": "k"
     }
@@ -2215,8 +2215,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": 4.5,
       "POS": "def"
     }
@@ -2225,16 +2225,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Jake Elliott",
-      "FPTS": 8,
-      "FPTS/G": 8,
+      "FPTS": 8.0,
+      "FPTS/G": 8.0,
       "ROST": "5.3%",
       "POS": "k"
     },
     "week 2": {
       "Rank": 0,
       "Player": "Jake Elliott",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "5.3%",
       "POS": "k"
     }
@@ -2243,16 +2243,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Jason Myers",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "5.3%",
       "POS": "k"
     },
     "week 2": {
       "Rank": 0,
       "Player": "Jason Myers",
-      "FPTS": 11,
-      "FPTS/G": 11,
+      "FPTS": 11.0,
+      "FPTS/G": 11.0,
       "ROST": "5.3%",
       "POS": "k"
     }
@@ -2635,8 +2635,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 9.0,
-      "FPTS/G": 9.0,
+      "FPTS": 8.9,
+      "FPTS/G": 8.9,
       "ROST": 4.5,
       "POS": "qb"
     }
@@ -2674,8 +2674,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 8,
-      "YDS.1": 16,
+      "ATT.1": 10,
+      "YDS.1": 22,
       "TD.1": 0,
       "FL": 0,
       "REC": 1,
@@ -2683,8 +2683,8 @@ const player_stats = {
       "YDS.2": -2,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 2.4,
-      "FPTS/G": 2.4,
+      "FPTS": 3.0,
+      "FPTS/G": 3.0,
       "ROST": 4.5,
       "POS": "qb"
     }
@@ -2741,16 +2741,16 @@ const player_stats = {
     "week 1": {
       "Rank": 0,
       "Player": "Wil Lutz",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "5.3%",
       "POS": "k"
     },
     "week 2": {
       "Rank": 0,
       "Player": "Wil Lutz",
-      "FPTS": 17,
-      "FPTS/G": 17,
+      "FPTS": 17.0,
+      "FPTS/G": 17.0,
       "ROST": "5.3%",
       "POS": "k"
     }
