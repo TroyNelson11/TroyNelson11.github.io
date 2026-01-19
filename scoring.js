@@ -2033,8 +2033,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Cairo Santos",
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 1.0,
+      "FPTS/G": 1.0,
       "ROST": "5.3%",
       "POS": "k"
     }
