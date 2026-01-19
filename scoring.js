@@ -1508,13 +1508,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 1,
+      "YDS.2": 11,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 2.1,
+      "FPTS/G": 2.1,
       "ROST": 18.2,
       "POS": "qb"
     }
@@ -1803,10 +1803,10 @@ const player_stats = {
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 0,
+      "PA": 7,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 4.0,
+      "FPTS/G": 4.0,
       "ROST": 9.1,
       "POS": "def"
     }
@@ -2181,8 +2181,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Harrison Mevis",
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 1.0,
+      "FPTS/G": 1.0,
       "ROST": "5.3%",
       "POS": "k"
     }
@@ -2338,7 +2338,7 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
+      "ATT.1": 2,
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
