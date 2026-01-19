@@ -644,8 +644,8 @@ const player_stats = {
       "YDS": 215,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 1,
+      "YDS.1": -1,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -653,8 +653,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 8.6,
-      "FPTS/G": 8.6,
+      "FPTS": 8.5,
+      "FPTS/G": 8.5,
       "ROST": 45.5,
       "POS": "qb"
     }
@@ -2033,8 +2033,8 @@ const player_stats = {
     "week 2": {
       "Rank": 0,
       "Player": "Cairo Santos",
-      "FPTS": 5.0,
-      "FPTS/G": 5.0,
+      "FPTS": 6.0,
+      "FPTS/G": 6.0,
       "ROST": "5.3%",
       "POS": "k"
     }
