@@ -1635,16 +1635,16 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Denver Broncos",
-      "SACKS": 3.0,
+      "SACKS": 4.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
       "BK": 0,
       "SAFE": 0,
-      "PA": 7,
+      "PA": 10,
       "G": 1,
-      "FPTS": 7.0,
-      "FPTS/G": 7.0,
+      "FPTS": 8.0,
+      "FPTS/G": 8.0,
       "ROST": 22.7,
       "POS": "def"
     }
@@ -3557,8 +3557,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 11,
-      "YDS.1": 35,
+      "ATT.1": 13,
+      "YDS.1": 39,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -3566,8 +3566,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 3.5,
-      "FPTS/G": 3.5,
+      "FPTS": 3.9,
+      "FPTS/G": 3.9,
       "ROST": 4.5,
       "POS": "rb"
     }
