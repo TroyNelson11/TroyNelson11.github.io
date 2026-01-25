@@ -981,10 +981,10 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Drake Maye",
-      "CMP": 0,
-      "ATT": 1,
-      "PCT": 0.0,
-      "YDS": 0,
+      "CMP": 1,
+      "ATT": 2,
+      "PCT": 50.0,
+      "YDS": 6,
       "TD": 0,
       "INT": 0,
       "ATT.1": 0,
@@ -996,8 +996,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 0.2,
+      "FPTS/G": 0.2,
       "ROST": 40.9,
       "POS": "qb"
     }
@@ -1517,15 +1517,15 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 2,
+      "YDS.2": 6,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 1.6,
+      "FPTS/G": 1.6,
       "ROST": 27.3,
-      "POS": "qb"
+      "POS": "wr"
     }
   },
   "A.J. Brown": {
