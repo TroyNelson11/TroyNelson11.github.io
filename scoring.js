@@ -1204,15 +1204,15 @@ const player_stats = {
       "YDS.1": 29,
       "TD.1": 0,
       "FL": 0,
-      "REC": 0,
-      "TGT": 0,
-      "YDS.2": 0,
+      "REC": 1,
+      "TGT": 3,
+      "YDS.2": 10,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 2.9,
-      "FPTS/G": 2.9,
+      "FPTS": 4.9,
+      "FPTS/G": 4.9,
       "ROST": 36.4,
-      "POS": "rb"
+      "POS": "wr"
     }
   },
   "Colston Loveland": {
