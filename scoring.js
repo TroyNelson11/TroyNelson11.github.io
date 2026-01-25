@@ -981,10 +981,10 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Drake Maye",
-      "CMP": 6,
-      "ATT": 11,
-      "PCT": 54.5,
-      "YDS": 38,
+      "CMP": 7,
+      "ATT": 12,
+      "PCT": 58.3,
+      "YDS": 41,
       "TD": 0,
       "INT": 0,
       "ATT.1": 1,
@@ -996,8 +996,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 8.1,
-      "FPTS/G": 8.1,
+      "FPTS": 8.2,
+      "FPTS/G": 8.2,
       "ROST": 40.9,
       "POS": "rb"
     }
