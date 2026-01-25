@@ -1906,13 +1906,13 @@ const player_stats = {
       "YDS.1": 0,
       "TD.1": 0,
       "FL": 0,
-      "REC": 1,
-      "TGT": 2,
-      "YDS.2": 6,
+      "REC": 2,
+      "TGT": 3,
+      "YDS.2": 11,
       "TD.2": 1,
       "G": 1,
-      "FPTS": 7.6,
-      "FPTS/G": 7.6,
+      "FPTS": 9.1,
+      "FPTS/G": 9.1,
       "ROST": 18.2,
       "POS": "wr"
     }
