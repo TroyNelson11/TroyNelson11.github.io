@@ -982,8 +982,8 @@ const player_stats = {
       "Rank": 0,
       "Player": "Drake Maye",
       "CMP": 3,
-      "ATT": 5,
-      "PCT": 60.0,
+      "ATT": 6,
+      "PCT": 50.0,
       "YDS": 7,
       "TD": 0,
       "INT": 0,
@@ -1635,7 +1635,7 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Denver Broncos",
-      "SACKS": 0,
+      "SACKS": 1.0,
       "FR": 0,
       "INT.1": 0,
       "TD.3": 0,
@@ -1643,8 +1643,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 0,
       "G": 1,
-      "FPTS": 10.0,
-      "FPTS/G": 10.0,
+      "FPTS": 11.0,
+      "FPTS/G": 11.0,
       "ROST": 22.7,
       "POS": "def"
     }
