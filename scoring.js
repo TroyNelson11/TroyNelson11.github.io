@@ -589,8 +589,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Ryan Fitzgerald",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "42.1%",
       "POS": "k"
     }
@@ -686,8 +686,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Cameron Dicker",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "42.1%",
       "POS": "k"
     }
@@ -712,8 +712,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Chris Boswell",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "47.4%",
       "POS": "k"
     }
@@ -987,8 +987,8 @@ const player_stats = {
       "YDS": 86,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 8,
-      "YDS.1": 67,
+      "ATT.1": 10,
+      "YDS.1": 65,
       "TD.1": 1,
       "FL": 0,
       "REC": 0,
@@ -996,8 +996,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 16.1,
-      "FPTS/G": 16.1,
+      "FPTS": 15.9,
+      "FPTS/G": 15.9,
       "ROST": 40.9,
       "POS": "rb"
     }
@@ -1790,8 +1790,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Cam Little",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "21.1%",
       "POS": "k"
     }
@@ -2505,8 +2505,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Brandon McManus",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "10.5%",
       "POS": "k"
     }
@@ -2652,8 +2652,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Ka'imi Fairbairn",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "10.5%",
       "POS": "k"
     }
@@ -2891,8 +2891,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Cairo Santos",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "5.3%",
       "POS": "k"
     }
@@ -3109,8 +3109,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Harrison Mevis",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "5.3%",
       "POS": "k"
     }
@@ -3185,8 +3185,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Jake Elliott",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "5.3%",
       "POS": "k"
     }
@@ -3211,8 +3211,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Jason Myers",
-      "FPTS": 0,
-      "FPTS/G": 0,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": "5.3%",
       "POS": "k"
     }
