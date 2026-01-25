@@ -3211,8 +3211,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Jason Myers",
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 1.0,
+      "FPTS/G": 1.0,
       "ROST": "5.3%",
       "POS": "k"
     }
@@ -3273,17 +3273,17 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 1,
-      "YDS.1": 5,
-      "TD.1": 0,
+      "ATT.1": 4,
+      "YDS.1": 14,
+      "TD.1": 1,
       "FL": 0,
       "REC": 0,
       "TGT": 0,
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.5,
-      "FPTS/G": 0.5,
+      "FPTS": 7.4,
+      "FPTS/G": 7.4,
       "ROST": 4.5,
       "POS": "qb"
     }
