@@ -1200,8 +1200,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 3,
-      "YDS.1": 10,
+      "ATT.1": 6,
+      "YDS.1": 13,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -1209,8 +1209,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 1.0,
-      "FPTS/G": 1.0,
+      "FPTS": 1.3,
+      "FPTS/G": 1.3,
       "ROST": 36.4,
       "POS": "rb"
     }
@@ -1907,7 +1907,7 @@ const player_stats = {
       "TD.1": 0,
       "FL": 0,
       "REC": 1,
-      "TGT": 1,
+      "TGT": 2,
       "YDS.2": 6,
       "TD.2": 1,
       "G": 1,
@@ -3841,8 +3841,8 @@ const player_stats = {
       "YDS": 0,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 0,
-      "YDS.1": 0,
+      "ATT.1": 1,
+      "YDS.1": 4,
       "TD.1": 0,
       "FL": 0,
       "REC": 0,
@@ -3850,10 +3850,10 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 0.0,
-      "FPTS/G": 0.0,
+      "FPTS": 0.4,
+      "FPTS/G": 0.4,
       "ROST": 4.5,
-      "POS": "qb"
+      "POS": "rb"
     }
   },
   "Troy Franklin": {
