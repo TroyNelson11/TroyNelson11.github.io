@@ -982,13 +982,13 @@ const player_stats = {
       "Rank": 0,
       "Player": "Drake Maye",
       "CMP": 7,
-      "ATT": 12,
-      "PCT": 58.3,
+      "ATT": 14,
+      "PCT": 50.0,
       "YDS": 41,
       "TD": 0,
       "INT": 0,
-      "ATT.1": 1,
-      "YDS.1": 6,
+      "ATT.1": 2,
+      "YDS.1": 22,
       "TD.1": 1,
       "FL": 0,
       "REC": 0,
@@ -996,8 +996,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 8.2,
-      "FPTS/G": 8.2,
+      "FPTS": 9.8,
+      "FPTS/G": 9.8,
       "ROST": 40.9,
       "POS": "rb"
     }
@@ -1685,7 +1685,7 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "New England Patriots",
-      "SACKS": 2.0,
+      "SACKS": 3.0,
       "FR": 1,
       "INT.1": 0,
       "TD.3": 0,
@@ -1693,8 +1693,8 @@ const player_stats = {
       "SAFE": 0,
       "PA": 7,
       "G": 1,
-      "FPTS": 8.0,
-      "FPTS/G": 8.0,
+      "FPTS": 9.0,
+      "FPTS/G": 9.0,
       "ROST": 22.7,
       "POS": "def"
     }
