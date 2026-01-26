@@ -839,11 +839,11 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Matthew Stafford",
-      "CMP": 6,
-      "ATT": 11,
-      "PCT": 54.5,
-      "YDS": 104,
-      "TD": 0,
+      "CMP": 7,
+      "ATT": 12,
+      "PCT": 58.3,
+      "YDS": 113,
+      "TD": 1,
       "INT": 0,
       "ATT.1": 0,
       "YDS.1": 0,
@@ -854,8 +854,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 4.1,
-      "FPTS/G": 4.1,
+      "FPTS": 8.5,
+      "FPTS/G": 8.5,
       "ROST": 45.5,
       "POS": "qb"
     }
@@ -3109,8 +3109,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Harrison Mevis",
-      "FPTS": 9.0,
-      "FPTS/G": 9.0,
+      "FPTS": 10.0,
+      "FPTS/G": 10.0,
       "ROST": "5.3%",
       "POS": "k"
     }
