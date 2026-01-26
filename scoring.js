@@ -3764,10 +3764,10 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Sam Darnold",
-      "CMP": 21,
-      "ATT": 30,
-      "PCT": 70.0,
-      "YDS": 306,
+      "CMP": 22,
+      "ATT": 32,
+      "PCT": 68.8,
+      "YDS": 310,
       "TD": 3,
       "INT": 0,
       "ATT.1": 2,
@@ -3779,8 +3779,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 25.6,
-      "FPTS/G": 25.6,
+      "FPTS": 25.8,
+      "FPTS/G": 25.8,
       "ROST": 4.5,
       "POS": "qb"
     }
