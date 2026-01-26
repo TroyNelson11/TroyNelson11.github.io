@@ -3109,8 +3109,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Harrison Mevis",
-      "FPTS": 10.0,
-      "FPTS/G": 10.0,
+      "FPTS": 11.0,
+      "FPTS/G": 11.0,
       "ROST": "5.3%",
       "POS": "k"
     }
