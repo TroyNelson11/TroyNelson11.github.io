@@ -3211,8 +3211,8 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Jason Myers",
-      "FPTS": 5.0,
-      "FPTS/G": 5.0,
+      "FPTS": 6.0,
+      "FPTS/G": 6.0,
       "ROST": "5.3%",
       "POS": "k"
     }
@@ -3764,11 +3764,11 @@ const player_stats = {
     "week 3": {
       "Rank": 0,
       "Player": "Sam Darnold",
-      "CMP": 13,
-      "ATT": 20,
-      "PCT": 65.0,
-      "YDS": 221,
-      "TD": 1,
+      "CMP": 14,
+      "ATT": 21,
+      "PCT": 66.7,
+      "YDS": 238,
+      "TD": 2,
       "INT": 0,
       "ATT.1": 1,
       "YDS.1": 0,
@@ -3779,8 +3779,8 @@ const player_stats = {
       "YDS.2": 0,
       "TD.2": 0,
       "G": 1,
-      "FPTS": 12.8,
-      "FPTS/G": 12.8,
+      "FPTS": 17.5,
+      "FPTS/G": 17.5,
       "ROST": 4.5,
       "POS": "qb"
     }
