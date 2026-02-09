@@ -375,6 +375,29 @@ const player_stats = {
       "FPTS/G": 31.3,
       "ROST": 77.3,
       "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Jaxon Smith-Njigba",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 4,
+      "TGT": 10,
+      "YDS.2": 27,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 6.7,
+      "FPTS/G": 6.7,
+      "ROST": 77.3,
+      "POS": "qb"
     }
   },
   "Saquon Barkley": {
@@ -1000,6 +1023,29 @@ const player_stats = {
       "FPTS/G": 15.9,
       "ROST": 40.9,
       "POS": "rb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Drake Maye",
+      "CMP": 27,
+      "ATT": 43,
+      "PCT": 62.8,
+      "YDS": 295,
+      "TD": 2,
+      "INT": 2,
+      "ATT.1": 5,
+      "YDS.1": 37,
+      "TD.1": 0,
+      "FL": 1,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 19.5,
+      "FPTS/G": 19.5,
+      "ROST": 40.9,
+      "POS": "rb"
     }
   },
   "James Cook III": {
@@ -1526,6 +1572,29 @@ const player_stats = {
       "FPTS/G": 6.7,
       "ROST": 27.3,
       "POS": "wr"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Stefon Diggs",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 0,
+      "YDS.1": 0,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 3,
+      "TGT": 3,
+      "YDS.2": 37,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 6.7,
+      "FPTS/G": 6.7,
+      "ROST": 27.3,
+      "POS": "wr"
     }
   },
   "A.J. Brown": {
@@ -1695,6 +1764,22 @@ const player_stats = {
       "G": 1,
       "FPTS": 11.0,
       "FPTS/G": 11.0,
+      "ROST": 22.7,
+      "POS": "def"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "New England Patriots",
+      "SACKS": 1.0,
+      "FR": 0,
+      "INT.1": 0,
+      "TD.3": 0,
+      "BK": 0,
+      "SAFE": 0,
+      "PA": 29,
+      "G": 1,
+      "FPTS": 0.0,
+      "FPTS/G": 0.0,
       "ROST": 22.7,
       "POS": "def"
     }
@@ -3215,6 +3300,14 @@ const player_stats = {
       "FPTS/G": 7.0,
       "ROST": "5.3%",
       "POS": "k"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Jason Myers",
+      "FPTS": 18.0,
+      "FPTS/G": 18.0,
+      "ROST": "5.3%",
+      "POS": "k"
     }
   },
   "Kenneth Walker III": {
@@ -3284,6 +3377,29 @@ const player_stats = {
       "G": 1,
       "FPTS": 21.1,
       "FPTS/G": 21.1,
+      "ROST": 4.5,
+      "POS": "qb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "Kenneth Walker III",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 27,
+      "YDS.1": 135,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 2,
+      "TGT": 4,
+      "YDS.2": 26,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 18.1,
+      "FPTS/G": 18.1,
       "ROST": 4.5,
       "POS": "qb"
     }
@@ -3783,6 +3899,29 @@ const player_stats = {
       "FPTS/G": 26.7,
       "ROST": 4.5,
       "POS": "qb"
+    },
+    "week 3": {
+      "Rank": 0,
+      "Player": "Sam Darnold",
+      "CMP": 19,
+      "ATT": 38,
+      "PCT": 50.0,
+      "YDS": 202,
+      "TD": 1,
+      "INT": 0,
+      "ATT.1": 2,
+      "YDS.1": 5,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 12.5,
+      "FPTS/G": 12.5,
+      "ROST": 4.5,
+      "POS": "qb"
     }
   },
   "TreVeyon Henderson": {
@@ -3852,6 +3991,29 @@ const player_stats = {
       "G": 1,
       "FPTS": 0.5,
       "FPTS/G": 0.5,
+      "ROST": 4.5,
+      "POS": "rb"
+    },
+    "week 4": {
+      "Rank": 0,
+      "Player": "TreVeyon Henderson",
+      "CMP": 0,
+      "ATT": 0,
+      "PCT": 0,
+      "YDS": 0,
+      "TD": 0,
+      "INT": 0,
+      "ATT.1": 6,
+      "YDS.1": 19,
+      "TD.1": 0,
+      "FL": 0,
+      "REC": 0,
+      "TGT": 0,
+      "YDS.2": 0,
+      "TD.2": 0,
+      "G": 1,
+      "FPTS": 1.9,
+      "FPTS/G": 1.9,
       "ROST": 4.5,
       "POS": "rb"
     }
